@@ -18,8 +18,5 @@ class EmpWeather: public IZoneWeather {
             reaction->react_emp(parent, dt, scheduler);
         this->parent->execute(parent, reaction, dt, scheduler);
     }
-    void update(double dt, std::vector<IEntity*> scheduler) {
-        parent->update(dt, scheduler);
-    }
 };
 #endif

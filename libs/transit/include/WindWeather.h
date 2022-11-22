@@ -20,8 +20,5 @@ class WindWeather: public IZoneWeather {
             reaction->react_wind(parent, dt, scheduler, windSpeed);
         this->parent->execute(parent, reaction, dt, scheduler);
     }
-    void update(double dt, std::vector<IEntity*> scheduler) {
-        parent->update(dt, scheduler);
-    }
 };
 #endif

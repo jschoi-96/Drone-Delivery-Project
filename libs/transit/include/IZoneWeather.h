@@ -11,6 +11,10 @@ class IZoneWeather: public IWeather {
     void update_real(double dt, std::vector<IEntity*>* scheduler) {
         // TBD: Updates pos and whatever
     }
+    void update(double dt, std::vector<IEntity*> scheduler) {
+        update_real(dt, scheduler);
+        parent->update(dt, scheduler);
+    }
     bool is_inside(IEntity* parent) {
         return true; // returns if parent intersects with 
     }; // if the object is affected by the weather
