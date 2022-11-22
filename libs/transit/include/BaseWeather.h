@@ -1,5 +1,9 @@
 #ifndef BASE_WEATHER_H
 #define BASE_WEATHER_H
+#include "IWeather.h"
+#include "IEntity.h"
+#include "IReaction.h"
+#include <vector>
 class BaseWeather: public IWeather {
     private:
     // there is ONLY ONE WEATHER IN THE WORLDDDDDD

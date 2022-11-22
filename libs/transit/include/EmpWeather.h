@@ -1,5 +1,11 @@
 #ifndef EMP_WEATHER_H
 #define EMP_WEATHER_H
+#include "IEntity.h"
+#include "IWeather.h"
+#include "IZoneWeather.h"
+
+#include <vector>
+
 class EmpWeather: public IZoneWeather {
     private:
     IWeather* parent;

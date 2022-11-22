@@ -1,5 +1,10 @@
 #ifndef IZONE_WEATHER
 #define IZONE_WEATHER
+#include "IEntity.h"
+#include "IWeather.h"
+#include "IZoneWeather.h"
+
+#include <vector>
 class IZoneWeather: public IWeather {
     // TBD: Has a radius and stuff
     public:

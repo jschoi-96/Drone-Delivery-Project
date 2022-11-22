@@ -4,6 +4,10 @@
 #include <vector>
 
 #include "IEntity.h"
+#include "IReaction.h"
+#include "graph.h"
+#include "math/vector3.h"
+#include "util/json.h"
 
 class WeatherReactDecorator : public IEntity {
  public:

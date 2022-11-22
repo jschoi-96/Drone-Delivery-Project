@@ -1,5 +1,11 @@
 #ifndef WIND_WEATHER_H
 #define WIND_WEATHER_H
+#include "IEntity.h"
+#include "IWeather.h"
+#include "IZoneWeather.h"
+#include "math/vector3.h"
+
+#include <vector>
 class WindWeather: public IZoneWeather {
     private:
     IWeather* parent;
