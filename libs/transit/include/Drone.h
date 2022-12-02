@@ -6,12 +6,23 @@
 #include "IEntity.h"
 #include "IStrategy.h"
 #include "math/vector3.h"
+#include <map>
 
 // Represents a drone in a physical system.
 // Drones move using euler integration based on a specified
 // velocity and direction.
 class Drone : public IEntity {
  public:
+  std::map<std::string, std::string> Dronecolors = {
+    {"red", "0xff0000"},
+    {"yellow", "0xffff00"},
+    {"blue", "0x0000FF"},
+    {"orange", "0xffa500"},
+    {"green", "0x00ff00"},
+    {"purple", "0xa020f0"},
+    {"brown", "0x964b00"},
+    {"black", "0x000000"}
+  };
   // Drones are created with a name
   Drone(JsonObject& obj);
   // Destructor
@@ -66,6 +77,7 @@ class Drone : public IEntity {
   IEntity* nearestEntity = NULL;
   IStrategy* toTargetPosStrategy = NULL;
   IStrategy* toTargetDestStrategy = NULL;
+ 
 };
 
 #endif

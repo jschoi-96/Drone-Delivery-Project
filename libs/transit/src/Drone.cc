@@ -65,6 +65,7 @@ void Drone::Update(double dt, std::vector<IEntity*> scheduler) {
   if (available) {
     GetNearestEntity(scheduler);
   }
+  details["color"] = Dronecolors["black"];
 
   if(toTargetPosStrategy){
     toTargetPosStrategy->Move(this, dt);
