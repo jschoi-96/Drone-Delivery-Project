@@ -77,6 +77,28 @@ $( document ).ready(function() {
 
             var adjustedDirVector = model.localToWorld(new THREE.Vector3(0,0,0)).add(dir);
             model.lookAt(adjustedDirVector);
+
+            model.children[1].material = new THREE.MeshBasicMaterial( { color: parseInt(details.color, 16), transparent: true, opacity: opacity } );
+            /*var sphere = new THREE.Mesh( sphereGeom, sphereMaterial );
+            sphere.scale.copy(new THREE.Vector3(0.03, 0.03, 0.03));
+
+            const group = new THREE.Group();
+            group.add( model );
+            group.add(sphere);
+            group.position.copy(position);
+            
+            if (details.offset != undefined) {
+              group.offset = new THREE.Vector3(details.offset[0], details.offset[1], details.offset[2]);
+            }
+            else {
+              group.offset = new THREE.Vector3(0.0, 0.0, 0.0);
+            }
+
+            models.push(group);
+            scene.add( group );
+            entities[id] = group;
+            entityList.push(id);
+             */
           }
 
           if (currentView >= 0) {
@@ -496,6 +518,8 @@ function update() {
       mixer.mixer.setTime(newTime);
     }
   }
+  
+  
 
   // Send the update command to the socket.
   //if (connected) {
