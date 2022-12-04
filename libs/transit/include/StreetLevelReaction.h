@@ -6,6 +6,8 @@
 #include "IReaction.h"
 
 class StreetLevelReaction : public IReaction {
+ public:
+  StreetLevelReaction() {}
   void react_wind(IEntity* parent, double& dt, std::vector<IEntity*>& scheduler,
                   Vector3 wind);
   void react_rain(IEntity* parent, double& dt,

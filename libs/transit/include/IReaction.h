@@ -12,11 +12,10 @@ class IReaction {
       {"blue", "0x0000ff"},   {"orange", "0xffa500"}, {"green", "0x00ff00"},
       {"purple", "0xa020f0"}, {"brown", "0x964b00"},  {"black", "0x000000"}};
   virtual void react_wind(IEntity* parent, double& dt,
-                          std::vector<IEntity*>& scheduler,
-                          Vector3 wind) const = 0;
+                          std::vector<IEntity*>& scheduler, Vector3 wind) = 0;
   virtual void react_rain(IEntity* parent, double& dt,
-                          std::vector<IEntity*>& scheduler) const = 0;
+                          std::vector<IEntity*>& scheduler) = 0;
   virtual void react_emp(IEntity* parent, double& dt,
-                         std::vector<IEntity*>& scheduler) const = 0;
+                         std::vector<IEntity*>& scheduler) = 0;
 };
 #endif

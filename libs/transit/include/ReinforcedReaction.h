@@ -5,6 +5,8 @@
 #include "IEntity.h"
 #include "IReaction.h"
 class ReinforcedReaction : public IReaction {
+ public:
+  ReinforcedReaction() {}
   void react_wind(IEntity* parent, double& dt, std::vector<IEntity*>& scheduler,
                   Vector3 wind);
   void react_rain(IEntity* parent, double& dt,

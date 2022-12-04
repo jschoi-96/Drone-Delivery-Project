@@ -14,6 +14,8 @@
    brown = all 3
    */
 class RegularReaction : public IReaction {
+ public:
+  RegularReaction() {}
   void react_wind(IEntity* parent, double& dt, std::vector<IEntity*>& scheduler,
                   Vector3 wind);
   void react_rain(IEntity* parent, double& dt,

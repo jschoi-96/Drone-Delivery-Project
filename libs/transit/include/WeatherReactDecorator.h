@@ -11,10 +11,7 @@
 
 class WeatherReactDecorator : public IEntity {
  public:
-  WeatherReactDecorator(IEntity* parent_, IReaction* reaction_) {
-    parent = parent_;
-    reaction = reaction_;
-  }
+  WeatherReactDecorator(IEntity* parent_, IReaction* reaction_);
   float GetSpeed() const { return parent->GetSpeed(); }
 
   // Gets the drone position
