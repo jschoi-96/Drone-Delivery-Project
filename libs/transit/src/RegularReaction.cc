@@ -8,6 +8,7 @@
 void RegularReaction::react_wind(IEntity* parent, double& dt,
                                  std::vector<IEntity*>& scheduler,
                                  Vector3 wind) {
+  printf("An entity is in the wind!\n");
   std::string color = parent->GetDetails()["color"];
   if (color == colors["red"]) {  // case where rain goes into wind zone
     parent->GetDetails()["color"] = colors["orange"];
@@ -26,6 +27,7 @@ void RegularReaction::react_wind(IEntity* parent, double& dt,
 }
 void RegularReaction::react_rain(IEntity* parent, double& dt,
                                  std::vector<IEntity*>& scheduler) {
+  printf("An entity is in the rain!\n");
   std::string color = parent->GetDetails()["color"];
   if (color == colors["yellow"]) {  // case where wind goes into rain zone
     parent->GetDetails()["color"] = colors["orange"];
@@ -43,7 +45,7 @@ void RegularReaction::react_rain(IEntity* parent, double& dt,
 }
 void RegularReaction::react_emp(IEntity* parent, double& dt,
                                 std::vector<IEntity*>& scheduler) {
-  printf("Reaction was called!\n");
+  printf("An entity is in the EMP blast!\n");
   std::string color = parent->GetDetails()["color"];
   if (color == colors["yellow"]) {  // case where wind geos into emp zone
     parent->GetDetails()["color"] = colors["green"];
@@ -57,8 +59,6 @@ void RegularReaction::react_emp(IEntity* parent, double& dt,
                                           // goes into emp zone
     parent->GetDetails()["color"] = colors["blue"];
   }
-  printf("color change was successful!\n");
   // changes the color first, and then...
   dt = 0;
-  printf("dt change was successful!\n");
 }

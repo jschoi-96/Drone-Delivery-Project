@@ -2,7 +2,7 @@
 #include <map>
 
 #include "BaseWeather.h"
-#include "EmpWeather.h"
+#include "RainWeather.h"
 #include "SimulationModel.h"
 #include "WebServer.h"
 #include "routing_api.h"
@@ -56,10 +56,6 @@ class TransitService : public JsonSession, public IController {
         SendEntity("UpdateEntity", *it->second, false);
       }
     } else if (cmd == "Start") {
-      printf("Instance of whatever will be gotten!\n");
-      BaseWeather::SetInstance(new EmpWeather(
-          BaseWeather::GetInstance(), 0, 0, 100000));  // adds EMP to everywhere
-      printf("Instance has been gotten!\n");
     }
   }
 
@@ -190,6 +186,12 @@ int main(int argc, char** argv) {
     int port = std::atoi(argv[1]);
     std::string webDir = std::string(argv[2]);
     TransitWebServer server(port, webDir);
+
+    printf("Setting weather...\n");
+    BaseWeather::SetInstance(
+        new RainWeather(BaseWeather::GetInstance(), 0, 0,
+                        100000));       // adds EMP to everywhere
+    printf("Weather has been set!\n");  // for now
     while (true) {
       server.service();
     }

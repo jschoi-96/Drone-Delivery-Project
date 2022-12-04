@@ -8,9 +8,7 @@
 #include "IZoneWeather.h"
 void EmpWeather::execute(IEntity* parent, IReaction* reaction, double dt,
                          std::vector<IEntity*> scheduler) {
-  printf("EMP was called!\n");
   if (is_inside(parent)) reaction->react_emp(parent, dt, scheduler);
-  printf("EMP was successful!\n");
   this->parent->execute(parent, reaction, dt, scheduler);
 }
 EmpWeather::EmpWeather(IWeather* parent_, double xCircle_, double yCircle_,

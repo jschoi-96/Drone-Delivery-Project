@@ -12,37 +12,39 @@
 class WeatherReactDecorator : public IEntity {
  public:
   WeatherReactDecorator(IEntity* parent_, IReaction* reaction_);
-  float GetSpeed() const { return parent->GetSpeed(); }
+  float GetSpeed() const;
 
   // Gets the drone position
-  Vector3 GetPosition() const { return parent->GetPosition(); }
+  Vector3 GetPosition() const;
 
-  Vector3 GetDirection() const { return parent->GetDirection(); }
+  Vector3 GetDirection() const;
 
-  Vector3 GetDestination() const { return parent->GetDestination(); }
+  Vector3 GetDestination() const;
 
-  JsonObject GetDetails() const { return parent->GetDetails(); }
+  JsonObject GetDetails() const;
 
-  bool GetAvailability() const { return parent->GetAvailability(); }
+  bool GetAvailability() const;
 
-  std::string GetStrategyName() { return parent->GetStrategyName(); }
+  std::string GetStrategyName();
 
-  void SetAvailability(bool choice) { parent->SetAvailability(choice); }
+  void SetAvailability(bool choice);
 
   // reacts to the weather, then calls the parent's update function
   void Update(double dt, std::vector<IEntity*> scheduler);
 
-  void SetPosition(Vector3 pos_) { parent->SetPosition(pos_); }
+  void SetPosition(Vector3 pos_);
 
   // Sets the drone's direction
-  void SetDirection(Vector3 dir_) { parent->SetDirection(dir_); }
+  void SetDirection(Vector3 dir_);
 
-  void SetDestination(Vector3 des_) { parent->SetDestination(des_); }
+  void SetDestination(Vector3 des_);
 
   // Rotates a drone
-  void Rotate(double angle) { parent->Rotate(angle); }
+  void Rotate(double angle);
 
-  void Jump(double height) { parent->Jump(height); }
+  void Jump(double height);
+
+  void SetGraph(const IGraph* graph);
 
  protected:
   IEntity* parent;

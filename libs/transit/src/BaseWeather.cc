@@ -12,7 +12,5 @@ IWeather* BaseWeather::GetInstance() {
 }
 void BaseWeather::execute(IEntity* parent, IReaction* reaction, double dt,
                           std::vector<IEntity*> scheduler) {
-  printf("Base was called!\n");
   parent->Update(dt, scheduler);
-  printf("Base was successful!\n");
 }
