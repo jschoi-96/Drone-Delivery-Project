@@ -1,22 +1,18 @@
 #ifndef EMP_WEATHER_H
 #define EMP_WEATHER_H
+#include <vector>
+
 #include "IEntity.h"
 #include "IWeather.h"
 #include "IZoneWeather.h"
 
-#include <vector>
-
-class EmpWeather: public IZoneWeather {
-    private:
-    IWeather* parent;
-    public:
-    EmpWeather(IWeather* parent_) {
-        parent = parent_;
-    }
-    void execute(IEntity* parent, IReaction* reaction, double dt, std::vector<IEntity*> scheduler) {
-        if(is_inside(parent))
-            reaction->react_emp(parent, dt, scheduler);
-        this->parent->execute(parent, reaction, dt, scheduler);
-    }
+class EmpWeather : public IZoneWeather {
+ public:
+  EmpWeather(IWeather* parent_, double xCircle_, double yCircle_,
+             double radius_);
+  EmpWeather(IWeather* parent, double xminRec_, double yminRec_,
+             double xmaxRec_, double ymaxRec_);
+  void execute(IEntity* parent, IReaction* reaction, double dt,
+               std::vector<IEntity*> scheduler);
 };
 #endif

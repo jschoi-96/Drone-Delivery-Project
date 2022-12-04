@@ -28,14 +28,14 @@ class IEntity {
   virtual JsonObject GetDetails() const = 0;
   virtual float GetSpeed() const = 0;
   virtual bool GetAvailability() const {};
-  virtual std::string GetStrategyName(){}
+  virtual std::string GetStrategyName() {}
   virtual void SetAvailability(bool choice) {}
   virtual void Update(double dt, std::vector<IEntity*> scheduler) {}
   void SetGraph(const IGraph* graph) { this->graph = graph; }
   virtual void SetPosition(Vector3 pos_) {}
   virtual void SetDirection(Vector3 dir_) {}
   virtual void SetDestination(Vector3 des_) {}
-  virtual void SetStrategyName(std::string strategyName_){}
+  virtual void SetStrategyName(std::string strategyName_) {}
   virtual void Rotate(double angle) {}
   virtual void Jump(double height) {}
 
