@@ -78,7 +78,41 @@
         }
     },
     {
-        "command": "Start",
-        "params": {}
+        "command": "CreateEntity",
+        "params": {
+            "type": "rain",
+            "name": "rain",
+            "position": [
+                498.292,
+                270,
+                -228.623
+            ],
+            "isCircle": true,
+            "direction": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "scale": [
+                0.1,
+                0.1,
+                0.1
+            ],
+            "radius": 800.0,
+            "speed": 30.0,
+            "duration": 2.0,
+            "offset": [
+                0,
+                0.6,
+                0
+            ],
+            "color": "0xffffff"
+        }
     }
 ]

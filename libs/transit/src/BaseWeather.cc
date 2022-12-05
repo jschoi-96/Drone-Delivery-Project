@@ -10,7 +10,7 @@ IWeather* BaseWeather::GetInstance() {
   }
   return instance;
 }
-void BaseWeather::execute(IEntity* parent, IReaction* reaction, double dt,
+void BaseWeather::Execute(IEntity* parent, IReaction* reaction, double dt,
                           std::vector<IEntity*> scheduler) {
   parent->Update(dt, scheduler);
 }

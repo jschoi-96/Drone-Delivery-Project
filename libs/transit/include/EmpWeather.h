@@ -8,11 +8,8 @@
 
 class EmpWeather : public IZoneWeather {
  public:
-  EmpWeather(IWeather* parent_, double xCircle_, double yCircle_,
-             double radius_);
-  EmpWeather(IWeather* parent, double xminRec_, double yminRec_,
-             double xmaxRec_, double ymaxRec_);
-  void execute(IEntity* parent, IReaction* reaction, double dt,
+  EmpWeather(JsonObject& obj);
+  void Execute(IEntity* parent, IReaction* reaction, double dt,
                std::vector<IEntity*> scheduler);
 };
 #endif

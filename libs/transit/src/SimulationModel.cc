@@ -1,12 +1,19 @@
 #include "SimulationModel.h"
+
 #include "DroneFactory.h"
+#include "EmpFactory.h"
+#include "RainFactory.h"
 #include "RobotFactory.h"
+#include "WindFactory.h"
 
 SimulationModel::SimulationModel(IController& controller)
     : controller(controller) {
   compFactory = new CompositeFactory();
   AddFactory(new DroneFactory());
   AddFactory(new RobotFactory());
+  AddFactory(new EmpFactory());
+  AddFactory(new WindFactory());
+  AddFactory(new RainFactory());
 }
 
 void SimulationModel::CreateEntity(JsonObject& entity) {
@@ -17,7 +24,7 @@ void SimulationModel::CreateEntity(JsonObject& entity) {
 
   IEntity* myNewEntity = compFactory->CreateEntity(entity);
   myNewEntity->SetGraph(graph);
-  
+
   // Call AddEntity to add it to the view
   controller.AddEntity(*myNewEntity);
   entities.push_back(myNewEntity);
@@ -34,7 +41,8 @@ void SimulationModel::ScheduleTrip(JsonObject& details) {
     JsonObject detailsTemp = entity->GetDetails();
     std::string nameTemp = detailsTemp["name"];
     std::string typeTemp = detailsTemp["type"];
-    if (name.compare(nameTemp) == 0 && typeTemp.compare("robot") == 0 && entity->GetAvailability()) {
+    if (name.compare(nameTemp) == 0 && typeTemp.compare("robot") == 0 &&
+        entity->GetAvailability()) {
       std::string strategyName = details["search"];
       entity->SetStrategyName(strategyName);
       entity->SetDestination(Vector3(end[0], end[1], end[2]));

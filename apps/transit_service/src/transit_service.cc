@@ -186,12 +186,6 @@ int main(int argc, char** argv) {
     int port = std::atoi(argv[1]);
     std::string webDir = std::string(argv[2]);
     TransitWebServer server(port, webDir);
-
-    printf("Setting weather...\n");
-    BaseWeather::SetInstance(
-        new RainWeather(BaseWeather::GetInstance(), 0, 0,
-                        100000));       // adds EMP to everywhere
-    printf("Weather has been set!\n");  // for now
     while (true) {
       server.service();
     }

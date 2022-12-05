@@ -11,11 +11,9 @@ class WindWeather : public IZoneWeather {
   Vector3 windSpeed;
 
  public:
-  WindWeather(IWeather* parent_, Vector3 windSpeed_, double xCircle_,
-              double yCircle_, double radius_);
-  WindWeather(IWeather* parent, Vector3 windSpeed_, double xminRec_,
-              double yminRec_, double xmaxRec_, double ymaxRec_);
-  void execute(IEntity* parent, IReaction* reaction, double dt,
+  WindWeather(JsonObject& obj);
+
+  void Execute(IEntity* parent, IReaction* reaction, double dt,
                std::vector<IEntity*> scheduler);
 };
 #endif

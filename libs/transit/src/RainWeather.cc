@@ -3,21 +3,31 @@
 
 #include <vector>
 
+#include "BaseWeather.h"
 #include "IEntity.h"
 #include "IWeather.h"
 #include "IZoneWeather.h"
-void RainWeather::execute(IEntity* parent, IReaction* reaction, double dt,
+void RainWeather::Execute(IEntity* parent, IReaction* reaction, double dt,
                           std::vector<IEntity*> scheduler) {
-  if (is_inside(parent)) reaction->react_rain(parent, dt, scheduler);
-  this->parent->execute(parent, reaction, dt, scheduler);
+  if (IsInside(parent)) reaction->react_rain(parent, dt, scheduler);
+  this->parent->Execute(parent, reaction, dt, scheduler);
 }
-RainWeather::RainWeather(IWeather* parent_, double xCircle_, double yCircle_,
-                         double radius_) {
-  parent = parent_;
-  circle(xCircle_, yCircle_, radius_);
-}
-RainWeather::RainWeather(IWeather* parent_, double xminRec_, double yminRec_,
-                         double xmaxRec_, double ymaxRec_) {
-  parent = parent_;
-  rect(xminRec_, yminRec_, xmaxRec_, ymaxRec_);
+RainWeather::RainWeather(JsonObject& obj) {
+  details = obj;
+  parent = BaseWeather::GetInstance();
+  JsonArray position(obj["position"]);
+  pos = {position[0], position[1], position[2]};
+  JsonArray dir(obj["direction"]);
+  direction = {dir[0], dir[1], dir[2]};
+  speed = direction.Magnitude();
+  bool isCircle = obj["isCircle"];
+  this->isCircle = isCircle;
+  if (isCircle) {
+    float radius = obj["radius"];
+    this->radius = radius;
+  } else {
+    JsonArray width(obj["width"]);
+    this->width = {width[0], width[1], width[2]};
+  }
+  BaseWeather::SetInstance(this);
 }

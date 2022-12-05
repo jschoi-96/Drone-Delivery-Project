@@ -5,26 +5,32 @@
 #include "IEntity.h"
 #include "IWeather.h"
 #include "IZoneWeather.h"
-class IZoneWeather : public IWeather {
+class IZoneWeather : public IWeather, public IEntity {
   // TBD: Has a radius and stuff
  public:
-  void circle(double xCircle_, double yCircle_, double radius_);
+  bool IsInside(IEntity* parent);  // if the object is affected by the weather
 
-  void rect(double xminRec_, double yminRec_, double xmaxRec_, double ymaxRec_);
-  void update_real(double dt, std::vector<IEntity*> scheduler);
-  void update(double dt, std::vector<IEntity*> scheduler);
-  bool is_inside(IEntity* parent);  // if the object is affected by the weather
+  virtual Vector3 GetPosition() const { return pos; }
+  virtual Vector3 GetDirection() const { return direction; }
+  virtual Vector3 GetDestination() const { return Vector3(0, 0, 0); }
+  virtual JsonObject GetDetails() const { return details; };
+  virtual float GetSpeed() const { return speed; };
+  virtual bool GetAvailability() const { return false; }
+  virtual std::string GetStrategyName() { return ""; }
+  virtual void SetAvailability(bool choice) {}
+  virtual void Update(double dt, std::vector<IEntity*> scheduler);
+  virtual void SetGraph(const IGraph* graph) { this->graph = graph; }
 
  protected:
+  JsonObject details;
   IWeather* parent;
-  double radius;
-  double xCircle;
-  double yCircle;
 
-  double xminRec;
-  double yminRec;
-  double xmaxRec;
-  double ymaxRec;
+  Vector3 pos;
+  Vector3 direction;  // what direction the weather moves in
+
+  Vector3 width;  // for squares
+  float radius;   // for circles
+  float speed = 0;
   bool isCircle = false;
 };
 #endif

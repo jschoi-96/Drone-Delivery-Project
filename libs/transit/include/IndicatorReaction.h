@@ -1,5 +1,5 @@
-#ifndef REGULAR_REACTION_H
-#define REGULAR_REACTION_H
+#ifndef INDICATOR_REACTION_H
+#define INDICATOR_REACTION_H
 #include <vector>
 
 #include "IEntity.h"
@@ -13,12 +13,9 @@
    purple = rain + emp
    brown = all 3
    */
-class RegularReaction : public IReaction {
- private:
-  int counter = 0;
-
+class IndicatorReaction : public IReaction {
  public:
-  RegularReaction() {}
+  IndicatorReaction() {}
   void react_wind(IEntity* parent, double& dt, std::vector<IEntity*>& scheduler,
                   Vector3 wind);
   void react_rain(IEntity* parent, double& dt,
