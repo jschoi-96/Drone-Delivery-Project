@@ -13,8 +13,7 @@ class BaseWeather : public IWeather {
   ~BaseWeather() override = default;
   void Execute(IEntity* parent, IReaction* reaction, double dt,
                std::vector<IEntity*> scheduler);
-  virtual void update(double dt, std::vector<IEntity*> scheduler) {}
-  virtual bool IsInside(IEntity* parent) { return true; }
+  bool IsInside(IEntity* parent) { return true; }
 
   static IWeather* GetInstance();
   static void SetInstance(IWeather* new_instance) { instance = new_instance; }
