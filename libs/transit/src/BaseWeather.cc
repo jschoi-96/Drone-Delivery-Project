@@ -3,6 +3,7 @@
 #include "IEntity.h"
 #include "IReaction.h"
 #include "IWeather.h"
+
 IWeather* BaseWeather::instance = nullptr;
 IWeather* BaseWeather::GetInstance() {
   if (instance == nullptr) {

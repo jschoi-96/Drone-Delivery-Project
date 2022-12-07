@@ -7,6 +7,7 @@
 #include "IEntity.h"
 #include "IWeather.h"
 #include "IZoneWeather.h"
+
 void WindWeather::Execute(IEntity* parent, IReaction* reaction, double dt,
                           std::vector<IEntity*> scheduler) {
   if (IsInside(parent)) reaction->react_wind(parent, dt, scheduler, windSpeed);

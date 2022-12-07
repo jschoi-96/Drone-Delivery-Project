@@ -7,6 +7,7 @@
 #include "IEntity.h"
 #include "IWeather.h"
 #include "IZoneWeather.h"
+
 void EmpWeather::Execute(IEntity* parent, IReaction* reaction, double dt,
                          std::vector<IEntity*> scheduler) {
   if (IsInside(parent)) reaction->react_emp(parent, dt, scheduler);

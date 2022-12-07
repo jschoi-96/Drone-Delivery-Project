@@ -6,6 +6,7 @@
 #include "IReaction.h"
 class IWeather {
  public:
+  virtual ~IWeather() {}
   virtual void Execute(IEntity* parent, IReaction* reaction, double dt,
                        std::vector<IEntity*> scheduler) = 0;
   virtual bool IsInside(

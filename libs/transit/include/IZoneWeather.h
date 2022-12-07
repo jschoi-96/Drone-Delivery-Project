@@ -9,6 +9,7 @@ class IZoneWeather : public IWeather, public IEntity {
   // TBD: Has a radius and stuff
  public:
   bool IsInside(IEntity* parent);  // if the object is affected by the weather
+  ~IZoneWeather() override = default;
 
   virtual Vector3 GetPosition() const { return pos; }
   virtual Vector3 GetDirection() const { return direction; }

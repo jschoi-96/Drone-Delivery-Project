@@ -9,6 +9,7 @@
 class EmpWeather : public IZoneWeather {
  public:
   EmpWeather(JsonObject& obj);
+  ~EmpWeather() override = default;
   void Execute(IEntity* parent, IReaction* reaction, double dt,
                std::vector<IEntity*> scheduler);
 };

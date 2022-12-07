@@ -5,6 +5,8 @@
 #include "IEntity.h"
 #include "IReaction.h"
 
+
+
 void RegularReaction::react_wind(IEntity* parent, double& dt,
                                  std::vector<IEntity*>& scheduler,
                                  Vector3 wind) {

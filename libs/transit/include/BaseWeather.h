@@ -5,8 +5,12 @@
 #include "IEntity.h"
 #include "IReaction.h"
 #include "IWeather.h"
+/**
+* @brief This class inherits from the IWeather and is responsible for setting base weather 
+**/
 class BaseWeather : public IWeather {
  public:
+  ~BaseWeather() override = default;
   void Execute(IEntity* parent, IReaction* reaction, double dt,
                std::vector<IEntity*> scheduler);
   virtual void update(double dt, std::vector<IEntity*> scheduler) {}

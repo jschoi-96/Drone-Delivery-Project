@@ -12,7 +12,7 @@ class WindWeather : public IZoneWeather {
 
  public:
   WindWeather(JsonObject& obj);
-
+  virtual ~WindWeather() override = default;
   void Execute(IEntity* parent, IReaction* reaction, double dt,
                std::vector<IEntity*> scheduler);
 };

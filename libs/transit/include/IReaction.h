@@ -7,6 +7,7 @@
 
 class IReaction {
  public:
+  virtual ~IReaction(){}
   std::map<std::string, std::string> colors = {
       {"white", "0xffffff"},  {"red", "0xff0000"},    {"yellow", "0xffff00"},
       {"blue", "0x0000ff"},   {"orange", "0xffa500"}, {"green", "0x00ff00"},

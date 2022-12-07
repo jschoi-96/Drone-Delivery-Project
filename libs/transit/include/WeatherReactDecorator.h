@@ -12,6 +12,7 @@
 class WeatherReactDecorator : public IEntity {
  public:
   WeatherReactDecorator(IEntity* parent_, IReaction* reaction_);
+  ~WeatherReactDecorator() override = default;
   float GetSpeed() const;
 
   // Gets the drone position
