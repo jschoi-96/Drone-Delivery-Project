@@ -6,6 +6,8 @@
 #include "math/vector3.h"
 
 class IReaction {
+ protected: 
+  int counter = 0;
  public:
   virtual ~IReaction(){}
   std::map<std::string, std::string> colors = {
