@@ -14,9 +14,6 @@
    brown = all 3
    */
 class RegularReaction : public IReaction {
- private:
-  int counter = 0;
-
  public:
   RegularReaction() {}
   ~RegularReaction() override = default;
