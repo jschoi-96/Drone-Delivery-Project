@@ -1,0 +1,7 @@
+<map id="IWeather" name="IWeather">
+<area shape="rect" id="node1" title=" " alt="" coords="87,5,169,32"/>
+<area shape="rect" id="node2" href="$classBaseWeather.html" title="This class inherits from the IWeather and is responsible for setting base weather." alt="" coords="5,80,115,107"/>
+<area shape="rect" id="node3" href="$classIZoneWeather.html" title=" " alt="" coords="139,80,253,107"/>
+<area shape="rect" id="node4" href="$classEmpWeather.html" title=" " alt="" coords="76,155,183,181"/>
+<area shape="rect" id="node5" href="$classWindWeather.html" title=" " alt="" coords="207,155,318,181"/>
+</map>

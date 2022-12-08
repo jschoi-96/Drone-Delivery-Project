@@ -1,0 +1,7 @@
+<map id="IZoneWeather" name="IZoneWeather">
+<area shape="rect" id="node1" title=" " alt="" coords="68,80,183,107"/>
+<area shape="rect" id="node4" href="$classEmpWeather.html" title=" " alt="" coords="5,155,112,181"/>
+<area shape="rect" id="node5" href="$classWindWeather.html" title=" " alt="" coords="137,155,247,181"/>
+<area shape="rect" id="node2" href="$classIWeather.html" title=" " alt="" coords="37,5,118,32"/>
+<area shape="rect" id="node3" href="$classIEntity.html" title="A class built to see interface." alt="" coords="143,5,207,32"/>
+</map>

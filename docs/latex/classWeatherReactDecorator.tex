@@ -1,0 +1,349 @@
+\hypertarget{classWeatherReactDecorator}{}\doxysection{Weather\+React\+Decorator Class Reference}
+\label{classWeatherReactDecorator}\index{WeatherReactDecorator@{WeatherReactDecorator}}
+
+
+Inheritance diagram for Weather\+React\+Decorator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classWeatherReactDecorator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Weather\+React\+Decorator\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classWeatherReactDecorator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWeatherReactDecorator_aab1f4fbe0424704523d79f68d0145747}\label{classWeatherReactDecorator_aab1f4fbe0424704523d79f68d0145747}} 
+{\bfseries Weather\+React\+Decorator} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent\+\_\+, \mbox{\hyperlink{classIReaction}{I\+Reaction}} $\ast$reaction\+\_\+)
+\item 
+float \mbox{\hyperlink{classWeatherReactDecorator_a589055b7197d6b2db609e295bc4896be}{Get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em get speed \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classWeatherReactDecorator_ace1de3ad110d8aae295117f4e1fb0c9a}{Get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em get position \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classWeatherReactDecorator_a990913fe6d5ca1f1fa6baa00c160d671}{Get\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em get direction \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classWeatherReactDecorator_a2745a0695fcabf7c760d686efc527aad}{Get\+Destination}} () const
+\begin{DoxyCompactList}\small\item\em get destination \end{DoxyCompactList}\item 
+Json\+Object \mbox{\hyperlink{classWeatherReactDecorator_a95ad708fa947046c22c232aee3b2a61f}{Get\+Details}} () const
+\begin{DoxyCompactList}\small\item\em get details \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWeatherReactDecorator_a4a93645b63c56a3defd14f723eab0fd7}{Get\+Availability}} () const
+\begin{DoxyCompactList}\small\item\em check whether it is available \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classWeatherReactDecorator_a4815f1c3004ed6e6c95b8912f740940c}{Get\+Strategy\+Name}} ()
+\begin{DoxyCompactList}\small\item\em The strategy of robot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWeatherReactDecorator_ab50b2ce3cf1d422809993692d7485719}{Set\+Availability}} (bool choice)
+\begin{DoxyCompactList}\small\item\em set availability \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWeatherReactDecorator_a0a6d21782ce46b3209c8a7c53ba5e091}{Update}} (double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em if availablity of drone is true, then call get\+Nearest\+Entity function \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWeatherReactDecorator_a97df0455f66cca471d139c859e4df58d}{Set\+Position}} (\mbox{\hyperlink{classVector3}{Vector3}} pos\+\_\+)
+\begin{DoxyCompactList}\small\item\em set the position of object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWeatherReactDecorator_ac53b52f4d75f8d010a377790fd9d32c3}{Set\+Direction}} (\mbox{\hyperlink{classVector3}{Vector3}} dir\+\_\+)
+\begin{DoxyCompactList}\small\item\em set the direction of object \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWeatherReactDecorator_acfba219ccb4200a1d3d75ad8ae72e75f}{Set\+Destination}} (\mbox{\hyperlink{classVector3}{Vector3}} des\+\_\+)
+\begin{DoxyCompactList}\small\item\em set the destination of obj \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWeatherReactDecorator_a767a1015160a0e37737f77a2da0af3d6}{Rotate}} (double angle)
+\begin{DoxyCompactList}\small\item\em rotate drone by using angle and formula \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWeatherReactDecorator_a6fa31185cdaeff32f70bfde66c41b3e0}{Jump}} (double height)
+\begin{DoxyCompactList}\small\item\em rotate drone by using height and formula \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWeatherReactDecorator_a48ca6187d3edf8ba5a9331bd615b5092}{Set\+Graph}} (const I\+Graph $\ast$graph)
+\begin{DoxyCompactList}\small\item\em set graph \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWeatherReactDecorator_af39d39be7a2a060ec3e4e349610f740c}\label{classWeatherReactDecorator_af39d39be7a2a060ec3e4e349610f740c}} 
+\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ {\bfseries parent}
+\item 
+\mbox{\Hypertarget{classWeatherReactDecorator_aea283a8dbdac8634750356061dc5d0f3}\label{classWeatherReactDecorator_aea283a8dbdac8634750356061dc5d0f3}} 
+\mbox{\hyperlink{classIReaction}{I\+Reaction}} $\ast$ {\bfseries reaction}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWeatherReactDecorator_a4a93645b63c56a3defd14f723eab0fd7}\label{classWeatherReactDecorator_a4a93645b63c56a3defd14f723eab0fd7}} 
+\index{WeatherReactDecorator@{WeatherReactDecorator}!GetAvailability@{GetAvailability}}
+\index{GetAvailability@{GetAvailability}!WeatherReactDecorator@{WeatherReactDecorator}}
+\doxysubsubsection{\texorpdfstring{GetAvailability()}{GetAvailability()}}
+{\footnotesize\ttfamily bool Weather\+React\+Decorator\+::\+Get\+Availability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+check whether it is available 
+
+\begin{DoxyReturn}{Returns}
+true if is available and false if not 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a90348881691a37d5c3d63265ed3463b1}{I\+Entity}}.
+
+\mbox{\Hypertarget{classWeatherReactDecorator_a2745a0695fcabf7c760d686efc527aad}\label{classWeatherReactDecorator_a2745a0695fcabf7c760d686efc527aad}} 
+\index{WeatherReactDecorator@{WeatherReactDecorator}!GetDestination@{GetDestination}}
+\index{GetDestination@{GetDestination}!WeatherReactDecorator@{WeatherReactDecorator}}
+\doxysubsubsection{\texorpdfstring{GetDestination()}{GetDestination()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Weather\+React\+Decorator\+::\+Get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get destination 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} type destination 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a0dcaf865938ab1fb49c8389b5e580d90}{I\+Entity}}.
+
+\mbox{\Hypertarget{classWeatherReactDecorator_a95ad708fa947046c22c232aee3b2a61f}\label{classWeatherReactDecorator_a95ad708fa947046c22c232aee3b2a61f}} 
+\index{WeatherReactDecorator@{WeatherReactDecorator}!GetDetails@{GetDetails}}
+\index{GetDetails@{GetDetails}!WeatherReactDecorator@{WeatherReactDecorator}}
+\doxysubsubsection{\texorpdfstring{GetDetails()}{GetDetails()}}
+{\footnotesize\ttfamily Json\+Object Weather\+React\+Decorator\+::\+Get\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get details 
+
+\begin{DoxyReturn}{Returns}
+Json\+Object type details 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a97c799400ce05e2ff2566adc4d7b9634}{I\+Entity}}.
+
+\mbox{\Hypertarget{classWeatherReactDecorator_a990913fe6d5ca1f1fa6baa00c160d671}\label{classWeatherReactDecorator_a990913fe6d5ca1f1fa6baa00c160d671}} 
+\index{WeatherReactDecorator@{WeatherReactDecorator}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!WeatherReactDecorator@{WeatherReactDecorator}}
+\doxysubsubsection{\texorpdfstring{GetDirection()}{GetDirection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Weather\+React\+Decorator\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get direction 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} type direciton 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_aa99a8fef8b22195a5113c38ef51f086d}{I\+Entity}}.
+
+\mbox{\Hypertarget{classWeatherReactDecorator_ace1de3ad110d8aae295117f4e1fb0c9a}\label{classWeatherReactDecorator_ace1de3ad110d8aae295117f4e1fb0c9a}} 
+\index{WeatherReactDecorator@{WeatherReactDecorator}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!WeatherReactDecorator@{WeatherReactDecorator}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} Weather\+React\+Decorator\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get position 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} type position 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a9bc32587aab91761fc0e718612498199}{I\+Entity}}.
+
+\mbox{\Hypertarget{classWeatherReactDecorator_a589055b7197d6b2db609e295bc4896be}\label{classWeatherReactDecorator_a589055b7197d6b2db609e295bc4896be}} 
+\index{WeatherReactDecorator@{WeatherReactDecorator}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!WeatherReactDecorator@{WeatherReactDecorator}}
+\doxysubsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily float Weather\+React\+Decorator\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+get speed 
+
+\begin{DoxyReturn}{Returns}
+float type of speed 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a6520d2b1dc71d092bab38ef9f5cc9ff4}{I\+Entity}}.
+
+\mbox{\Hypertarget{classWeatherReactDecorator_a4815f1c3004ed6e6c95b8912f740940c}\label{classWeatherReactDecorator_a4815f1c3004ed6e6c95b8912f740940c}} 
+\index{WeatherReactDecorator@{WeatherReactDecorator}!GetStrategyName@{GetStrategyName}}
+\index{GetStrategyName@{GetStrategyName}!WeatherReactDecorator@{WeatherReactDecorator}}
+\doxysubsubsection{\texorpdfstring{GetStrategyName()}{GetStrategyName()}}
+{\footnotesize\ttfamily std\+::string Weather\+React\+Decorator\+::\+Get\+Strategy\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+The strategy of robot. 
+
+\begin{DoxyReturn}{Returns}
+return the name of strategy that is used 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a9b4a238a04f5cd56db89e50292355005}{I\+Entity}}.
+
+\mbox{\Hypertarget{classWeatherReactDecorator_a6fa31185cdaeff32f70bfde66c41b3e0}\label{classWeatherReactDecorator_a6fa31185cdaeff32f70bfde66c41b3e0}} 
+\index{WeatherReactDecorator@{WeatherReactDecorator}!Jump@{Jump}}
+\index{Jump@{Jump}!WeatherReactDecorator@{WeatherReactDecorator}}
+\doxysubsubsection{\texorpdfstring{Jump()}{Jump()}}
+{\footnotesize\ttfamily void Weather\+React\+Decorator\+::\+Jump (\begin{DoxyParamCaption}\item[{double}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+rotate drone by using height and formula 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & -\/ height of drone \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a4e8eb64a324e1196be039c5e2a293b7a}{I\+Entity}}.
+
+\mbox{\Hypertarget{classWeatherReactDecorator_a767a1015160a0e37737f77a2da0af3d6}\label{classWeatherReactDecorator_a767a1015160a0e37737f77a2da0af3d6}} 
+\index{WeatherReactDecorator@{WeatherReactDecorator}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!WeatherReactDecorator@{WeatherReactDecorator}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}}
+{\footnotesize\ttfamily void Weather\+React\+Decorator\+::\+Rotate (\begin{DoxyParamCaption}\item[{double}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+rotate drone by using angle and formula 
+
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & -\/ angle of drone \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a4c109baa4179c28422623a7d3b2e9f82}{I\+Entity}}.
+
+\mbox{\Hypertarget{classWeatherReactDecorator_ab50b2ce3cf1d422809993692d7485719}\label{classWeatherReactDecorator_ab50b2ce3cf1d422809993692d7485719}} 
+\index{WeatherReactDecorator@{WeatherReactDecorator}!SetAvailability@{SetAvailability}}
+\index{SetAvailability@{SetAvailability}!WeatherReactDecorator@{WeatherReactDecorator}}
+\doxysubsubsection{\texorpdfstring{SetAvailability()}{SetAvailability()}}
+{\footnotesize\ttfamily void Weather\+React\+Decorator\+::\+Set\+Availability (\begin{DoxyParamCaption}\item[{bool}]{choice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+set availability 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choice} & -\/ bool type of choice parameter \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_adf3acdf4764f5ff25f89d7814e39551c}{I\+Entity}}.
+
+\mbox{\Hypertarget{classWeatherReactDecorator_acfba219ccb4200a1d3d75ad8ae72e75f}\label{classWeatherReactDecorator_acfba219ccb4200a1d3d75ad8ae72e75f}} 
+\index{WeatherReactDecorator@{WeatherReactDecorator}!SetDestination@{SetDestination}}
+\index{SetDestination@{SetDestination}!WeatherReactDecorator@{WeatherReactDecorator}}
+\doxysubsubsection{\texorpdfstring{SetDestination()}{SetDestination()}}
+{\footnotesize\ttfamily void Weather\+React\+Decorator\+::\+Set\+Destination (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{des\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+set the destination of obj 
+
+
+\begin{DoxyParams}{Parameters}
+{\em des\+\_\+} & -\/ \mbox{\hyperlink{classVector3}{Vector3}} obj \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_aa473000823f673e9d7b89aed3cd3fc5c}{I\+Entity}}.
+
+\mbox{\Hypertarget{classWeatherReactDecorator_ac53b52f4d75f8d010a377790fd9d32c3}\label{classWeatherReactDecorator_ac53b52f4d75f8d010a377790fd9d32c3}} 
+\index{WeatherReactDecorator@{WeatherReactDecorator}!SetDirection@{SetDirection}}
+\index{SetDirection@{SetDirection}!WeatherReactDecorator@{WeatherReactDecorator}}
+\doxysubsubsection{\texorpdfstring{SetDirection()}{SetDirection()}}
+{\footnotesize\ttfamily void Weather\+React\+Decorator\+::\+Set\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{dir\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+set the direction of object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dir\+\_\+} & -\/ \mbox{\hyperlink{classVector3}{Vector3}} obj \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a64bfaa448a929ca71693ff3e2edb9d97}{I\+Entity}}.
+
+\mbox{\Hypertarget{classWeatherReactDecorator_a48ca6187d3edf8ba5a9331bd615b5092}\label{classWeatherReactDecorator_a48ca6187d3edf8ba5a9331bd615b5092}} 
+\index{WeatherReactDecorator@{WeatherReactDecorator}!SetGraph@{SetGraph}}
+\index{SetGraph@{SetGraph}!WeatherReactDecorator@{WeatherReactDecorator}}
+\doxysubsubsection{\texorpdfstring{SetGraph()}{SetGraph()}}
+{\footnotesize\ttfamily void Weather\+React\+Decorator\+::\+Set\+Graph (\begin{DoxyParamCaption}\item[{const I\+Graph $\ast$}]{graph }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+set graph 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & -\/ I\+Graph type obj \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a50b01c5c4fab1632c0289e30aa77faf2}{I\+Entity}}.
+
+\mbox{\Hypertarget{classWeatherReactDecorator_a97df0455f66cca471d139c859e4df58d}\label{classWeatherReactDecorator_a97df0455f66cca471d139c859e4df58d}} 
+\index{WeatherReactDecorator@{WeatherReactDecorator}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!WeatherReactDecorator@{WeatherReactDecorator}}
+\doxysubsubsection{\texorpdfstring{SetPosition()}{SetPosition()}}
+{\footnotesize\ttfamily void Weather\+React\+Decorator\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{pos\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+set the position of object 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos\+\_\+} & -\/ \mbox{\hyperlink{classVector3}{Vector3}} obj \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_af0475048b09dc13ed6cf8e7c7be2ae6b}{I\+Entity}}.
+
+\mbox{\Hypertarget{classWeatherReactDecorator_a0a6d21782ce46b3209c8a7c53ba5e091}\label{classWeatherReactDecorator_a0a6d21782ce46b3209c8a7c53ba5e091}} 
+\index{WeatherReactDecorator@{WeatherReactDecorator}!Update@{Update}}
+\index{Update@{Update}!WeatherReactDecorator@{WeatherReactDecorator}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Weather\+React\+Decorator\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+if availablity of drone is true, then call get\+Nearest\+Entity function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & -\/ delta time \\
+\hline
+{\em scheduler} & -\/ \mbox{\hyperlink{classIEntity}{I\+Entity}} type vector obj \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a9a8e8588fd85c7b0d813d60686d4dc2c}{I\+Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Weather\+React\+Decorator.\+h\item 
+/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Weather\+React\+Decorator.\+cc\end{DoxyCompactItemize}

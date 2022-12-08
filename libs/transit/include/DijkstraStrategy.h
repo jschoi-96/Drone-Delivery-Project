@@ -9,13 +9,38 @@
 #include "IStrategy.h"
 #include "IEntity.h"
 /**
- * @brief this class inhertis from the IStrategy class and is responsible for generating the beeline that the drone will take.
- */
+* @brief Implementation of Dijkstra strategy for entity movement. Inherits from IStrategy.
+**/
 class DijkstraStrategy : public IStrategy {
 public:
+    /**
+     * @brief Constructor for DijkstraStrategy class.
+     * 
+     * @param position_ current position of the entity to move.
+     * @param destination_ destination of entity to move.
+     * @param graph_ pointer to graph to be used to generate beeline pathing.
+     * @return none.
+     **/
     DijkstraStrategy(Vector3 position, Vector3 destination, const IGraph* graph);
+    /**
+     * @brief Destructor for DijkstraStrategy class.
+     * 
+     * @return none.
+     **/
     ~DijkstraStrategy();
+    /**
+     * @brief Used for moving drone/robot pairs towards their destination using the dijkstra movement strategy.
+     * 
+     * @param entity entity to move.
+     * @param dt amount of time that the entity will be moving.
+     * @return none.
+     **/
     void Move(IEntity* entity, double dt);
+    /**
+     * @brief Checks if the route has been completed.
+     * 
+     * @return true if completed, if not, return false.
+     **/
     bool IsCompleted();
 
 private:

@@ -1,0 +1,57 @@
+\hypertarget{classIReaction}{}\doxysection{I\+Reaction Class Reference}
+\label{classIReaction}\index{IReaction@{IReaction}}
+
+
+Inheritance diagram for I\+Reaction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIReaction__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIReaction_a427a52e6cb6d0e4622946e4bb445582a}\label{classIReaction_a427a52e6cb6d0e4622946e4bb445582a}} 
+virtual void {\bfseries react\+\_\+wind} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler, \mbox{\hyperlink{classVector3}{Vector3}} wind)=0
+\item 
+\mbox{\Hypertarget{classIReaction_a4655d9e1632f4453718653c8b0c1f6bf}\label{classIReaction_a4655d9e1632f4453718653c8b0c1f6bf}} 
+virtual void {\bfseries react\+\_\+rain} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler)=0
+\item 
+\mbox{\Hypertarget{classIReaction_acf3ecf0ba873130cd89b30b12f898821}\label{classIReaction_acf3ecf0ba873130cd89b30b12f898821}} 
+virtual void {\bfseries react\+\_\+emp} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler)=0
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, std\+::string $>$ {\bfseries colors}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIReaction_a8fefac6c93de944f36ad53a46d580f20}\label{classIReaction_a8fefac6c93de944f36ad53a46d580f20}} 
+int {\bfseries counter} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classIReaction_a9973976475150f7ebd1eda286aec0f97}\label{classIReaction_a9973976475150f7ebd1eda286aec0f97}} 
+\index{IReaction@{IReaction}!colors@{colors}}
+\index{colors@{colors}!IReaction@{IReaction}}
+\doxysubsubsection{\texorpdfstring{colors}{colors}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::string$>$ I\+Reaction\+::colors}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"white"}, \textcolor{stringliteral}{"0xffffff"}\},  \{\textcolor{stringliteral}{"red"}, \textcolor{stringliteral}{"0xff0000"}\},    \{\textcolor{stringliteral}{"yellow"}, \textcolor{stringliteral}{"0xffff00"}\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"blue"}, \textcolor{stringliteral}{"0x0000ff"}\},   \{\textcolor{stringliteral}{"orange"}, \textcolor{stringliteral}{"0xffa500"}\}, \{\textcolor{stringliteral}{"green"}, \textcolor{stringliteral}{"0x00ff00"}\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"purple"}, \textcolor{stringliteral}{"0xa020f0"}\}, \{\textcolor{stringliteral}{"brown"}, \textcolor{stringliteral}{"0x964b00"}\},  \{\textcolor{stringliteral}{"black"}, \textcolor{stringliteral}{"0x000000"}\}\}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/I\+Reaction.\+h\end{DoxyCompactItemize}
