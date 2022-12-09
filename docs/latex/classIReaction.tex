@@ -2,6 +2,15 @@
 \label{classIReaction}\index{IReaction@{IReaction}}
 
 
+A class built for \mbox{\hyperlink{classIReaction}{I\+Reaction}}.  
+
+
+
+
+{\ttfamily \#include $<$I\+Reaction.\+h$>$}
+
+
+
 Inheritance diagram for I\+Reaction\+:
 \nopagebreak
 \begin{figure}[H]
@@ -13,26 +22,118 @@ Inheritance diagram for I\+Reaction\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classIReaction_a427a52e6cb6d0e4622946e4bb445582a}\label{classIReaction_a427a52e6cb6d0e4622946e4bb445582a}} 
-virtual void {\bfseries react\+\_\+wind} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler, \mbox{\hyperlink{classVector3}{Vector3}} wind)=0
-\item 
-\mbox{\Hypertarget{classIReaction_a4655d9e1632f4453718653c8b0c1f6bf}\label{classIReaction_a4655d9e1632f4453718653c8b0c1f6bf}} 
-virtual void {\bfseries react\+\_\+rain} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler)=0
-\item 
-\mbox{\Hypertarget{classIReaction_acf3ecf0ba873130cd89b30b12f898821}\label{classIReaction_acf3ecf0ba873130cd89b30b12f898821}} 
-virtual void {\bfseries react\+\_\+emp} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler)=0
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classIReaction_a3e7f69783685869c4eba95aa6c7af1db}\label{classIReaction_a3e7f69783685869c4eba95aa6c7af1db}} 
+virtual \mbox{\hyperlink{classIReaction_a3e7f69783685869c4eba95aa6c7af1db}{$\sim$\+I\+Reaction}} ()
+\begin{DoxyCompactList}\small\item\em A deconstructor for \mbox{\hyperlink{classIReaction}{I\+Reaction}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIReaction_a427a52e6cb6d0e4622946e4bb445582a}{react\+\_\+wind}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler, \mbox{\hyperlink{classVector3}{Vector3}} wind)=0
+\begin{DoxyCompactList}\small\item\em executes the reaction happening to the drone with wind \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIReaction_a4655d9e1632f4453718653c8b0c1f6bf}{react\+\_\+rain}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler)=0
+\begin{DoxyCompactList}\small\item\em executes the reaction happening to the drone with rain \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIReaction_acf3ecf0ba873130cd89b30b12f898821}{react\+\_\+emp}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler)=0
+\begin{DoxyCompactList}\small\item\em executes the reaction happening to the drone with emp \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::map$<$ std\+::string, std\+::string $>$ {\bfseries colors}
-\end{DoxyCompactItemize}
+std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{classIReaction_a9973976475150f7ebd1eda286aec0f97}{colors}}
+\begin{DoxyCompactList}\small\item\em A dictionary map that holds the color and hexcodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classIReaction_a8fefac6c93de944f36ad53a46d580f20}\label{classIReaction_a8fefac6c93de944f36ad53a46d580f20}} 
 int {\bfseries counter} = 0
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class built for \mbox{\hyperlink{classIReaction}{I\+Reaction}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIReaction_acf3ecf0ba873130cd89b30b12f898821}\label{classIReaction_acf3ecf0ba873130cd89b30b12f898821}} 
+\index{IReaction@{IReaction}!react\_emp@{react\_emp}}
+\index{react\_emp@{react\_emp}!IReaction@{IReaction}}
+\doxysubsubsection{\texorpdfstring{react\_emp()}{react\_emp()}}
+{\footnotesize\ttfamily virtual void I\+Reaction\+::react\+\_\+emp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double \&}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+executes the reaction happening to the drone with emp 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & which is the Ientity \\
+\hline
+{\em reaction} & current reaction \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the ientities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classIndicatorReaction_a649b1a86cf7fad9a34a3ee3bdde20c76}{Indicator\+Reaction}}, \mbox{\hyperlink{classRegularReaction_a5a089220ce821407c5cbdb0aaeff5f47}{Regular\+Reaction}}, \mbox{\hyperlink{classStreetLevelReaction_aa2ee3cda5bbe62c9bfbb4bd6dbe179c2}{Street\+Level\+Reaction}}, and \mbox{\hyperlink{classReinforcedReaction_a77b0ea3da63d8101094670c80fe51cf9}{Reinforced\+Reaction}}.
+
+\mbox{\Hypertarget{classIReaction_a4655d9e1632f4453718653c8b0c1f6bf}\label{classIReaction_a4655d9e1632f4453718653c8b0c1f6bf}} 
+\index{IReaction@{IReaction}!react\_rain@{react\_rain}}
+\index{react\_rain@{react\_rain}!IReaction@{IReaction}}
+\doxysubsubsection{\texorpdfstring{react\_rain()}{react\_rain()}}
+{\footnotesize\ttfamily virtual void I\+Reaction\+::react\+\_\+rain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double \&}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+executes the reaction happening to the drone with rain 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & which is the Ientity \\
+\hline
+{\em reaction} & current reaction \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the ientities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classIndicatorReaction_a64ebb06a98fd18eaec0de0ac9c303d82}{Indicator\+Reaction}}, \mbox{\hyperlink{classRegularReaction_a8c07e22c7996fb4e086651dbfc3f64a8}{Regular\+Reaction}}, \mbox{\hyperlink{classStreetLevelReaction_ae6958aeee3c0b93cbf5192ae5ab3219b}{Street\+Level\+Reaction}}, and \mbox{\hyperlink{classReinforcedReaction_a4c57576af813907f5c311013058cbdd7}{Reinforced\+Reaction}}.
+
+\mbox{\Hypertarget{classIReaction_a427a52e6cb6d0e4622946e4bb445582a}\label{classIReaction_a427a52e6cb6d0e4622946e4bb445582a}} 
+\index{IReaction@{IReaction}!react\_wind@{react\_wind}}
+\index{react\_wind@{react\_wind}!IReaction@{IReaction}}
+\doxysubsubsection{\texorpdfstring{react\_wind()}{react\_wind()}}
+{\footnotesize\ttfamily virtual void I\+Reaction\+::react\+\_\+wind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double \&}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&}]{scheduler,  }\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{wind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+executes the reaction happening to the drone with wind 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & which is the Ientity \\
+\hline
+{\em reaction} & current reaction \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the ientities. \\
+\hline
+{\em wind} & holds a vector3\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classIndicatorReaction_af7c81b7e0938d276c11baead24106b1d}{Indicator\+Reaction}}, \mbox{\hyperlink{classRegularReaction_a34220c66c692945bbdc5855fd3a51629}{Regular\+Reaction}}, \mbox{\hyperlink{classReinforcedReaction_aa9aeac97e5abdab4a349a64c6d7f5e9e}{Reinforced\+Reaction}}, and \mbox{\hyperlink{classStreetLevelReaction_a9b9bb14e547e8483839cf4910f27a2c1}{Street\+Level\+Reaction}}.
+
 
 
 \doxysubsection{Member Data Documentation}
@@ -50,6 +151,10 @@ int {\bfseries counter} = 0
 \DoxyCodeLine{      \{\textcolor{stringliteral}{"purple"}, \textcolor{stringliteral}{"0xa020f0"}\}, \{\textcolor{stringliteral}{"brown"}, \textcolor{stringliteral}{"0x964b00"}\},  \{\textcolor{stringliteral}{"black"}, \textcolor{stringliteral}{"0x000000"}\}\}}
 
 \end{DoxyCode}
+
+
+A dictionary map that holds the color and hexcodes. 
+
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}

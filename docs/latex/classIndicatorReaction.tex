@@ -2,6 +2,15 @@
 \label{classIndicatorReaction}\index{IndicatorReaction@{IndicatorReaction}}
 
 
+A class built for indicator\+Reaction.  
+
+
+
+
+{\ttfamily \#include $<$Indicator\+Reaction.\+h$>$}
+
+
+
 Inheritance diagram for Indicator\+Reaction\+:
 \nopagebreak
 \begin{figure}[H]
@@ -23,16 +32,111 @@ Collaboration diagram for Indicator\+Reaction\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classIndicatorReaction_af7c81b7e0938d276c11baead24106b1d}\label{classIndicatorReaction_af7c81b7e0938d276c11baead24106b1d}} 
-void {\bfseries react\+\_\+wind} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler, \mbox{\hyperlink{classVector3}{Vector3}} wind)
-\item 
-\mbox{\Hypertarget{classIndicatorReaction_a64ebb06a98fd18eaec0de0ac9c303d82}\label{classIndicatorReaction_a64ebb06a98fd18eaec0de0ac9c303d82}} 
-void {\bfseries react\+\_\+rain} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler)
-\item 
-\mbox{\Hypertarget{classIndicatorReaction_a649b1a86cf7fad9a34a3ee3bdde20c76}\label{classIndicatorReaction_a649b1a86cf7fad9a34a3ee3bdde20c76}} 
-void {\bfseries react\+\_\+emp} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler)
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classIndicatorReaction_a1424c9040d95536991dd7653f7990a08}\label{classIndicatorReaction_a1424c9040d95536991dd7653f7990a08}} 
+\mbox{\hyperlink{classIndicatorReaction_a1424c9040d95536991dd7653f7990a08}{Indicator\+Reaction}} ()
+\begin{DoxyCompactList}\small\item\em A constructor for indicator\+Reaction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIndicatorReaction_afb7dea65d76758fb854f7817fc83437d}\label{classIndicatorReaction_afb7dea65d76758fb854f7817fc83437d}} 
+\mbox{\hyperlink{classIndicatorReaction_afb7dea65d76758fb854f7817fc83437d}{$\sim$\+Indicator\+Reaction}} () override=default
+\begin{DoxyCompactList}\small\item\em A deconstructor for indicator\+Reaction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIndicatorReaction_af7c81b7e0938d276c11baead24106b1d}{react\+\_\+wind}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler, \mbox{\hyperlink{classVector3}{Vector3}} wind)
+\begin{DoxyCompactList}\small\item\em executes the reaction happening to the drone with wind \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIndicatorReaction_a64ebb06a98fd18eaec0de0ac9c303d82}{react\+\_\+rain}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler)
+\begin{DoxyCompactList}\small\item\em executes the reaction happening to the drone with rain \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIndicatorReaction_a649b1a86cf7fad9a34a3ee3bdde20c76}{react\+\_\+emp}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler)
+\begin{DoxyCompactList}\small\item\em executes the reaction happening to the drone with emp \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class built for indicator\+Reaction. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIndicatorReaction_a649b1a86cf7fad9a34a3ee3bdde20c76}\label{classIndicatorReaction_a649b1a86cf7fad9a34a3ee3bdde20c76}} 
+\index{IndicatorReaction@{IndicatorReaction}!react\_emp@{react\_emp}}
+\index{react\_emp@{react\_emp}!IndicatorReaction@{IndicatorReaction}}
+\doxysubsubsection{\texorpdfstring{react\_emp()}{react\_emp()}}
+{\footnotesize\ttfamily void Indicator\+Reaction\+::react\+\_\+emp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double \&}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+executes the reaction happening to the drone with emp 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & which is the Ientity \\
+\hline
+{\em reaction} & current reaction \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the ientities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIReaction_acf3ecf0ba873130cd89b30b12f898821}{I\+Reaction}}.
+
+\mbox{\Hypertarget{classIndicatorReaction_a64ebb06a98fd18eaec0de0ac9c303d82}\label{classIndicatorReaction_a64ebb06a98fd18eaec0de0ac9c303d82}} 
+\index{IndicatorReaction@{IndicatorReaction}!react\_rain@{react\_rain}}
+\index{react\_rain@{react\_rain}!IndicatorReaction@{IndicatorReaction}}
+\doxysubsubsection{\texorpdfstring{react\_rain()}{react\_rain()}}
+{\footnotesize\ttfamily void Indicator\+Reaction\+::react\+\_\+rain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double \&}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+executes the reaction happening to the drone with rain 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & which is the Ientity \\
+\hline
+{\em reaction} & current reaction \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the ientities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIReaction_a4655d9e1632f4453718653c8b0c1f6bf}{I\+Reaction}}.
+
+\mbox{\Hypertarget{classIndicatorReaction_af7c81b7e0938d276c11baead24106b1d}\label{classIndicatorReaction_af7c81b7e0938d276c11baead24106b1d}} 
+\index{IndicatorReaction@{IndicatorReaction}!react\_wind@{react\_wind}}
+\index{react\_wind@{react\_wind}!IndicatorReaction@{IndicatorReaction}}
+\doxysubsubsection{\texorpdfstring{react\_wind()}{react\_wind()}}
+{\footnotesize\ttfamily void Indicator\+Reaction\+::react\+\_\+wind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double \&}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&}]{scheduler,  }\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{wind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+executes the reaction happening to the drone with wind 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & which is the Ientity \\
+\hline
+{\em reaction} & current reaction \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the ientities. \\
+\hline
+{\em wind} & holds a vector3 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIReaction_a427a52e6cb6d0e4622946e4bb445582a}{I\+Reaction}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -2,6 +2,15 @@
 \label{classRainFactory}\index{RainFactory@{RainFactory}}
 
 
+A class built using the factory design pattern but for rain weather.  
+
+
+
+
+{\ttfamily \#include $<$Rain\+Factory.\+h$>$}
+
+
+
 Inheritance diagram for Rain\+Factory\+:
 \nopagebreak
 \begin{figure}[H]
@@ -23,9 +32,54 @@ Collaboration diagram for Rain\+Factory\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+virtual \mbox{\hyperlink{classRainFactory_a7deb897ca28eef791726090a956750b8}{$\sim$\+Rain\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em A deconstructor for rain factory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ \mbox{\hyperlink{classRainFactory_acc32ae576edc67e98855e17330cadf36}{Create\+Entity}} (Json\+Object \&entity)
+\begin{DoxyCompactList}\small\item\em Creates the rain weather entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class built using the factory design pattern but for rain weather. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRainFactory_a7deb897ca28eef791726090a956750b8}\label{classRainFactory_a7deb897ca28eef791726090a956750b8}} 
+\index{RainFactory@{RainFactory}!````~RainFactory@{$\sim$RainFactory}}
+\index{````~RainFactory@{$\sim$RainFactory}!RainFactory@{RainFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$RainFactory()}{~RainFactory()}}
+{\footnotesize\ttfamily virtual Rain\+Factory\+::$\sim$\+Rain\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+A deconstructor for rain factory. 
+
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classRainFactory_acc32ae576edc67e98855e17330cadf36}\label{classRainFactory_acc32ae576edc67e98855e17330cadf36}} 
-\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ {\bfseries Create\+Entity} (Json\+Object \&entity)
-\end{DoxyCompactItemize}
+\index{RainFactory@{RainFactory}!CreateEntity@{CreateEntity}}
+\index{CreateEntity@{CreateEntity}!RainFactory@{RainFactory}}
+\doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ Rain\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the rain weather entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & jsonobj\& \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ientity$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntityFactory_a9bd53cf7ca21ab252968062ea5d88180}{I\+Entity\+Factory}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

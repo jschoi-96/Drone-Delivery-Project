@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['operator_2a_131',['operator*',['../classVector3.html#a4968b100aa24e624d7926cee91498496',1,'Vector3']]],
-  ['operator_2b_132',['operator+',['../classVector3.html#a9228f34c33c47c753442a5402aaaf0ba',1,'Vector3']]],
-  ['operator_2d_133',['operator-',['../classVector3.html#a99f85da3057603ccb39f6eb763034f04',1,'Vector3']]],
-  ['operator_2f_134',['operator/',['../classVector3.html#a212b45ab1cd8d9a7f9b37d596d19544d',1,'Vector3']]],
-  ['operator_3d_135',['operator=',['../classDrone.html#a2226fed35df96c5a802a0c4f44cc2354',1,'Drone']]]
+  ['move_165',['Move',['../classAstarStrategy.html#afd13e7ed2b1872f01aa2a2f4b07b41c3',1,'AstarStrategy::Move()'],['../classBeelineStrategy.html#ab8d3f5b05d5e9dd06465f5fc4cd4767e',1,'BeelineStrategy::Move()'],['../classCelebrationDecorator.html#aaea8fd11f7d0e12dd79ccdc63ab1bbf6',1,'CelebrationDecorator::Move()'],['../classDfsStrategy.html#aab5a0a5c97f710075634b81a3e00ecf9',1,'DfsStrategy::Move()'],['../classDijkstraStrategy.html#a24e0177f55b69a6b2260b0a0e2ce4430',1,'DijkstraStrategy::Move()'],['../classIStrategy.html#a69254389f4ef9a851dc5d40c4cc9aacd',1,'IStrategy::Move()'],['../classJumpDecorator.html#a6d46675428916bbe6acd10fb25d51f86',1,'JumpDecorator::Move()'],['../classSpinDecorator.html#a766735ae467d0bb3a80169e109951804',1,'SpinDecorator::Move()']]]
 ];

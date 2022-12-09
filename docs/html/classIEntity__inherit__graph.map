@@ -1,9 +1,10 @@
 <map id="IEntity" name="IEntity">
-<area shape="rect" id="node1" title="A class built to see interface." alt="" coords="172,5,236,32"/>
-<area shape="rect" id="node2" href="$classDrone.html" title="A class built to manipulate movement of drone." alt="" coords="5,80,67,107"/>
-<area shape="rect" id="node3" href="$classIZoneWeather.html" title=" " alt="" coords="91,80,205,107"/>
-<area shape="rect" id="node6" href="$classRobot.html" title="A class built to manipulate movement of Robot." alt="" coords="230,80,290,107"/>
-<area shape="rect" id="node7" href="$classWeatherReactDecorator.html" title=" " alt="" coords="315,80,493,107"/>
-<area shape="rect" id="node4" href="$classEmpWeather.html" title=" " alt="" coords="28,155,135,181"/>
-<area shape="rect" id="node5" href="$classWindWeather.html" title=" " alt="" coords="159,155,270,181"/>
+<area shape="rect" id="node1" title="A class built to see interface." alt="" coords="213,5,277,32"/>
+<area shape="rect" id="node2" href="$classDrone.html" title="A class built to manipulate movement of drone." alt="" coords="47,80,108,107"/>
+<area shape="rect" id="node3" href="$classIZoneWeather.html" title="class that holds the IZoneweather inherits from iweather and ientity." alt="" coords="132,80,247,107"/>
+<area shape="rect" id="node7" href="$classRobot.html" title="A class built to manipulate movement of Robot." alt="" coords="271,80,331,107"/>
+<area shape="rect" id="node8" href="$classWeatherReactDecorator.html" title="A class built using weatherreactDecorator." alt="" coords="356,80,535,107"/>
+<area shape="rect" id="node4" href="$classEmpWeather.html" title="A class built for emp weather." alt="" coords="5,155,112,181"/>
+<area shape="rect" id="node5" href="$classRainWeather.html" title="A class built for rain weather." alt="" coords="136,155,243,181"/>
+<area shape="rect" id="node6" href="$classWindWeather.html" title="A class built for wind weather." alt="" coords="267,155,378,181"/>
 </map>

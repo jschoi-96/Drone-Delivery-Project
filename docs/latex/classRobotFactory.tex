@@ -2,6 +2,15 @@
 \label{classRobotFactory}\index{RobotFactory@{RobotFactory}}
 
 
+Factory method for \mbox{\hyperlink{classRobot}{Robot}} class.  
+
+
+
+
+{\ttfamily \#include $<$Robot\+Factory.\+h$>$}
+
+
+
 Inheritance diagram for Robot\+Factory\+:
 \nopagebreak
 \begin{figure}[H]
@@ -23,9 +32,36 @@ Collaboration diagram for Robot\+Factory\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ \mbox{\hyperlink{classRobotFactory_ad2ceb080af7357b641332a237ae74959}{Create\+Entity}} (Json\+Object \&entity)
+\begin{DoxyCompactList}\small\item\em Creates entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Factory method for \mbox{\hyperlink{classRobot}{Robot}} class. 
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classRobotFactory_ad2ceb080af7357b641332a237ae74959}\label{classRobotFactory_ad2ceb080af7357b641332a237ae74959}} 
-\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ {\bfseries Create\+Entity} (Json\+Object \&entity)
-\end{DoxyCompactItemize}
+\index{RobotFactory@{RobotFactory}!CreateEntity@{CreateEntity}}
+\index{CreateEntity@{CreateEntity}!RobotFactory@{RobotFactory}}
+\doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ Robot\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & -\/ Json\+Object type obj \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntityFactory_a9bd53cf7ca21ab252968062ea5d88180}{I\+Entity\+Factory}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

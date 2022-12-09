@@ -69,7 +69,29 @@ $(function() {
 <div class="title">RainWeather.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"></div><!-- fragment --></div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RAIN_WEATHER_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define RAIN_WEATHER_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;IEntity.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;IWeather.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;IZoneWeather.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classRainWeather.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classRainWeather.html">RainWeather</a> : <span class="keyword">public</span> <a class="code" href="classIZoneWeather.html">IZoneWeather</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classRainWeather.html#a555913fab624936627e9a4d0c8a4338e">~RainWeather</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="classRainWeather.html#a711bc16b2e246abbd21a3a3f81a7c926">RainWeather</a>(JsonObject&amp; obj);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classRainWeather.html#a9a04d15d59ea80ce50ad774329e8ce12">Execute</a>(<a class="code" href="classIEntity.html">IEntity</a>* parent, <a class="code" href="classIReaction.html">IReaction</a>* reaction, <span class="keywordtype">double</span> dt,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;               std::vector&lt;IEntity*&gt; scheduler);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassRainWeather_html_a555913fab624936627e9a4d0c8a4338e"><div class="ttname"><a href="classRainWeather.html#a555913fab624936627e9a4d0c8a4338e">RainWeather::~RainWeather</a></div><div class="ttdeci">virtual ~RainWeather() override=default</div><div class="ttdoc">deconstructor for rainWeather.</div></div>
+<div class="ttc" id="aclassRainWeather_html"><div class="ttname"><a href="classRainWeather.html">RainWeather</a></div><div class="ttdoc">A class built for rain weather.</div><div class="ttdef"><b>Definition:</b> RainWeather.h:11</div></div>
+<div class="ttc" id="aclassIZoneWeather_html"><div class="ttname"><a href="classIZoneWeather.html">IZoneWeather</a></div><div class="ttdoc">class that holds the IZoneweather inherits from iweather and ientity.</div><div class="ttdef"><b>Definition:</b> IZoneWeather.h:11</div></div>
+<div class="ttc" id="aclassRainWeather_html_a9a04d15d59ea80ce50ad774329e8ce12"><div class="ttname"><a href="classRainWeather.html#a9a04d15d59ea80ce50ad774329e8ce12">RainWeather::Execute</a></div><div class="ttdeci">void Execute(IEntity *parent, IReaction *reaction, double dt, std::vector&lt; IEntity * &gt; scheduler)</div><div class="ttdoc">executes the reaction happening to the drone with rainweather.</div><div class="ttdef"><b>Definition:</b> RainWeather.cc:11</div></div>
+<div class="ttc" id="aclassRainWeather_html_a711bc16b2e246abbd21a3a3f81a7c926"><div class="ttname"><a href="classRainWeather.html#a711bc16b2e246abbd21a3a3f81a7c926">RainWeather::RainWeather</a></div><div class="ttdeci">RainWeather(JsonObject &amp;obj)</div><div class="ttdoc">constructor for rainWeather.</div><div class="ttdef"><b>Definition:</b> RainWeather.cc:16</div></div>
+<div class="ttc" id="aclassIReaction_html"><div class="ttname"><a href="classIReaction.html">IReaction</a></div><div class="ttdoc">A class built for IReaction.</div><div class="ttdef"><b>Definition:</b> IReaction.h:11</div></div>
+<div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to see interface.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

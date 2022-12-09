@@ -2,6 +2,15 @@
 \label{classEmpFactory}\index{EmpFactory@{EmpFactory}}
 
 
+A class built using the factory design pattern but for emp weather.  
+
+
+
+
+{\ttfamily \#include $<$Emp\+Factory.\+h$>$}
+
+
+
 Inheritance diagram for Emp\+Factory\+:
 \nopagebreak
 \begin{figure}[H]
@@ -23,9 +32,54 @@ Collaboration diagram for Emp\+Factory\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+virtual \mbox{\hyperlink{classEmpFactory_af631b3f38c02bee59cd686e398a1d34d}{$\sim$\+Emp\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em A deconstructor for emp factory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ \mbox{\hyperlink{classEmpFactory_a6c7121acea4c84653c6f1d81a5c7a3fa}{Create\+Entity}} (Json\+Object \&entity)
+\begin{DoxyCompactList}\small\item\em Creates the emp weather entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class built using the factory design pattern but for emp weather. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEmpFactory_af631b3f38c02bee59cd686e398a1d34d}\label{classEmpFactory_af631b3f38c02bee59cd686e398a1d34d}} 
+\index{EmpFactory@{EmpFactory}!````~EmpFactory@{$\sim$EmpFactory}}
+\index{````~EmpFactory@{$\sim$EmpFactory}!EmpFactory@{EmpFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$EmpFactory()}{~EmpFactory()}}
+{\footnotesize\ttfamily virtual Emp\+Factory\+::$\sim$\+Emp\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+A deconstructor for emp factory. 
+
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classEmpFactory_a6c7121acea4c84653c6f1d81a5c7a3fa}\label{classEmpFactory_a6c7121acea4c84653c6f1d81a5c7a3fa}} 
-\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ {\bfseries Create\+Entity} (Json\+Object \&entity)
-\end{DoxyCompactItemize}
+\index{EmpFactory@{EmpFactory}!CreateEntity@{CreateEntity}}
+\index{CreateEntity@{CreateEntity}!EmpFactory@{EmpFactory}}
+\doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ Emp\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the emp weather entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & jsonobj\& \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ientity$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntityFactory_a9bd53cf7ca21ab252968062ea5d88180}{I\+Entity\+Factory}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

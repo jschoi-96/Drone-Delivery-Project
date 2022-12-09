@@ -1,7 +1,7 @@
 <map id="WindWeather" name="WindWeather">
-<area shape="rect" id="node1" title=" " alt="" coords="61,200,172,227"/>
-<area shape="rect" id="node2" href="$classIZoneWeather.html" title=" " alt="" coords="59,124,174,151"/>
-<area shape="rect" id="node3" href="$classIWeather.html" title=" " alt="" coords="5,5,87,32"/>
+<area shape="rect" id="node1" title="A class built for wind weather." alt="" coords="61,200,172,227"/>
+<area shape="rect" id="node2" href="$classIZoneWeather.html" title="class that holds the IZoneweather inherits from iweather and ientity." alt="" coords="59,124,174,151"/>
+<area shape="rect" id="node3" href="$classIWeather.html" title="A class built for IWeather." alt="" coords="5,5,87,32"/>
 <area shape="rect" id="node4" href="$classIEntity.html" title="A class built to see interface." alt="" coords="118,5,182,32"/>
 <area shape="rect" id="node5" href="$classVector3.html" title="A class built solely to handle 3D vector mathematics." alt="" coords="206,5,278,32"/>
 </map>

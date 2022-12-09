@@ -68,7 +68,8 @@ $(function() {
 : <a class="el" href="classIController.html#a9d4ed07090f564f3d6f1847440835610">IController</a>
 </li>
 <li>AddFactory()
-: <a class="el" href="classSimulationModel.html#a44215da18f82ad591ead5085f6da13f0">SimulationModel</a>
+: <a class="el" href="classCompositeFactory.html#a1e9833480826a2661f293d7e2d6358d5">CompositeFactory</a>
+, <a class="el" href="classSimulationModel.html#a44215da18f82ad591ead5085f6da13f0">SimulationModel</a>
 </li>
 <li>AddPath()
 : <a class="el" href="classIController.html#aa50f4cf3a9cc11decfc8e201dc00ab39">IController</a>
@@ -87,8 +88,18 @@ $(function() {
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
+<li>CelebrationDecorator()
+: <a class="el" href="classCelebrationDecorator.html#af1ea3e7a231fe372c9fec0f7175dc724">CelebrationDecorator</a>
+</li>
 <li>CreateEntity()
-: <a class="el" href="classSimulationModel.html#a0529fb427560a2bde9b8cb62f82e6baf">SimulationModel</a>
+: <a class="el" href="classCompositeFactory.html#a46a24b2fa2e5c077bd140b7075f61ff9">CompositeFactory</a>
+, <a class="el" href="classDroneFactory.html#ad0d77279eacf09e49c990b7d2a86e74e">DroneFactory</a>
+, <a class="el" href="classEmpFactory.html#a6c7121acea4c84653c6f1d81a5c7a3fa">EmpFactory</a>
+, <a class="el" href="classIEntityFactory.html#a9bd53cf7ca21ab252968062ea5d88180">IEntityFactory</a>
+, <a class="el" href="classRainFactory.html#acc32ae576edc67e98855e17330cadf36">RainFactory</a>
+, <a class="el" href="classRobotFactory.html#ad2ceb080af7357b641332a237ae74959">RobotFactory</a>
+, <a class="el" href="classSimulationModel.html#a0529fb427560a2bde9b8cb62f82e6baf">SimulationModel</a>
+, <a class="el" href="classWindFactory.html#a5165e7a498712b4dd821868387156689">WindFactory</a>
 </li>
 </ul>
 
@@ -102,6 +113,20 @@ $(function() {
 </li>
 <li>Drone()
 : <a class="el" href="classDrone.html#ae182c9500fdd3c896ed460004b1b42ad">Drone</a>
+</li>
+</ul>
+
+
+<h3><a id="index_e"></a>- e -</h3><ul>
+<li>EmpWeather()
+: <a class="el" href="classEmpWeather.html#afa82aa185fdb31bc0a5ebf28969f5456">EmpWeather</a>
+</li>
+<li>Execute()
+: <a class="el" href="classBaseWeather.html#a6ead11189f8ce07457deea25fc6afad3">BaseWeather</a>
+, <a class="el" href="classEmpWeather.html#a74606238abac4c50a621ca8e2bfc1f45">EmpWeather</a>
+, <a class="el" href="classIWeather.html#a1268319157d56c3a6568d09e5cbfdfab">IWeather</a>
+, <a class="el" href="classRainWeather.html#a9a04d15d59ea80ce50ad774329e8ce12">RainWeather</a>
+, <a class="el" href="classWindWeather.html#a5c95efcad53f507b6c340ee42da79ead">WindWeather</a>
 </li>
 </ul>
 
@@ -138,6 +163,9 @@ $(function() {
 <li>GetId()
 : <a class="el" href="classIEntity.html#a2bfa9ab304ff33b252fbd5a707e42995">IEntity</a>
 </li>
+<li>GetInstance()
+: <a class="el" href="classBaseWeather.html#abc0356c8396497b4435b7841b3206e26">BaseWeather</a>
+</li>
 <li>GetNearestEntity()
 : <a class="el" href="classDrone.html#a21d9dc799ee8a6c10b579fcab401bd57">Drone</a>
 </li>
@@ -165,11 +193,23 @@ $(function() {
 
 
 <h3><a id="index_i"></a>- i -</h3><ul>
+<li>IndicatorReaction()
+: <a class="el" href="classIndicatorReaction.html#a1424c9040d95536991dd7653f7990a08">IndicatorReaction</a>
+</li>
 <li>IsCompleted()
 : <a class="el" href="classAstarStrategy.html#a65ae8d490fe820fa152a379da6845103">AstarStrategy</a>
 , <a class="el" href="classBeelineStrategy.html#a648eae389f7844f210ac267313ef6233">BeelineStrategy</a>
+, <a class="el" href="classCelebrationDecorator.html#a7ce83ef692d22773bf40e8733e20329a">CelebrationDecorator</a>
 , <a class="el" href="classDfsStrategy.html#a30fb7b230d0244cd87de51a13a8d8c5b">DfsStrategy</a>
 , <a class="el" href="classDijkstraStrategy.html#a409569a22f38028431ce25522d355ee2">DijkstraStrategy</a>
+, <a class="el" href="classIStrategy.html#a13c6048efd232b696db5f35000d5b106">IStrategy</a>
+, <a class="el" href="classJumpDecorator.html#a94b32bed5b764df15980356aa8763abe">JumpDecorator</a>
+, <a class="el" href="classSpinDecorator.html#a0887a816731d9ff8ee8161034a03c4aa">SpinDecorator</a>
+</li>
+<li>IsInside()
+: <a class="el" href="classBaseWeather.html#a739374c45e55d4695ceb7bdbda8e7d0c">BaseWeather</a>
+, <a class="el" href="classIWeather.html#a17bd5cf79e4065f101ba50226db9a732">IWeather</a>
+, <a class="el" href="classIZoneWeather.html#ae550498e257f595a7c94da3d74f91f76">IZoneWeather</a>
 </li>
 </ul>
 
@@ -180,6 +220,9 @@ $(function() {
 , <a class="el" href="classIEntity.html#a4e8eb64a324e1196be039c5e2a293b7a">IEntity</a>
 , <a class="el" href="classWeatherReactDecorator.html#a6fa31185cdaeff32f70bfde66c41b3e0">WeatherReactDecorator</a>
 </li>
+<li>JumpDecorator()
+: <a class="el" href="classJumpDecorator.html#a0e488a121d506f294d2ed4b90108e10f">JumpDecorator</a>
+</li>
 </ul>
 
 
@@ -187,8 +230,12 @@ $(function() {
 <li>Move()
 : <a class="el" href="classAstarStrategy.html#afd13e7ed2b1872f01aa2a2f4b07b41c3">AstarStrategy</a>
 , <a class="el" href="classBeelineStrategy.html#ab8d3f5b05d5e9dd06465f5fc4cd4767e">BeelineStrategy</a>
+, <a class="el" href="classCelebrationDecorator.html#aaea8fd11f7d0e12dd79ccdc63ab1bbf6">CelebrationDecorator</a>
 , <a class="el" href="classDfsStrategy.html#aab5a0a5c97f710075634b81a3e00ecf9">DfsStrategy</a>
 , <a class="el" href="classDijkstraStrategy.html#a24e0177f55b69a6b2260b0a0e2ce4430">DijkstraStrategy</a>
+, <a class="el" href="classIStrategy.html#a69254389f4ef9a851dc5d40c4cc9aacd">IStrategy</a>
+, <a class="el" href="classJumpDecorator.html#a6d46675428916bbe6acd10fb25d51f86">JumpDecorator</a>
+, <a class="el" href="classSpinDecorator.html#a766735ae467d0bb3a80169e109951804">SpinDecorator</a>
 </li>
 </ul>
 
@@ -220,6 +267,36 @@ $(function() {
 
 
 <h3><a id="index_r"></a>- r -</h3><ul>
+<li>RainWeather()
+: <a class="el" href="classRainWeather.html#a711bc16b2e246abbd21a3a3f81a7c926">RainWeather</a>
+</li>
+<li>react_emp()
+: <a class="el" href="classIndicatorReaction.html#a649b1a86cf7fad9a34a3ee3bdde20c76">IndicatorReaction</a>
+, <a class="el" href="classIReaction.html#acf3ecf0ba873130cd89b30b12f898821">IReaction</a>
+, <a class="el" href="classRegularReaction.html#a5a089220ce821407c5cbdb0aaeff5f47">RegularReaction</a>
+, <a class="el" href="classReinforcedReaction.html#a77b0ea3da63d8101094670c80fe51cf9">ReinforcedReaction</a>
+, <a class="el" href="classStreetLevelReaction.html#aa2ee3cda5bbe62c9bfbb4bd6dbe179c2">StreetLevelReaction</a>
+</li>
+<li>react_rain()
+: <a class="el" href="classIndicatorReaction.html#a64ebb06a98fd18eaec0de0ac9c303d82">IndicatorReaction</a>
+, <a class="el" href="classIReaction.html#a4655d9e1632f4453718653c8b0c1f6bf">IReaction</a>
+, <a class="el" href="classRegularReaction.html#a8c07e22c7996fb4e086651dbfc3f64a8">RegularReaction</a>
+, <a class="el" href="classReinforcedReaction.html#a4c57576af813907f5c311013058cbdd7">ReinforcedReaction</a>
+, <a class="el" href="classStreetLevelReaction.html#ae6958aeee3c0b93cbf5192ae5ab3219b">StreetLevelReaction</a>
+</li>
+<li>react_wind()
+: <a class="el" href="classIndicatorReaction.html#af7c81b7e0938d276c11baead24106b1d">IndicatorReaction</a>
+, <a class="el" href="classIReaction.html#a427a52e6cb6d0e4622946e4bb445582a">IReaction</a>
+, <a class="el" href="classRegularReaction.html#a34220c66c692945bbdc5855fd3a51629">RegularReaction</a>
+, <a class="el" href="classReinforcedReaction.html#aa9aeac97e5abdab4a349a64c6d7f5e9e">ReinforcedReaction</a>
+, <a class="el" href="classStreetLevelReaction.html#a9b9bb14e547e8483839cf4910f27a2c1">StreetLevelReaction</a>
+</li>
+<li>RegularReaction()
+: <a class="el" href="classRegularReaction.html#ac0c4648fb5293dde2dcc44ac42fa10de">RegularReaction</a>
+</li>
+<li>ReinforcedReaction()
+: <a class="el" href="classReinforcedReaction.html#aa5d12f8a4e65b9b641e1d9b176905fcd">ReinforcedReaction</a>
+</li>
 <li>RemoveEntity()
 : <a class="el" href="classIController.html#a35b431eb8e01216df8b33fa3f4c2b25c">IController</a>
 </li>
@@ -269,6 +346,9 @@ $(function() {
 , <a class="el" href="classSimulationModel.html#a7595badfb368bcf5673f98b3f229dc0f">SimulationModel</a>
 , <a class="el" href="classWeatherReactDecorator.html#a48ca6187d3edf8ba5a9331bd615b5092">WeatherReactDecorator</a>
 </li>
+<li>SetInstance()
+: <a class="el" href="classBaseWeather.html#ad6076e5df3c4081eff0770c10782ed28">BaseWeather</a>
+</li>
 <li>SetPosition()
 : <a class="el" href="classDrone.html#a00150938e8dbfceaf81c9fb59994f6ef">Drone</a>
 , <a class="el" href="classIEntity.html#af0475048b09dc13ed6cf8e7c7be2ae6b">IEntity</a>
@@ -281,6 +361,12 @@ $(function() {
 </li>
 <li>SimulationModel()
 : <a class="el" href="classSimulationModel.html#adf36c1575bfba5c56cc5d27dcaed7691">SimulationModel</a>
+</li>
+<li>SpinDecorator()
+: <a class="el" href="classSpinDecorator.html#a2d9b8054970b50d567344c20dd6bde1f">SpinDecorator</a>
+</li>
+<li>StreetLevelReaction()
+: <a class="el" href="classStreetLevelReaction.html#a6f0bd25c8537cb1aad82ab85c57d85f6">StreetLevelReaction</a>
 </li>
 </ul>
 
@@ -306,12 +392,28 @@ $(function() {
 </ul>
 
 
+<h3><a id="index_w"></a>- w -</h3><ul>
+<li>WeatherReactDecorator()
+: <a class="el" href="classWeatherReactDecorator.html#aab1f4fbe0424704523d79f68d0145747">WeatherReactDecorator</a>
+</li>
+<li>WindWeather()
+: <a class="el" href="classWindWeather.html#a4aadc73179cd2675fb70bb6f0ffadcaa">WindWeather</a>
+</li>
+</ul>
+
+
 <h3><a id="index__7E"></a>- ~ -</h3><ul>
 <li>~AstarStrategy()
 : <a class="el" href="classAstarStrategy.html#aaea127f0c592f085aa6acfd2135c0c73">AstarStrategy</a>
 </li>
+<li>~BaseWeather()
+: <a class="el" href="classBaseWeather.html#a15f142669dd0d22e26716e9e9007e889">BaseWeather</a>
+</li>
 <li>~BeelineStrategy()
 : <a class="el" href="classBeelineStrategy.html#ab2b5b091b722359b48b91fa8aedd5dc5">BeelineStrategy</a>
+</li>
+<li>~CompositeFactory()
+: <a class="el" href="classCompositeFactory.html#a5601892e2e4dd1ab9f9ab9316be1cd10">CompositeFactory</a>
 </li>
 <li>~DfsStrategy()
 : <a class="el" href="classDfsStrategy.html#aa7e5c9681810fcc22194268b2ddce21e">DfsStrategy</a>
@@ -322,14 +424,62 @@ $(function() {
 <li>~Drone()
 : <a class="el" href="classDrone.html#a667075abb1eb5c54be6418884a387d14">Drone</a>
 </li>
+<li>~DroneFactory()
+: <a class="el" href="classDroneFactory.html#a757949d7b86a82ad884e3c281e16cbd5">DroneFactory</a>
+</li>
+<li>~EmpFactory()
+: <a class="el" href="classEmpFactory.html#af631b3f38c02bee59cd686e398a1d34d">EmpFactory</a>
+</li>
+<li>~EmpWeather()
+: <a class="el" href="classEmpWeather.html#a8d23b035ab88419f16ad6e41c78a08fb">EmpWeather</a>
+</li>
 <li>~IController()
 : <a class="el" href="classIController.html#a30b618142be776fd779255998a540e08">IController</a>
 </li>
 <li>~IEntity()
 : <a class="el" href="classIEntity.html#a8aea4fbca51d17a0ce314aaa4633f28e">IEntity</a>
 </li>
+<li>~IEntityFactory()
+: <a class="el" href="classIEntityFactory.html#a57921a96c43266c435a4d11abd56355c">IEntityFactory</a>
+</li>
+<li>~IndicatorReaction()
+: <a class="el" href="classIndicatorReaction.html#afb7dea65d76758fb854f7817fc83437d">IndicatorReaction</a>
+</li>
+<li>~IReaction()
+: <a class="el" href="classIReaction.html#a3e7f69783685869c4eba95aa6c7af1db">IReaction</a>
+</li>
+<li>~IWeather()
+: <a class="el" href="classIWeather.html#a626114db543b22b7277b6e791d3ba89f">IWeather</a>
+</li>
+<li>~IZoneWeather()
+: <a class="el" href="classIZoneWeather.html#a43c61e38309552e19da1a98bb228ad68">IZoneWeather</a>
+</li>
+<li>~RainFactory()
+: <a class="el" href="classRainFactory.html#a7deb897ca28eef791726090a956750b8">RainFactory</a>
+</li>
+<li>~RainWeather()
+: <a class="el" href="classRainWeather.html#a555913fab624936627e9a4d0c8a4338e">RainWeather</a>
+</li>
+<li>~RegularReaction()
+: <a class="el" href="classRegularReaction.html#a08608c2154ea08f1115696507b021126">RegularReaction</a>
+</li>
+<li>~ReinforcedReaction()
+: <a class="el" href="classReinforcedReaction.html#a701f940a0ab09fbd0cb77bb54d5f7b5c">ReinforcedReaction</a>
+</li>
 <li>~Robot()
 : <a class="el" href="classRobot.html#a2aeab6ed0e3dc953c076a2d3937e661d">Robot</a>
+</li>
+<li>~StreetLevelReaction()
+: <a class="el" href="classStreetLevelReaction.html#a219b475f5a8e3fe428b31b4ead0a3c45">StreetLevelReaction</a>
+</li>
+<li>~WeatherReactDecorator()
+: <a class="el" href="classWeatherReactDecorator.html#a90598a97739816107a451b2e33be1d52">WeatherReactDecorator</a>
+</li>
+<li>~WindFactory()
+: <a class="el" href="classWindFactory.html#a7a370026863d90d40b5ad2bd26cc1a79">WindFactory</a>
+</li>
+<li>~WindWeather()
+: <a class="el" href="classWindWeather.html#a170dbab7053ec4f65f8c3dcc99590de1">WindWeather</a>
 </li>
 </ul>
 </div><!-- contents -->

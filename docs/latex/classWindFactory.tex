@@ -2,6 +2,15 @@
 \label{classWindFactory}\index{WindFactory@{WindFactory}}
 
 
+A class built using the factory design pattern but for wind weather.  
+
+
+
+
+{\ttfamily \#include $<$Wind\+Factory.\+h$>$}
+
+
+
 Inheritance diagram for Wind\+Factory\+:
 \nopagebreak
 \begin{figure}[H]
@@ -23,9 +32,54 @@ Collaboration diagram for Wind\+Factory\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+virtual \mbox{\hyperlink{classWindFactory_a7a370026863d90d40b5ad2bd26cc1a79}{$\sim$\+Wind\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em A deconstructor for wind factory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ \mbox{\hyperlink{classWindFactory_a5165e7a498712b4dd821868387156689}{Create\+Entity}} (Json\+Object \&entity)
+\begin{DoxyCompactList}\small\item\em Creates the wind weather entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class built using the factory design pattern but for wind weather. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWindFactory_a7a370026863d90d40b5ad2bd26cc1a79}\label{classWindFactory_a7a370026863d90d40b5ad2bd26cc1a79}} 
+\index{WindFactory@{WindFactory}!````~WindFactory@{$\sim$WindFactory}}
+\index{````~WindFactory@{$\sim$WindFactory}!WindFactory@{WindFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$WindFactory()}{~WindFactory()}}
+{\footnotesize\ttfamily virtual Wind\+Factory\+::$\sim$\+Wind\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+A deconstructor for wind factory. 
+
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classWindFactory_a5165e7a498712b4dd821868387156689}\label{classWindFactory_a5165e7a498712b4dd821868387156689}} 
-\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ {\bfseries Create\+Entity} (Json\+Object \&entity)
-\end{DoxyCompactItemize}
+\index{WindFactory@{WindFactory}!CreateEntity@{CreateEntity}}
+\index{CreateEntity@{CreateEntity}!WindFactory@{WindFactory}}
+\doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ Wind\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates the wind weather entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & jsonobj\& \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Ientity$\ast$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntityFactory_a9bd53cf7ca21ab252968062ea5d88180}{I\+Entity\+Factory}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

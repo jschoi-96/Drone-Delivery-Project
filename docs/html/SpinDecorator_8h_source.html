@@ -77,19 +77,25 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;CelebrationDecorator.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;IStrategy.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classSpinDecorator.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSpinDecorator.html">SpinDecorator</a> : <span class="keyword">public</span> <a class="code" href="classCelebrationDecorator.html">CelebrationDecorator</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;  <a class="code" href="classSpinDecorator.html">SpinDecorator</a>(<a class="code" href="classIStrategy.html">IStrategy</a>* strategy_) : <a class="code" href="classCelebrationDecorator.html">CelebrationDecorator</a>(strategy_) {}</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keywordtype">bool</span> IsCompleted();</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keywordtype">void</span> Move(<a class="code" href="classIEntity.html">IEntity</a>* entity, <span class="keywordtype">double</span> dt);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};  <span class="comment">// close class</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif  // SPIN_DECORATOR_H_</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classSpinDecorator.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classSpinDecorator.html">SpinDecorator</a> : <span class="keyword">public</span> <a class="code" href="classCelebrationDecorator.html">CelebrationDecorator</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classSpinDecorator.html#a2d9b8054970b50d567344c20dd6bde1f">   20</a></span>&#160;  <a class="code" href="classSpinDecorator.html#a2d9b8054970b50d567344c20dd6bde1f">SpinDecorator</a>(<a class="code" href="classIStrategy.html">IStrategy</a>* strategy_) : <a class="code" href="classCelebrationDecorator.html">CelebrationDecorator</a>(strategy_) {}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classSpinDecorator.html#a0887a816731d9ff8ee8161034a03c4aa">IsCompleted</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classSpinDecorator.html#a766735ae467d0bb3a80169e109951804">Move</a>(<a class="code" href="classIEntity.html">IEntity</a>* entity, <span class="keywordtype">double</span> dt);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};  <span class="comment">// close class</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif  // SPIN_DECORATOR_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassIStrategy_html"><div class="ttname"><a href="classIStrategy.html">IStrategy</a></div><div class="ttdef"><b>Definition:</b> IStrategy.h:10</div></div>
-<div class="ttc" id="aclassSpinDecorator_html"><div class="ttname"><a href="classSpinDecorator.html">SpinDecorator</a></div><div class="ttdef"><b>Definition:</b> SpinDecorator.h:9</div></div>
-<div class="ttc" id="aclassCelebrationDecorator_html"><div class="ttname"><a href="classCelebrationDecorator.html">CelebrationDecorator</a></div><div class="ttdef"><b>Definition:</b> CelebrationDecorator.h:8</div></div>
+<div class="ttc" id="aclassIStrategy_html"><div class="ttname"><a href="classIStrategy.html">IStrategy</a></div><div class="ttdoc">A class built for Istrategy.</div><div class="ttdef"><b>Definition:</b> IStrategy.h:13</div></div>
+<div class="ttc" id="aclassSpinDecorator_html_a0887a816731d9ff8ee8161034a03c4aa"><div class="ttname"><a href="classSpinDecorator.html#a0887a816731d9ff8ee8161034a03c4aa">SpinDecorator::IsCompleted</a></div><div class="ttdeci">bool IsCompleted()</div><div class="ttdoc">Checks if the decorator has been completed.</div><div class="ttdef"><b>Definition:</b> SpinDecorator.cc:3</div></div>
+<div class="ttc" id="aclassSpinDecorator_html"><div class="ttname"><a href="classSpinDecorator.html">SpinDecorator</a></div><div class="ttdoc">Decorator method to spin object.</div><div class="ttdef"><b>Definition:</b> SpinDecorator.h:12</div></div>
+<div class="ttc" id="aclassCelebrationDecorator_html"><div class="ttname"><a href="classCelebrationDecorator.html">CelebrationDecorator</a></div><div class="ttdoc">Decorator method to implement other feature.</div><div class="ttdef"><b>Definition:</b> CelebrationDecorator.h:11</div></div>
+<div class="ttc" id="aclassSpinDecorator_html_a766735ae467d0bb3a80169e109951804"><div class="ttname"><a href="classSpinDecorator.html#a766735ae467d0bb3a80169e109951804">SpinDecorator::Move</a></div><div class="ttdeci">void Move(IEntity *entity, double dt)</div><div class="ttdoc">Used for moving drone/robot pairs towards their destination.</div><div class="ttdef"><b>Definition:</b> SpinDecorator.cc:7</div></div>
 <div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to see interface.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
+<div class="ttc" id="aclassSpinDecorator_html_a2d9b8054970b50d567344c20dd6bde1f"><div class="ttname"><a href="classSpinDecorator.html#a2d9b8054970b50d567344c20dd6bde1f">SpinDecorator::SpinDecorator</a></div><div class="ttdeci">SpinDecorator(IStrategy *strategy_)</div><div class="ttdoc">Constructore for SpinDecorator.</div><div class="ttdef"><b>Definition:</b> SpinDecorator.h:20</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

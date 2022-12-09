@@ -2,6 +2,15 @@
 \label{classEmpWeather}\index{EmpWeather@{EmpWeather}}
 
 
+A class built for emp weather.  
+
+
+
+
+{\ttfamily \#include $<$Emp\+Weather.\+h$>$}
+
+
+
 Inheritance diagram for Emp\+Weather\+:
 \nopagebreak
 \begin{figure}[H]
@@ -23,13 +32,81 @@ Collaboration diagram for Emp\+Weather\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEmpWeather_afa82aa185fdb31bc0a5ebf28969f5456}\label{classEmpWeather_afa82aa185fdb31bc0a5ebf28969f5456}} 
-{\bfseries Emp\+Weather} (Json\+Object \&obj)
-\item 
-\mbox{\Hypertarget{classEmpWeather_a74606238abac4c50a621ca8e2bfc1f45}\label{classEmpWeather_a74606238abac4c50a621ca8e2bfc1f45}} 
-void {\bfseries Execute} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, \mbox{\hyperlink{classIReaction}{I\+Reaction}} $\ast$reaction, double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classEmpWeather_afa82aa185fdb31bc0a5ebf28969f5456}{Emp\+Weather}} (Json\+Object \&obj)
+\begin{DoxyCompactList}\small\item\em constructor for emp\+Weather. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEmpWeather_a8d23b035ab88419f16ad6e41c78a08fb}{$\sim$\+Emp\+Weather}} () override=default
+\begin{DoxyCompactList}\small\item\em deconstructor for emp\+Weather. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEmpWeather_a74606238abac4c50a621ca8e2bfc1f45}{Execute}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, \mbox{\hyperlink{classIReaction}{I\+Reaction}} $\ast$reaction, double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em executes the reaction happening to the drone with empweather. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class built for emp weather. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEmpWeather_afa82aa185fdb31bc0a5ebf28969f5456}\label{classEmpWeather_afa82aa185fdb31bc0a5ebf28969f5456}} 
+\index{EmpWeather@{EmpWeather}!EmpWeather@{EmpWeather}}
+\index{EmpWeather@{EmpWeather}!EmpWeather@{EmpWeather}}
+\doxysubsubsection{\texorpdfstring{EmpWeather()}{EmpWeather()}}
+{\footnotesize\ttfamily Emp\+Weather\+::\+Emp\+Weather (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+constructor for emp\+Weather. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & json\+Object\& \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classEmpWeather_a8d23b035ab88419f16ad6e41c78a08fb}\label{classEmpWeather_a8d23b035ab88419f16ad6e41c78a08fb}} 
+\index{EmpWeather@{EmpWeather}!````~EmpWeather@{$\sim$EmpWeather}}
+\index{````~EmpWeather@{$\sim$EmpWeather}!EmpWeather@{EmpWeather}}
+\doxysubsubsection{\texorpdfstring{$\sim$EmpWeather()}{~EmpWeather()}}
+{\footnotesize\ttfamily Emp\+Weather\+::$\sim$\+Emp\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+deconstructor for emp\+Weather. 
+
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEmpWeather_a74606238abac4c50a621ca8e2bfc1f45}\label{classEmpWeather_a74606238abac4c50a621ca8e2bfc1f45}} 
+\index{EmpWeather@{EmpWeather}!Execute@{Execute}}
+\index{Execute@{Execute}!EmpWeather@{EmpWeather}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily void Emp\+Weather\+::\+Execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classIReaction}{I\+Reaction}} $\ast$}]{reaction,  }\item[{double}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+executes the reaction happening to the drone with empweather. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & which is the Ientity \\
+\hline
+{\em reaction} & current reaction \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the ientities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIWeather_a1268319157d56c3a6568d09e5cbfdfab}{I\+Weather}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

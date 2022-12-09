@@ -1,9 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classIEntityFactory.html" title=" " alt="" coords="5,132,117,159"/>
-<area shape="rect" id="node2" href="$classCompositeFactory.html" title=" " alt="" coords="165,5,305,32"/>
-<area shape="rect" id="node3" href="$classDroneFactory.html" title=" " alt="" coords="181,56,290,83"/>
-<area shape="rect" id="node4" href="$classEmpFactory.html" title=" " alt="" coords="186,107,285,133"/>
-<area shape="rect" id="node5" href="$classRainFactory.html" title=" " alt="" coords="186,157,285,184"/>
-<area shape="rect" id="node6" href="$classRobotFactory.html" title=" " alt="" coords="181,208,289,235"/>
-<area shape="rect" id="node7" href="$classWindFactory.html" title=" " alt="" coords="184,259,287,285"/>
+<area shape="rect" id="node1" href="$classIEntityFactory.html" title="Factory method for IEntity class." alt="" coords="5,132,117,159"/>
+<area shape="rect" id="node2" href="$classCompositeFactory.html" title="Factory method for composite class." alt="" coords="165,5,305,32"/>
+<area shape="rect" id="node3" href="$classDroneFactory.html" title="Factory method for Drone class." alt="" coords="181,56,290,83"/>
+<area shape="rect" id="node4" href="$classEmpFactory.html" title="A class built using the factory design pattern but for emp weather." alt="" coords="186,107,285,133"/>
+<area shape="rect" id="node5" href="$classRainFactory.html" title="A class built using the factory design pattern but for rain weather." alt="" coords="186,157,285,184"/>
+<area shape="rect" id="node6" href="$classRobotFactory.html" title="Factory method for Robot class." alt="" coords="181,208,289,235"/>
+<area shape="rect" id="node7" href="$classWindFactory.html" title="A class built using the factory design pattern but for wind weather." alt="" coords="184,259,287,285"/>
 </map>

@@ -2,12 +2,21 @@
 \label{classIZoneWeather}\index{IZoneWeather@{IZoneWeather}}
 
 
+class that holds the I\+Zoneweather inherits from iweather and ientity.  
+
+
+
+
+{\ttfamily \#include $<$I\+Zone\+Weather.\+h$>$}
+
+
+
 Inheritance diagram for I\+Zone\+Weather\+:
 \nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=262pt]{classIZoneWeather__inherit__graph}
+\includegraphics[width=350pt]{classIZoneWeather__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -23,9 +32,10 @@ Collaboration diagram for I\+Zone\+Weather\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classIZoneWeather_ae550498e257f595a7c94da3d74f91f76}\label{classIZoneWeather_ae550498e257f595a7c94da3d74f91f76}} 
-bool {\bfseries Is\+Inside} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent)
-\item 
+bool \mbox{\hyperlink{classIZoneWeather_ae550498e257f595a7c94da3d74f91f76}{Is\+Inside}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Checks to see if the drone is inside the base weather. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIZoneWeather_a43c61e38309552e19da1a98bb228ad68}{$\sim$\+I\+Zone\+Weather}} () override=default
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classIZoneWeather}{I\+Zone\+Weather}} class. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classIZoneWeather_aba37f50f146f68c3ba53670d7d774da8}{Get\+Position}} () const
 \begin{DoxyCompactList}\small\item\em get position \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classIZoneWeather_a59ed6a214a0d2446f0e11f00f28d57bb}{Get\+Direction}} () const
@@ -73,6 +83,25 @@ float {\bfseries speed} = 0
 \mbox{\Hypertarget{classIZoneWeather_ac2a3f7c46052fa0d3cad1eefafd78599}\label{classIZoneWeather_ac2a3f7c46052fa0d3cad1eefafd78599}} 
 bool {\bfseries is\+Circle} = false
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class that holds the I\+Zoneweather inherits from iweather and ientity. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIZoneWeather_a43c61e38309552e19da1a98bb228ad68}\label{classIZoneWeather_a43c61e38309552e19da1a98bb228ad68}} 
+\index{IZoneWeather@{IZoneWeather}!````~IZoneWeather@{$\sim$IZoneWeather}}
+\index{````~IZoneWeather@{$\sim$IZoneWeather}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{$\sim$IZoneWeather()}{~IZoneWeather()}}
+{\footnotesize\ttfamily I\+Zone\+Weather\+::$\sim$\+I\+Zone\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+Destructor for \mbox{\hyperlink{classIZoneWeather}{I\+Zone\+Weather}} class. 
+
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
 
 
 \doxysubsection{Member Function Documentation}
@@ -194,6 +223,28 @@ return the name of strategy that is used
 
 
 Reimplemented from \mbox{\hyperlink{classIEntity_a9b4a238a04f5cd56db89e50292355005}{I\+Entity}}.
+
+\mbox{\Hypertarget{classIZoneWeather_ae550498e257f595a7c94da3d74f91f76}\label{classIZoneWeather_ae550498e257f595a7c94da3d74f91f76}} 
+\index{IZoneWeather@{IZoneWeather}!IsInside@{IsInside}}
+\index{IsInside@{IsInside}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{IsInside()}{IsInside()}}
+{\footnotesize\ttfamily bool I\+Zone\+Weather\+::\+Is\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks to see if the drone is inside the base weather. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & Ientity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIWeather_a17bd5cf79e4065f101ba50226db9a732}{I\+Weather}}.
 
 \mbox{\Hypertarget{classIZoneWeather_a3fc876b402780c17e2cd819146619aa1}\label{classIZoneWeather_a3fc876b402780c17e2cd819146619aa1}} 
 \index{IZoneWeather@{IZoneWeather}!SetAvailability@{SetAvailability}}
