@@ -110,6 +110,22 @@ class WeatherReactDecorator : public IEntity {
    **/
   void SetGraph(const IGraph* graph);
 
+  /** 
+   * @brief Getter for the color field of the drone
+   * 
+   * @return color field of drone
+   */
+  std::string GetColor() const { return parent->GetColor(); }
+  /**
+   * @brief Sets the color field of the drone
+   * 
+   * @param color_ the new color for the drone 
+   */
+  virtual void SetColor(std::string color_) {
+    parent->SetColor(color_);
+  }
+
+
  protected:
   IEntity* parent;
   IReaction* reaction;

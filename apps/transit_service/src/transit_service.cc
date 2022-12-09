@@ -73,6 +73,8 @@ class TransitService : public JsonSession, public IController {
     JsonArray dir = {dir_.x, dir_.y, dir_.z};
     details["pos"] = pos;
     details["dir"] = dir;
+    std::string col_ = entity.GetColor();
+    if(col_ != "None") details["color"] = col_;
     SendEventToView(event, details);
   }
 

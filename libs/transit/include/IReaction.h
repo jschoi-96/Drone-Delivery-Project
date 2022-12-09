@@ -9,8 +9,6 @@
 *@brief A class built for IReaction
 **/
 class IReaction {
- protected: 
-  int counter = 0;
  public:
 
  /**
@@ -22,9 +20,9 @@ class IReaction {
 * @brief A dictionary map that holds the color and hexcodes.
 **/
   std::map<std::string, std::string> colors = {
-      {"white", "0xffffff"},  {"red", "0xff0000"},    {"yellow", "0xffff00"},
-      {"blue", "0x0000ff"},   {"orange", "0xffa500"}, {"green", "0x00ff00"},
-      {"purple", "0xa020f0"}, {"brown", "0x964b00"},  {"black", "0x000000"}};
+      {"white", "#ffffff"},  {"red", "#ff0000"},    {"yellow", "#ffff00"},
+      {"blue", "#0000ff"},   {"orange", "#ffa500"}, {"green", "#00ff00"},
+      {"purple", "#a020f0"}, {"brown", "#964b00"},  {"black", "#000000"}};
 
 /**
      * @brief executes the reaction happening to the drone with wind

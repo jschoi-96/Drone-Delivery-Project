@@ -81,6 +81,21 @@ class IEntity {
    */
   virtual std::string GetStrategyName() {}
 
+  /** 
+   * @brief Getter for the color field of the drone
+   * 
+   * @return color field of drone
+   */
+  virtual std::string GetColor() const { return color; }
+  /**
+   * @brief Sets the color field of the drone
+   * 
+   * @param color_ the new color for the drone 
+   */
+  virtual void SetColor(std::string color_) {
+    color = color_;
+  }
+
   /**
    * @brief set availability 
    * @param choice - bool type of choice parameter
@@ -137,6 +152,7 @@ class IEntity {
    */  
   virtual void Jump(double height) {}
 
+  std::string color = "None"; // None means default color
  protected:
   int id;
   const IGraph* graph;

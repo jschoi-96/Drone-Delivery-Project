@@ -17,8 +17,7 @@ WeatherReactDecorator::WeatherReactDecorator(IEntity* parent_,
 }
 void WeatherReactDecorator::Update(double dt, std::vector<IEntity*> scheduler) {
   IWeather* weather = BaseWeather::GetInstance();
-  parent->GetDetails()["color"] =
-      reaction->colors["white"];  // resets color to white
+  parent->SetColor(reaction->colors["white"]);  // resets color to white
   weather->Execute(parent, reaction, dt, scheduler);
 }
 float WeatherReactDecorator::GetSpeed() const { return parent->GetSpeed(); }

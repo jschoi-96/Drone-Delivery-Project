@@ -75,6 +75,7 @@ class Drone : public IEntity {
    */
   bool GetAvailability() const { return available; }
 
+
   /**
    * @brief find the distance of entity and set it to minimum value
    * @param scheduler - IEntity type vector obj
@@ -152,6 +153,7 @@ class Drone : public IEntity {
   IEntity* nearestEntity = NULL;
   IStrategy* toTargetPosStrategy = NULL;
   IStrategy* toTargetDestStrategy = NULL;
+
 };
 
 #endif
