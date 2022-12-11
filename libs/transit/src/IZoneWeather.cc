@@ -1,4 +1,3 @@
-  
 #include "IZoneWeather.h"
 
 #include <vector>

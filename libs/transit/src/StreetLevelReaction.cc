@@ -8,7 +8,7 @@
 void StreetLevelReaction::react_wind(IEntity* parent, double& dt,
                                      std::vector<IEntity*>& scheduler,
                                      Vector3 wind) {
-  std::string color = parent-> GetColor(); 
+  std::string color = parent-> GetColor();
   if (color == colors["red"]) {  // case where rain goes into wind zone
     std::string c = ("orange");
     parent->SetColor(c);
@@ -28,7 +28,7 @@ void StreetLevelReaction::react_wind(IEntity* parent, double& dt,
 }
 void StreetLevelReaction::react_rain(IEntity* parent, double& dt,
                                      std::vector<IEntity*>& scheduler) {
-  std::string color = parent-> GetColor(); 
+  std::string color = parent-> GetColor();
   if (color == colors["yellow"]) {  // case where wind goes into rain zone
     std::string c = ("orange");
     parent->SetColor(c);
@@ -49,7 +49,7 @@ void StreetLevelReaction::react_rain(IEntity* parent, double& dt,
 }
 void StreetLevelReaction::react_emp(IEntity* parent, double& dt,
                                     std::vector<IEntity*>& scheduler) {
-  std::string color = parent-> GetColor(); 
+  std::string color = parent-> GetColor();
   if (color == colors["yellow"]) {  // case where wind geos into emp zone
     std::string c = ("green");
     parent->SetColor(c);
