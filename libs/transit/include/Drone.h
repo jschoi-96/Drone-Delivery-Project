@@ -1,5 +1,5 @@
-#ifndef DRONE_H_
-#define DRONE_H_
+#ifndef LIBS_TRANSIT_INCLUDE_DRONE_H_
+#define LIBS_TRANSIT_INCLUDE_DRONE_H_
 
 #include <map>
 #include <vector>
@@ -13,22 +13,21 @@
 // velocity and direction.
 
 /**
-*@brief A class built to manipulate movement of drone
-**/
+ *@brief A class built to manipulate movement of drone
+ **/
 class Drone : public IEntity {
  public:
-
-   /**
+  /**
    * @brief it sets position, direction,speed, availability of drone
    *
    * @param obj contains position, direction, and speed
    */
-  Drone(JsonObject& obj);
-    /**
-     * @brief Destructor for Drone class.
-     * 
-     * @return none.
-     **/
+  Drone(const JsonObject& obj);
+  /**
+   * @brief Destructor for Drone class.
+   *
+   * @return none.
+   **/
   ~Drone();
 
   /**
@@ -75,7 +74,6 @@ class Drone : public IEntity {
    */
   bool GetAvailability() const { return available; }
 
-
   /**
    * @brief find the distance of entity and set it to minimum value
    * @param scheduler - IEntity type vector obj
@@ -94,20 +92,20 @@ class Drone : public IEntity {
   /**
    * @brief set the position of object
    * @param pos_ - Vector3 obj
-   */  
+   */
   void SetPosition(Vector3 pos_) { position = pos_; }
 
   // Sets the drone's direction
   /**
    * @brief set the direction of object
    * @param dir_ - Vector3 obj
-   */  
+   */
   void SetDirection(Vector3 dir_) { direction = dir_; }
 
   /**
    * @brief set the destination of obj
    * @param des_ - Vector3 obj
-   */  
+   */
   void SetDestination(Vector3 des_) { destination = des_; }
 
   // Rotates a drone
@@ -115,13 +113,13 @@ class Drone : public IEntity {
   /**
    * @brief rotate drone by using angle and formula
    * @param angle - angle of drone
-   */  
+   */
   void Rotate(double angle);
 
   /**
    * @brief rotate drone by using height and formula
    * @param height - height of drone
-   */  
+   */
   void Jump(double height);
 
   // Removing the copy constructor and assignment operator
@@ -130,13 +128,13 @@ class Drone : public IEntity {
   /**
    * @brief Removing the copy constructor
    * @param drone - drone obj
-   */  
+   */
   Drone(const Drone& drone) = delete;
 
   /**
    * @brief Removing assignment operator
    * @param drone - drone obj
-   */  
+   */
   Drone& operator=(const Drone& drone) = delete;
 
  private:
@@ -153,7 +151,6 @@ class Drone : public IEntity {
   IEntity* nearestEntity = NULL;
   IStrategy* toTargetPosStrategy = NULL;
   IStrategy* toTargetDestStrategy = NULL;
-
 };
 
-#endif
+#endif  // LIBS_TRANSIT_INCLUDE_DRONE_H_

@@ -1,30 +1,29 @@
-#ifndef I_ENTITY_FACTORY_H_
-#define I_ENTITY_FACTORY_H_
+#ifndef LIBS_TRANSIT_INCLUDE_IENTITYFACTORY_H_
+#define LIBS_TRANSIT_INCLUDE_IENTITYFACTORY_H_
 
-#include "util/json.h"
-
+#include "Drone.h"
 #include "IEntity.h"
 #include "IEntityFactory.h"
-#include "Drone.h"
+#include "util/json.h"
 
 /**
-*@brief Factory method for IEntity class
-**/
+ *@brief Factory method for IEntity class
+ **/
 class IEntityFactory {
-  public:
-    /**
-     * @brief Destructor for IEntityFactory class.
-     * 
-     * @return none.
-     **/
-    virtual ~IEntityFactory() {}
+ public:
+  /**
+   * @brief Destructor for IEntityFactory class.
+   *
+   * @return none.
+   **/
+  virtual ~IEntityFactory() {}
 
-    /**
-     * @brief Creates entity
-     * @param entity - JsonObject type obj
-     * @return none.
-     **/
-    virtual IEntity* CreateEntity(JsonObject& entity) = 0;
+  /**
+   * @brief Creates entity
+   * @param entity - JsonObject type obj
+   * @return none.
+   **/
+  virtual IEntity* CreateEntity(const JsonObject& entity) = 0;
 };
 
-#endif
+#endif  // LIBS_TRANSIT_INCLUDE_IENTITYFACTORY_H_

@@ -1,25 +1,24 @@
-#ifndef IZONE_WEATHER
-#define IZONE_WEATHER
+#ifndef LIBS_TRANSIT_INCLUDE_IZONEWEATHER_H_
+#define LIBS_TRANSIT_INCLUDE_IZONEWEATHER_H_
 #include <vector>
 
 #include "IEntity.h"
 #include "IWeather.h"
 #include "IZoneWeather.h"
 /**
-* @brief class that holds the IZoneweather inherits from iweather and ientity.
-**/
+ * @brief class that holds the IZoneweather inherits from iweather and ientity.
+ **/
 class IZoneWeather : public IWeather, public IEntity {
   // TBD: Has a radius and stuff
  public:
   bool IsInside(IEntity* parent);  // if the object is affected by the weather
 
-   /**
+  /**
    * @brief Destructor for IZoneWeather class.
-   * 
+   *
    * @return none.
    **/
   ~IZoneWeather() override = default;
-
 
   /**
    * @brief get position
@@ -27,40 +26,40 @@ class IZoneWeather : public IWeather, public IEntity {
    **/
   virtual Vector3 GetPosition() const { return pos; }
 
-   /**
+  /**
    * @brief get direction
    * @return Vector3 type direciton
    **/
   virtual Vector3 GetDirection() const { return direction; }
-   /**
+  /**
    * @brief get destination
    * @return Vector3 type destination
    **/
   virtual Vector3 GetDestination() const { return Vector3(0, 0, 0); }
 
   /**
-   * @brief get details 
+   * @brief get details
    * @return JsonObject type details
    **/
-  virtual JsonObject GetDetails() const { return details; };
+  virtual JsonObject GetDetails() const { return details; }
   /**
    * @brief get speed
    * @return float type of speed
    **/
-  virtual float GetSpeed() const { return speed; };
-   /**
+  virtual float GetSpeed() const { return speed; }
+  /**
    * @brief check whether it is available
    * @return true if is available and false if not
    **/
   virtual bool GetAvailability() const { return false; }
-   /**
+  /**
    * @brief The strategy of robot
    *
-   * @return return the name of strategy that is used 
+   * @return return the name of strategy that is used
    */
   virtual std::string GetStrategyName() { return ""; }
-   /**
-   * @brief set availability 
+  /**
+   * @brief set availability
    * @param choice - bool type of choice parameter
    **/
   virtual void SetAvailability(bool choice) {}
@@ -70,8 +69,8 @@ class IZoneWeather : public IWeather, public IEntity {
    * @param scheduler - IEntity type vector obj
    **/
   virtual void Update(double dt, std::vector<IEntity*> scheduler);
-   /**
-   * @brief set graph 
+  /**
+   * @brief set graph
    * @param graph - IGraph type obj
    **/
   virtual void SetGraph(const IGraph* graph) { this->graph = graph; }
@@ -88,4 +87,4 @@ class IZoneWeather : public IWeather, public IEntity {
   float speed = 0;
   bool isCircle = false;
 };
-#endif
+#endif  // LIBS_TRANSIT_INCLUDE_IZONEWEATHER_H_

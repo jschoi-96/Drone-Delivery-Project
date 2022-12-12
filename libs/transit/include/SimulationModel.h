@@ -1,8 +1,8 @@
-#ifndef SIMULATION_MODEL_H_
-#define SIMULATION_MODEL_H_
+#ifndef LIBS_TRANSIT_INCLUDE_SIMULATIONMODEL_H_
+#define LIBS_TRANSIT_INCLUDE_SIMULATIONMODEL_H_
 
-#include "IController.h"
 #include "CompositeFactory.h"
+#include "IController.h"
 #include "IEntity.h"
 #include "graph.h"
 using namespace routing;
@@ -13,16 +13,15 @@ using namespace routing;
 /// with the controller.
 
 /**
-*@brief A class built to Simulate Model
-**/
+ *@brief A class built to Simulate Model
+ **/
 class SimulationModel {
  public:
-
   /**
    * @brief SimulationModel constructor
    * @param controller - Icontroller type obj
-   */  
-  SimulationModel(IController& controller);
+   */
+  SimulationModel(const IController& controller);
 
   /**
    * @brief set graph
@@ -35,18 +34,18 @@ class SimulationModel {
    * @brief create type, name, and position for entity
    * @param entity - JsonObject type obj
    */
-  void CreateEntity(JsonObject& entity);
+  void CreateEntity(const JsonObject& entity);
 
   /// Schedules a trip for an object in the scene
   /**
    * @brief Schedule a trip for an object
    * @param details - JsonObject type obj
    */
-  void ScheduleTrip(JsonObject& details);
+  void ScheduleTrip(const JsonObject& details);
 
   /// Updates the simulation
   /**
-   * @brief change entities and call updateEntity function 
+   * @brief change entities and call updateEntity function
    * @param dt - delta time
    */
   void Update(double dt);
@@ -66,4 +65,4 @@ class SimulationModel {
   CompositeFactory* compFactory;
 };
 
-#endif
+#endif  // LIBS_TRANSIT_INCLUDE_SIMULATIONMODEL_H_

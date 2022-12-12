@@ -1,5 +1,5 @@
-#ifndef CONTROLLER_H_
-#define CONTROLLER_H_
+#ifndef LIBS_TRANSIT_INCLUDE_ICONTROLLER_H_
+#define LIBS_TRANSIT_INCLUDE_ICONTROLLER_H_
 
 #include "IEntity.h"
 #include "util/json.h"
@@ -10,16 +10,15 @@
 /// Controller Pattern
 
 /**
-*@brief A class built to see controller
-**/
+ *@brief A class built to see controller
+ **/
 class IController {
  public:
-
-/**
- * @brief Destructor for IController
- * 
- * @return none.
- **/
+  /**
+   * @brief Destructor for IController
+   *
+   * @return none.
+   **/
   virtual ~IController() {}
 
   /// Adds an entity to the program
@@ -47,11 +46,11 @@ class IController {
   /**
    * @brief Adds a path to the program
    * @param id - int variable
-   * @param path - 2d dimention vector that has path 
+   * @param path - 2d dimention vector that has path
    **/
   virtual void AddPath(int id,
                        const std::vector<std::vector<float> >& path) = 0;
-  
+
   /// Removes a path from the program
   /**
    * @brief Removes a path from the program
@@ -69,4 +68,5 @@ class IController {
                                const JsonObject& details) = 0;
 };
 
-#endif
+#endif  // LIBS_TRANSIT_INCLUDE_ICONTROLLER_H_
+

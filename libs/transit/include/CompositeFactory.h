@@ -1,37 +1,36 @@
-#ifndef COMPOSITE_FACTORY_H_
-#define COMPOSITE_FACTORY_H_
+#ifndef LIBS_TRANSIT_INCLUDE_COMPOSITEFACTORY_H_
+#define LIBS_TRANSIT_INCLUDE_COMPOSITEFACTORY_H_
 
 #include "IEntityFactory.h"
 
 /**
-*@brief Factory method for composite class 
-**/
+ *@brief Factory method for composite class
+ **/
 class CompositeFactory : public IEntityFactory {
-  public:
+ public:
+  /**
+   * @brief Creates Factory
+   * @param entity - JsonObject type obj
+   * @return none.
+   **/
+  IEntity* CreateEntity(const JsonObject& entity);
 
-    /**
-     * @brief Creates Factory
-     * @param entity - JsonObject type obj
-     * @return none.
-     **/
-    IEntity* CreateEntity(JsonObject& entity);
+  /**
+   * @brief Adds Factory
+   * @param factoryEntity - IEntityFactory type obj
+   * @return none.
+   **/
+  void AddFactory(IEntityFactory* factoryEntity);
 
-    /**
-     * @brief Adds Factory
-     * @param factoryEntity - IEntityFactory type obj
-     * @return none.
-     **/
-    void AddFactory(IEntityFactory* factoryEntity);
-  
-    /**
-     * @brief Destructor for CompositeFactory class.
-     * 
-     * @return none.
-     **/
-    virtual ~CompositeFactory();
+  /**
+   * @brief Destructor for CompositeFactory class.
+   *
+   * @return none.
+   **/
+  virtual ~CompositeFactory();
 
-  private:
-    std::vector<IEntityFactory*> componentFactories;
+ private:
+  std::vector<IEntityFactory*> componentFactories;
 };
 
-#endif
+#endif  // LIBS_TRANSIT_INCLUDE_COMPOSITEFACTORY_H_

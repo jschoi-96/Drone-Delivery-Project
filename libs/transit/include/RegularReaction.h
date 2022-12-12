@@ -1,5 +1,5 @@
-#ifndef REGULAR_REACTION_H
-#define REGULAR_REACTION_H
+#ifndef LIBS_TRANSIT_INCLUDE_REGULARREACTION_H_
+#define LIBS_TRANSIT_INCLUDE_REGULARREACTION_H_
 #include <vector>
 
 #include "IEntity.h"
@@ -13,53 +13,55 @@
    purple = rain + emp
    brown = all 3
    */
-  /**
-*@brief A class built for RegularReaction
-**/
+/**
+ *@brief A class built for RegularReaction
+ **/
 class RegularReaction : public IReaction {
  public:
- /**
-* @brief A constructor for Regularreaction
-**/
+  /**
+   * @brief A constructor for Regularreaction
+   **/
   RegularReaction() {}
   /**
-* @brief A deconstructor for regularReaction
-**/
+   * @brief A deconstructor for regularReaction
+   **/
   ~RegularReaction() override = default;
   /**
-     * @brief executes the reaction happening to the drone with wind
-     * 
-     * @param parent which is the Ientity
-     * @param reaction current reaction
-     * @param dt delta time
-     * @param scheduler vector that holds the ientities.
-     * @param wind holds a vector3
-     * @return none.
- **/
-  void react_wind(IEntity* parent, double& dt, std::vector<IEntity*>& scheduler,
+   * @brief executes the reaction happening to the drone with wind
+   *
+   * @param parent which is the Ientity
+   * @param reaction current reaction
+   * @param dt delta time
+   * @param scheduler vector that holds the ientities.
+   * @param wind holds a vector3
+   * @return none.
+   **/
+  void react_wind(IEntity* parent, const double& dt,
+  const std::vector<IEntity*>& scheduler,
                   Vector3 wind);
-   /**
-     * @brief executes the reaction happening to the drone with rain
-     * 
-     * @param parent which is the Ientity
-     * @param reaction current reaction
-     * @param dt delta time
-     * @param scheduler vector that holds the ientities.
-     * 
-     * @return none.
- **/
-  void react_rain(IEntity* parent, double& dt,
-                  std::vector<IEntity*>& scheduler);
-    /**
-     * @brief executes the reaction happening to the drone with emp
-     * 
-     * @param parent which is the Ientity
-     * @param reaction current reaction
-     * @param dt delta time
-     * @param scheduler vector that holds the ientities.
-     * 
-     * @return none.
- **/
-  void react_emp(IEntity* parent, double& dt, std::vector<IEntity*>& scheduler);
+  /**
+   * @brief executes the reaction happening to the drone with rain
+   *
+   * @param parent which is the Ientity
+   * @param reaction current reaction
+   * @param dt delta time
+   * @param scheduler vector that holds the ientities.
+   *
+   * @return none.
+   **/
+  void react_rain(IEntity* parent, const double& dt,
+                  const std::vector<IEntity*>& scheduler);
+  /**
+   * @brief executes the reaction happening to the drone with emp
+   *
+   * @param parent which is the Ientity
+   * @param reaction current reaction
+   * @param dt delta time
+   * @param scheduler vector that holds the ientities.
+   *
+   * @return none.
+   **/
+  void react_emp(IEntity* parent, const double& dt,
+  const std::vector<IEntity*>& scheduler);
 };
-#endif
+#endif  // LIBS_TRANSIT_INCLUDE_REGULARREACTION_H_

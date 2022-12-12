@@ -1,20 +1,19 @@
-#ifndef CELEBRATION_DECORATOR_H_
-#define CELEBRATION_DECORATOR_H_
+#ifndef LIBS_TRANSIT_INCLUDE_CELEBRATIONDECORATOR_H_
+#define LIBS_TRANSIT_INCLUDE_CELEBRATIONDECORATOR_H_
 
 #include <vector>
 
 #include "IStrategy.h"
 
 /**
-*@brief Decorator method to implement other feature
-**/
+ *@brief Decorator method to implement other feature
+ **/
 class CelebrationDecorator : public IStrategy {
-
-/**
-*@brief Constructore for CelebrationDecorator
-*
-*@param strategy_ IStrategy type obj
-**/
+  /**
+   *@brief Constructore for CelebrationDecorator
+   *
+   *@param strategy_ IStrategy type obj
+   **/
  public:
   CelebrationDecorator(IStrategy *strategy_) {
     strategy = strategy_;
@@ -23,7 +22,7 @@ class CelebrationDecorator : public IStrategy {
 
   /**
    * @brief Used for moving drone/robot pairs towards their destination
-   * 
+   *
    * @param entity entity to move.
    * @param dt amount of time that the entity will be moving.
    * @return none.
@@ -32,7 +31,7 @@ class CelebrationDecorator : public IStrategy {
 
   /**
    * @brief Checks if the decorator has been completed
-   * 
+   *
    * @return true if completed, if not, return false.
    **/
   bool IsCompleted();
@@ -42,4 +41,4 @@ class CelebrationDecorator : public IStrategy {
   float time;
 };  // close class
 
-#endif  // CELEBRATION_DECORATOR_H_
+#endif  // LIBS_TRANSIT_INCLUDE_CELEBRATIONDECORATOR_H_

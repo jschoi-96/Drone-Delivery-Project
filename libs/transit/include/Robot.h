@@ -1,5 +1,5 @@
-#ifndef ROBOT_H
-#define ROBOT_H
+#ifndef LIBS_TRANSIT_INCLUDE_ROBOT_H_
+#define LIBS_TRANSIT_INCLUDE_ROBOT_H_
 
 #include <vector>
 
@@ -8,22 +8,21 @@
 #include "util/json.h"
 
 /**
-*@brief A class built to manipulate movement of Robot
-**/
+ *@brief A class built to manipulate movement of Robot
+ **/
 class Robot : public IEntity {
  public:
-
   /**
    * @brief constructor of Robot
    * @param obj - JsonObject type obj
    */
-  Robot(JsonObject& obj);
+  Robot(const JsonObject& obj);
 
-    /**
-     * @brief Destructor for Robot class.
-     * 
-     * @return none.
-     **/
+  /**
+   * @brief Destructor for Robot class.
+   *
+   * @return none.
+   **/
   ~Robot() override = default;
 
   /**
@@ -69,46 +68,48 @@ class Robot : public IEntity {
   /**
    * @brief The strategy of robot
    *
-   * @return return the name of strategy that is used 
+   * @return return the name of strategy that is used
    */
-  std::string GetStrategyName() {return strategyName;}
+  std::string GetStrategyName() { return strategyName; }
 
   /**
    * @brief set availability
    *
-   * @param choice - bool type 
+   * @param choice - bool type
    */
   void SetAvailability(bool choice);
 
   /**
    * @brief set the position of object
    * @param pos_ - Vector3 obj
-   */  
+   */
   void SetPosition(Vector3 pos_) { position = pos_; }
 
   /**
    * @brief set the direction of object
    * @param dir_ - Vector3 obj
-   */  
+   */
   void SetDirection(Vector3 dir_) { direction = dir_; }
 
   /**
    * @brief set the destination of obj
    * @param des_ - Vector3 obj
-   */  
+   */
   void SetDestination(Vector3 des_) { destination = des_; }
 
   /**
-   * @brief set the strategy 
+   * @brief set the strategy
    *
    * @param strategyName_ - string type, name of strategy
    */
-  void SetStrategyName(std::string strategyName_) { strategyName = strategyName_;}
+  void SetStrategyName(std::string strategyName_) {
+    strategyName = strategyName_;
+  }
 
   /**
    * @brief rotate robot by using angle and formula
    * @param angle - angle of robot
-   */  
+   */
   void Rotate(double angle);
 
  private:
@@ -121,4 +122,4 @@ class Robot : public IEntity {
   std::string strategyName;
 };
 
-#endif  // ROBOT_H
+#endif  // LIBS_TRANSIT_INCLUDE_ROBOT_H_
