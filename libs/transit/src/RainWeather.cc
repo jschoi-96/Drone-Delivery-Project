@@ -10,10 +10,10 @@
 
 void RainWeather::Execute(IEntity* parent, IReaction* reaction, double dt,
                           std::vector<IEntity*> scheduler) {
-  if (IsInside(parent)) reaction->react_rain(parent, dt, scheduler);
+  if (IsInside(parent)) reaction->react_rain(parent, &dt, &scheduler);
   this->parent->Execute(parent, reaction, dt, scheduler);
 }
-RainWeather::RainWeather(JsonObject& obj) {
+RainWeather::RainWeather(const JsonObject& obj) {
   details = obj;
   parent = BaseWeather::GetInstance();
   JsonArray position(obj["position"]);

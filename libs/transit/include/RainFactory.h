@@ -20,6 +20,6 @@ class RainFactory : public IEntityFactory {
    * @param entity jsonobj&
    * @return Ientity*
    **/
-  IEntity* CreateEntity(JsonObject& entity);
+  IEntity* CreateEntity(const JsonObject& entity);
 };
 #endif  // LIBS_TRANSIT_INCLUDE_RAINFACTORY_H_

@@ -19,7 +19,7 @@ class WindWeather : public IZoneWeather {
    * @param obj jsonObject&
    * @return nothing
    **/
-  WindWeather(JsonObject& obj);
+  WindWeather(const JsonObject& obj);
   /**
    * @brief deconstructor for windWeather.
    *

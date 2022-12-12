@@ -11,7 +11,7 @@
 #include "JumpDecorator.h"
 #include "SpinDecorator.h"
 
-Drone::Drone(JsonObject& obj) : details(obj) {
+Drone::Drone(const JsonObject& obj) : details(obj) {
   JsonArray pos(obj["position"]);
   position = {pos[0], pos[1], pos[2]};
 

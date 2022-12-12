@@ -1,6 +1,6 @@
 #include "Robot.h"
 
-Robot::Robot(JsonObject &obj) : details(obj) {
+Robot::Robot(const JsonObject& obj) : details(obj) {
   JsonArray pos(obj["position"]);
   position = {pos[0], pos[1], pos[2]};
 

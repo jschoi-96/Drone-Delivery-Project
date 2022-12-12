@@ -3,7 +3,7 @@
 #include "RegularReaction.h"
 #include "WeatherReactDecorator.h"
 
-IEntity* DroneFactory::CreateEntity(JsonObject& entity) {
+IEntity* DroneFactory::CreateEntity(const JsonObject& entity) {
   std::string type = entity["type"];
   if (type.compare("drone") == 0) {
     std::cout << "Drone Created" << std::endl;

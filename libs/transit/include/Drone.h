@@ -22,7 +22,7 @@ class Drone : public IEntity {
    *
    * @param obj contains position, direction, and speed
    */
-  Drone(JsonObject& obj);
+  Drone(const JsonObject& obj);
   /**
    * @brief Destructor for Drone class.
    *

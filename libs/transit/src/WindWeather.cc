@@ -10,11 +10,12 @@
 
 void WindWeather::Execute(IEntity* parent, IReaction* reaction, double dt,
                           std::vector<IEntity*> scheduler) {
-  if (IsInside(parent)) reaction->react_wind(parent, dt, scheduler, windSpeed);
+  if (IsInside(parent))
+    reaction->react_wind(parent, &dt, &scheduler, windSpeed);
   this->parent->Execute(parent, reaction, dt, scheduler);
 }
 
-WindWeather::WindWeather(JsonObject& obj) {
+WindWeather::WindWeather(const JsonObject& obj) {
   details = obj;
   parent = BaseWeather::GetInstance();
   JsonArray position(obj["position"]);

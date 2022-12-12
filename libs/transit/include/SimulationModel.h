@@ -21,7 +21,7 @@ class SimulationModel {
    * @brief SimulationModel constructor
    * @param controller - Icontroller type obj
    */
-  SimulationModel(IController& controller);
+  SimulationModel(IController* controller);
 
   /**
    * @brief set graph
@@ -34,14 +34,14 @@ class SimulationModel {
    * @brief create type, name, and position for entity
    * @param entity - JsonObject type obj
    */
-  void CreateEntity(JsonObject& entity);
+  void CreateEntity(const JsonObject& entity);
 
   /// Schedules a trip for an object in the scene
   /**
    * @brief Schedule a trip for an object
    * @param details - JsonObject type obj
    */
-  void ScheduleTrip(JsonObject& details);
+  void ScheduleTrip(const JsonObject& details);
 
   /// Updates the simulation
   /**
@@ -58,7 +58,7 @@ class SimulationModel {
   void AddFactory(IEntityFactory* factory);
 
  protected:
-  IController& controller;
+  IController* controller;
   std::vector<IEntity*> entities;
   std::vector<IEntity*> scheduler;
   const IGraph* graph;

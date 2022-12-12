@@ -21,7 +21,7 @@ class RainWeather : public IZoneWeather {
    * @param obj jsonObject&
    * @return nothing
    **/
-  RainWeather(JsonObject& obj);
+  RainWeather(const JsonObject& obj);
   /**
    * @brief executes the reaction happening to the drone with rainweather.
    *

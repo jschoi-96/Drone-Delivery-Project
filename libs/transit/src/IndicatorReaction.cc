@@ -5,8 +5,8 @@
 #include "IEntity.h"
 #include "IReaction.h"
 
-void IndicatorReaction::react_wind(IEntity* parent, double& dt,
-                                   std::vector<IEntity*>& scheduler,
+void IndicatorReaction::react_wind(IEntity* parent, double* dt,
+                                   std::vector<IEntity*>* scheduler,
                                    Vector3 wind) {
   std::string color = parent->GetColor();
   if (color == colors["red"]) {  // case where rain goes into wind zone
@@ -26,9 +26,9 @@ void IndicatorReaction::react_wind(IEntity* parent, double& dt,
     parent->SetColor(c);
   }
 }
-void IndicatorReaction::react_rain(IEntity* parent, double& dt,
-                                   std::vector<IEntity*>& scheduler) {
-  std::string color = parent-> GetColor();
+void IndicatorReaction::react_rain(IEntity* parent, double* dt,
+                                   std::vector<IEntity*>* scheduler) {
+  std::string color = parent->GetColor();
   if (color == colors["yellow"]) {  // case where wind goes into rain zone
     std::string c = ("orange");
     parent->SetColor(c);
@@ -46,8 +46,8 @@ void IndicatorReaction::react_rain(IEntity* parent, double& dt,
     parent->SetColor(c);
   }
 }
-void IndicatorReaction::react_emp(IEntity* parent, double& dt,
-                                  std::vector<IEntity*>& scheduler) {
+void IndicatorReaction::react_emp(IEntity* parent, double* dt,
+                                  std::vector<IEntity*>* scheduler) {
   std::string color = parent->GetColor();
   if (color == colors["yellow"]) {  // case where wind geos into emp zone
     std::string c = ("green");

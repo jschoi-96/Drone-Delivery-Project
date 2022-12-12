@@ -5,12 +5,10 @@
 #include "IEntity.h"
 #include "IReaction.h"
 
-
-
-void RegularReaction::react_wind(IEntity* parent, double& dt,
-                                 std::vector<IEntity*>& scheduler,
+void RegularReaction::react_wind(IEntity* parent, double* dt,
+                                 std::vector<IEntity*>* scheduler,
                                  Vector3 wind) {
-    std::string color = parent->GetColor();
+  std::string color = parent->GetColor();
   if (color == colors["red"]) {  // case where rain goes into wind zone
     std::string c = colors["orange"];
     parent->SetColor(c);
@@ -30,8 +28,8 @@ void RegularReaction::react_wind(IEntity* parent, double& dt,
   // changes the color first, and then...
   parent->SetPosition(parent->GetPosition() + wind);
 }
-void RegularReaction::react_rain(IEntity* parent, double& dt,
-                                 std::vector<IEntity*>& scheduler) {
+void RegularReaction::react_rain(IEntity* parent, double* dt,
+                                 std::vector<IEntity*>* scheduler) {
   std::string color = parent->GetColor();
   if (color == colors["yellow"]) {  // case where wind goes into rain zone
     std::string c = colors["orange"];
@@ -49,11 +47,11 @@ void RegularReaction::react_rain(IEntity* parent, double& dt,
     std::string c = colors["red"];
     parent->color = c;
   }
-  dt *= 0.5;
+  *dt *= 0.5;
 }
-void RegularReaction::react_emp(IEntity* parent, double& dt,
-                                std::vector<IEntity*>& scheduler) {
-    std::string color = parent->GetColor();
+void RegularReaction::react_emp(IEntity* parent, double* dt,
+                                std::vector<IEntity*>* scheduler) {
+  std::string color = parent->GetColor();
   if (color == colors["yellow"]) {  // case where wind geos into emp zone
     std::string c = colors["green"];
     parent->SetColor(c);
@@ -71,5 +69,5 @@ void RegularReaction::react_emp(IEntity* parent, double& dt,
     parent->SetColor(c);
   }
   // changes the color first, and then...
-  dt = 0;
+  *dt = 0;
 }

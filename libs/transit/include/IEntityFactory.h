@@ -23,7 +23,7 @@ class IEntityFactory {
    * @param entity - JsonObject type obj
    * @return none.
    **/
-  virtual IEntity* CreateEntity(JsonObject& entity) = 0;
+  virtual IEntity* CreateEntity(const JsonObject& entity) = 0;
 };
 
 #endif  // LIBS_TRANSIT_INCLUDE_IENTITYFACTORY_H_

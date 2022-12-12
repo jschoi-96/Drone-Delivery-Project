@@ -74,7 +74,7 @@ class TransitService : public JsonSession, public IController {
     details["pos"] = pos;
     details["dir"] = dir;
     std::string col_ = entity.GetColor();
-    if(col_ != "None") details["color"] = col_;
+    if (col_ != "None") details["color"] = col_;
     SendEventToView(event, details);
   }
 
@@ -137,7 +137,7 @@ class TransitService : public JsonSession, public IController {
 class TransitWebServer : public WebServerBase, public IController {
  public:
   TransitWebServer(int port = 8081, const std::string& webDir = ".")
-      : WebServerBase(port, webDir), model(*this) {}
+      : WebServerBase(port, webDir), model(this) {}
   void AddEntity(const IEntity& entity) {
     for (int i = 0; i < sessions.size(); i++) {
       static_cast<TransitService*>(sessions[i])->AddEntity(entity);
