@@ -21,6 +21,6 @@ class EmpFactory : public IEntityFactory {
    * @param entity jsonobj&
    * @return Ientity*
    **/
-  IEntity* CreateEntity(const JsonObject& entity);
+  IEntity* CreateEntity(JsonObject& entity);
 };
 #endif  // LIBS_TRANSIT_INCLUDE_EMPFACTORY_H_

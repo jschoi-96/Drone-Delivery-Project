@@ -34,9 +34,8 @@ class IReaction {
    *
    * @return none.
    **/
-  virtual void react_wind(IEntity* parent, const double& dt,
-                          const std::vector<IEntity*>& scheduler,
-                          Vector3 wind) = 0;
+  virtual void react_wind(IEntity* parent, double& dt,
+                          std::vector<IEntity*>& scheduler, Vector3 wind) = 0;
 
   /**
    * @brief executes the reaction happening to the drone with rain
@@ -48,8 +47,8 @@ class IReaction {
    *
    * @return none.
    **/
-  virtual void react_rain(IEntity* parent, const double& dt,
-                          const std::vector<IEntity*>& scheduler) = 0;
+  virtual void react_rain(IEntity* parent, double& dt,
+                          std::vector<IEntity*>& scheduler) = 0;
 
   /**
    * @brief executes the reaction happening to the drone with emp
@@ -61,8 +60,7 @@ class IReaction {
    *
    * @return none.
    **/
-  virtual void react_emp(IEntity* parent, const double& dt,
-                        const std::vector<IEntity*>& scheduler) = 0;
+  virtual void react_emp(IEntity* parent, double& dt,
+                         std::vector<IEntity*>& scheduler) = 0;
 };
 #endif  // LIBS_TRANSIT_INCLUDE_IREACTION_H_
-

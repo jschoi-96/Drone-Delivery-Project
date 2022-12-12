@@ -6,6 +6,10 @@
 #include "IEntity.h"
 #include "IReaction.h"
 #include "IWeather.h"
+#include "IndicatorReaction.h"
+#include "RegularReaction.h"
+#include "ReinforcedReaction.h"
+#include "StreetLevelReaction.h"
 #include "graph.h"
 #include "math/vector3.h"
 #include "util/json.h"
@@ -16,6 +20,16 @@ WeatherReactDecorator::WeatherReactDecorator(IEntity* parent_,
   reaction = reaction_;
 }
 void WeatherReactDecorator::Update(double dt, std::vector<IEntity*> scheduler) {
+  delete reaction;
+  std::string strategyName = GetStrategyName();
+  if (strategyName.compare("astar") == 0)
+    reaction = new RegularReaction();
+  else if (strategyName.compare("dfs") == 0)
+    reaction = new StreetLevelReaction();
+  else if (strategyName.compare("dijkstra") == 0)
+    reaction = new ReinforcedReaction();
+  else
+    reaction = new IndicatorReaction();
   IWeather* weather = BaseWeather::GetInstance();
   parent->SetColor(reaction->colors["white"]);  // resets color to white
   weather->Execute(parent, reaction, dt, scheduler);

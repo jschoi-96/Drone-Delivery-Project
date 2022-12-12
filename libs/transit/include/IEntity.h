@@ -79,7 +79,7 @@ class IEntity {
    *
    * @return return the name of strategy that is used
    */
-  virtual std::string GetStrategyName() {}
+  virtual std::string GetStrategyName() { return "None"; }
 
   /**
    * @brief Getter for the color field of the drone
@@ -158,4 +158,3 @@ class IEntity {
 };
 
 #endif  // LIBS_TRANSIT_INCLUDE_IENTITY_H_
-

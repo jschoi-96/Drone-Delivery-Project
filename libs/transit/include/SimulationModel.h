@@ -21,7 +21,7 @@ class SimulationModel {
    * @brief SimulationModel constructor
    * @param controller - Icontroller type obj
    */
-  SimulationModel(const IController& controller);
+  SimulationModel(IController& controller);
 
   /**
    * @brief set graph
@@ -34,14 +34,14 @@ class SimulationModel {
    * @brief create type, name, and position for entity
    * @param entity - JsonObject type obj
    */
-  void CreateEntity(const JsonObject& entity);
+  void CreateEntity(JsonObject& entity);
 
   /// Schedules a trip for an object in the scene
   /**
    * @brief Schedule a trip for an object
    * @param details - JsonObject type obj
    */
-  void ScheduleTrip(const JsonObject& details);
+  void ScheduleTrip(JsonObject& details);
 
   /// Updates the simulation
   /**

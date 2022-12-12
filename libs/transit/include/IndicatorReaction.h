@@ -38,8 +38,7 @@ class IndicatorReaction : public IReaction {
    * @param wind holds a vector3
    * @return none.
    **/
-  void react_wind(IEntity* parent, const double& dt,
-  const std::vector<IEntity*>& scheduler,
+  void react_wind(IEntity* parent, double& dt, std::vector<IEntity*>& scheduler,
                   Vector3 wind);
 
   /**
@@ -52,8 +51,8 @@ class IndicatorReaction : public IReaction {
    *
    * @return none.
    **/
-  void react_rain(IEntity* parent, const double& dt,
-                  const std::vector<IEntity*>& scheduler);
+  void react_rain(IEntity* parent, double& dt,
+                  std::vector<IEntity*>& scheduler);
 
   /**
    * @brief executes the reaction happening to the drone with emp
@@ -65,7 +64,6 @@ class IndicatorReaction : public IReaction {
    *
    * @return none.
    **/
-  void react_emp(IEntity* parent, const double& dt,
-  const std::vector<IEntity*>& scheduler);
+  void react_emp(IEntity* parent, double& dt, std::vector<IEntity*>& scheduler);
 };
 #endif  // LIBS_TRANSIT_INCLUDE_INDICATORREACTION_H_

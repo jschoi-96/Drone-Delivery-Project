@@ -15,7 +15,7 @@ class EmpWeather : public IZoneWeather {
    * @param obj jsonObject&
    * @return nothing
    **/
-  EmpWeather(const JsonObject& obj);
+  EmpWeather(JsonObject& obj);
 
   /**
    * @brief deconstructor for empWeather.

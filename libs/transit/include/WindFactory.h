@@ -20,6 +20,6 @@ class WindFactory : public IEntityFactory {
    * @param entity jsonobj&
    * @return Ientity*
    **/
-  IEntity* CreateEntity(const JsonObject& entity);
+  IEntity* CreateEntity(JsonObject& entity);
 };
 #endif  // LIBS_TRANSIT_INCLUDE_WINDFACTORY_H_

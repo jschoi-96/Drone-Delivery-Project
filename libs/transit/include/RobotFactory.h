@@ -17,7 +17,7 @@ class RobotFactory : public IEntityFactory {
    * @param entity - JsonObject type obj
    * @return none.
    **/
-  IEntity* CreateEntity(const JsonObject& entity);
+  IEntity* CreateEntity(JsonObject& entity);
 };
 
 #endif  // LIBS_TRANSIT_INCLUDE_ROBOTFACTORY_H_
