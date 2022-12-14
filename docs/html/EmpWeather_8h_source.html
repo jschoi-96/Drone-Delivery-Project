@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: /home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/EmpWeather.h Source File</title>
+<title>My Project: /home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/EmpWeather.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,8 +69,8 @@ $(function() {
 <div class="title">EmpWeather.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef EMP_WEATHER_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define EMP_WEATHER_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LIBS_TRANSIT_INCLUDE_EMPWEATHER_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LIBS_TRANSIT_INCLUDE_EMPWEATHER_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;IEntity.h&quot;</span></div>
@@ -78,22 +78,23 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;IZoneWeather.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classEmpWeather.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEmpWeather.html">EmpWeather</a> : <span class="keyword">public</span> <a class="code" href="classIZoneWeather.html">IZoneWeather</a> {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="classEmpWeather.html#afa82aa185fdb31bc0a5ebf28969f5456">EmpWeather</a>(JsonObject&amp; obj);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="classEmpWeather.html#a8d23b035ab88419f16ad6e41c78a08fb">~EmpWeather</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classEmpWeather.html#a74606238abac4c50a621ca8e2bfc1f45">Execute</a>(<a class="code" href="classIEntity.html">IEntity</a>* parent, <a class="code" href="classIReaction.html">IReaction</a>* reaction, <span class="keywordtype">double</span> dt,</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="classEmpWeather.html#aeb899f18b2f4f879cde44edcb3c4e9b9">EmpWeather</a>(<span class="keyword">const</span> JsonObject&amp; obj);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <a class="code" href="classEmpWeather.html#a8d23b035ab88419f16ad6e41c78a08fb">~EmpWeather</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classEmpWeather.html#a74606238abac4c50a621ca8e2bfc1f45">Execute</a>(<a class="code" href="classIEntity.html">IEntity</a>* <a class="code" href="classIZoneWeather.html#a6898c798e169fce5f37502954b6e4ef3">parent</a>, <a class="code" href="classIReaction.html">IReaction</a>* reaction, <span class="keywordtype">double</span> dt,</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;               std::vector&lt;IEntity*&gt; scheduler);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif  // LIBS_TRANSIT_INCLUDE_EMPWEATHER_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassEmpWeather_html_afa82aa185fdb31bc0a5ebf28969f5456"><div class="ttname"><a href="classEmpWeather.html#afa82aa185fdb31bc0a5ebf28969f5456">EmpWeather::EmpWeather</a></div><div class="ttdeci">EmpWeather(JsonObject &amp;obj)</div><div class="ttdoc">constructor for empWeather.</div><div class="ttdef"><b>Definition:</b> EmpWeather.cc:16</div></div>
-<div class="ttc" id="aclassIZoneWeather_html"><div class="ttname"><a href="classIZoneWeather.html">IZoneWeather</a></div><div class="ttdoc">class that holds the IZoneweather inherits from iweather and ientity.</div><div class="ttdef"><b>Definition:</b> IZoneWeather.h:11</div></div>
+<div class="ttc" id="aclassIZoneWeather_html"><div class="ttname"><a href="classIZoneWeather.html">IZoneWeather</a></div><div class="ttdoc">class that holds the IZoneweather. Responsible for setting/moving/maintaining weather boundaries....</div><div class="ttdef"><b>Definition:</b> IZoneWeather.h:11</div></div>
 <div class="ttc" id="aclassEmpWeather_html_a8d23b035ab88419f16ad6e41c78a08fb"><div class="ttname"><a href="classEmpWeather.html#a8d23b035ab88419f16ad6e41c78a08fb">EmpWeather::~EmpWeather</a></div><div class="ttdeci">~EmpWeather() override=default</div><div class="ttdoc">deconstructor for empWeather.</div></div>
-<div class="ttc" id="aclassEmpWeather_html"><div class="ttname"><a href="classEmpWeather.html">EmpWeather</a></div><div class="ttdoc">A class built for emp weather.</div><div class="ttdef"><b>Definition:</b> EmpWeather.h:11</div></div>
-<div class="ttc" id="aclassIReaction_html"><div class="ttname"><a href="classIReaction.html">IReaction</a></div><div class="ttdoc">A class built for IReaction.</div><div class="ttdef"><b>Definition:</b> IReaction.h:11</div></div>
-<div class="ttc" id="aclassEmpWeather_html_a74606238abac4c50a621ca8e2bfc1f45"><div class="ttname"><a href="classEmpWeather.html#a74606238abac4c50a621ca8e2bfc1f45">EmpWeather::Execute</a></div><div class="ttdeci">void Execute(IEntity *parent, IReaction *reaction, double dt, std::vector&lt; IEntity * &gt; scheduler)</div><div class="ttdoc">executes the reaction happening to the drone with empweather.</div><div class="ttdef"><b>Definition:</b> EmpWeather.cc:11</div></div>
-<div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to see interface.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
+<div class="ttc" id="aclassEmpWeather_html"><div class="ttname"><a href="classEmpWeather.html">EmpWeather</a></div><div class="ttdoc">A class built for emp weather. Inherits from IZoneWeather.</div><div class="ttdef"><b>Definition:</b> EmpWeather.h:11</div></div>
+<div class="ttc" id="aclassIReaction_html"><div class="ttname"><a href="classIReaction.html">IReaction</a></div><div class="ttdoc">IReaction class. Responsible for the physical affects of different weather patterns on entities.</div><div class="ttdef"><b>Definition:</b> IReaction.h:11</div></div>
+<div class="ttc" id="aclassEmpWeather_html_a74606238abac4c50a621ca8e2bfc1f45"><div class="ttname"><a href="classEmpWeather.html#a74606238abac4c50a621ca8e2bfc1f45">EmpWeather::Execute</a></div><div class="ttdeci">void Execute(IEntity *parent, IReaction *reaction, double dt, std::vector&lt; IEntity * &gt; scheduler)</div><div class="ttdoc">executes the reaction happening to the drone with Empweather.</div><div class="ttdef"><b>Definition:</b> EmpWeather.cc:11</div></div>
+<div class="ttc" id="aclassEmpWeather_html_aeb899f18b2f4f879cde44edcb3c4e9b9"><div class="ttname"><a href="classEmpWeather.html#aeb899f18b2f4f879cde44edcb3c4e9b9">EmpWeather::EmpWeather</a></div><div class="ttdeci">EmpWeather(const JsonObject &amp;obj)</div><div class="ttdoc">constructor for empWeather.</div><div class="ttdef"><b>Definition:</b> EmpWeather.cc:16</div></div>
+<div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to for moving/updating entities in the simulation.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
+<div class="ttc" id="aclassIZoneWeather_html_a6898c798e169fce5f37502954b6e4ef3"><div class="ttname"><a href="classIZoneWeather.html#a6898c798e169fce5f37502954b6e4ef3">IZoneWeather::parent</a></div><div class="ttdeci">IWeather * parent</div><div class="ttdef"><b>Definition:</b> IZoneWeather.h:98</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

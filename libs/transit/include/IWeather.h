@@ -5,30 +5,33 @@
 #include "IEntity.h"
 #include "IReaction.h"
 /**
- *@brief A class built for IWeather
+ *@brief Interface built for different weather patterns/reactions.
  **/
 class IWeather {
  public:
   /**
    *@brief desconstuctor for IWeather
+   @return none.
    **/
   virtual ~IWeather() {}
+
   /**
-   * @brief executes the reaction happening to the drone with base weather.
+   * @brief executes the reaction happening to the drone for current weather pattern(s).
    *
-   * @param parent which is the Ientity
-   * @param reaction current reaction
+   * @param parent which is the drone being affected by the weather.
+   * @param reaction current weather reaction
    * @param dt delta time
-   * @param scheduler vector that holds the ientities.
+   * @param scheduler vector that holds the Ientities.
    *
    * @return none.
    **/
   virtual void Execute(IEntity* parent, IReaction* reaction, double dt,
                        std::vector<IEntity*> scheduler) = 0;
+
   /**
-   * @brief Checks to see if the drone is inside the base weather.
-   * @param parent Ientity
-   * @return true.
+   * @brief Checks to see if the drone is inside a weather zone.
+   * @param parent drone to check if within weather bounds.
+   * @return boolean - true if drone is inside weather bounds, false otherwise.
    **/
   virtual bool IsInside(
       IEntity* parent) = 0;  // if the object is affected by the weather

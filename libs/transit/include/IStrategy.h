@@ -9,13 +9,13 @@
 using namespace routing;
 
 /**
- *@brief A class built for Istrategy
+ *@brief A class built for Istrategy. Parent class for drone movement strategy classes.
  **/
 class IStrategy {
  public:
   /**
    * @brief moves the entity based on strategy.
-   * @param entity Ientity*
+   * @param entity Ientity* to be moved using given strategy.
    * @param dt delta time double
    * @return nothing
    */
@@ -23,12 +23,14 @@ class IStrategy {
   /**
    * @brief method to tell if stragety is completed.
    *
-   * @return boolean
+   * @return boolean. True if strategy completed, false otherwise.
    */
   virtual bool IsCompleted() = 0;
 
  protected:
-  // IGraph object to be used in the simulation.
+  /**
+   * IGraph object to be used in the simulation.
+   **/
   const IGraph* graph;
 };  // close class
 

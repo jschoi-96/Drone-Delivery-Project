@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: /home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/IEntityFactory.h Source File</title>
+<title>My Project: /home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/IEntityFactory.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,28 +69,27 @@ $(function() {
 <div class="title">IEntityFactory.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef I_ENTITY_FACTORY_H_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define I_ENTITY_FACTORY_H_</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LIBS_TRANSIT_INCLUDE_IENTITYFACTORY_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LIBS_TRANSIT_INCLUDE_IENTITYFACTORY_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;util/json.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;IEntity.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;IEntityFactory.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;Drone.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classIEntityFactory.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classIEntityFactory.html">IEntityFactory</a> {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classIEntityFactory.html#a57921a96c43266c435a4d11abd56355c">   20</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classIEntityFactory.html#a57921a96c43266c435a4d11abd56355c">~IEntityFactory</a>() {}</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classIEntity.html">IEntity</a>* <a class="code" href="classIEntityFactory.html#a9bd53cf7ca21ab252968062ea5d88180">CreateEntity</a>(JsonObject&amp; entity) = 0;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Drone.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;IEntity.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;IEntityFactory.h&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;util/json.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classIEntityFactory.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classIEntityFactory.html">IEntityFactory</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classIEntityFactory.html#a57921a96c43266c435a4d11abd56355c">   19</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classIEntityFactory.html#a57921a96c43266c435a4d11abd56355c">~IEntityFactory</a>() {}</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classIEntity.html">IEntity</a>* <a class="code" href="classIEntityFactory.html#ab28e669d7f78ce426620fa4e472f3adb">CreateEntity</a>(<span class="keyword">const</span> JsonObject&amp; entity) = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif  // LIBS_TRANSIT_INCLUDE_IENTITYFACTORY_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassIEntityFactory_html_a57921a96c43266c435a4d11abd56355c"><div class="ttname"><a href="classIEntityFactory.html#a57921a96c43266c435a4d11abd56355c">IEntityFactory::~IEntityFactory</a></div><div class="ttdeci">virtual ~IEntityFactory()</div><div class="ttdoc">Destructor for IEntityFactory class.</div><div class="ttdef"><b>Definition:</b> IEntityFactory.h:20</div></div>
-<div class="ttc" id="aclassIEntityFactory_html_a9bd53cf7ca21ab252968062ea5d88180"><div class="ttname"><a href="classIEntityFactory.html#a9bd53cf7ca21ab252968062ea5d88180">IEntityFactory::CreateEntity</a></div><div class="ttdeci">virtual IEntity * CreateEntity(JsonObject &amp;entity)=0</div><div class="ttdoc">Creates entity.</div></div>
-<div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to see interface.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
-<div class="ttc" id="aclassIEntityFactory_html"><div class="ttname"><a href="classIEntityFactory.html">IEntityFactory</a></div><div class="ttdoc">Factory method for IEntity class.</div><div class="ttdef"><b>Definition:</b> IEntityFactory.h:13</div></div>
+<div class="ttc" id="aclassIEntityFactory_html_ab28e669d7f78ce426620fa4e472f3adb"><div class="ttname"><a href="classIEntityFactory.html#ab28e669d7f78ce426620fa4e472f3adb">IEntityFactory::CreateEntity</a></div><div class="ttdeci">virtual IEntity * CreateEntity(const JsonObject &amp;entity)=0</div><div class="ttdoc">Creates entity using the given JSON object, if possible.</div></div>
+<div class="ttc" id="aclassIEntityFactory_html_a57921a96c43266c435a4d11abd56355c"><div class="ttname"><a href="classIEntityFactory.html#a57921a96c43266c435a4d11abd56355c">IEntityFactory::~IEntityFactory</a></div><div class="ttdeci">virtual ~IEntityFactory()</div><div class="ttdoc">Destructor for IEntityFactory class.</div><div class="ttdef"><b>Definition:</b> IEntityFactory.h:19</div></div>
+<div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to for moving/updating entities in the simulation.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
+<div class="ttc" id="aclassIEntityFactory_html"><div class="ttname"><a href="classIEntityFactory.html">IEntityFactory</a></div><div class="ttdoc">Factory method for IEntity class.</div><div class="ttdef"><b>Definition:</b> IEntityFactory.h:12</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

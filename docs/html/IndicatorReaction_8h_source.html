@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: /home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/IndicatorReaction.h Source File</title>
+<title>My Project: /home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/IndicatorReaction.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,8 +69,8 @@ $(function() {
 <div class="title">IndicatorReaction.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INDICATOR_REACTION_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INDICATOR_REACTION_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LIBS_TRANSIT_INCLUDE_INDICATORREACTION_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LIBS_TRANSIT_INCLUDE_INDICATORREACTION_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;IEntity.h&quot;</span></div>
@@ -87,28 +87,29 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classIndicatorReaction.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="classIndicatorReaction.html">IndicatorReaction</a> : <span class="keyword">public</span> <a class="code" href="classIReaction.html">IReaction</a> {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classIndicatorReaction.html#a1424c9040d95536991dd7653f7990a08">   25</a></span>&#160;  <a class="code" href="classIndicatorReaction.html#a1424c9040d95536991dd7653f7990a08">IndicatorReaction</a>() {}</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <a class="code" href="classIndicatorReaction.html#afb7dea65d76758fb854f7817fc83437d">~IndicatorReaction</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classIndicatorReaction.html#af7c81b7e0938d276c11baead24106b1d">react_wind</a>(<a class="code" href="classIEntity.html">IEntity</a>* parent, <span class="keywordtype">double</span>&amp; dt, std::vector&lt;IEntity*&gt;&amp; scheduler,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                  <a class="code" href="classVector3.html">Vector3</a> wind);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classIndicatorReaction.html#a64ebb06a98fd18eaec0de0ac9c303d82">react_rain</a>(<a class="code" href="classIEntity.html">IEntity</a>* parent, <span class="keywordtype">double</span>&amp; dt,</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                  std::vector&lt;IEntity*&gt;&amp; scheduler);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classIndicatorReaction.html#a649b1a86cf7fad9a34a3ee3bdde20c76">react_emp</a>(<a class="code" href="classIEntity.html">IEntity</a>* parent, <span class="keywordtype">double</span>&amp; dt, std::vector&lt;IEntity*&gt;&amp; scheduler);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classIndicatorReaction.html#a1424c9040d95536991dd7653f7990a08">   26</a></span>&#160;  <a class="code" href="classIndicatorReaction.html#a1424c9040d95536991dd7653f7990a08">IndicatorReaction</a>() {}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="classIndicatorReaction.html#afb7dea65d76758fb854f7817fc83437d">~IndicatorReaction</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classIndicatorReaction.html#a628dbb7b0a0112fa18469c5ce89bb0e5">react_wind</a>(<a class="code" href="classIEntity.html">IEntity</a>* parent, <span class="keywordtype">double</span>* dt, std::vector&lt;IEntity*&gt;* scheduler,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                  <a class="code" href="classVector3.html">Vector3</a> wind);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classIndicatorReaction.html#ae26362f3424fbf255aa1a2af31acd3e1">react_rain</a>(<a class="code" href="classIEntity.html">IEntity</a>* parent, <span class="keywordtype">double</span>* dt,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                  std::vector&lt;IEntity*&gt;* scheduler);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classIndicatorReaction.html#a5744c7383e81bc30ad93defeabdae469">react_emp</a>(<a class="code" href="classIEntity.html">IEntity</a>* parent, <span class="keywordtype">double</span>* dt, std::vector&lt;IEntity*&gt;* scheduler);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif  // LIBS_TRANSIT_INCLUDE_INDICATORREACTION_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassIndicatorReaction_html_a64ebb06a98fd18eaec0de0ac9c303d82"><div class="ttname"><a href="classIndicatorReaction.html#a64ebb06a98fd18eaec0de0ac9c303d82">IndicatorReaction::react_rain</a></div><div class="ttdeci">void react_rain(IEntity *parent, double &amp;dt, std::vector&lt; IEntity * &gt; &amp;scheduler)</div><div class="ttdoc">executes the reaction happening to the drone with rain</div><div class="ttdef"><b>Definition:</b> IndicatorReaction.cc:26</div></div>
-<div class="ttc" id="aclassIndicatorReaction_html"><div class="ttname"><a href="classIndicatorReaction.html">IndicatorReaction</a></div><div class="ttdoc">A class built for indicatorReaction.</div><div class="ttdef"><b>Definition:</b> IndicatorReaction.h:20</div></div>
-<div class="ttc" id="aclassIndicatorReaction_html_a649b1a86cf7fad9a34a3ee3bdde20c76"><div class="ttname"><a href="classIndicatorReaction.html#a649b1a86cf7fad9a34a3ee3bdde20c76">IndicatorReaction::react_emp</a></div><div class="ttdeci">void react_emp(IEntity *parent, double &amp;dt, std::vector&lt; IEntity * &gt; &amp;scheduler)</div><div class="ttdoc">executes the reaction happening to the drone with emp</div><div class="ttdef"><b>Definition:</b> IndicatorReaction.cc:43</div></div>
+<div class="ttc" id="aclassIndicatorReaction_html"><div class="ttname"><a href="classIndicatorReaction.html">IndicatorReaction</a></div><div class="ttdoc">A class built for indicatorReaction. Inherits from IReaction.</div><div class="ttdef"><b>Definition:</b> IndicatorReaction.h:20</div></div>
 <div class="ttc" id="aclassIndicatorReaction_html_afb7dea65d76758fb854f7817fc83437d"><div class="ttname"><a href="classIndicatorReaction.html#afb7dea65d76758fb854f7817fc83437d">IndicatorReaction::~IndicatorReaction</a></div><div class="ttdeci">~IndicatorReaction() override=default</div><div class="ttdoc">A deconstructor for indicatorReaction.</div></div>
 <div class="ttc" id="aclassVector3_html"><div class="ttname"><a href="classVector3.html">Vector3</a></div><div class="ttdoc">A class built solely to handle 3D vector mathematics.</div><div class="ttdef"><b>Definition:</b> vector3.h:9</div></div>
-<div class="ttc" id="aclassIndicatorReaction_html_af7c81b7e0938d276c11baead24106b1d"><div class="ttname"><a href="classIndicatorReaction.html#af7c81b7e0938d276c11baead24106b1d">IndicatorReaction::react_wind</a></div><div class="ttdeci">void react_wind(IEntity *parent, double &amp;dt, std::vector&lt; IEntity * &gt; &amp;scheduler, Vector3 wind)</div><div class="ttdoc">executes the reaction happening to the drone with wind</div><div class="ttdef"><b>Definition:</b> IndicatorReaction.cc:8</div></div>
-<div class="ttc" id="aclassIndicatorReaction_html_a1424c9040d95536991dd7653f7990a08"><div class="ttname"><a href="classIndicatorReaction.html#a1424c9040d95536991dd7653f7990a08">IndicatorReaction::IndicatorReaction</a></div><div class="ttdeci">IndicatorReaction()</div><div class="ttdoc">A constructor for indicatorReaction.</div><div class="ttdef"><b>Definition:</b> IndicatorReaction.h:25</div></div>
-<div class="ttc" id="aclassIReaction_html"><div class="ttname"><a href="classIReaction.html">IReaction</a></div><div class="ttdoc">A class built for IReaction.</div><div class="ttdef"><b>Definition:</b> IReaction.h:11</div></div>
-<div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to see interface.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
+<div class="ttc" id="aclassIndicatorReaction_html_a1424c9040d95536991dd7653f7990a08"><div class="ttname"><a href="classIndicatorReaction.html#a1424c9040d95536991dd7653f7990a08">IndicatorReaction::IndicatorReaction</a></div><div class="ttdeci">IndicatorReaction()</div><div class="ttdoc">A constructor for indicatorReaction.</div><div class="ttdef"><b>Definition:</b> IndicatorReaction.h:26</div></div>
+<div class="ttc" id="aclassIndicatorReaction_html_a5744c7383e81bc30ad93defeabdae469"><div class="ttname"><a href="classIndicatorReaction.html#a5744c7383e81bc30ad93defeabdae469">IndicatorReaction::react_emp</a></div><div class="ttdeci">void react_emp(IEntity *parent, double *dt, std::vector&lt; IEntity * &gt; *scheduler)</div><div class="ttdoc">executes the reaction that is supposed to happen when a drone is affected by an EMP.</div><div class="ttdef"><b>Definition:</b> IndicatorReaction.cc:49</div></div>
+<div class="ttc" id="aclassIndicatorReaction_html_ae26362f3424fbf255aa1a2af31acd3e1"><div class="ttname"><a href="classIndicatorReaction.html#ae26362f3424fbf255aa1a2af31acd3e1">IndicatorReaction::react_rain</a></div><div class="ttdeci">void react_rain(IEntity *parent, double *dt, std::vector&lt; IEntity * &gt; *scheduler)</div><div class="ttdoc">executes the reaction that is supposed to happen when a drone is affected by rain.</div><div class="ttdef"><b>Definition:</b> IndicatorReaction.cc:29</div></div>
+<div class="ttc" id="aclassIReaction_html"><div class="ttname"><a href="classIReaction.html">IReaction</a></div><div class="ttdoc">IReaction class. Responsible for the physical affects of different weather patterns on entities.</div><div class="ttdef"><b>Definition:</b> IReaction.h:11</div></div>
+<div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to for moving/updating entities in the simulation.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
+<div class="ttc" id="aclassIndicatorReaction_html_a628dbb7b0a0112fa18469c5ce89bb0e5"><div class="ttname"><a href="classIndicatorReaction.html#a628dbb7b0a0112fa18469c5ce89bb0e5">IndicatorReaction::react_wind</a></div><div class="ttdeci">void react_wind(IEntity *parent, double *dt, std::vector&lt; IEntity * &gt; *scheduler, Vector3 wind)</div><div class="ttdoc">executes the reaction that is supposed to happen when a drone is affected by wind.</div><div class="ttdef"><b>Definition:</b> IndicatorReaction.cc:8</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

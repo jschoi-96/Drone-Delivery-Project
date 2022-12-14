@@ -69,7 +69,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A class built for <a class="el" href="classIWeather.html" title="A class built for IWeather.">IWeather</a>.  
+<p>Interface built for different weather patterns/reactions.  
  <a href="classIWeather.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="IWeather_8h_source.html">IWeather.h</a>&gt;</code></p>
@@ -78,31 +78,59 @@ Inheritance diagram for IWeather:</div>
 <div class="dyncontent">
 <div class="center"><img src="classIWeather__inherit__graph.png" border="0" usemap="#IWeather_inherit__map" alt="Inheritance graph"/></div>
 <map name="IWeather_inherit__map" id="IWeather_inherit__map">
-<area shape="rect" title="A class built for IWeather." alt="" coords="87,5,169,32"/>
-<area shape="rect" href="classBaseWeather.html" title="This class inherits from the IWeather and is responsible for setting base weather." alt="" coords="5,80,115,107"/>
-<area shape="rect" href="classIZoneWeather.html" title="class that holds the IZoneweather inherits from iweather and ientity." alt="" coords="139,80,253,107"/>
-<area shape="rect" href="classEmpWeather.html" title="A class built for emp weather." alt="" coords="12,155,119,181"/>
-<area shape="rect" href="classRainWeather.html" title="A class built for rain weather." alt="" coords="143,155,249,181"/>
-<area shape="rect" href="classWindWeather.html" title="A class built for wind weather." alt="" coords="274,155,385,181"/>
+<area shape="rect" title="Interface built for different weather patterns/reactions." alt="" coords="87,5,169,32"/>
+<area shape="rect" href="classBaseWeather.html" title="This class inherits from the IWeather and is responsible for setting base weather...." alt="" coords="5,80,115,107"/>
+<area shape="rect" href="classIZoneWeather.html" title="class that holds the IZoneweather. Responsible for setting/moving/maintaining weather boundaries...." alt="" coords="139,80,253,107"/>
+<area shape="rect" href="classEmpWeather.html" title="A class built for emp weather. Inherits from IZoneWeather." alt="" coords="12,155,119,181"/>
+<area shape="rect" href="classRainWeather.html" title="A class built for rain weather. Inherits from IZoneWeather." alt="" coords="143,155,249,181"/>
+<area shape="rect" href="classWindWeather.html" title="A class built for wind weather. Inherits from IZoneWeather." alt="" coords="274,155,385,181"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a626114db543b22b7277b6e791d3ba89f"><td class="memItemLeft" align="right" valign="top"><a id="a626114db543b22b7277b6e791d3ba89f"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIWeather.html#a626114db543b22b7277b6e791d3ba89f">~IWeather</a> ()</td></tr>
-<tr class="memdesc:a626114db543b22b7277b6e791d3ba89f"><td class="mdescLeft">&#160;</td><td class="mdescRight">desconstuctor for <a class="el" href="classIWeather.html" title="A class built for IWeather.">IWeather</a> <br /></td></tr>
+<tr class="memitem:a626114db543b22b7277b6e791d3ba89f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIWeather.html#a626114db543b22b7277b6e791d3ba89f">~IWeather</a> ()</td></tr>
+<tr class="memdesc:a626114db543b22b7277b6e791d3ba89f"><td class="mdescLeft">&#160;</td><td class="mdescRight">desconstuctor for <a class="el" href="classIWeather.html" title="Interface built for different weather patterns/reactions.">IWeather</a>  <a href="classIWeather.html#a626114db543b22b7277b6e791d3ba89f">More...</a><br /></td></tr>
 <tr class="separator:a626114db543b22b7277b6e791d3ba89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1268319157d56c3a6568d09e5cbfdfab"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIWeather.html#a1268319157d56c3a6568d09e5cbfdfab">Execute</a> (<a class="el" href="classIEntity.html">IEntity</a> *parent, <a class="el" href="classIReaction.html">IReaction</a> *reaction, double dt, std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; scheduler)=0</td></tr>
-<tr class="memdesc:a1268319157d56c3a6568d09e5cbfdfab"><td class="mdescLeft">&#160;</td><td class="mdescRight">executes the reaction happening to the drone with base weather.  <a href="classIWeather.html#a1268319157d56c3a6568d09e5cbfdfab">More...</a><br /></td></tr>
+<tr class="memdesc:a1268319157d56c3a6568d09e5cbfdfab"><td class="mdescLeft">&#160;</td><td class="mdescRight">executes the reaction happening to the drone for current weather pattern(s).  <a href="classIWeather.html#a1268319157d56c3a6568d09e5cbfdfab">More...</a><br /></td></tr>
 <tr class="separator:a1268319157d56c3a6568d09e5cbfdfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17bd5cf79e4065f101ba50226db9a732"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIWeather.html#a17bd5cf79e4065f101ba50226db9a732">IsInside</a> (<a class="el" href="classIEntity.html">IEntity</a> *parent)=0</td></tr>
-<tr class="memdesc:a17bd5cf79e4065f101ba50226db9a732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if the drone is inside the base weather.  <a href="classIWeather.html#a17bd5cf79e4065f101ba50226db9a732">More...</a><br /></td></tr>
+<tr class="memdesc:a17bd5cf79e4065f101ba50226db9a732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if the drone is inside a weather zone.  <a href="classIWeather.html#a17bd5cf79e4065f101ba50226db9a732">More...</a><br /></td></tr>
 <tr class="separator:a17bd5cf79e4065f101ba50226db9a732"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class built for <a class="el" href="classIWeather.html" title="A class built for IWeather.">IWeather</a>. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<div class="textblock"><p>Interface built for different weather patterns/reactions. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a626114db543b22b7277b6e791d3ba89f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a626114db543b22b7277b6e791d3ba89f">&#9670;&nbsp;</a></span>~IWeather()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual IWeather::~IWeather </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>desconstuctor for <a class="el" href="classIWeather.html" title="Interface built for different weather patterns/reactions.">IWeather</a> </p>
+<dl class="section return"><dt>Returns</dt><dd>none. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1268319157d56c3a6568d09e5cbfdfab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1268319157d56c3a6568d09e5cbfdfab">&#9670;&nbsp;</a></span>Execute()</h2>
 
@@ -149,13 +177,13 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table>
 </div><div class="memdoc">
 
-<p>executes the reaction happening to the drone with base weather. </p>
+<p>executes the reaction happening to the drone for current weather pattern(s). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>which is the Ientity </td></tr>
-    <tr><td class="paramname">reaction</td><td>current reaction </td></tr>
+    <tr><td class="paramname">parent</td><td>which is the drone being affected by the weather. </td></tr>
+    <tr><td class="paramname">reaction</td><td>current weather reaction </td></tr>
     <tr><td class="paramname">dt</td><td>delta time </td></tr>
-    <tr><td class="paramname">scheduler</td><td>vector that holds the ientities.</td></tr>
+    <tr><td class="paramname">scheduler</td><td>vector that holds the Ientities.</td></tr>
   </table>
   </dd>
 </dl>
@@ -189,21 +217,21 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table>
 </div><div class="memdoc">
 
-<p>Checks to see if the drone is inside the base weather. </p>
+<p>Checks to see if the drone is inside a weather zone. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>Ientity </td></tr>
+    <tr><td class="paramname">parent</td><td>drone to check if within weather bounds. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean - true if drone is inside weather bounds, false otherwise. </dd></dl>
 
 <p>Implemented in <a class="el" href="classBaseWeather.html#a739374c45e55d4695ceb7bdbda8e7d0c">BaseWeather</a>, and <a class="el" href="classIZoneWeather.html#ae550498e257f595a7c94da3d74f91f76">IZoneWeather</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="IWeather_8h_source.html">IWeather.h</a></li>
+<li>/home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="IWeather_8h_source.html">IWeather.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

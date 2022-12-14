@@ -6,7 +6,7 @@
 #include "IEntity.h"
 #include "IEntityFactory.h"
 /**
- *@brief A class built using the factory design pattern but for emp weather.
+ *@brief A class built using the factory design pattern but for emp weather. Inherits from IEntityFactory.
  **/
 class EmpFactory : public IEntityFactory {
  public:
@@ -17,9 +17,9 @@ class EmpFactory : public IEntityFactory {
   virtual ~EmpFactory() {}
 
   /**
-   * @brief Creates the emp weather entity.
-   * @param entity jsonobj&
-   * @return Ientity*
+   * @brief Attempts to create an EmpWeather IEntity. Returns the entity if it was created, otherwise returns null.
+   * @param entity JSON object the EmpWeather object should be created from.
+   * @return the new EmpWeather entity if the JSON parameter corresponds to an EmpWeather. otherwise returns a nullpointer.
    **/
   IEntity* CreateEntity(const JsonObject& entity);
 };

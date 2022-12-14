@@ -10,121 +10,150 @@
 #include "util/json.h"
 
 /**
- *@brief A class built using weatherreactDecorator
+ *@brief A class built using weatherreactDecorator. Inherits from IEntity.
  **/
 class WeatherReactDecorator : public IEntity {
  public:
   /**
    * @brief constructor for weatherReactDecorator class
-   * @param parent_ Ientity*
-   * @param reaction_ Ireaction*
+   * @param parent_ Ientity* being affected by this weather
+   * @param reaction_ Ireaction* - reaction of entity being affected by this weather.
    * @return none.
    **/
   WeatherReactDecorator(IEntity* parent_, IReaction* reaction_);
+
   /**
    * @brief Destructor for weatherReactDecorator class.
    *
    * @return none.
    **/
   ~WeatherReactDecorator() override = default;
+
   /**
-   * @brief get speed
-   * @return float type of speed
+   * @brief getter for speed of the weather.
+   * @return float representing the speed of the weather.
    **/
   float GetSpeed() const;
 
-  // Gets the drone position
   /**
-   * @brief get position
-   * @return Vector3 type position
+   * @brief getter for the position of the weather.
+   *
+   * @return Vector3 representing the weather entities position.
    **/
   Vector3 GetPosition() const;
+
   /**
-   * @brief get direction
-   * @return Vector3 type direciton
+   * @brief getter for the direction of the weather.
+   *
+   * @return Vector3 representing the weather entities direction.
    **/
   Vector3 GetDirection() const;
+
   /**
-   * @brief get destination
-   * @return Vector3 type destination
+   * @brief getter for the destination of the weather.
+   *
+   * @return Vector3 representing the weather entities destination.
    **/
   Vector3 GetDestination() const;
+
   /**
-   * @brief get details
-   * @return JsonObject type details
+   * @brief getter for the JSON object for the weather entity.
+   * @return JsonObject representing the weather entity.
    **/
   JsonObject GetDetails() const;
+
   /**
-   * @brief check whether it is available
+   * @brief check whether weather is available (pun intended)
    * @return true if is available and false if not
    **/
   bool GetAvailability() const;
+
   /**
-   * @brief The strategy of robot
+   * @brief Getter for the movement strategy of the weather
    *
-   * @return return the name of strategy that is used
+   * @return string - the name of the movement strategy that is used
    */
   std::string GetStrategyName();
+
   /**
-   * @brief set availability
-   * @param choice - bool type of choice parameter
+   * @brief setter for weathers availability
+   * @param choice - bool - true if available, false if not available.
+   * @return none.
    **/
   void SetAvailability(bool choice);
+
   /**
-   * @brief if availablity of drone is true, then call getNearestEntity function
+   * @brief has drones react to the weather, then calls the parent's update function
    * @param dt - delta time
-   * @param scheduler - IEntity type vector obj
+   * @param scheduler - vector holding all entities. 
+   * @return none.
    **/
-  // reacts to the weather, then calls the parent's update function
   void Update(double dt, std::vector<IEntity*> scheduler);
+
   /**
-   * @brief set the position of object
-   * @param pos_ - Vector3 obj
+   * @brief setter for the position of the weather
+   * @param pos_ - Vector3 representing the position of the weather.
+   * @return none.
    **/
   void SetPosition(Vector3 pos_);
+
   /**
-   * @brief set the direction of object
-   * @param dir_ - Vector3 obj
+   * @brief setter for the direction of the weather
+   * @param dir_ - Vector3 representing the direction of the weather.
+   * @return none.
    **/
-  // Sets the drone's direction
   void SetDirection(Vector3 dir_);
+
   /**
-   * @brief set the destination of obj
-   * @param des_ - Vector3 obj
+   * @brief setter for the destination of the weather
+   * @param dir_ - Vector3 representing the destination of the weather.
+   * @return none.
    **/
   void SetDestination(Vector3 des_);
+
   /**
-   * @brief rotate drone by using angle and formula
-   * @param angle - angle of drone
+   * @brief rotate weather by using angle and formula
+   * @param angle - angle to use while rotating the weather.
+   * @return none.
    */
-  // Rotates a drone
   void Rotate(double angle);
+
   /**
-   * @brief rotate drone by using height and formula
-   * @param height - height of drone
+   * @brief Used for "jumping" the weather
+   * @param height - double - height of weather
+   * @return none.
    */
   void Jump(double height);
+
   /**
-   * @brief set graph
-   * @param graph - IGraph type obj
+   * @brief setter for the graph field
+   * @param graph - IGraph to set as graph field
+   * @return none.
    **/
   void SetGraph(const IGraph* graph);
 
   /**
-   * @brief Getter for the color field of the drone
+   * @brief Getter for the color field of the weather
    *
-   * @return color field of drone
+   * @return string - color field of weather
    */
   std::string GetColor() const { return parent->GetColor(); }
+
   /**
-   * @brief Sets the color field of the drone
+   * @brief Sets the color field of the weather
    *
-   * @param color_ the new color for the drone
+   * @param color_ the new color for the weather
    */
   virtual void SetColor(std::string color_) { parent->SetColor(color_); }
 
  protected:
+ /**
+  * Drone being affected by the weather.
+  **/
   IEntity* parent;
+  /**
+   * reaction of the drone being affected by the weather.
+   **/
   IReaction* reaction;
 };  // close class
 

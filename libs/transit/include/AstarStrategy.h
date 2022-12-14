@@ -11,7 +11,7 @@
 #include "math/vector3.h"
 /**
  * @brief Implementation of Astar strategy for entity movement. Inherits from
- *IStrategy.
+ * IStrategy.
  **/
 class AstarStrategy : public IStrategy {
  public:

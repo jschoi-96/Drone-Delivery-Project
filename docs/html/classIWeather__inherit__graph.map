@@ -1,8 +1,8 @@
 <map id="IWeather" name="IWeather">
-<area shape="rect" id="node1" title="A class built for IWeather." alt="" coords="87,5,169,32"/>
-<area shape="rect" id="node2" href="$classBaseWeather.html" title="This class inherits from the IWeather and is responsible for setting base weather." alt="" coords="5,80,115,107"/>
-<area shape="rect" id="node3" href="$classIZoneWeather.html" title="class that holds the IZoneweather inherits from iweather and ientity." alt="" coords="139,80,253,107"/>
-<area shape="rect" id="node4" href="$classEmpWeather.html" title="A class built for emp weather." alt="" coords="12,155,119,181"/>
-<area shape="rect" id="node5" href="$classRainWeather.html" title="A class built for rain weather." alt="" coords="143,155,249,181"/>
-<area shape="rect" id="node6" href="$classWindWeather.html" title="A class built for wind weather." alt="" coords="274,155,385,181"/>
+<area shape="rect" id="node1" title="Interface built for different weather patterns/reactions." alt="" coords="87,5,169,32"/>
+<area shape="rect" id="node2" href="$classBaseWeather.html" title="This class inherits from the IWeather and is responsible for setting base weather...." alt="" coords="5,80,115,107"/>
+<area shape="rect" id="node3" href="$classIZoneWeather.html" title="class that holds the IZoneweather. Responsible for setting/moving/maintaining weather boundaries...." alt="" coords="139,80,253,107"/>
+<area shape="rect" id="node4" href="$classEmpWeather.html" title="A class built for emp weather. Inherits from IZoneWeather." alt="" coords="12,155,119,181"/>
+<area shape="rect" id="node5" href="$classRainWeather.html" title="A class built for rain weather. Inherits from IZoneWeather." alt="" coords="143,155,249,181"/>
+<area shape="rect" id="node6" href="$classWindWeather.html" title="A class built for wind weather. Inherits from IZoneWeather." alt="" coords="274,155,385,181"/>
 </map>

@@ -2,7 +2,7 @@
 \label{classIEntity}\index{IEntity@{IEntity}}
 
 
-A class built to see interface.  
+A class built to for moving/updating entities in the simulation.  
 
 
 
@@ -22,59 +22,81 @@ Inheritance diagram for I\+Entity\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classIEntity_ad59bd0827b3f6e19b82a4e28e5400fe3}{I\+Entity}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classIEntity}{I\+Entity}} class. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classIEntity_a8aea4fbca51d17a0ce314aaa4633f28e}{$\sim$\+I\+Entity}} ()
 \begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classIEntity}{I\+Entity}} class. \end{DoxyCompactList}\item 
 virtual int \mbox{\hyperlink{classIEntity_a2bfa9ab304ff33b252fbd5a707e42995}{Get\+Id}} () const
-\begin{DoxyCompactList}\small\item\em get ID from specific obj \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em getter for the unique id that entity has. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classIEntity_a9bc32587aab91761fc0e718612498199}{Get\+Position}} () const =0
-\begin{DoxyCompactList}\small\item\em get position \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em getter for the entities position \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classIEntity_aa99a8fef8b22195a5113c38ef51f086d}{Get\+Direction}} () const =0
-\begin{DoxyCompactList}\small\item\em get direction \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em getter for the entities direction \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classIEntity_a0dcaf865938ab1fb49c8389b5e580d90}{Get\+Destination}} () const =0
-\begin{DoxyCompactList}\small\item\em get destination \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em getter for the entities destination \end{DoxyCompactList}\item 
 virtual Json\+Object \mbox{\hyperlink{classIEntity_a97c799400ce05e2ff2566adc4d7b9634}{Get\+Details}} () const =0
-\begin{DoxyCompactList}\small\item\em get details \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em getter for the J\+S\+ON object for the entity. \end{DoxyCompactList}\item 
 virtual float \mbox{\hyperlink{classIEntity_a6520d2b1dc71d092bab38ef9f5cc9ff4}{Get\+Speed}} () const =0
-\begin{DoxyCompactList}\small\item\em get speed \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em getter for the entitie\textquotesingle{}s speed \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classIEntity_a90348881691a37d5c3d63265ed3463b1}{Get\+Availability}} () const
-\begin{DoxyCompactList}\small\item\em check whether it is available \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em check whether the entity is available \end{DoxyCompactList}\item 
 virtual std\+::string \mbox{\hyperlink{classIEntity_a9b4a238a04f5cd56db89e50292355005}{Get\+Strategy\+Name}} ()
-\begin{DoxyCompactList}\small\item\em The strategy of robot. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em The strategy for robot movement. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classIEntity_a1326f6c0e0377a4fbde8a8c02fb6ccb3}{Get\+Color}} () const
+\begin{DoxyCompactList}\small\item\em Getter for the color field of the entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIEntity_ad93b2cbe055fad782564914833b8c6cd}{Set\+Color}} (std\+::string color\+\_\+)
+\begin{DoxyCompactList}\small\item\em Sets the color field of the entity. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classIEntity_adf3acdf4764f5ff25f89d7814e39551c}{Set\+Availability}} (bool choice)
-\begin{DoxyCompactList}\small\item\em set availability \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em set availability of the entity \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classIEntity_a9a8e8588fd85c7b0d813d60686d4dc2c}{Update}} (double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
-\begin{DoxyCompactList}\small\item\em if availablity of drone is true, then call get\+Nearest\+Entity function \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classIEntity_a50b01c5c4fab1632c0289e30aa77faf2}{Set\+Graph}} (const I\+Graph $\ast$graph)
-\begin{DoxyCompactList}\small\item\em set graph \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em if availablity of drone is true, then calls get\+Nearest\+Entity function and updates entity variables accordingly. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIEntity_a50b01c5c4fab1632c0289e30aa77faf2}{Set\+Graph}} (const I\+Graph $\ast$\mbox{\hyperlink{classIEntity_a5d4d1c3d5da8a816fe03522cd0b4fcb3}{graph}})
+\begin{DoxyCompactList}\small\item\em setter for the entities graph \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classIEntity_af0475048b09dc13ed6cf8e7c7be2ae6b}{Set\+Position}} (\mbox{\hyperlink{classVector3}{Vector3}} pos\+\_\+)
-\begin{DoxyCompactList}\small\item\em set the position of object \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em set the position of the entity \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classIEntity_a64bfaa448a929ca71693ff3e2edb9d97}{Set\+Direction}} (\mbox{\hyperlink{classVector3}{Vector3}} dir\+\_\+)
-\begin{DoxyCompactList}\small\item\em set the direction of object \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em set the direction of the entity \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classIEntity_aa473000823f673e9d7b89aed3cd3fc5c}{Set\+Destination}} (\mbox{\hyperlink{classVector3}{Vector3}} des\+\_\+)
-\begin{DoxyCompactList}\small\item\em set the destination of obj \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em set the destination of the entity \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classIEntity_a933def05f85783fddbf05e8257cc8880}{Set\+Strategy\+Name}} (std\+::string strategy\+Name\+\_\+)
-\begin{DoxyCompactList}\small\item\em set the strategy \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em set the movement strategy of the entity. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classIEntity_a4c109baa4179c28422623a7d3b2e9f82}{Rotate}} (double angle)
-\begin{DoxyCompactList}\small\item\em rotate drone by using angle and formula \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em executes the reaction happening to the drone with rainweather. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classIEntity_a4e8eb64a324e1196be039c5e2a293b7a}{Jump}} (double height)
 \begin{DoxyCompactList}\small\item\em rotate drone by using height and formula \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classIEntity_a00de496c1153bc873b1db364162bd17c}{color}} = \char`\"{}None\char`\"{}
+\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classIEntity_adb3b46323a3c0269c5f108305a36737c}\label{classIEntity_adb3b46323a3c0269c5f108305a36737c}} 
-int {\bfseries id}
+int \mbox{\hyperlink{classIEntity_adb3b46323a3c0269c5f108305a36737c}{id}}
 \item 
-\mbox{\Hypertarget{classIEntity_a5d4d1c3d5da8a816fe03522cd0b4fcb3}\label{classIEntity_a5d4d1c3d5da8a816fe03522cd0b4fcb3}} 
-const I\+Graph $\ast$ {\bfseries graph}
+const I\+Graph $\ast$ \mbox{\hyperlink{classIEntity_a5d4d1c3d5da8a816fe03522cd0b4fcb3}{graph}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-A class built to see interface. 
+A class built to for moving/updating entities in the simulation. 
 
 Abstract controller class used in the Transit Service. Uses the Model View Controller Pattern 
 
 \doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIEntity_ad59bd0827b3f6e19b82a4e28e5400fe3}\label{classIEntity_ad59bd0827b3f6e19b82a4e28e5400fe3}} 
+\index{IEntity@{IEntity}!IEntity@{IEntity}}
+\index{IEntity@{IEntity}!IEntity@{IEntity}}
+\doxysubsubsection{\texorpdfstring{IEntity()}{IEntity()}}
+{\footnotesize\ttfamily I\+Entity\+::\+I\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \mbox{\hyperlink{classIEntity}{I\+Entity}} class. 
+
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classIEntity_a8aea4fbca51d17a0ce314aaa4633f28e}\label{classIEntity_a8aea4fbca51d17a0ce314aaa4633f28e}} 
 \index{IEntity@{IEntity}!````~IEntity@{$\sim$IEntity}}
 \index{````~IEntity@{$\sim$IEntity}!IEntity@{IEntity}}
@@ -99,14 +121,31 @@ none.
 
 
 
-check whether it is available 
+check whether the entity is available 
 
 \begin{DoxyReturn}{Returns}
-true if is available and false if not 
+boolean that is true if entity is available and false if not 
 \end{DoxyReturn}
 
 
-Reimplemented in \mbox{\hyperlink{classDrone_a479442805072af27a7ee628ed59d621e}{Drone}}, \mbox{\hyperlink{classWeatherReactDecorator_a4a93645b63c56a3defd14f723eab0fd7}{Weather\+React\+Decorator}}, \mbox{\hyperlink{classIZoneWeather_ac5b11e82dce67654a7f3e64e61539b03}{I\+Zone\+Weather}}, and \mbox{\hyperlink{classRobot_a2b56c4d4cf7b0ef07ce6713ffae6e490}{Robot}}.
+Reimplemented in \mbox{\hyperlink{classWeatherReactDecorator_a4a93645b63c56a3defd14f723eab0fd7}{Weather\+React\+Decorator}}, \mbox{\hyperlink{classIZoneWeather_ac5b11e82dce67654a7f3e64e61539b03}{I\+Zone\+Weather}}, and \mbox{\hyperlink{classRobot_a2b56c4d4cf7b0ef07ce6713ffae6e490}{Robot}}.
+
+\mbox{\Hypertarget{classIEntity_a1326f6c0e0377a4fbde8a8c02fb6ccb3}\label{classIEntity_a1326f6c0e0377a4fbde8a8c02fb6ccb3}} 
+\index{IEntity@{IEntity}!GetColor@{GetColor}}
+\index{GetColor@{GetColor}!IEntity@{IEntity}}
+\doxysubsubsection{\texorpdfstring{GetColor()}{GetColor()}}
+{\footnotesize\ttfamily virtual std\+::string I\+Entity\+::\+Get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Getter for the color field of the entity. 
+
+\begin{DoxyReturn}{Returns}
+string color field of entity 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classWeatherReactDecorator_ab19f5f2349acfb4d4ae4ef0d16f6b7dd}{Weather\+React\+Decorator}}.
 
 \mbox{\Hypertarget{classIEntity_a0dcaf865938ab1fb49c8389b5e580d90}\label{classIEntity_a0dcaf865938ab1fb49c8389b5e580d90}} 
 \index{IEntity@{IEntity}!GetDestination@{GetDestination}}
@@ -116,14 +155,14 @@ Reimplemented in \mbox{\hyperlink{classDrone_a479442805072af27a7ee628ed59d621e}{
 
 
 
-get destination 
+getter for the entities destination 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{classVector3}{Vector3}} type destination 
+\mbox{\hyperlink{classVector3}{Vector3}} representing the entities destination 
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classDrone_adaf61822f659e8ab22fb633569288752}{Drone}}, \mbox{\hyperlink{classWeatherReactDecorator_a2745a0695fcabf7c760d686efc527aad}{Weather\+React\+Decorator}}, \mbox{\hyperlink{classRobot_abe629d465798403a706f574b33284659}{Robot}}, and \mbox{\hyperlink{classIZoneWeather_aa36f6964a9e0ce569efa1d932828e122}{I\+Zone\+Weather}}.
+Implemented in \mbox{\hyperlink{classWeatherReactDecorator_a2745a0695fcabf7c760d686efc527aad}{Weather\+React\+Decorator}}, \mbox{\hyperlink{classRobot_abe629d465798403a706f574b33284659}{Robot}}, and \mbox{\hyperlink{classIZoneWeather_aa36f6964a9e0ce569efa1d932828e122}{I\+Zone\+Weather}}.
 
 \mbox{\Hypertarget{classIEntity_a97c799400ce05e2ff2566adc4d7b9634}\label{classIEntity_a97c799400ce05e2ff2566adc4d7b9634}} 
 \index{IEntity@{IEntity}!GetDetails@{GetDetails}}
@@ -133,14 +172,14 @@ Implemented in \mbox{\hyperlink{classDrone_adaf61822f659e8ab22fb633569288752}{Dr
 
 
 
-get details 
+getter for the J\+S\+ON object for the entity. 
 
 \begin{DoxyReturn}{Returns}
-Json\+Object type details 
+Json\+Object for the entity 
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classRobot_a0ac023c6fb5d7ad58b180903010d2924}{Robot}}, \mbox{\hyperlink{classDrone_aa038e4cb9540e6a4101ea70f311c8308}{Drone}}, \mbox{\hyperlink{classWeatherReactDecorator_a95ad708fa947046c22c232aee3b2a61f}{Weather\+React\+Decorator}}, and \mbox{\hyperlink{classIZoneWeather_a894c18ffa64f185e2119327aa2856306}{I\+Zone\+Weather}}.
+Implemented in \mbox{\hyperlink{classRobot_a0ac023c6fb5d7ad58b180903010d2924}{Robot}}, \mbox{\hyperlink{classWeatherReactDecorator_a95ad708fa947046c22c232aee3b2a61f}{Weather\+React\+Decorator}}, and \mbox{\hyperlink{classIZoneWeather_a894c18ffa64f185e2119327aa2856306}{I\+Zone\+Weather}}.
 
 \mbox{\Hypertarget{classIEntity_aa99a8fef8b22195a5113c38ef51f086d}\label{classIEntity_aa99a8fef8b22195a5113c38ef51f086d}} 
 \index{IEntity@{IEntity}!GetDirection@{GetDirection}}
@@ -150,14 +189,14 @@ Implemented in \mbox{\hyperlink{classRobot_a0ac023c6fb5d7ad58b180903010d2924}{Ro
 
 
 
-get direction 
+getter for the entities direction 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{classVector3}{Vector3}} type direciton 
+\mbox{\hyperlink{classVector3}{Vector3}} representing the entities direciton 
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classDrone_aaf51e8007322a36d481ce9a546099e44}{Drone}}, \mbox{\hyperlink{classWeatherReactDecorator_a990913fe6d5ca1f1fa6baa00c160d671}{Weather\+React\+Decorator}}, \mbox{\hyperlink{classRobot_a2d6dd7a322d2d2c0bc1c44566253b9f1}{Robot}}, and \mbox{\hyperlink{classIZoneWeather_a59ed6a214a0d2446f0e11f00f28d57bb}{I\+Zone\+Weather}}.
+Implemented in \mbox{\hyperlink{classWeatherReactDecorator_a990913fe6d5ca1f1fa6baa00c160d671}{Weather\+React\+Decorator}}, \mbox{\hyperlink{classRobot_a2d6dd7a322d2d2c0bc1c44566253b9f1}{Robot}}, and \mbox{\hyperlink{classIZoneWeather_a59ed6a214a0d2446f0e11f00f28d57bb}{I\+Zone\+Weather}}.
 
 \mbox{\Hypertarget{classIEntity_a2bfa9ab304ff33b252fbd5a707e42995}\label{classIEntity_a2bfa9ab304ff33b252fbd5a707e42995}} 
 \index{IEntity@{IEntity}!GetId@{GetId}}
@@ -167,10 +206,10 @@ Implemented in \mbox{\hyperlink{classDrone_aaf51e8007322a36d481ce9a546099e44}{Dr
 
 
 
-get ID from specific obj 
+getter for the unique id that entity has. 
 
 \begin{DoxyReturn}{Returns}
-int type of id 
+int that uniquely identifies the entity. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classIEntity_a9bc32587aab91761fc0e718612498199}\label{classIEntity_a9bc32587aab91761fc0e718612498199}} 
 \index{IEntity@{IEntity}!GetPosition@{GetPosition}}
@@ -180,14 +219,14 @@ int type of id
 
 
 
-get position 
+getter for the entities position 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{classVector3}{Vector3}} type position 
+\mbox{\hyperlink{classVector3}{Vector3}} representing the entities position 
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classDrone_a3d86b956f8722735b1d7e791dea703bc}{Drone}}, \mbox{\hyperlink{classWeatherReactDecorator_ace1de3ad110d8aae295117f4e1fb0c9a}{Weather\+React\+Decorator}}, \mbox{\hyperlink{classRobot_a0505da0b08d679a828c005879da63b16}{Robot}}, and \mbox{\hyperlink{classIZoneWeather_aba37f50f146f68c3ba53670d7d774da8}{I\+Zone\+Weather}}.
+Implemented in \mbox{\hyperlink{classWeatherReactDecorator_ace1de3ad110d8aae295117f4e1fb0c9a}{Weather\+React\+Decorator}}, \mbox{\hyperlink{classRobot_a0505da0b08d679a828c005879da63b16}{Robot}}, and \mbox{\hyperlink{classIZoneWeather_aba37f50f146f68c3ba53670d7d774da8}{I\+Zone\+Weather}}.
 
 \mbox{\Hypertarget{classIEntity_a6520d2b1dc71d092bab38ef9f5cc9ff4}\label{classIEntity_a6520d2b1dc71d092bab38ef9f5cc9ff4}} 
 \index{IEntity@{IEntity}!GetSpeed@{GetSpeed}}
@@ -197,14 +236,14 @@ Implemented in \mbox{\hyperlink{classDrone_a3d86b956f8722735b1d7e791dea703bc}{Dr
 
 
 
-get speed 
+getter for the entitie\textquotesingle{}s speed 
 
 \begin{DoxyReturn}{Returns}
-float type of speed 
+float representing the speed of the entity. 
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classRobot_ad199885470ae6e1109153526c21473c5}{Robot}}, \mbox{\hyperlink{classIZoneWeather_a27787abd20d1a7f3c72920216a084502}{I\+Zone\+Weather}}, \mbox{\hyperlink{classDrone_a33d05f853306e480ab97049eb6408ef7}{Drone}}, and \mbox{\hyperlink{classWeatherReactDecorator_a589055b7197d6b2db609e295bc4896be}{Weather\+React\+Decorator}}.
+Implemented in \mbox{\hyperlink{classRobot_ad199885470ae6e1109153526c21473c5}{Robot}}, \mbox{\hyperlink{classIZoneWeather_a27787abd20d1a7f3c72920216a084502}{I\+Zone\+Weather}}, and \mbox{\hyperlink{classWeatherReactDecorator_a589055b7197d6b2db609e295bc4896be}{Weather\+React\+Decorator}}.
 
 \mbox{\Hypertarget{classIEntity_a9b4a238a04f5cd56db89e50292355005}\label{classIEntity_a9b4a238a04f5cd56db89e50292355005}} 
 \index{IEntity@{IEntity}!GetStrategyName@{GetStrategyName}}
@@ -214,14 +253,14 @@ Implemented in \mbox{\hyperlink{classRobot_ad199885470ae6e1109153526c21473c5}{Ro
 
 
 
-The strategy of robot. 
+The strategy for robot movement. 
 
 \begin{DoxyReturn}{Returns}
-return the name of strategy that is used 
+return the name of strategy that is used (Always None for robots) 
 \end{DoxyReturn}
 
 
-Reimplemented in \mbox{\hyperlink{classRobot_af3e8590ef2a275caf25363079f7b4273}{Robot}}, \mbox{\hyperlink{classWeatherReactDecorator_a4815f1c3004ed6e6c95b8912f740940c}{Weather\+React\+Decorator}}, and \mbox{\hyperlink{classIZoneWeather_a95a456a852d7e2a21728f49b531a276e}{I\+Zone\+Weather}}.
+Reimplemented in \mbox{\hyperlink{classWeatherReactDecorator_a4815f1c3004ed6e6c95b8912f740940c}{Weather\+React\+Decorator}}, \mbox{\hyperlink{classRobot_af3e8590ef2a275caf25363079f7b4273}{Robot}}, and \mbox{\hyperlink{classIZoneWeather_a95a456a852d7e2a21728f49b531a276e}{I\+Zone\+Weather}}.
 
 \mbox{\Hypertarget{classIEntity_a4e8eb64a324e1196be039c5e2a293b7a}\label{classIEntity_a4e8eb64a324e1196be039c5e2a293b7a}} 
 \index{IEntity@{IEntity}!Jump@{Jump}}
@@ -235,12 +274,12 @@ rotate drone by using height and formula
 
 
 \begin{DoxyParams}{Parameters}
-{\em height} & -\/ height of drone \\
+{\em height} & double -\/ height to rotate entity by \\
 \hline
 \end{DoxyParams}
 
 
-Reimplemented in \mbox{\hyperlink{classDrone_a1559fe24a5792ac72ba9d8a4a13a9ec8}{Drone}}, and \mbox{\hyperlink{classWeatherReactDecorator_a6fa31185cdaeff32f70bfde66c41b3e0}{Weather\+React\+Decorator}}.
+Reimplemented in \mbox{\hyperlink{classWeatherReactDecorator_a6fa31185cdaeff32f70bfde66c41b3e0}{Weather\+React\+Decorator}}.
 
 \mbox{\Hypertarget{classIEntity_a4c109baa4179c28422623a7d3b2e9f82}\label{classIEntity_a4c109baa4179c28422623a7d3b2e9f82}} 
 \index{IEntity@{IEntity}!Rotate@{Rotate}}
@@ -250,16 +289,25 @@ Reimplemented in \mbox{\hyperlink{classDrone_a1559fe24a5792ac72ba9d8a4a13a9ec8}{
 
 
 
-rotate drone by using angle and formula 
+executes the reaction happening to the drone with rainweather. 
 
-
+/$\ast$$\ast$ 
 \begin{DoxyParams}{Parameters}
-{\em angle} & -\/ angle of drone \\
+{\em parent} & which is the Ientity \\
+\hline
+{\em reaction} & current reaction \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the ientities.\\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
 
 
-Reimplemented in \mbox{\hyperlink{classDrone_ad698b0fac61fecdd01dffea6762a3710}{Drone}}, \mbox{\hyperlink{classRobot_a1cb405ec49d47c46f3aa87fde1415b59}{Robot}}, and \mbox{\hyperlink{classWeatherReactDecorator_a767a1015160a0e37737f77a2da0af3d6}{Weather\+React\+Decorator}}.
+Reimplemented in \mbox{\hyperlink{classWeatherReactDecorator_a767a1015160a0e37737f77a2da0af3d6}{Weather\+React\+Decorator}}, and \mbox{\hyperlink{classRobot_a1cb405ec49d47c46f3aa87fde1415b59}{Robot}}.
 
 \mbox{\Hypertarget{classIEntity_adf3acdf4764f5ff25f89d7814e39551c}\label{classIEntity_adf3acdf4764f5ff25f89d7814e39551c}} 
 \index{IEntity@{IEntity}!SetAvailability@{SetAvailability}}
@@ -269,16 +317,41 @@ Reimplemented in \mbox{\hyperlink{classDrone_ad698b0fac61fecdd01dffea6762a3710}{
 
 
 
-set availability 
+set availability of the entity 
 
 
 \begin{DoxyParams}{Parameters}
-{\em choice} & -\/ bool type of choice parameter \\
+{\em choice} & -\/ boolean representing entities availability. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
 
 
-Reimplemented in \mbox{\hyperlink{classRobot_a2ef6424fa88e43973ade3fddb4ec649b}{Robot}}, \mbox{\hyperlink{classWeatherReactDecorator_ab50b2ce3cf1d422809993692d7485719}{Weather\+React\+Decorator}}, and \mbox{\hyperlink{classIZoneWeather_a3fc876b402780c17e2cd819146619aa1}{I\+Zone\+Weather}}.
+Reimplemented in \mbox{\hyperlink{classWeatherReactDecorator_ab50b2ce3cf1d422809993692d7485719}{Weather\+React\+Decorator}}, \mbox{\hyperlink{classRobot_a2ef6424fa88e43973ade3fddb4ec649b}{Robot}}, and \mbox{\hyperlink{classIZoneWeather_a3fc876b402780c17e2cd819146619aa1}{I\+Zone\+Weather}}.
+
+\mbox{\Hypertarget{classIEntity_ad93b2cbe055fad782564914833b8c6cd}\label{classIEntity_ad93b2cbe055fad782564914833b8c6cd}} 
+\index{IEntity@{IEntity}!SetColor@{SetColor}}
+\index{SetColor@{SetColor}!IEntity@{IEntity}}
+\doxysubsubsection{\texorpdfstring{SetColor()}{SetColor()}}
+{\footnotesize\ttfamily virtual void I\+Entity\+::\+Set\+Color (\begin{DoxyParamCaption}\item[{std\+::string}]{color\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Sets the color field of the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em color\+\_\+} & the new color for the entity\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classWeatherReactDecorator_a9e1fb0a8d5c364ecb6845e7f979b5c24}{Weather\+React\+Decorator}}.
 
 \mbox{\Hypertarget{classIEntity_aa473000823f673e9d7b89aed3cd3fc5c}\label{classIEntity_aa473000823f673e9d7b89aed3cd3fc5c}} 
 \index{IEntity@{IEntity}!SetDestination@{SetDestination}}
@@ -288,16 +361,16 @@ Reimplemented in \mbox{\hyperlink{classRobot_a2ef6424fa88e43973ade3fddb4ec649b}{
 
 
 
-set the destination of obj 
+set the destination of the entity 
 
 
 \begin{DoxyParams}{Parameters}
-{\em des\+\_\+} & -\/ \mbox{\hyperlink{classVector3}{Vector3}} obj \\
+{\em des\+\_\+} & -\/ \mbox{\hyperlink{classVector3}{Vector3}} representing the entities new destination. \\
 \hline
 \end{DoxyParams}
 
 
-Reimplemented in \mbox{\hyperlink{classDrone_a2dfb158a784d354d13740a40151fb312}{Drone}}, \mbox{\hyperlink{classRobot_a557af09ca03132837bc6574bca6fbe05}{Robot}}, and \mbox{\hyperlink{classWeatherReactDecorator_acfba219ccb4200a1d3d75ad8ae72e75f}{Weather\+React\+Decorator}}.
+Reimplemented in \mbox{\hyperlink{classWeatherReactDecorator_acfba219ccb4200a1d3d75ad8ae72e75f}{Weather\+React\+Decorator}}, and \mbox{\hyperlink{classRobot_a557af09ca03132837bc6574bca6fbe05}{Robot}}.
 
 \mbox{\Hypertarget{classIEntity_a64bfaa448a929ca71693ff3e2edb9d97}\label{classIEntity_a64bfaa448a929ca71693ff3e2edb9d97}} 
 \index{IEntity@{IEntity}!SetDirection@{SetDirection}}
@@ -307,16 +380,16 @@ Reimplemented in \mbox{\hyperlink{classDrone_a2dfb158a784d354d13740a40151fb312}{
 
 
 
-set the direction of object 
+set the direction of the entity 
 
 
 \begin{DoxyParams}{Parameters}
-{\em dir\+\_\+} & -\/ \mbox{\hyperlink{classVector3}{Vector3}} obj \\
+{\em dir\+\_\+} & -\/ \mbox{\hyperlink{classVector3}{Vector3}} to set as entities new direction. \\
 \hline
 \end{DoxyParams}
 
 
-Reimplemented in \mbox{\hyperlink{classDrone_a102651f93957b1dbe8199cbd30a9e26f}{Drone}}, \mbox{\hyperlink{classRobot_aaa0e41dbf57cb4040c0319b93c5a008c}{Robot}}, and \mbox{\hyperlink{classWeatherReactDecorator_ac53b52f4d75f8d010a377790fd9d32c3}{Weather\+React\+Decorator}}.
+Reimplemented in \mbox{\hyperlink{classWeatherReactDecorator_ac53b52f4d75f8d010a377790fd9d32c3}{Weather\+React\+Decorator}}, and \mbox{\hyperlink{classRobot_aaa0e41dbf57cb4040c0319b93c5a008c}{Robot}}.
 
 \mbox{\Hypertarget{classIEntity_a50b01c5c4fab1632c0289e30aa77faf2}\label{classIEntity_a50b01c5c4fab1632c0289e30aa77faf2}} 
 \index{IEntity@{IEntity}!SetGraph@{SetGraph}}
@@ -326,13 +399,16 @@ Reimplemented in \mbox{\hyperlink{classDrone_a102651f93957b1dbe8199cbd30a9e26f}{
 
 
 
-set graph 
+setter for the entities graph 
 
 
 \begin{DoxyParams}{Parameters}
-{\em graph} & -\/ I\+Graph type obj \\
+{\em graph} & -\/ I\+Graph object to set as entities graph \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
 
 
 Reimplemented in \mbox{\hyperlink{classWeatherReactDecorator_a48ca6187d3edf8ba5a9331bd615b5092}{Weather\+React\+Decorator}}, and \mbox{\hyperlink{classIZoneWeather_a3d0a3a084d6b4ac1393a82803b740e77}{I\+Zone\+Weather}}.
@@ -345,16 +421,19 @@ Reimplemented in \mbox{\hyperlink{classWeatherReactDecorator_a48ca6187d3edf8ba5a
 
 
 
-set the position of object 
+set the position of the entity 
 
 
 \begin{DoxyParams}{Parameters}
-{\em pos\+\_\+} & -\/ \mbox{\hyperlink{classVector3}{Vector3}} obj \\
+{\em pos\+\_\+} & -\/ \mbox{\hyperlink{classVector3}{Vector3}} to set as entities new position. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
 
 
-Reimplemented in \mbox{\hyperlink{classDrone_a00150938e8dbfceaf81c9fb59994f6ef}{Drone}}, \mbox{\hyperlink{classRobot_a35ce73ea17f6cfbcbfe272c6bff038ba}{Robot}}, and \mbox{\hyperlink{classWeatherReactDecorator_a97df0455f66cca471d139c859e4df58d}{Weather\+React\+Decorator}}.
+Reimplemented in \mbox{\hyperlink{classWeatherReactDecorator_a97df0455f66cca471d139c859e4df58d}{Weather\+React\+Decorator}}, and \mbox{\hyperlink{classRobot_a35ce73ea17f6cfbcbfe272c6bff038ba}{Robot}}.
 
 \mbox{\Hypertarget{classIEntity_a933def05f85783fddbf05e8257cc8880}\label{classIEntity_a933def05f85783fddbf05e8257cc8880}} 
 \index{IEntity@{IEntity}!SetStrategyName@{SetStrategyName}}
@@ -364,7 +443,7 @@ Reimplemented in \mbox{\hyperlink{classDrone_a00150938e8dbfceaf81c9fb59994f6ef}{
 
 
 
-set the strategy 
+set the movement strategy of the entity. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -383,21 +462,45 @@ Reimplemented in \mbox{\hyperlink{classRobot_a59c7dbc7346f86df3941c5dad9b12507}{
 
 
 
-if availablity of drone is true, then call get\+Nearest\+Entity function 
+if availablity of drone is true, then calls get\+Nearest\+Entity function and updates entity variables accordingly. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em dt} & -\/ delta time \\
+{\em dt} & -\/ double -\/ delta time \\
 \hline
-{\em scheduler} & -\/ \mbox{\hyperlink{classIEntity}{I\+Entity}} type vector obj \\
+{\em scheduler} & -\/ Vector holding all entities in the simulation. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
 
 
-Reimplemented in \mbox{\hyperlink{classDrone_a6798b0bd297ca7a930016cd2dda0b7ff}{Drone}}, \mbox{\hyperlink{classWeatherReactDecorator_a0a6d21782ce46b3209c8a7c53ba5e091}{Weather\+React\+Decorator}}, and \mbox{\hyperlink{classIZoneWeather_a49bcb2852205e7cde43c7c80b705bac7}{I\+Zone\+Weather}}.
+Reimplemented in \mbox{\hyperlink{classWeatherReactDecorator_a0a6d21782ce46b3209c8a7c53ba5e091}{Weather\+React\+Decorator}}, and \mbox{\hyperlink{classIZoneWeather_a49bcb2852205e7cde43c7c80b705bac7}{I\+Zone\+Weather}}.
 
 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classIEntity_a00de496c1153bc873b1db364162bd17c}\label{classIEntity_a00de496c1153bc873b1db364162bd17c}} 
+\index{IEntity@{IEntity}!color@{color}}
+\index{color@{color}!IEntity@{IEntity}}
+\doxysubsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily std\+::string I\+Entity\+::color = \char`\"{}None\char`\"{}}
+
+color field of the entity. \mbox{\Hypertarget{classIEntity_a5d4d1c3d5da8a816fe03522cd0b4fcb3}\label{classIEntity_a5d4d1c3d5da8a816fe03522cd0b4fcb3}} 
+\index{IEntity@{IEntity}!graph@{graph}}
+\index{graph@{graph}!IEntity@{IEntity}}
+\doxysubsubsection{\texorpdfstring{graph}{graph}}
+{\footnotesize\ttfamily const I\+Graph$\ast$ I\+Entity\+::graph\hspace{0.3cm}{\ttfamily [protected]}}
+
+graph for the entity. \mbox{\Hypertarget{classIEntity_adb3b46323a3c0269c5f108305a36737c}\label{classIEntity_adb3b46323a3c0269c5f108305a36737c}} 
+\index{IEntity@{IEntity}!id@{id}}
+\index{id@{id}!IEntity@{IEntity}}
+\doxysubsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily int I\+Entity\+::id\hspace{0.3cm}{\ttfamily [protected]}}
+
+unique identifier for the entity. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/I\+Entity.\+h\end{DoxyCompactItemize}
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/I\+Entity.\+h\end{DoxyCompactItemize}

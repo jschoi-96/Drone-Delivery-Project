@@ -2,7 +2,7 @@
 \label{classRobot}\index{Robot@{Robot}}
 
 
-A class built to manipulate movement of \mbox{\hyperlink{classRobot}{Robot}}.  
+A class built to manipulate movement of Robots. Inherits from \mbox{\hyperlink{classIEntity}{I\+Entity}}.  
 
 
 
@@ -30,57 +30,57 @@ Collaboration diagram for Robot\+:\nopagebreak
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classRobot_a007753e52e18f9a487d8241da97d4150}{Robot}} (Json\+Object \&obj)
-\begin{DoxyCompactList}\small\item\em constructor of \mbox{\hyperlink{classRobot}{Robot}} \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRobot_acda89d5cfb3e9efeb2fd15d2a732b335}{Robot}} (const Json\+Object \&obj)
+\begin{DoxyCompactList}\small\item\em constructor for \mbox{\hyperlink{classRobot}{Robot}} class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classRobot_a2aeab6ed0e3dc953c076a2d3937e661d}{$\sim$\+Robot}} () override=default
 \begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classRobot}{Robot}} class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classRobot_a0505da0b08d679a828c005879da63b16}{Get\+Position}} () const
-\begin{DoxyCompactList}\small\item\em The Position of \mbox{\hyperlink{classRobot}{Robot}}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Getter for the Position of \mbox{\hyperlink{classRobot}{Robot}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classRobot_a2d6dd7a322d2d2c0bc1c44566253b9f1}{Get\+Direction}} () const
-\begin{DoxyCompactList}\small\item\em The direction of robot. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Getter for the direction of robot. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classRobot_abe629d465798403a706f574b33284659}{Get\+Destination}} () const
-\begin{DoxyCompactList}\small\item\em The destination of robot. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Getter for the destination of robot. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classRobot_a2b56c4d4cf7b0ef07ce6713ffae6e490}{Get\+Availability}} () const
-\begin{DoxyCompactList}\small\item\em The availability of drine. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em The availability of the robot. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classRobot_a0ac023c6fb5d7ad58b180903010d2924}\label{classRobot_a0ac023c6fb5d7ad58b180903010d2924}} 
 Json\+Object \mbox{\hyperlink{classRobot_a0ac023c6fb5d7ad58b180903010d2924}{Get\+Details}} () const override
-\begin{DoxyCompactList}\small\item\em get details from Json\+Object obj \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em get details from Json\+Object corresponding to this robot. \end{DoxyCompactList}\item 
 float \mbox{\hyperlink{classRobot_ad199885470ae6e1109153526c21473c5}{Get\+Speed}} () const
-\begin{DoxyCompactList}\small\item\em The speed of robot. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Getter for the speed of robot. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classRobot_af3e8590ef2a275caf25363079f7b4273}{Get\+Strategy\+Name}} ()
-\begin{DoxyCompactList}\small\item\em The strategy of robot. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Getter for the movement strategy of robot. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classRobot_a2ef6424fa88e43973ade3fddb4ec649b}{Set\+Availability}} (bool choice)
 \begin{DoxyCompactList}\small\item\em set availability \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classRobot_a35ce73ea17f6cfbcbfe272c6bff038ba}{Set\+Position}} (\mbox{\hyperlink{classVector3}{Vector3}} pos\+\_\+)
-\begin{DoxyCompactList}\small\item\em set the position of object \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em set the position of the robot. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classRobot_aaa0e41dbf57cb4040c0319b93c5a008c}{Set\+Direction}} (\mbox{\hyperlink{classVector3}{Vector3}} dir\+\_\+)
-\begin{DoxyCompactList}\small\item\em set the direction of object \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em set the direction of the robot. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classRobot_a557af09ca03132837bc6574bca6fbe05}{Set\+Destination}} (\mbox{\hyperlink{classVector3}{Vector3}} des\+\_\+)
-\begin{DoxyCompactList}\small\item\em set the destination of obj \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em set the destination of the robot. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classRobot_a59c7dbc7346f86df3941c5dad9b12507}{Set\+Strategy\+Name}} (std\+::string strategy\+Name\+\_\+)
-\begin{DoxyCompactList}\small\item\em set the strategy \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em set the strategy movement strategy of the robot. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classRobot_a1cb405ec49d47c46f3aa87fde1415b59}{Rotate}} (double angle)
 \begin{DoxyCompactList}\small\item\em rotate robot by using angle and formula \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
-A class built to manipulate movement of \mbox{\hyperlink{classRobot}{Robot}}. 
+A class built to manipulate movement of Robots. Inherits from \mbox{\hyperlink{classIEntity}{I\+Entity}}. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classRobot_a007753e52e18f9a487d8241da97d4150}\label{classRobot_a007753e52e18f9a487d8241da97d4150}} 
+\mbox{\Hypertarget{classRobot_acda89d5cfb3e9efeb2fd15d2a732b335}\label{classRobot_acda89d5cfb3e9efeb2fd15d2a732b335}} 
 \index{Robot@{Robot}!Robot@{Robot}}
 \index{Robot@{Robot}!Robot@{Robot}}
 \doxysubsubsection{\texorpdfstring{Robot()}{Robot()}}
-{\footnotesize\ttfamily Robot\+::\+Robot (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{obj }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Robot\+::\+Robot (\begin{DoxyParamCaption}\item[{const Json\+Object \&}]{obj }\end{DoxyParamCaption})}
 
 
 
-constructor of \mbox{\hyperlink{classRobot}{Robot}} 
+constructor for \mbox{\hyperlink{classRobot}{Robot}} class. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em obj} & -\/ Json\+Object type obj \\
+{\em obj} & -\/ Json\+Object to represent the robot in the simulation. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classRobot_a2aeab6ed0e3dc953c076a2d3937e661d}\label{classRobot_a2aeab6ed0e3dc953c076a2d3937e661d}} 
@@ -107,7 +107,7 @@ none.
 
 
 
-The availability of drine. 
+The availability of the robot. 
 
 \begin{DoxyReturn}{Returns}
 return true if it is available, if not return false 
@@ -124,10 +124,10 @@ Reimplemented from \mbox{\hyperlink{classIEntity_a90348881691a37d5c3d63265ed3463
 
 
 
-The destination of robot. 
+Getter for the destination of robot. 
 
 \begin{DoxyReturn}{Returns}
-return the destination of robot 
+return a \mbox{\hyperlink{classVector3}{Vector3}} representing the destination of robot 
 \end{DoxyReturn}
 
 
@@ -141,10 +141,10 @@ Implements \mbox{\hyperlink{classIEntity_a0dcaf865938ab1fb49c8389b5e580d90}{I\+E
 
 
 
-The direction of robot. 
+Getter for the direction of robot. 
 
 \begin{DoxyReturn}{Returns}
-return the direction of robot 
+return a \mbox{\hyperlink{classVector3}{Vector3}} representing the direction of robot 
 \end{DoxyReturn}
 
 
@@ -158,10 +158,10 @@ Implements \mbox{\hyperlink{classIEntity_aa99a8fef8b22195a5113c38ef51f086d}{I\+E
 
 
 
-The Position of \mbox{\hyperlink{classRobot}{Robot}}. 
+Getter for the Position of \mbox{\hyperlink{classRobot}{Robot}}. 
 
 \begin{DoxyReturn}{Returns}
-return the position of robot 
+return a \mbox{\hyperlink{classVector3}{Vector3}} representing the position of the robot 
 \end{DoxyReturn}
 
 
@@ -175,10 +175,10 @@ Implements \mbox{\hyperlink{classIEntity_a9bc32587aab91761fc0e718612498199}{I\+E
 
 
 
-The speed of robot. 
+Getter for the speed of robot. 
 
 \begin{DoxyReturn}{Returns}
-return the speed of robot 
+return a float representing the speed of robot 
 \end{DoxyReturn}
 
 
@@ -192,10 +192,10 @@ Implements \mbox{\hyperlink{classIEntity_a6520d2b1dc71d092bab38ef9f5cc9ff4}{I\+E
 
 
 
-The strategy of robot. 
+Getter for the movement strategy of robot. 
 
 \begin{DoxyReturn}{Returns}
-return the name of strategy that is used 
+return the name of strategy that is used (a string) 
 \end{DoxyReturn}
 
 
@@ -213,7 +213,7 @@ rotate robot by using angle and formula
 
 
 \begin{DoxyParams}{Parameters}
-{\em angle} & -\/ angle of robot \\
+{\em angle} & -\/ double representing the angle to use for rotating the robot. \\
 \hline
 \end{DoxyParams}
 
@@ -232,7 +232,7 @@ set availability
 
 
 \begin{DoxyParams}{Parameters}
-{\em choice} & -\/ bool type \\
+{\em choice} & -\/ bool type. True if available, false if not available. \\
 \hline
 \end{DoxyParams}
 
@@ -247,11 +247,11 @@ Reimplemented from \mbox{\hyperlink{classIEntity_adf3acdf4764f5ff25f89d7814e3955
 
 
 
-set the destination of obj 
+set the destination of the robot. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em des\+\_\+} & -\/ \mbox{\hyperlink{classVector3}{Vector3}} obj \\
+{\em des\+\_\+} & -\/ \mbox{\hyperlink{classVector3}{Vector3}} representing the new destination of the robot. \\
 \hline
 \end{DoxyParams}
 
@@ -266,11 +266,11 @@ Reimplemented from \mbox{\hyperlink{classIEntity_aa473000823f673e9d7b89aed3cd3fc
 
 
 
-set the direction of object 
+set the direction of the robot. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em dir\+\_\+} & -\/ \mbox{\hyperlink{classVector3}{Vector3}} obj \\
+{\em dir\+\_\+} & -\/ \mbox{\hyperlink{classVector3}{Vector3}} representing the robot\textquotesingle{}s new direction. \\
 \hline
 \end{DoxyParams}
 
@@ -285,11 +285,11 @@ Reimplemented from \mbox{\hyperlink{classIEntity_a64bfaa448a929ca71693ff3e2edb9d
 
 
 
-set the position of object 
+set the position of the robot. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em pos\+\_\+} & -\/ \mbox{\hyperlink{classVector3}{Vector3}} obj \\
+{\em pos\+\_\+} & -\/ \mbox{\hyperlink{classVector3}{Vector3}} representing the robot\textquotesingle{}s new position. \\
 \hline
 \end{DoxyParams}
 
@@ -304,7 +304,7 @@ Reimplemented from \mbox{\hyperlink{classIEntity_af0475048b09dc13ed6cf8e7c7be2ae
 
 
 
-set the strategy 
+set the strategy movement strategy of the robot. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -319,5 +319,5 @@ Reimplemented from \mbox{\hyperlink{classIEntity_a933def05f85783fddbf05e8257cc88
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Robot.\+h\item 
-/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Robot.\+cc\end{DoxyCompactItemize}
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Robot.\+h\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Robot.\+cc\end{DoxyCompactItemize}

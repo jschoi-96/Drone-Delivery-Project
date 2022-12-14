@@ -1,4 +1,4 @@
 <map id="BaseWeather" name="BaseWeather">
-<area shape="rect" id="node1" title="This class inherits from the IWeather and is responsible for setting base weather." alt="" coords="5,80,115,107"/>
-<area shape="rect" id="node2" href="$classIWeather.html" title="A class built for IWeather." alt="" coords="19,5,101,32"/>
+<area shape="rect" id="node1" title="This class inherits from the IWeather and is responsible for setting base weather...." alt="" coords="5,80,115,107"/>
+<area shape="rect" id="node2" href="$classIWeather.html" title="Interface built for different weather patterns/reactions." alt="" coords="19,5,101,32"/>
 </map>

@@ -70,7 +70,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Decorator method to implement other feature.  
+<p>Decorator method to implement other feature. Inherits from <a class="el" href="classIStrategy.html" title="A class built for Istrategy. Parent class for drone movement strategy classes.">IStrategy</a>.  
  <a href="classCelebrationDecorator.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="CelebrationDecorator_8h_source.html">CelebrationDecorator.h</a>&gt;</code></p>
@@ -79,10 +79,10 @@ Inheritance diagram for CelebrationDecorator:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCelebrationDecorator__inherit__graph.png" border="0" usemap="#CelebrationDecorator_inherit__map" alt="Inheritance graph"/></div>
 <map name="CelebrationDecorator_inherit__map" id="CelebrationDecorator_inherit__map">
-<area shape="rect" title="Decorator method to implement other feature." alt="" coords="55,80,216,107"/>
-<area shape="rect" href="classJumpDecorator.html" title="Decorator method to jump object." alt="" coords="5,155,124,181"/>
-<area shape="rect" href="classSpinDecorator.html" title="Decorator method to spin object." alt="" coords="149,155,263,181"/>
-<area shape="rect" href="classIStrategy.html" title="A class built for Istrategy." alt="" coords="95,5,176,32"/>
+<area shape="rect" title="Decorator method to implement other feature. Inherits from IStrategy." alt="" coords="55,80,216,107"/>
+<area shape="rect" href="classJumpDecorator.html" title="Decorator class for the jump celebration. Inherits from CelebrationDecorator." alt="" coords="5,155,124,181"/>
+<area shape="rect" href="classSpinDecorator.html" title="Decorator class for the spin celebration. Inherits from CelebrationDecorator." alt="" coords="149,155,263,181"/>
+<area shape="rect" href="classIStrategy.html" title="A class built for Istrategy. Parent class for drone movement strategy classes." alt="" coords="95,5,176,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -90,15 +90,15 @@ Collaboration diagram for CelebrationDecorator:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCelebrationDecorator__coll__graph.png" border="0" usemap="#CelebrationDecorator_coll__map" alt="Collaboration graph"/></div>
 <map name="CelebrationDecorator_coll__map" id="CelebrationDecorator_coll__map">
-<area shape="rect" title="Decorator method to implement other feature." alt="" coords="5,95,167,121"/>
-<area shape="rect" href="classIStrategy.html" title="A class built for Istrategy." alt="" coords="45,5,127,32"/>
+<area shape="rect" title="Decorator method to implement other feature. Inherits from IStrategy." alt="" coords="5,95,167,121"/>
+<area shape="rect" href="classIStrategy.html" title="A class built for Istrategy. Parent class for drone movement strategy classes." alt="" coords="45,5,127,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af1ea3e7a231fe372c9fec0f7175dc724"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCelebrationDecorator.html#af1ea3e7a231fe372c9fec0f7175dc724">CelebrationDecorator</a> (<a class="el" href="classIStrategy.html">IStrategy</a> *strategy_)</td></tr>
-<tr class="memdesc:af1ea3e7a231fe372c9fec0f7175dc724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructore for <a class="el" href="classCelebrationDecorator.html" title="Decorator method to implement other feature.">CelebrationDecorator</a>.  <a href="classCelebrationDecorator.html#af1ea3e7a231fe372c9fec0f7175dc724">More...</a><br /></td></tr>
+<tr class="memdesc:af1ea3e7a231fe372c9fec0f7175dc724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructore for <a class="el" href="classCelebrationDecorator.html" title="Decorator method to implement other feature. Inherits from IStrategy.">CelebrationDecorator</a>.  <a href="classCelebrationDecorator.html#af1ea3e7a231fe372c9fec0f7175dc724">More...</a><br /></td></tr>
 <tr class="separator:af1ea3e7a231fe372c9fec0f7175dc724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaea8fd11f7d0e12dd79ccdc63ab1bbf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCelebrationDecorator.html#aaea8fd11f7d0e12dd79ccdc63ab1bbf6">Move</a> (<a class="el" href="classIEntity.html">IEntity</a> *entity, double dt)</td></tr>
 <tr class="memdesc:aaea8fd11f7d0e12dd79ccdc63ab1bbf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for moving drone/robot pairs towards their destination.  <a href="classCelebrationDecorator.html#aaea8fd11f7d0e12dd79ccdc63ab1bbf6">More...</a><br /></td></tr>
@@ -109,19 +109,16 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:abd8ba74a8cf4dc060feac318fc10e2a9"><td class="memItemLeft" align="right" valign="top"><a id="abd8ba74a8cf4dc060feac318fc10e2a9"></a>
-<a class="el" href="classIStrategy.html">IStrategy</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>strategy</b></td></tr>
+<tr class="memitem:abd8ba74a8cf4dc060feac318fc10e2a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIStrategy.html">IStrategy</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCelebrationDecorator.html#abd8ba74a8cf4dc060feac318fc10e2a9">strategy</a></td></tr>
 <tr class="separator:abd8ba74a8cf4dc060feac318fc10e2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6c0f2a022f2d9df9345e3e5a8cbe7b1"><td class="memItemLeft" align="right" valign="top"><a id="ab6c0f2a022f2d9df9345e3e5a8cbe7b1"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>time</b></td></tr>
+<tr class="memitem:ab6c0f2a022f2d9df9345e3e5a8cbe7b1"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCelebrationDecorator.html#ab6c0f2a022f2d9df9345e3e5a8cbe7b1">time</a></td></tr>
 <tr class="separator:ab6c0f2a022f2d9df9345e3e5a8cbe7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classIStrategy"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classIStrategy')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classIStrategy.html">IStrategy</a></td></tr>
-<tr class="memitem:abdcb4741836a0bb72017f52752962ba2 inherit pro_attribs_classIStrategy"><td class="memItemLeft" align="right" valign="top"><a id="abdcb4741836a0bb72017f52752962ba2"></a>
-const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b></td></tr>
+<tr class="memitem:abdcb4741836a0bb72017f52752962ba2 inherit pro_attribs_classIStrategy"><td class="memItemLeft" align="right" valign="top">const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIStrategy.html#abdcb4741836a0bb72017f52752962ba2">graph</a></td></tr>
 <tr class="separator:abdcb4741836a0bb72017f52752962ba2 inherit pro_attribs_classIStrategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Decorator method to implement other feature. </p>
+<div class="textblock"><p>Decorator method to implement other feature. Inherits from <a class="el" href="classIStrategy.html" title="A class built for Istrategy. Parent class for drone movement strategy classes.">IStrategy</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af1ea3e7a231fe372c9fec0f7175dc724"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af1ea3e7a231fe372c9fec0f7175dc724">&#9670;&nbsp;</a></span>CelebrationDecorator()</h2>
@@ -147,10 +144,10 @@ const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b></
 </table>
 </div><div class="memdoc">
 
-<p>Constructore for <a class="el" href="classCelebrationDecorator.html" title="Decorator method to implement other feature.">CelebrationDecorator</a>. </p>
+<p>Constructore for <a class="el" href="classCelebrationDecorator.html" title="Decorator method to implement other feature. Inherits from IStrategy.">CelebrationDecorator</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">strategy_</td><td><a class="el" href="classIStrategy.html" title="A class built for Istrategy.">IStrategy</a> type obj </td></tr>
+    <tr><td class="paramname">strategy_</td><td><a class="el" href="classIStrategy.html" title="A class built for Istrategy. Parent class for drone movement strategy classes.">IStrategy</a> type obj </td></tr>
   </table>
   </dd>
 </dl>
@@ -240,9 +237,56 @@ const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b></
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abd8ba74a8cf4dc060feac318fc10e2a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd8ba74a8cf4dc060feac318fc10e2a9">&#9670;&nbsp;</a></span>strategy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classIStrategy.html">IStrategy</a>* CelebrationDecorator::strategy</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Curent Movement strategy of the entity being moved. </p>
+
+</div>
+</div>
+<a id="ab6c0f2a022f2d9df9345e3e5a8cbe7b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c0f2a022f2d9df9345e3e5a8cbe7b1">&#9670;&nbsp;</a></span>time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CelebrationDecorator::time</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Amount of time elapsed during the celebration so far. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="CelebrationDecorator_8h_source.html">CelebrationDecorator.h</a></li>
-<li>/home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/src/CelebrationDecorator.cc</li>
+<li>/home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="CelebrationDecorator_8h_source.html">CelebrationDecorator.h</a></li>
+<li>/home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/src/CelebrationDecorator.cc</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

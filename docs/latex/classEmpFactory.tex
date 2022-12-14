@@ -2,7 +2,7 @@
 \label{classEmpFactory}\index{EmpFactory@{EmpFactory}}
 
 
-A class built using the factory design pattern but for emp weather.  
+A class built using the factory design pattern but for emp weather. Inherits from \mbox{\hyperlink{classIEntityFactory}{I\+Entity\+Factory}}.  
 
 
 
@@ -11,8 +11,7 @@ A class built using the factory design pattern but for emp weather.
 
 
 
-Inheritance diagram for Emp\+Factory\+:
-\nopagebreak
+Inheritance diagram for Emp\+Factory\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Emp\+Factory\+:
 \end{figure}
 
 
-Collaboration diagram for Emp\+Factory\+:
-\nopagebreak
+Collaboration diagram for Emp\+Factory\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -34,12 +32,12 @@ Collaboration diagram for Emp\+Factory\+:
 \item 
 virtual \mbox{\hyperlink{classEmpFactory_af631b3f38c02bee59cd686e398a1d34d}{$\sim$\+Emp\+Factory}} ()
 \begin{DoxyCompactList}\small\item\em A deconstructor for emp factory. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ \mbox{\hyperlink{classEmpFactory_a6c7121acea4c84653c6f1d81a5c7a3fa}{Create\+Entity}} (Json\+Object \&entity)
-\begin{DoxyCompactList}\small\item\em Creates the emp weather entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ \mbox{\hyperlink{classEmpFactory_a7e5eb8c11cf08cdc74e91bdde8fd4396}{Create\+Entity}} (const Json\+Object \&entity)
+\begin{DoxyCompactList}\small\item\em Attempts to create an \mbox{\hyperlink{classEmpWeather}{Emp\+Weather}} \mbox{\hyperlink{classIEntity}{I\+Entity}}. Returns the entity if it was created, otherwise returns null. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-A class built using the factory design pattern but for emp weather. 
+A class built using the factory design pattern but for emp weather. Inherits from \mbox{\hyperlink{classIEntityFactory}{I\+Entity\+Factory}}. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classEmpFactory_af631b3f38c02bee59cd686e398a1d34d}\label{classEmpFactory_af631b3f38c02bee59cd686e398a1d34d}} 
@@ -58,31 +56,31 @@ nothing
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classEmpFactory_a6c7121acea4c84653c6f1d81a5c7a3fa}\label{classEmpFactory_a6c7121acea4c84653c6f1d81a5c7a3fa}} 
+\mbox{\Hypertarget{classEmpFactory_a7e5eb8c11cf08cdc74e91bdde8fd4396}\label{classEmpFactory_a7e5eb8c11cf08cdc74e91bdde8fd4396}} 
 \index{EmpFactory@{EmpFactory}!CreateEntity@{CreateEntity}}
 \index{CreateEntity@{CreateEntity}!EmpFactory@{EmpFactory}}
 \doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ Emp\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ Emp\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{const Json\+Object \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Creates the emp weather entity. 
+Attempts to create an \mbox{\hyperlink{classEmpWeather}{Emp\+Weather}} \mbox{\hyperlink{classIEntity}{I\+Entity}}. Returns the entity if it was created, otherwise returns null. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em entity} & jsonobj\& \\
+{\em entity} & J\+S\+ON object the \mbox{\hyperlink{classEmpWeather}{Emp\+Weather}} object should be created from. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Ientity$\ast$ 
+the new \mbox{\hyperlink{classEmpWeather}{Emp\+Weather}} entity if the J\+S\+ON parameter corresponds to an \mbox{\hyperlink{classEmpWeather}{Emp\+Weather}}. otherwise returns a nullpointer. 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classIEntityFactory_a9bd53cf7ca21ab252968062ea5d88180}{I\+Entity\+Factory}}.
+Implements \mbox{\hyperlink{classIEntityFactory_ab28e669d7f78ce426620fa4e472f3adb}{I\+Entity\+Factory}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Emp\+Factory.\+h\item 
-/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Emp\+Factory.\+cc\end{DoxyCompactItemize}
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Emp\+Factory.\+h\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Emp\+Factory.\+cc\end{DoxyCompactItemize}

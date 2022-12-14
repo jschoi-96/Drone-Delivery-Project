@@ -47,8 +47,17 @@ class DfsStrategy : public IStrategy {
   bool IsCompleted();
 
  private:
+  /**
+   * vector of float vectors. Each float vector represents a node in the path.
+   **/
   std::vector<std::vector<float>> path;
+  /**
+   * current index of the position nodes in the path.
+   **/
   int currentIndex;
+  /**
+   * maximum index of position nodes in the path.
+   **/
   int maxIndex;
 };      // end class
 #endif  // LIBS_TRANSIT_INCLUDE_DFSSTRATEGY_H_

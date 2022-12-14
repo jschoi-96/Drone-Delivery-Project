@@ -6,7 +6,7 @@
 #include "IStrategy.h"
 
 /**
- *@brief Decorator method to implement other feature
+ *@brief Decorator method to implement other feature. Inherits from IStrategy.
  **/
 class CelebrationDecorator : public IStrategy {
   /**
@@ -37,7 +37,13 @@ class CelebrationDecorator : public IStrategy {
   bool IsCompleted();
 
  protected:
+  /**
+   * Curent Movement strategy of the entity being moved.
+   **/
   IStrategy *strategy;
+  /**
+   * Amount of time elapsed during the celebration so far.
+   **/
   float time;
 };  // close class
 

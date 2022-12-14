@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: /home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/BaseWeather.h Source File</title>
+<title>My Project: /home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/BaseWeather.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,40 +69,44 @@ $(function() {
 <div class="title">BaseWeather.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BASE_WEATHER_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BASE_WEATHER_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LIBS_TRANSIT_INCLUDE_BASEWEATHER_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LIBS_TRANSIT_INCLUDE_BASEWEATHER_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;IEntity.h&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;IReaction.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;IWeather.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classBaseWeather.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBaseWeather.html">BaseWeather</a> : <span class="keyword">public</span> <a class="code" href="classIWeather.html">IWeather</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  <a class="code" href="classBaseWeather.html#a15f142669dd0d22e26716e9e9007e889">~BaseWeather</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classBaseWeather.html#a6ead11189f8ce07457deea25fc6afad3">Execute</a>(<a class="code" href="classIEntity.html">IEntity</a>* parent, <a class="code" href="classIReaction.html">IReaction</a>* reaction, <span class="keywordtype">double</span> dt,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;               std::vector&lt;IEntity*&gt; scheduler);</div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classBaseWeather.html#a739374c45e55d4695ceb7bdbda8e7d0c">   36</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classBaseWeather.html#a739374c45e55d4695ceb7bdbda8e7d0c">IsInside</a>(<a class="code" href="classIEntity.html">IEntity</a>* parent) { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">static</span> <a class="code" href="classIWeather.html">IWeather</a>* <a class="code" href="classBaseWeather.html#abc0356c8396497b4435b7841b3206e26">GetInstance</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classBaseWeather.html#ad6076e5df3c4081eff0770c10782ed28">   48</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classBaseWeather.html#ad6076e5df3c4081eff0770c10782ed28">SetInstance</a>(<a class="code" href="classIWeather.html">IWeather</a>* new_instance) { instance = new_instance; }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="comment">// there is ONLY ONE WEATHER IN THE WORLDDDDDD</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span>  <a class="code" href="classBaseWeather.html">BaseWeather</a>() {}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keyword">static</span> <a class="code" href="classIWeather.html">IWeather</a>* instance;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classBaseWeather.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBaseWeather.html">BaseWeather</a> : <span class="keyword">public</span> <a class="code" href="classIWeather.html">IWeather</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <a class="code" href="classBaseWeather.html#a15f142669dd0d22e26716e9e9007e889">~BaseWeather</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classBaseWeather.html#a6ead11189f8ce07457deea25fc6afad3">Execute</a>(<a class="code" href="classIEntity.html">IEntity</a>* parent, <a class="code" href="classIReaction.html">IReaction</a>* reaction, <span class="keywordtype">double</span> dt,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;               std::vector&lt;IEntity*&gt; scheduler);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classBaseWeather.html#a739374c45e55d4695ceb7bdbda8e7d0c">   39</a></span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classBaseWeather.html#a739374c45e55d4695ceb7bdbda8e7d0c">IsInside</a>(<a class="code" href="classIEntity.html">IEntity</a>* parent) { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keyword">static</span> <a class="code" href="classIWeather.html">IWeather</a>* <a class="code" href="classBaseWeather.html#abc0356c8396497b4435b7841b3206e26">GetInstance</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classBaseWeather.html#ad6076e5df3c4081eff0770c10782ed28">   53</a></span>&#160;  <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classBaseWeather.html#ad6076e5df3c4081eff0770c10782ed28">SetInstance</a>(<a class="code" href="classIWeather.html">IWeather</a>* new_instance) { instance = new_instance; }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="comment">// there is ONLY ONE WEATHER IN THE WORLDDDDDD</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"></span>  <a class="code" href="classBaseWeather.html">BaseWeather</a>() {}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <span class="keyword">static</span> <a class="code" href="classIWeather.html">IWeather</a>* instance;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif  // LIBS_TRANSIT_INCLUDE_BASEWEATHER_H_</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassBaseWeather_html"><div class="ttname"><a href="classBaseWeather.html">BaseWeather</a></div><div class="ttdoc">This class inherits from the IWeather and is responsible for setting base weather.</div><div class="ttdef"><b>Definition:</b> BaseWeather.h:11</div></div>
+<div class="ttc" id="aclassBaseWeather_html"><div class="ttname"><a href="classBaseWeather.html">BaseWeather</a></div><div class="ttdoc">This class inherits from the IWeather and is responsible for setting base weather....</div><div class="ttdef"><b>Definition:</b> BaseWeather.h:12</div></div>
 <div class="ttc" id="aclassBaseWeather_html_a6ead11189f8ce07457deea25fc6afad3"><div class="ttname"><a href="classBaseWeather.html#a6ead11189f8ce07457deea25fc6afad3">BaseWeather::Execute</a></div><div class="ttdeci">void Execute(IEntity *parent, IReaction *reaction, double dt, std::vector&lt; IEntity * &gt; scheduler)</div><div class="ttdoc">executes the reaction happening to the drone with base weather.</div><div class="ttdef"><b>Definition:</b> BaseWeather.cc:14</div></div>
 <div class="ttc" id="aclassBaseWeather_html_abc0356c8396497b4435b7841b3206e26"><div class="ttname"><a href="classBaseWeather.html#abc0356c8396497b4435b7841b3206e26">BaseWeather::GetInstance</a></div><div class="ttdeci">static IWeather * GetInstance()</div><div class="ttdoc">getter for instance of base weather.</div><div class="ttdef"><b>Definition:</b> BaseWeather.cc:8</div></div>
-<div class="ttc" id="aclassIWeather_html"><div class="ttname"><a href="classIWeather.html">IWeather</a></div><div class="ttdoc">A class built for IWeather.</div><div class="ttdef"><b>Definition:</b> IWeather.h:10</div></div>
-<div class="ttc" id="aclassBaseWeather_html_a739374c45e55d4695ceb7bdbda8e7d0c"><div class="ttname"><a href="classBaseWeather.html#a739374c45e55d4695ceb7bdbda8e7d0c">BaseWeather::IsInside</a></div><div class="ttdeci">bool IsInside(IEntity *parent)</div><div class="ttdoc">Checks to see if the drone is inside the base weather.</div><div class="ttdef"><b>Definition:</b> BaseWeather.h:36</div></div>
-<div class="ttc" id="aclassIReaction_html"><div class="ttname"><a href="classIReaction.html">IReaction</a></div><div class="ttdoc">A class built for IReaction.</div><div class="ttdef"><b>Definition:</b> IReaction.h:11</div></div>
-<div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to see interface.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
+<div class="ttc" id="aclassIWeather_html"><div class="ttname"><a href="classIWeather.html">IWeather</a></div><div class="ttdoc">Interface built for different weather patterns/reactions.</div><div class="ttdef"><b>Definition:</b> IWeather.h:10</div></div>
+<div class="ttc" id="aclassBaseWeather_html_a739374c45e55d4695ceb7bdbda8e7d0c"><div class="ttname"><a href="classBaseWeather.html#a739374c45e55d4695ceb7bdbda8e7d0c">BaseWeather::IsInside</a></div><div class="ttdeci">bool IsInside(IEntity *parent)</div><div class="ttdoc">Checks to see if the drone is inside a weather pattern.</div><div class="ttdef"><b>Definition:</b> BaseWeather.h:39</div></div>
+<div class="ttc" id="aclassIReaction_html"><div class="ttname"><a href="classIReaction.html">IReaction</a></div><div class="ttdoc">IReaction class. Responsible for the physical affects of different weather patterns on entities.</div><div class="ttdef"><b>Definition:</b> IReaction.h:11</div></div>
+<div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to for moving/updating entities in the simulation.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
 <div class="ttc" id="aclassBaseWeather_html_a15f142669dd0d22e26716e9e9007e889"><div class="ttname"><a href="classBaseWeather.html#a15f142669dd0d22e26716e9e9007e889">BaseWeather::~BaseWeather</a></div><div class="ttdeci">~BaseWeather() override=default</div><div class="ttdoc">Destructor for baseWeather class.</div></div>
-<div class="ttc" id="aclassBaseWeather_html_ad6076e5df3c4081eff0770c10782ed28"><div class="ttname"><a href="classBaseWeather.html#ad6076e5df3c4081eff0770c10782ed28">BaseWeather::SetInstance</a></div><div class="ttdeci">static void SetInstance(IWeather *new_instance)</div><div class="ttdoc">setter for instance of baseWeather class.</div><div class="ttdef"><b>Definition:</b> BaseWeather.h:48</div></div>
+<div class="ttc" id="aclassBaseWeather_html_ad6076e5df3c4081eff0770c10782ed28"><div class="ttname"><a href="classBaseWeather.html#ad6076e5df3c4081eff0770c10782ed28">BaseWeather::SetInstance</a></div><div class="ttdeci">static void SetInstance(IWeather *new_instance)</div><div class="ttdoc">setter for a new instance of a Weather object.</div><div class="ttdef"><b>Definition:</b> BaseWeather.h:53</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -19,9 +19,9 @@ class IEntityFactory {
   virtual ~IEntityFactory() {}
 
   /**
-   * @brief Creates entity
-   * @param entity - JsonObject type obj
-   * @return none.
+   * @brief Creates entity using the given JSON object, if possible.
+   * @param entity - JsonObject to be used to create the new entity.
+   * @return Entity that was created if it was created successfully, or a nullpointer if creation failed.
    **/
   virtual IEntity* CreateEntity(const JsonObject& entity) = 0;
 };

@@ -6,29 +6,31 @@
 #include "IWeather.h"
 #include "IZoneWeather.h"
 /**
- *@brief A class built for rain weather
+ *@brief A class built for rain weather. Inherits from IZoneWeather.
  **/
 class RainWeather : public IZoneWeather {
  public:
   /**
-   * @brief deconstructor for rainWeather.
+   * @brief destructor for rainWeather.
    *
    * @return nothing
    **/
   ~RainWeather() override = default;
+
   /**
-   * @brief constructor for rainWeather.
-   * @param obj jsonObject&
+   * @brief constructor for RainWeather.
+   * @param obj JSON object to be used for creating a RainWeather entity.
    * @return nothing
    **/
   RainWeather(const JsonObject& obj);
+
   /**
-   * @brief executes the reaction happening to the drone with rainweather.
+   * @brief executes the reaction happening to the drone with Rainweather.
    *
-   * @param parent which is the Ientity
-   * @param reaction current reaction
+   * @param parent The drone being affected by rain.
+   * @param reaction current weather reaction
    * @param dt delta time
-   * @param scheduler vector that holds the ientities.
+   * @param scheduler vector that holds the entities.
    *
    * @return none.
    **/

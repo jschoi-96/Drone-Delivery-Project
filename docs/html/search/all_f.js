@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['weatherreactdecorator_73',['WeatherReactDecorator',['../classWeatherReactDecorator.html',1,'WeatherReactDecorator'],['../classWeatherReactDecorator.html#aab1f4fbe0424704523d79f68d0145747',1,'WeatherReactDecorator::WeatherReactDecorator()']]],
-  ['windfactory_74',['WindFactory',['../classWindFactory.html',1,'']]],
-  ['windweather_75',['WindWeather',['../classWindWeather.html',1,'WindWeather'],['../classWindWeather.html#a4aadc73179cd2675fb70bb6f0ffadcaa',1,'WindWeather::WindWeather()']]]
+  ['vector3_93',['Vector3',['../classVector3.html',1,'Vector3'],['../classVector3.html#a0f49191f7e001e7f7ae1cb49522118b4',1,'Vector3::Vector3()'],['../classVector3.html#ad843eb49e7d4fce292ca66bbd835cfe5',1,'Vector3::Vector3(float x_, float y_, float z_)']]]
 ];

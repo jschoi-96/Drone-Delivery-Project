@@ -14,49 +14,53 @@
    brown = all 3
    */
 /**
- *@brief A class built for RegularReaction
+ *@brief A class built for RegularReactions. Inherits from IReaction.
  **/
 class RegularReaction : public IReaction {
  public:
   /**
    * @brief A constructor for Regularreaction
+   * @return none.
    **/
   RegularReaction() {}
+
   /**
-   * @brief A deconstructor for regularReaction
+   * @brief A destructor for regularReaction
+   * @return none.
    **/
   ~RegularReaction() override = default;
+
   /**
-   * @brief executes the reaction happening to the drone with wind
+   * @brief executes the reaction that is supposed to happen when a drone is affected by wind.
    *
-   * @param parent which is the Ientity
-   * @param reaction current reaction
+   * @param parent This is the drone being affected by wind.
    * @param dt delta time
-   * @param scheduler vector that holds the ientities.
-   * @param wind holds a vector3
+   * @param scheduler vector that holds the entities.
+   * @param wind holds a vector3 with details of the wind strength.
+   *
    * @return none.
    **/
   void react_wind(IEntity* parent, double* dt, std::vector<IEntity*>* scheduler,
                   Vector3 wind);
+
   /**
-   * @brief executes the reaction happening to the drone with rain
+   * @brief executes the reaction that is supposed to happen when a drone is affected by rain.
    *
-   * @param parent which is the Ientity
-   * @param reaction current reaction
+   * @param parent This is the drone being affected by rain.
    * @param dt delta time
-   * @param scheduler vector that holds the ientities.
+   * @param scheduler vector that holds the entities.
    *
    * @return none.
    **/
   void react_rain(IEntity* parent, double* dt,
                   std::vector<IEntity*>* scheduler);
+
   /**
-   * @brief executes the reaction happening to the drone with emp
+   * @brief executes the reaction that is supposed to happen when a drone is affected by an EMP.
    *
-   * @param parent which is the Ientity
-   * @param reaction current reaction
+   * @param parent This is the drone being affected by an EMP.
    * @param dt delta time
-   * @param scheduler vector that holds the ientities.
+   * @param scheduler vector that holds the entities.
    *
    * @return none.
    **/

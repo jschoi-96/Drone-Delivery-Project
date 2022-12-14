@@ -1,5 +1,5 @@
 <map id="WeatherReactDecorator" name="WeatherReactDecorator">
-<area shape="rect" id="node1" title="A class built using weatherreactDecorator." alt="" coords="5,95,184,121"/>
-<area shape="rect" id="node2" href="$classIEntity.html" title="A class built to see interface." alt="" coords="31,5,95,32"/>
-<area shape="rect" id="node3" href="$classIReaction.html" title="A class built for IReaction." alt="" coords="131,5,213,32"/>
+<area shape="rect" id="node1" title="A class built using weatherreactDecorator. Inherits from IEntity." alt="" coords="5,95,184,121"/>
+<area shape="rect" id="node2" href="$classIEntity.html" title="A class built to for moving/updating entities in the simulation." alt="" coords="31,5,95,32"/>
+<area shape="rect" id="node3" href="$classIReaction.html" title="IReaction class. Responsible for the physical affects of different weather patterns on entities." alt="" coords="131,5,213,32"/>
 </map>

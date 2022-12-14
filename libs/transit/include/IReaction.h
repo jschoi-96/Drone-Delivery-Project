@@ -6,17 +6,17 @@
 #include "math/vector3.h"
 
 /**
- *@brief A class built for IReaction
+ * @brief IReaction class. Responsible for the physical affects of different weather patterns on entities.
  **/
 class IReaction {
  public:
   /**
-   * @brief A deconstructor for IReaction
+   * @brief A destructor for the IReaction class.
    **/
   virtual ~IReaction() {}
 
   /**
-   * @brief A dictionary map that holds the color and hexcodes.
+   * @brief A dictionary map that holds colors and corresponding hexcodes.
    **/
   std::map<std::string, std::string> colors = {
       {"white", "#ffffff"},  {"red", "#ff0000"},    {"yellow", "#ffff00"},
@@ -24,13 +24,12 @@ class IReaction {
       {"purple", "#a020f0"}, {"brown", "#964b00"},  {"black", "#000000"}};
 
   /**
-   * @brief executes the reaction happening to the drone with wind
+   * @brief executes the reaction that is supposed to happen when a drone is affected by wind.
    *
-   * @param parent which is the Ientity
-   * @param reaction current reaction
+   * @param parent This is the drone being affected by wind.
    * @param dt delta time
-   * @param scheduler vector that holds the ientities.
-   * @param wind holds a vector3
+   * @param scheduler vector that holds the entities.
+   * @param wind holds a vector3 with details of the wind strength.
    *
    * @return none.
    **/
@@ -38,12 +37,11 @@ class IReaction {
                           std::vector<IEntity*>* scheduler, Vector3 wind) = 0;
 
   /**
-   * @brief executes the reaction happening to the drone with rain
+   * @brief executes the reaction that is supposed to happen when a drone is affected by rain.
    *
-   * @param parent which is the Ientity
-   * @param reaction current reaction
+   * @param parent This is the drone being affected by rain.
    * @param dt delta time
-   * @param scheduler vector that holds the ientities.
+   * @param scheduler vector that holds the entities.
    *
    * @return none.
    **/
@@ -51,12 +49,11 @@ class IReaction {
                           std::vector<IEntity*>* scheduler) = 0;
 
   /**
-   * @brief executes the reaction happening to the drone with emp
+   * @brief executes the reaction that is supposed to happen when a drone is affected by an EMP.
    *
-   * @param parent which is the Ientity
-   * @param reaction current reaction
+   * @param parent This is the drone being affected by an EMP.
    * @param dt delta time
-   * @param scheduler vector that holds the ientities.
+   * @param scheduler vector that holds the entities.
    *
    * @return none.
    **/

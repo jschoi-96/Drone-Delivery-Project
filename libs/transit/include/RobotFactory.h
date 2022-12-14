@@ -8,13 +8,13 @@
 #include "Robot.h"
 
 /**
- *@brief Factory method for Robot class
+ *@brief Factory method for Robot class. Inherits from IEntityFactory.
  **/
 class RobotFactory : public IEntityFactory {
  public:
   /**
-   * @brief Creates entity
-   * @param entity - JsonObject type obj
+   * @brief Creates a new drone entity.
+   * @param entity - JsonObject to represent the drone in the simulation.
    * @return none.
    **/
   IEntity* CreateEntity(const JsonObject& entity);

@@ -1,4 +1,4 @@
 <map id="BeelineStrategy" name="BeelineStrategy">
 <area shape="rect" id="node1" title="Implementation of Beeline strategy for drone movement. Inherits from IStrategy." alt="" coords="5,80,132,107"/>
-<area shape="rect" id="node2" href="$classIStrategy.html" title="A class built for Istrategy." alt="" coords="28,5,109,32"/>
+<area shape="rect" id="node2" href="$classIStrategy.html" title="A class built for Istrategy. Parent class for drone movement strategy classes." alt="" coords="28,5,109,32"/>
 </map>

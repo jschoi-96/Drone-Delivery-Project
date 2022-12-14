@@ -7,21 +7,21 @@
 #include "IStrategy.h"
 
 /**
- *@brief Decorator method to jump object
+ *@brief Decorator class for the jump celebration. Inherits from CelebrationDecorator.
  **/
 class JumpDecorator : public CelebrationDecorator {
  public:
   /**
-   *@brief Constructore for CelebrationDecorator
+   *@brief Constructor for JumpDecorator
    *
-   *@param strategy_ IStrategy type obj
+   *@param strategy_ IStrategy object. The jumping entities current movement strategy.
    **/
   JumpDecorator(IStrategy* strategy_) : CelebrationDecorator(strategy_) {}
 
   /**
-   * @brief Checks if the decorator has been completed
+   * @brief Checks if the decorator (jump) has been completed
    *
-   * @return true if completed, if not, return false.
+   * @return boolean. true if completed. if not, returns false.
    **/
   bool IsCompleted();
 

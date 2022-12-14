@@ -69,7 +69,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Implementation of Depth-first-search strategy for entity movement. Inherits from <a class="el" href="classIStrategy.html" title="A class built for Istrategy.">IStrategy</a>.  
+<p>Implementation of Depth-first-search strategy for entity movement. Inherits from <a class="el" href="classIStrategy.html" title="A class built for Istrategy. Parent class for drone movement strategy classes.">IStrategy</a>.  
  <a href="classDfsStrategy.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="DfsStrategy_8h_source.html">DfsStrategy.h</a>&gt;</code></p>
@@ -79,7 +79,7 @@ Inheritance diagram for DfsStrategy:</div>
 <div class="center"><img src="classDfsStrategy__inherit__graph.png" border="0" usemap="#DfsStrategy_inherit__map" alt="Inheritance graph"/></div>
 <map name="DfsStrategy_inherit__map" id="DfsStrategy_inherit__map">
 <area shape="rect" title="Implementation of Depth&#45;first&#45;search strategy for entity movement. Inherits from IStrategy." alt="" coords="5,80,104,107"/>
-<area shape="rect" href="classIStrategy.html" title="A class built for Istrategy." alt="" coords="14,5,95,32"/>
+<area shape="rect" href="classIStrategy.html" title="A class built for Istrategy. Parent class for drone movement strategy classes." alt="" coords="14,5,95,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -88,13 +88,13 @@ Collaboration diagram for DfsStrategy:</div>
 <div class="center"><img src="classDfsStrategy__coll__graph.png" border="0" usemap="#DfsStrategy_coll__map" alt="Collaboration graph"/></div>
 <map name="DfsStrategy_coll__map" id="DfsStrategy_coll__map">
 <area shape="rect" title="Implementation of Depth&#45;first&#45;search strategy for entity movement. Inherits from IStrategy." alt="" coords="5,80,104,107"/>
-<area shape="rect" href="classIStrategy.html" title="A class built for Istrategy." alt="" coords="14,5,95,32"/>
+<area shape="rect" href="classIStrategy.html" title="A class built for Istrategy. Parent class for drone movement strategy classes." alt="" coords="14,5,95,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac62cd4f89c6d75a4a719397cfb187afa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDfsStrategy.html#ac62cd4f89c6d75a4a719397cfb187afa">DfsStrategy</a> (<a class="el" href="classVector3.html">Vector3</a> position, <a class="el" href="classVector3.html">Vector3</a> destination, const IGraph *graph)</td></tr>
+<tr class="memitem:ac62cd4f89c6d75a4a719397cfb187afa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDfsStrategy.html#ac62cd4f89c6d75a4a719397cfb187afa">DfsStrategy</a> (<a class="el" href="classVector3.html">Vector3</a> position, <a class="el" href="classVector3.html">Vector3</a> destination, const IGraph *<a class="el" href="classIStrategy.html#abdcb4741836a0bb72017f52752962ba2">graph</a>)</td></tr>
 <tr class="memdesc:ac62cd4f89c6d75a4a719397cfb187afa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classDfsStrategy.html" title="Implementation of Depth-first-search strategy for entity movement. Inherits from IStrategy.">DfsStrategy</a> class.  <a href="classDfsStrategy.html#ac62cd4f89c6d75a4a719397cfb187afa">More...</a><br /></td></tr>
 <tr class="separator:ac62cd4f89c6d75a4a719397cfb187afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7e5c9681810fcc22194268b2ddce21e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDfsStrategy.html#aa7e5c9681810fcc22194268b2ddce21e">~DfsStrategy</a> ()</td></tr>
@@ -110,12 +110,11 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_classIStrategy"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classIStrategy')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classIStrategy.html">IStrategy</a></td></tr>
-<tr class="memitem:abdcb4741836a0bb72017f52752962ba2 inherit pro_attribs_classIStrategy"><td class="memItemLeft" align="right" valign="top"><a id="abdcb4741836a0bb72017f52752962ba2"></a>
-const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b></td></tr>
+<tr class="memitem:abdcb4741836a0bb72017f52752962ba2 inherit pro_attribs_classIStrategy"><td class="memItemLeft" align="right" valign="top">const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIStrategy.html#abdcb4741836a0bb72017f52752962ba2">graph</a></td></tr>
 <tr class="separator:abdcb4741836a0bb72017f52752962ba2 inherit pro_attribs_classIStrategy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Implementation of Depth-first-search strategy for entity movement. Inherits from <a class="el" href="classIStrategy.html" title="A class built for Istrategy.">IStrategy</a>. </p>
+<div class="textblock"><p>Implementation of Depth-first-search strategy for entity movement. Inherits from <a class="el" href="classIStrategy.html" title="A class built for Istrategy. Parent class for drone movement strategy classes.">IStrategy</a>. </p>
 <p>include </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac62cd4f89c6d75a4a719397cfb187afa"></a>
@@ -263,8 +262,8 @@ const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b></
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="DfsStrategy_8h_source.html">DfsStrategy.h</a></li>
-<li>/home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/src/DfsStrategy.cc</li>
+<li>/home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="DfsStrategy_8h_source.html">DfsStrategy.h</a></li>
+<li>/home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/src/DfsStrategy.cc</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -158,7 +158,7 @@ Public Member Functions</h2></td></tr>
 <p>Adds an entity to the program. </p>
 <p>Adds an entity to the program </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="classIEntity.html" title="A class built to see interface.">IEntity</a></td><td>type entity </td></tr>
+    <tr><td class="paramname">entity</td><td><a class="el" href="classIEntity.html" title="A class built to for moving/updating entities in the simulation.">IEntity</a> to add to the program. </td></tr>
   </table>
   </dd>
 </dl>
@@ -202,8 +202,8 @@ Public Member Functions</h2></td></tr>
 <p>Adds a path to the program. </p>
 <p>Adds a path to the program </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>- int variable </td></tr>
-    <tr><td class="paramname">path</td><td>- 2d dimention vector that has path </td></tr>
+    <tr><td class="paramname">id</td><td>- int variable that uniquely identifies a path </td></tr>
+    <tr><td class="paramname">path</td><td>- 2d dimention vector that has a path </td></tr>
   </table>
   </dd>
 </dl>
@@ -237,7 +237,7 @@ Public Member Functions</h2></td></tr>
 <p>Removes an entity from the program. </p>
 <p>Removes an entity from the program </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="classIEntity.html" title="A class built to see interface.">IEntity</a></td><td>type entity </td></tr>
+    <tr><td class="paramname">id</td><td>integer that uniquely identifies an entity </td></tr>
   </table>
   </dd>
 </dl>
@@ -271,7 +271,7 @@ Public Member Functions</h2></td></tr>
 <p>Removes a path from the program. </p>
 <p>Removes a path from the program </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>- int variable </td></tr>
+    <tr><td class="paramname">id</td><td>- int variable that uniquely identifies a path </td></tr>
   </table>
   </dd>
 </dl>
@@ -315,8 +315,8 @@ Public Member Functions</h2></td></tr>
 <p>Allows messages to be passed back to the view. </p>
 <p>Allows messages to be passed back to the view </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">event</td><td>- string variable </td></tr>
-    <tr><td class="paramname">details</td><td>- JsonObject obj </td></tr>
+    <tr><td class="paramname">event</td><td>- string variable. Name of event to send to sim view. </td></tr>
+    <tr><td class="paramname">details</td><td>- JsonObject of the entity who is responsible for the event. </td></tr>
   </table>
   </dd>
 </dl>
@@ -348,9 +348,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adds an entity to the program. </p>
-<p>update an entity to the program </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Updates an entity in the program </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="classIEntity.html" title="A class built to see interface.">IEntity</a></td><td>type entity </td></tr>
+    <tr><td class="paramname">entity</td><td>Ientity to update in the program. </td></tr>
   </table>
   </dd>
 </dl>
@@ -358,7 +358,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="IController_8h_source.html">IController.h</a></li>
+<li>/home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="IController_8h_source.html">IController.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

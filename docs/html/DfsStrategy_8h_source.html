@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: /home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/DfsStrategy.h Source File</title>
+<title>My Project: /home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/DfsStrategy.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,35 +69,37 @@ $(function() {
 <div class="title">DfsStrategy.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DFS_STRATEGY_H_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DFS_STRATEGY_H_</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LIBS_TRANSIT_INCLUDE_DFSSTRATEGY_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LIBS_TRANSIT_INCLUDE_DFSSTRATEGY_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;math/vector3.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;IStrategy.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;IEntity.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classDfsStrategy.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDfsStrategy.html">DfsStrategy</a> : <span class="keyword">public</span> <a class="code" href="classIStrategy.html">IStrategy</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classDfsStrategy.html#ac62cd4f89c6d75a4a719397cfb187afa">DfsStrategy</a>(<a class="code" href="classVector3.html">Vector3</a> position, <a class="code" href="classVector3.html">Vector3</a> destination, <span class="keyword">const</span> IGraph* graph);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classDfsStrategy.html#aa7e5c9681810fcc22194268b2ddce21e">~DfsStrategy</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classDfsStrategy.html#aab5a0a5c97f710075634b81a3e00ecf9">Move</a>(<a class="code" href="classIEntity.html">IEntity</a>* entity, <span class="keywordtype">double</span> dt);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classDfsStrategy.html#a30fb7b230d0244cd87de51a13a8d8c5b">IsCompleted</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::vector&lt;std::vector&lt;float&gt;&gt; path;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> currentIndex;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">int</span> maxIndex;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}; <span class="comment">//end class</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif // DFS_STRATEGY_H_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;IEntity.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;IStrategy.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;math/vector3.h&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classDfsStrategy.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDfsStrategy.html">DfsStrategy</a> : <span class="keyword">public</span> <a class="code" href="classIStrategy.html">IStrategy</a> {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <a class="code" href="classDfsStrategy.html#ac62cd4f89c6d75a4a719397cfb187afa">DfsStrategy</a>(<a class="code" href="classVector3.html">Vector3</a> position, <a class="code" href="classVector3.html">Vector3</a> destination, <span class="keyword">const</span> IGraph* <a class="code" href="classIStrategy.html#abdcb4741836a0bb72017f52752962ba2">graph</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="classDfsStrategy.html#aa7e5c9681810fcc22194268b2ddce21e">~DfsStrategy</a>();</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classDfsStrategy.html#aab5a0a5c97f710075634b81a3e00ecf9">Move</a>(<a class="code" href="classIEntity.html">IEntity</a>* entity, <span class="keywordtype">double</span> dt);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classDfsStrategy.html#a30fb7b230d0244cd87de51a13a8d8c5b">IsCompleted</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  std::vector&lt;std::vector&lt;float&gt;&gt; path;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">int</span> currentIndex;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordtype">int</span> maxIndex;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};      <span class="comment">// end class</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif  // LIBS_TRANSIT_INCLUDE_DFSSTRATEGY_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassDfsStrategy_html"><div class="ttname"><a href="classDfsStrategy.html">DfsStrategy</a></div><div class="ttdoc">Implementation of Depth-first-search strategy for entity movement. Inherits from IStrategy.</div><div class="ttdef"><b>Definition:</b> DfsStrategy.h:14</div></div>
-<div class="ttc" id="aclassDfsStrategy_html_a30fb7b230d0244cd87de51a13a8d8c5b"><div class="ttname"><a href="classDfsStrategy.html#a30fb7b230d0244cd87de51a13a8d8c5b">DfsStrategy::IsCompleted</a></div><div class="ttdeci">bool IsCompleted()</div><div class="ttdoc">Checks if the route has been completed.</div><div class="ttdef"><b>Definition:</b> DfsStrategy.cc:28</div></div>
-<div class="ttc" id="aclassIStrategy_html"><div class="ttname"><a href="classIStrategy.html">IStrategy</a></div><div class="ttdoc">A class built for Istrategy.</div><div class="ttdef"><b>Definition:</b> IStrategy.h:13</div></div>
-<div class="ttc" id="aclassDfsStrategy_html_ac62cd4f89c6d75a4a719397cfb187afa"><div class="ttname"><a href="classDfsStrategy.html#ac62cd4f89c6d75a4a719397cfb187afa">DfsStrategy::DfsStrategy</a></div><div class="ttdeci">DfsStrategy(Vector3 position, Vector3 destination, const IGraph *graph)</div><div class="ttdoc">Constructor for DfsStrategy class.</div><div class="ttdef"><b>Definition:</b> DfsStrategy.cc:7</div></div>
+<div class="ttc" id="aclassDfsStrategy_html"><div class="ttname"><a href="classDfsStrategy.html">DfsStrategy</a></div><div class="ttdoc">Implementation of Depth-first-search strategy for entity movement. Inherits from IStrategy.</div><div class="ttdef"><b>Definition:</b> DfsStrategy.h:16</div></div>
+<div class="ttc" id="aclassDfsStrategy_html_a30fb7b230d0244cd87de51a13a8d8c5b"><div class="ttname"><a href="classDfsStrategy.html#a30fb7b230d0244cd87de51a13a8d8c5b">DfsStrategy::IsCompleted</a></div><div class="ttdeci">bool IsCompleted()</div><div class="ttdoc">Checks if the route has been completed.</div><div class="ttdef"><b>Definition:</b> DfsStrategy.cc:29</div></div>
+<div class="ttc" id="aclassIStrategy_html"><div class="ttname"><a href="classIStrategy.html">IStrategy</a></div><div class="ttdoc">A class built for Istrategy. Parent class for drone movement strategy classes.</div><div class="ttdef"><b>Definition:</b> IStrategy.h:14</div></div>
+<div class="ttc" id="aclassDfsStrategy_html_ac62cd4f89c6d75a4a719397cfb187afa"><div class="ttname"><a href="classDfsStrategy.html#ac62cd4f89c6d75a4a719397cfb187afa">DfsStrategy::DfsStrategy</a></div><div class="ttdeci">DfsStrategy(Vector3 position, Vector3 destination, const IGraph *graph)</div><div class="ttdoc">Constructor for DfsStrategy class.</div><div class="ttdef"><b>Definition:</b> DfsStrategy.cc:8</div></div>
 <div class="ttc" id="aclassDfsStrategy_html_aa7e5c9681810fcc22194268b2ddce21e"><div class="ttname"><a href="classDfsStrategy.html#aa7e5c9681810fcc22194268b2ddce21e">DfsStrategy::~DfsStrategy</a></div><div class="ttdeci">~DfsStrategy()</div><div class="ttdoc">Destructor for DfsStrategy class.</div></div>
 <div class="ttc" id="aclassVector3_html"><div class="ttname"><a href="classVector3.html">Vector3</a></div><div class="ttdoc">A class built solely to handle 3D vector mathematics.</div><div class="ttdef"><b>Definition:</b> vector3.h:9</div></div>
-<div class="ttc" id="aclassDfsStrategy_html_aab5a0a5c97f710075634b81a3e00ecf9"><div class="ttname"><a href="classDfsStrategy.html#aab5a0a5c97f710075634b81a3e00ecf9">DfsStrategy::Move</a></div><div class="ttdeci">void Move(IEntity *entity, double dt)</div><div class="ttdoc">Used for moving drone/robot pairs towards their destination using the dfs movement strategy.</div><div class="ttdef"><b>Definition:</b> DfsStrategy.cc:32</div></div>
-<div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to see interface.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
+<div class="ttc" id="aclassDfsStrategy_html_aab5a0a5c97f710075634b81a3e00ecf9"><div class="ttname"><a href="classDfsStrategy.html#aab5a0a5c97f710075634b81a3e00ecf9">DfsStrategy::Move</a></div><div class="ttdeci">void Move(IEntity *entity, double dt)</div><div class="ttdoc">Used for moving drone/robot pairs towards their destination using the dfs movement strategy.</div><div class="ttdef"><b>Definition:</b> DfsStrategy.cc:33</div></div>
+<div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to for moving/updating entities in the simulation.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
+<div class="ttc" id="aclassIStrategy_html_abdcb4741836a0bb72017f52752962ba2"><div class="ttname"><a href="classIStrategy.html#abdcb4741836a0bb72017f52752962ba2">IStrategy::graph</a></div><div class="ttdeci">const IGraph * graph</div><div class="ttdef"><b>Definition:</b> IStrategy.h:34</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

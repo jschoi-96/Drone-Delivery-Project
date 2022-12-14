@@ -1,7 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classIReaction.html" title="A class built for IReaction." alt="" coords="5,81,88,108"/>
-<area shape="rect" id="node2" href="$classIndicatorReaction.html" title="A class built for indicatorReaction." alt="" coords="145,5,281,32"/>
-<area shape="rect" id="node3" href="$classRegularReaction.html" title="A class built for RegularReaction." alt="" coords="148,56,277,83"/>
-<area shape="rect" id="node4" href="$classReinforcedReaction.html" title="A class built for ReinforcedReaction." alt="" coords="138,107,287,133"/>
-<area shape="rect" id="node5" href="$classStreetLevelReaction.html" title="A class built for streetlevelReaction." alt="" coords="136,157,289,184"/>
+<area shape="rect" id="node1" href="$classIReaction.html" title="IReaction class. Responsible for the physical affects of different weather patterns on entities." alt="" coords="5,81,88,108"/>
+<area shape="rect" id="node2" href="$classIndicatorReaction.html" title="A class built for indicatorReaction. Inherits from IReaction." alt="" coords="145,5,281,32"/>
+<area shape="rect" id="node3" href="$classRegularReaction.html" title="A class built for RegularReactions. Inherits from IReaction." alt="" coords="148,56,277,83"/>
+<area shape="rect" id="node4" href="$classReinforcedReaction.html" title="A class built for ReinforcedReactions. Inherits from IReaction." alt="" coords="138,107,287,133"/>
+<area shape="rect" id="node5" href="$classStreetLevelReaction.html" title="A class built for streetlevelReaction. Inherits from IReaction." alt="" coords="136,157,289,184"/>
 </map>

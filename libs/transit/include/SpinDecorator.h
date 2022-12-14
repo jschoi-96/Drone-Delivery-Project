@@ -7,21 +7,21 @@
 #include "IStrategy.h"
 
 /**
- *@brief Decorator method to spin object
+ *@brief Decorator class for the spin celebration. Inherits from CelebrationDecorator.
  **/
 class SpinDecorator : public CelebrationDecorator {
  public:
   /**
-   *@brief Constructore for SpinDecorator
+   *@brief Constructor for SpinDecorator
    *
-   *@param strategy_ IStrategy type obj
+   *@param strategy_ IStrategy object. The spinning entities current movement strategy.
    **/
   SpinDecorator(IStrategy* strategy_) : CelebrationDecorator(strategy_) {}
 
   /**
-   * @brief Checks if the decorator has been completed
+   * @brief Checks if the decorator (spin) has been completed
    *
-   * @return true if completed, if not, return false.
+   * @return boolean. true if completed. if not, returns false.
    **/
   bool IsCompleted();
 

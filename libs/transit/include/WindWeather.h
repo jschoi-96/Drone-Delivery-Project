@@ -7,36 +7,40 @@
 #include "IZoneWeather.h"
 #include "math/vector3.h"
 /**
- *@brief A class built for wind weather
+ *@brief A class built for wind weather. Inherits from IZoneWeather.
  **/
 class WindWeather : public IZoneWeather {
- private:
-  Vector3 windSpeed;
-
  public:
   /**
-   * @brief constructor for rainWeather.
-   * @param obj jsonObject&
+   * @brief constructor for WindWeather.
+   * @param obj JSON object to be used for creating a WindWeather entity.
    * @return nothing
    **/
   WindWeather(const JsonObject& obj);
+
   /**
-   * @brief deconstructor for windWeather.
+   * @brief destructor for windWeather.
    *
    * @return nothing
    **/
   ~WindWeather() override = default;
+
   /**
-   * @brief executes the reaction happening to the drone with rainweather.
+   * @brief executes the reaction happening to the drone with Empweather.
    *
-   * @param parent which is the Ientity
-   * @param reaction current reaction
+   * @param parent The drone being affected by wind.
+   * @param reaction current weather reaction
    * @param dt delta time
-   * @param scheduler vector that holds the ientities.
+   * @param scheduler vector that holds the entities.
    *
    * @return none.
    **/
   void Execute(IEntity* parent, IReaction* reaction, double dt,
                std::vector<IEntity*> scheduler);
+  private:
+  /**
+   * Vector3 representing the velocity of the wind.
+   **/
+  Vector3 windSpeed; 
 };
 #endif  // LIBS_TRANSIT_INCLUDE_WINDWEATHER_H_

@@ -70,7 +70,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A class built for Istrategy.  
+<p>A class built for Istrategy. Parent class for drone movement strategy classes.  
  <a href="classIStrategy.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="IStrategy_8h_source.html">IStrategy.h</a>&gt;</code></p>
@@ -79,14 +79,14 @@ Inheritance diagram for IStrategy:</div>
 <div class="dyncontent">
 <div class="center"><img src="classIStrategy__inherit__graph.png" border="0" usemap="#IStrategy_inherit__map" alt="Inheritance graph"/></div>
 <map name="IStrategy_inherit__map" id="IStrategy_inherit__map">
-<area shape="rect" title="A class built for Istrategy." alt="" coords="331,5,412,32"/>
+<area shape="rect" title="A class built for Istrategy. Parent class for drone movement strategy classes." alt="" coords="331,5,412,32"/>
 <area shape="rect" href="classAstarStrategy.html" title="Implementation of Astar strategy for entity movement. Inherits from IStrategy." alt="" coords="5,80,116,107"/>
 <area shape="rect" href="classBeelineStrategy.html" title="Implementation of Beeline strategy for drone movement. Inherits from IStrategy." alt="" coords="140,80,267,107"/>
-<area shape="rect" href="classCelebrationDecorator.html" title="Decorator method to implement other feature." alt="" coords="291,80,452,107"/>
+<area shape="rect" href="classCelebrationDecorator.html" title="Decorator method to implement other feature. Inherits from IStrategy." alt="" coords="291,80,452,107"/>
 <area shape="rect" href="classDfsStrategy.html" title="Implementation of Depth&#45;first&#45;search strategy for entity movement. Inherits from IStrategy." alt="" coords="477,80,575,107"/>
 <area shape="rect" href="classDijkstraStrategy.html" title="Implementation of Dijkstra strategy for entity movement. Inherits from IStrategy." alt="" coords="599,80,727,107"/>
-<area shape="rect" href="classJumpDecorator.html" title="Decorator method to jump object." alt="" coords="241,155,360,181"/>
-<area shape="rect" href="classSpinDecorator.html" title="Decorator method to spin object." alt="" coords="385,155,499,181"/>
+<area shape="rect" href="classJumpDecorator.html" title="Decorator class for the jump celebration. Inherits from CelebrationDecorator." alt="" coords="241,155,360,181"/>
+<area shape="rect" href="classSpinDecorator.html" title="Decorator class for the spin celebration. Inherits from CelebrationDecorator." alt="" coords="385,155,499,181"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -101,12 +101,11 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:abdcb4741836a0bb72017f52752962ba2"><td class="memItemLeft" align="right" valign="top"><a id="abdcb4741836a0bb72017f52752962ba2"></a>
-const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b></td></tr>
+<tr class="memitem:abdcb4741836a0bb72017f52752962ba2"><td class="memItemLeft" align="right" valign="top">const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIStrategy.html#abdcb4741836a0bb72017f52752962ba2">graph</a></td></tr>
 <tr class="separator:abdcb4741836a0bb72017f52752962ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class built for Istrategy. </p>
+<div class="textblock"><p>A class built for Istrategy. Parent class for drone movement strategy classes. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a13c6048efd232b696db5f35000d5b106"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13c6048efd232b696db5f35000d5b106">&#9670;&nbsp;</a></span>IsCompleted()</h2>
@@ -132,9 +131,9 @@ const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b></
 </div><div class="memdoc">
 
 <p>method to tell if stragety is completed. </p>
-<dl class="section return"><dt>Returns</dt><dd>boolean </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>boolean. True if strategy completed, false otherwise. </dd></dl>
 
-<p>Implemented in <a class="el" href="classAstarStrategy.html#a65ae8d490fe820fa152a379da6845103">AstarStrategy</a>, <a class="el" href="classBeelineStrategy.html#a648eae389f7844f210ac267313ef6233">BeelineStrategy</a>, <a class="el" href="classDfsStrategy.html#a30fb7b230d0244cd87de51a13a8d8c5b">DfsStrategy</a>, <a class="el" href="classDijkstraStrategy.html#a409569a22f38028431ce25522d355ee2">DijkstraStrategy</a>, <a class="el" href="classCelebrationDecorator.html#a7ce83ef692d22773bf40e8733e20329a">CelebrationDecorator</a>, <a class="el" href="classJumpDecorator.html#a94b32bed5b764df15980356aa8763abe">JumpDecorator</a>, and <a class="el" href="classSpinDecorator.html#a0887a816731d9ff8ee8161034a03c4aa">SpinDecorator</a>.</p>
+<p>Implemented in <a class="el" href="classAstarStrategy.html#a65ae8d490fe820fa152a379da6845103">AstarStrategy</a>, <a class="el" href="classDfsStrategy.html#a30fb7b230d0244cd87de51a13a8d8c5b">DfsStrategy</a>, <a class="el" href="classDijkstraStrategy.html#a409569a22f38028431ce25522d355ee2">DijkstraStrategy</a>, <a class="el" href="classBeelineStrategy.html#a648eae389f7844f210ac267313ef6233">BeelineStrategy</a>, <a class="el" href="classCelebrationDecorator.html#a7ce83ef692d22773bf40e8733e20329a">CelebrationDecorator</a>, <a class="el" href="classJumpDecorator.html#a94b32bed5b764df15980356aa8763abe">JumpDecorator</a>, and <a class="el" href="classSpinDecorator.html#a0887a816731d9ff8ee8161034a03c4aa">SpinDecorator</a>.</p>
 
 </div>
 </div>
@@ -175,19 +174,43 @@ const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b></
 <p>moves the entity based on strategy. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">entity</td><td>Ientity* </td></tr>
+    <tr><td class="paramname">entity</td><td>Ientity* to be moved using given strategy. </td></tr>
     <tr><td class="paramname">dt</td><td>delta time double </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>nothing </dd></dl>
 
-<p>Implemented in <a class="el" href="classAstarStrategy.html#afd13e7ed2b1872f01aa2a2f4b07b41c3">AstarStrategy</a>, <a class="el" href="classBeelineStrategy.html#ab8d3f5b05d5e9dd06465f5fc4cd4767e">BeelineStrategy</a>, <a class="el" href="classDfsStrategy.html#aab5a0a5c97f710075634b81a3e00ecf9">DfsStrategy</a>, <a class="el" href="classDijkstraStrategy.html#a24e0177f55b69a6b2260b0a0e2ce4430">DijkstraStrategy</a>, <a class="el" href="classJumpDecorator.html#a6d46675428916bbe6acd10fb25d51f86">JumpDecorator</a>, <a class="el" href="classSpinDecorator.html#a766735ae467d0bb3a80169e109951804">SpinDecorator</a>, and <a class="el" href="classCelebrationDecorator.html#aaea8fd11f7d0e12dd79ccdc63ab1bbf6">CelebrationDecorator</a>.</p>
+<p>Implemented in <a class="el" href="classAstarStrategy.html#afd13e7ed2b1872f01aa2a2f4b07b41c3">AstarStrategy</a>, <a class="el" href="classDfsStrategy.html#aab5a0a5c97f710075634b81a3e00ecf9">DfsStrategy</a>, <a class="el" href="classDijkstraStrategy.html#a24e0177f55b69a6b2260b0a0e2ce4430">DijkstraStrategy</a>, <a class="el" href="classBeelineStrategy.html#ab8d3f5b05d5e9dd06465f5fc4cd4767e">BeelineStrategy</a>, <a class="el" href="classJumpDecorator.html#a6d46675428916bbe6acd10fb25d51f86">JumpDecorator</a>, <a class="el" href="classSpinDecorator.html#a766735ae467d0bb3a80169e109951804">SpinDecorator</a>, and <a class="el" href="classCelebrationDecorator.html#aaea8fd11f7d0e12dd79ccdc63ab1bbf6">CelebrationDecorator</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="abdcb4741836a0bb72017f52752962ba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdcb4741836a0bb72017f52752962ba2">&#9670;&nbsp;</a></span>graph</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const IGraph* IStrategy::graph</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>IGraph object to be used in the simulation. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="IStrategy_8h_source.html">IStrategy.h</a></li>
+<li>/home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="IStrategy_8h_source.html">IStrategy.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -2,7 +2,7 @@
 \label{classIWeather}\index{IWeather@{IWeather}}
 
 
-A class built for \mbox{\hyperlink{classIWeather}{I\+Weather}}.  
+Interface built for different weather patterns/reactions.  
 
 
 
@@ -11,8 +11,7 @@ A class built for \mbox{\hyperlink{classIWeather}{I\+Weather}}.
 
 
 
-Inheritance diagram for I\+Weather\+:
-\nopagebreak
+Inheritance diagram for I\+Weather\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -22,17 +21,32 @@ Inheritance diagram for I\+Weather\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classIWeather_a626114db543b22b7277b6e791d3ba89f}\label{classIWeather_a626114db543b22b7277b6e791d3ba89f}} 
 virtual \mbox{\hyperlink{classIWeather_a626114db543b22b7277b6e791d3ba89f}{$\sim$\+I\+Weather}} ()
 \begin{DoxyCompactList}\small\item\em desconstuctor for \mbox{\hyperlink{classIWeather}{I\+Weather}} \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classIWeather_a1268319157d56c3a6568d09e5cbfdfab}{Execute}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, \mbox{\hyperlink{classIReaction}{I\+Reaction}} $\ast$reaction, double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)=0
-\begin{DoxyCompactList}\small\item\em executes the reaction happening to the drone with base weather. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em executes the reaction happening to the drone for current weather pattern(s). \end{DoxyCompactList}\item 
 virtual bool \mbox{\hyperlink{classIWeather_a17bd5cf79e4065f101ba50226db9a732}{Is\+Inside}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent)=0
-\begin{DoxyCompactList}\small\item\em Checks to see if the drone is inside the base weather. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Checks to see if the drone is inside a weather zone. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-A class built for \mbox{\hyperlink{classIWeather}{I\+Weather}}. 
+Interface built for different weather patterns/reactions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIWeather_a626114db543b22b7277b6e791d3ba89f}\label{classIWeather_a626114db543b22b7277b6e791d3ba89f}} 
+\index{IWeather@{IWeather}!````~IWeather@{$\sim$IWeather}}
+\index{````~IWeather@{$\sim$IWeather}!IWeather@{IWeather}}
+\doxysubsubsection{\texorpdfstring{$\sim$IWeather()}{~IWeather()}}
+{\footnotesize\ttfamily virtual I\+Weather\+::$\sim$\+I\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+desconstuctor for \mbox{\hyperlink{classIWeather}{I\+Weather}} 
+
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classIWeather_a1268319157d56c3a6568d09e5cbfdfab}\label{classIWeather_a1268319157d56c3a6568d09e5cbfdfab}} 
@@ -43,17 +57,17 @@ A class built for \mbox{\hyperlink{classIWeather}{I\+Weather}}.
 
 
 
-executes the reaction happening to the drone with base weather. 
+executes the reaction happening to the drone for current weather pattern(s). 
 
 
 \begin{DoxyParams}{Parameters}
-{\em parent} & which is the Ientity \\
+{\em parent} & which is the drone being affected by the weather. \\
 \hline
-{\em reaction} & current reaction \\
+{\em reaction} & current weather reaction \\
 \hline
 {\em dt} & delta time \\
 \hline
-{\em scheduler} & vector that holds the ientities.\\
+{\em scheduler} & vector that holds the Ientities.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -71,15 +85,15 @@ Implemented in \mbox{\hyperlink{classWindWeather_a5c95efcad53f507b6c340ee42da79e
 
 
 
-Checks to see if the drone is inside the base weather. 
+Checks to see if the drone is inside a weather zone. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em parent} & Ientity \\
+{\em parent} & drone to check if within weather bounds. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-true. 
+boolean -\/ true if drone is inside weather bounds, false otherwise. 
 \end{DoxyReturn}
 
 
@@ -89,4 +103,4 @@ Implemented in \mbox{\hyperlink{classBaseWeather_a739374c45e55d4695ceb7bdbda8e7d
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/I\+Weather.\+h\end{DoxyCompactItemize}
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/I\+Weather.\+h\end{DoxyCompactItemize}

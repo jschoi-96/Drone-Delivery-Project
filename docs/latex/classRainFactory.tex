@@ -2,7 +2,7 @@
 \label{classRainFactory}\index{RainFactory@{RainFactory}}
 
 
-A class built using the factory design pattern but for rain weather.  
+A class built using the factory design pattern but for rain weather. Inherits from \mbox{\hyperlink{classIEntityFactory}{I\+Entity\+Factory}}.  
 
 
 
@@ -11,8 +11,7 @@ A class built using the factory design pattern but for rain weather.
 
 
 
-Inheritance diagram for Rain\+Factory\+:
-\nopagebreak
+Inheritance diagram for Rain\+Factory\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Rain\+Factory\+:
 \end{figure}
 
 
-Collaboration diagram for Rain\+Factory\+:
-\nopagebreak
+Collaboration diagram for Rain\+Factory\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -33,13 +31,13 @@ Collaboration diagram for Rain\+Factory\+:
 \begin{DoxyCompactItemize}
 \item 
 virtual \mbox{\hyperlink{classRainFactory_a7deb897ca28eef791726090a956750b8}{$\sim$\+Rain\+Factory}} ()
-\begin{DoxyCompactList}\small\item\em A deconstructor for rain factory. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ \mbox{\hyperlink{classRainFactory_acc32ae576edc67e98855e17330cadf36}{Create\+Entity}} (Json\+Object \&entity)
-\begin{DoxyCompactList}\small\item\em Creates the rain weather entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A destructor for rain factory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ \mbox{\hyperlink{classRainFactory_a7e89acfd9e050babc5f27656e0cab2ac}{Create\+Entity}} (const Json\+Object \&entity)
+\begin{DoxyCompactList}\small\item\em Attempts to create a \mbox{\hyperlink{classRainWeather}{Rain\+Weather}} \mbox{\hyperlink{classIEntity}{I\+Entity}}. Returns the entity if it was created, otherwise returns null. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-A class built using the factory design pattern but for rain weather. 
+A class built using the factory design pattern but for rain weather. Inherits from \mbox{\hyperlink{classIEntityFactory}{I\+Entity\+Factory}}. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classRainFactory_a7deb897ca28eef791726090a956750b8}\label{classRainFactory_a7deb897ca28eef791726090a956750b8}} 
@@ -50,7 +48,7 @@ A class built using the factory design pattern but for rain weather.
 
 
 
-A deconstructor for rain factory. 
+A destructor for rain factory. 
 
 \begin{DoxyReturn}{Returns}
 nothing 
@@ -58,31 +56,31 @@ nothing
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classRainFactory_acc32ae576edc67e98855e17330cadf36}\label{classRainFactory_acc32ae576edc67e98855e17330cadf36}} 
+\mbox{\Hypertarget{classRainFactory_a7e89acfd9e050babc5f27656e0cab2ac}\label{classRainFactory_a7e89acfd9e050babc5f27656e0cab2ac}} 
 \index{RainFactory@{RainFactory}!CreateEntity@{CreateEntity}}
 \index{CreateEntity@{CreateEntity}!RainFactory@{RainFactory}}
 \doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ Rain\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ Rain\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{const Json\+Object \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Creates the rain weather entity. 
+Attempts to create a \mbox{\hyperlink{classRainWeather}{Rain\+Weather}} \mbox{\hyperlink{classIEntity}{I\+Entity}}. Returns the entity if it was created, otherwise returns null. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em entity} & jsonobj\& \\
+{\em entity} & J\+S\+ON object the \mbox{\hyperlink{classRainWeather}{Rain\+Weather}} object should be created from. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Ientity$\ast$ 
+the new \mbox{\hyperlink{classEmpWeather}{Emp\+Weather}} entity if the J\+S\+ON parameter corresponds to a \mbox{\hyperlink{classRainWeather}{Rain\+Weather}} object. otherwise returns a nullpointer. 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classIEntityFactory_a9bd53cf7ca21ab252968062ea5d88180}{I\+Entity\+Factory}}.
+Implements \mbox{\hyperlink{classIEntityFactory_ab28e669d7f78ce426620fa4e472f3adb}{I\+Entity\+Factory}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Rain\+Factory.\+h\item 
-/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Rain\+Factory.\+cc\end{DoxyCompactItemize}
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Rain\+Factory.\+h\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Rain\+Factory.\+cc\end{DoxyCompactItemize}

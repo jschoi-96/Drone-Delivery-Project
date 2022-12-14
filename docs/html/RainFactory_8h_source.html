@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: /home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/RainFactory.h Source File</title>
+<title>My Project: /home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/RainFactory.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,8 +69,8 @@ $(function() {
 <div class="title">RainFactory.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RAIN_FACTORY_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define RAIN_FACTORY_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LIBS_TRANSIT_INCLUDE_RAINFACTORY_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LIBS_TRANSIT_INCLUDE_RAINFACTORY_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;IEntity.h&quot;</span></div>
@@ -79,15 +79,16 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classRainFactory.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classRainFactory.html">RainFactory</a> : <span class="keyword">public</span> <a class="code" href="classIEntityFactory.html">IEntityFactory</a> {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classRainFactory.html#a7deb897ca28eef791726090a956750b8">   17</a></span>&#160;  <span class="keyword">virtual</span> <a class="code" href="classRainFactory.html#a7deb897ca28eef791726090a956750b8">~RainFactory</a>() {}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <a class="code" href="classIEntity.html">IEntity</a>* <a class="code" href="classRainFactory.html#acc32ae576edc67e98855e17330cadf36">CreateEntity</a>(JsonObject&amp; entity);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <a class="code" href="classIEntity.html">IEntity</a>* <a class="code" href="classRainFactory.html#a7e89acfd9e050babc5f27656e0cab2ac">CreateEntity</a>(<span class="keyword">const</span> JsonObject&amp; entity);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif  // LIBS_TRANSIT_INCLUDE_RAINFACTORY_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassRainFactory_html_a7deb897ca28eef791726090a956750b8"><div class="ttname"><a href="classRainFactory.html#a7deb897ca28eef791726090a956750b8">RainFactory::~RainFactory</a></div><div class="ttdeci">virtual ~RainFactory()</div><div class="ttdoc">A deconstructor for rain factory.</div><div class="ttdef"><b>Definition:</b> RainFactory.h:17</div></div>
-<div class="ttc" id="aclassRainFactory_html_acc32ae576edc67e98855e17330cadf36"><div class="ttname"><a href="classRainFactory.html#acc32ae576edc67e98855e17330cadf36">RainFactory::CreateEntity</a></div><div class="ttdeci">IEntity * CreateEntity(JsonObject &amp;entity)</div><div class="ttdoc">Creates the rain weather entity.</div><div class="ttdef"><b>Definition:</b> RainFactory.cc:6</div></div>
-<div class="ttc" id="aclassRainFactory_html"><div class="ttname"><a href="classRainFactory.html">RainFactory</a></div><div class="ttdoc">A class built using the factory design pattern but for rain weather.</div><div class="ttdef"><b>Definition:</b> RainFactory.h:11</div></div>
-<div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to see interface.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
-<div class="ttc" id="aclassIEntityFactory_html"><div class="ttname"><a href="classIEntityFactory.html">IEntityFactory</a></div><div class="ttdoc">Factory method for IEntity class.</div><div class="ttdef"><b>Definition:</b> IEntityFactory.h:13</div></div>
+<div class="ttc" id="aclassRainFactory_html_a7deb897ca28eef791726090a956750b8"><div class="ttname"><a href="classRainFactory.html#a7deb897ca28eef791726090a956750b8">RainFactory::~RainFactory</a></div><div class="ttdeci">virtual ~RainFactory()</div><div class="ttdoc">A destructor for rain factory.</div><div class="ttdef"><b>Definition:</b> RainFactory.h:17</div></div>
+<div class="ttc" id="aclassRainFactory_html"><div class="ttname"><a href="classRainFactory.html">RainFactory</a></div><div class="ttdoc">A class built using the factory design pattern but for rain weather. Inherits from IEntityFactory.</div><div class="ttdef"><b>Definition:</b> RainFactory.h:11</div></div>
+<div class="ttc" id="aclassRainFactory_html_a7e89acfd9e050babc5f27656e0cab2ac"><div class="ttname"><a href="classRainFactory.html#a7e89acfd9e050babc5f27656e0cab2ac">RainFactory::CreateEntity</a></div><div class="ttdeci">IEntity * CreateEntity(const JsonObject &amp;entity)</div><div class="ttdoc">Attempts to create a RainWeather IEntity. Returns the entity if it was created, otherwise returns nul...</div><div class="ttdef"><b>Definition:</b> RainFactory.cc:6</div></div>
+<div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to for moving/updating entities in the simulation.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
+<div class="ttc" id="aclassIEntityFactory_html"><div class="ttname"><a href="classIEntityFactory.html">IEntityFactory</a></div><div class="ttdoc">Factory method for IEntity class.</div><div class="ttdef"><b>Definition:</b> IEntityFactory.h:12</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

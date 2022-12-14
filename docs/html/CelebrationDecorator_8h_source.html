@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: /home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/CelebrationDecorator.h Source File</title>
+<title>My Project: /home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/CelebrationDecorator.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,38 +69,39 @@ $(function() {
 <div class="title">CelebrationDecorator.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CELEBRATION_DECORATOR_H_</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CELEBRATION_DECORATOR_H_</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LIBS_TRANSIT_INCLUDE_CELEBRATIONDECORATOR_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define LIBS_TRANSIT_INCLUDE_CELEBRATIONDECORATOR_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;IStrategy.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classCelebrationDecorator.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCelebrationDecorator.html">CelebrationDecorator</a> : <span class="keyword">public</span> <a class="code" href="classIStrategy.html">IStrategy</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classCelebrationDecorator.html#af1ea3e7a231fe372c9fec0f7175dc724">   19</a></span>&#160;  <a class="code" href="classCelebrationDecorator.html#af1ea3e7a231fe372c9fec0f7175dc724">CelebrationDecorator</a>(<a class="code" href="classIStrategy.html">IStrategy</a> *strategy_) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    strategy = strategy_;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    time = 0;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classCelebrationDecorator.html#aaea8fd11f7d0e12dd79ccdc63ab1bbf6">Move</a>(<a class="code" href="classIEntity.html">IEntity</a> *entity, <span class="keywordtype">double</span> dt);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classCelebrationDecorator.html#a7ce83ef692d22773bf40e8733e20329a">IsCompleted</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <a class="code" href="classIStrategy.html">IStrategy</a> *strategy;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">float</span> time;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};  <span class="comment">// close class</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif  // CELEBRATION_DECORATOR_H_</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classCelebrationDecorator.html#af1ea3e7a231fe372c9fec0f7175dc724">   18</a></span>&#160;  <a class="code" href="classCelebrationDecorator.html#af1ea3e7a231fe372c9fec0f7175dc724">CelebrationDecorator</a>(<a class="code" href="classIStrategy.html">IStrategy</a> *strategy_) {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classCelebrationDecorator.html#abd8ba74a8cf4dc060feac318fc10e2a9">strategy</a> = strategy_;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classCelebrationDecorator.html#ab6c0f2a022f2d9df9345e3e5a8cbe7b1">time</a> = 0;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;  }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classCelebrationDecorator.html#aaea8fd11f7d0e12dd79ccdc63ab1bbf6">Move</a>(<a class="code" href="classIEntity.html">IEntity</a> *entity, <span class="keywordtype">double</span> dt);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  <span class="keywordtype">bool</span> <a class="code" href="classCelebrationDecorator.html#a7ce83ef692d22773bf40e8733e20329a">IsCompleted</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classCelebrationDecorator.html#abd8ba74a8cf4dc060feac318fc10e2a9">   43</a></span>&#160;  <a class="code" href="classIStrategy.html">IStrategy</a> *<a class="code" href="classCelebrationDecorator.html#abd8ba74a8cf4dc060feac318fc10e2a9">strategy</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classCelebrationDecorator.html#ab6c0f2a022f2d9df9345e3e5a8cbe7b1">   47</a></span>&#160;  <span class="keywordtype">float</span> <a class="code" href="classCelebrationDecorator.html#ab6c0f2a022f2d9df9345e3e5a8cbe7b1">time</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};  <span class="comment">// close class</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif  // LIBS_TRANSIT_INCLUDE_CELEBRATIONDECORATOR_H_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassCelebrationDecorator_html_aaea8fd11f7d0e12dd79ccdc63ab1bbf6"><div class="ttname"><a href="classCelebrationDecorator.html#aaea8fd11f7d0e12dd79ccdc63ab1bbf6">CelebrationDecorator::Move</a></div><div class="ttdeci">void Move(IEntity *entity, double dt)</div><div class="ttdoc">Used for moving drone/robot pairs towards their destination.</div><div class="ttdef"><b>Definition:</b> CelebrationDecorator.cc:5</div></div>
-<div class="ttc" id="aclassIStrategy_html"><div class="ttname"><a href="classIStrategy.html">IStrategy</a></div><div class="ttdoc">A class built for Istrategy.</div><div class="ttdef"><b>Definition:</b> IStrategy.h:13</div></div>
-<div class="ttc" id="aclassCelebrationDecorator_html"><div class="ttname"><a href="classCelebrationDecorator.html">CelebrationDecorator</a></div><div class="ttdoc">Decorator method to implement other feature.</div><div class="ttdef"><b>Definition:</b> CelebrationDecorator.h:11</div></div>
+<div class="ttc" id="aclassIStrategy_html"><div class="ttname"><a href="classIStrategy.html">IStrategy</a></div><div class="ttdoc">A class built for Istrategy. Parent class for drone movement strategy classes.</div><div class="ttdef"><b>Definition:</b> IStrategy.h:14</div></div>
+<div class="ttc" id="aclassCelebrationDecorator_html_ab6c0f2a022f2d9df9345e3e5a8cbe7b1"><div class="ttname"><a href="classCelebrationDecorator.html#ab6c0f2a022f2d9df9345e3e5a8cbe7b1">CelebrationDecorator::time</a></div><div class="ttdeci">float time</div><div class="ttdef"><b>Definition:</b> CelebrationDecorator.h:47</div></div>
+<div class="ttc" id="aclassCelebrationDecorator_html"><div class="ttname"><a href="classCelebrationDecorator.html">CelebrationDecorator</a></div><div class="ttdoc">Decorator method to implement other feature. Inherits from IStrategy.</div><div class="ttdef"><b>Definition:</b> CelebrationDecorator.h:11</div></div>
 <div class="ttc" id="aclassCelebrationDecorator_html_a7ce83ef692d22773bf40e8733e20329a"><div class="ttname"><a href="classCelebrationDecorator.html#a7ce83ef692d22773bf40e8733e20329a">CelebrationDecorator::IsCompleted</a></div><div class="ttdeci">bool IsCompleted()</div><div class="ttdoc">Checks if the decorator has been completed.</div><div class="ttdef"><b>Definition:</b> CelebrationDecorator.cc:3</div></div>
-<div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to see interface.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
-<div class="ttc" id="aclassCelebrationDecorator_html_af1ea3e7a231fe372c9fec0f7175dc724"><div class="ttname"><a href="classCelebrationDecorator.html#af1ea3e7a231fe372c9fec0f7175dc724">CelebrationDecorator::CelebrationDecorator</a></div><div class="ttdeci">CelebrationDecorator(IStrategy *strategy_)</div><div class="ttdoc">Constructore for CelebrationDecorator.</div><div class="ttdef"><b>Definition:</b> CelebrationDecorator.h:19</div></div>
+<div class="ttc" id="aclassCelebrationDecorator_html_abd8ba74a8cf4dc060feac318fc10e2a9"><div class="ttname"><a href="classCelebrationDecorator.html#abd8ba74a8cf4dc060feac318fc10e2a9">CelebrationDecorator::strategy</a></div><div class="ttdeci">IStrategy * strategy</div><div class="ttdef"><b>Definition:</b> CelebrationDecorator.h:43</div></div>
+<div class="ttc" id="aclassIEntity_html"><div class="ttname"><a href="classIEntity.html">IEntity</a></div><div class="ttdoc">A class built to for moving/updating entities in the simulation.</div><div class="ttdef"><b>Definition:</b> IEntity.h:20</div></div>
+<div class="ttc" id="aclassCelebrationDecorator_html_af1ea3e7a231fe372c9fec0f7175dc724"><div class="ttname"><a href="classCelebrationDecorator.html#af1ea3e7a231fe372c9fec0f7175dc724">CelebrationDecorator::CelebrationDecorator</a></div><div class="ttdeci">CelebrationDecorator(IStrategy *strategy_)</div><div class="ttdoc">Constructore for CelebrationDecorator.</div><div class="ttdef"><b>Definition:</b> CelebrationDecorator.h:18</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

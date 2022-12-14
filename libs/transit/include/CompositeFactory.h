@@ -4,7 +4,7 @@
 #include "IEntityFactory.h"
 
 /**
- *@brief Factory method for composite class
+ *@brief Factory method for composite class. Inherits from IEntityFactory.
  **/
 class CompositeFactory : public IEntityFactory {
  public:
@@ -30,6 +30,9 @@ class CompositeFactory : public IEntityFactory {
   virtual ~CompositeFactory();
 
  private:
+  /**
+   *  Vector of Entity Factories of different types.
+   **/
   std::vector<IEntityFactory*> componentFactories;
 };
 

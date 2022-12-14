@@ -64,14 +64,13 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classIReaction-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">IReaction Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A class built for <a class="el" href="classIReaction.html" title="A class built for IReaction.">IReaction</a>.  
+<p><a class="el" href="classIReaction.html" title="IReaction class. Responsible for the physical affects of different weather patterns on entities.">IReaction</a> class. Responsible for the physical affects of different weather patterns on entities.  
  <a href="classIReaction.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="IReaction_8h_source.html">IReaction.h</a>&gt;</code></p>
@@ -80,11 +79,11 @@ Inheritance diagram for IReaction:</div>
 <div class="dyncontent">
 <div class="center"><img src="classIReaction__inherit__graph.png" border="0" usemap="#IReaction_inherit__map" alt="Inheritance graph"/></div>
 <map name="IReaction_inherit__map" id="IReaction_inherit__map">
-<area shape="rect" title="A class built for IReaction." alt="" coords="271,5,353,32"/>
-<area shape="rect" href="classIndicatorReaction.html" title="A class built for indicatorReaction." alt="" coords="5,80,141,107"/>
-<area shape="rect" href="classRegularReaction.html" title="A class built for RegularReaction." alt="" coords="166,80,295,107"/>
-<area shape="rect" href="classReinforcedReaction.html" title="A class built for ReinforcedReaction." alt="" coords="320,80,469,107"/>
-<area shape="rect" href="classStreetLevelReaction.html" title="A class built for streetlevelReaction." alt="" coords="494,80,647,107"/>
+<area shape="rect" title="IReaction class. Responsible for the physical affects of different weather patterns on entities." alt="" coords="271,5,353,32"/>
+<area shape="rect" href="classIndicatorReaction.html" title="A class built for indicatorReaction. Inherits from IReaction." alt="" coords="5,80,141,107"/>
+<area shape="rect" href="classRegularReaction.html" title="A class built for RegularReactions. Inherits from IReaction." alt="" coords="166,80,295,107"/>
+<area shape="rect" href="classReinforcedReaction.html" title="A class built for ReinforcedReactions. Inherits from IReaction." alt="" coords="320,80,469,107"/>
+<area shape="rect" href="classStreetLevelReaction.html" title="A class built for streetlevelReaction. Inherits from IReaction." alt="" coords="494,80,647,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -92,35 +91,29 @@ Inheritance diagram for IReaction:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3e7f69783685869c4eba95aa6c7af1db"><td class="memItemLeft" align="right" valign="top"><a id="a3e7f69783685869c4eba95aa6c7af1db"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIReaction.html#a3e7f69783685869c4eba95aa6c7af1db">~IReaction</a> ()</td></tr>
-<tr class="memdesc:a3e7f69783685869c4eba95aa6c7af1db"><td class="mdescLeft">&#160;</td><td class="mdescRight">A deconstructor for <a class="el" href="classIReaction.html" title="A class built for IReaction.">IReaction</a>. <br /></td></tr>
+<tr class="memdesc:a3e7f69783685869c4eba95aa6c7af1db"><td class="mdescLeft">&#160;</td><td class="mdescRight">A destructor for the <a class="el" href="classIReaction.html" title="IReaction class. Responsible for the physical affects of different weather patterns on entities.">IReaction</a> class. <br /></td></tr>
 <tr class="separator:a3e7f69783685869c4eba95aa6c7af1db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a427a52e6cb6d0e4622946e4bb445582a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIReaction.html#a427a52e6cb6d0e4622946e4bb445582a">react_wind</a> (<a class="el" href="classIEntity.html">IEntity</a> *parent, double &amp;dt, std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; &amp;scheduler, <a class="el" href="classVector3.html">Vector3</a> wind)=0</td></tr>
-<tr class="memdesc:a427a52e6cb6d0e4622946e4bb445582a"><td class="mdescLeft">&#160;</td><td class="mdescRight">executes the reaction happening to the drone with wind  <a href="classIReaction.html#a427a52e6cb6d0e4622946e4bb445582a">More...</a><br /></td></tr>
-<tr class="separator:a427a52e6cb6d0e4622946e4bb445582a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4655d9e1632f4453718653c8b0c1f6bf"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIReaction.html#a4655d9e1632f4453718653c8b0c1f6bf">react_rain</a> (<a class="el" href="classIEntity.html">IEntity</a> *parent, double &amp;dt, std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; &amp;scheduler)=0</td></tr>
-<tr class="memdesc:a4655d9e1632f4453718653c8b0c1f6bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">executes the reaction happening to the drone with rain  <a href="classIReaction.html#a4655d9e1632f4453718653c8b0c1f6bf">More...</a><br /></td></tr>
-<tr class="separator:a4655d9e1632f4453718653c8b0c1f6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf3ecf0ba873130cd89b30b12f898821"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIReaction.html#acf3ecf0ba873130cd89b30b12f898821">react_emp</a> (<a class="el" href="classIEntity.html">IEntity</a> *parent, double &amp;dt, std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; &amp;scheduler)=0</td></tr>
-<tr class="memdesc:acf3ecf0ba873130cd89b30b12f898821"><td class="mdescLeft">&#160;</td><td class="mdescRight">executes the reaction happening to the drone with emp  <a href="classIReaction.html#acf3ecf0ba873130cd89b30b12f898821">More...</a><br /></td></tr>
-<tr class="separator:acf3ecf0ba873130cd89b30b12f898821"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3153e571df369b6b23fe97d33a693d5b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIReaction.html#a3153e571df369b6b23fe97d33a693d5b">react_wind</a> (<a class="el" href="classIEntity.html">IEntity</a> *parent, double *dt, std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; *scheduler, <a class="el" href="classVector3.html">Vector3</a> wind)=0</td></tr>
+<tr class="memdesc:a3153e571df369b6b23fe97d33a693d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">executes the reaction that is supposed to happen when a drone is affected by wind.  <a href="classIReaction.html#a3153e571df369b6b23fe97d33a693d5b">More...</a><br /></td></tr>
+<tr class="separator:a3153e571df369b6b23fe97d33a693d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff051d6e1529459140c48a275b5dd7c3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIReaction.html#aff051d6e1529459140c48a275b5dd7c3">react_rain</a> (<a class="el" href="classIEntity.html">IEntity</a> *parent, double *dt, std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; *scheduler)=0</td></tr>
+<tr class="memdesc:aff051d6e1529459140c48a275b5dd7c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">executes the reaction that is supposed to happen when a drone is affected by rain.  <a href="classIReaction.html#aff051d6e1529459140c48a275b5dd7c3">More...</a><br /></td></tr>
+<tr class="separator:aff051d6e1529459140c48a275b5dd7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a525236d3b3ce3aac7cb10abb32ef9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIReaction.html#ad7a525236d3b3ce3aac7cb10abb32ef9">react_emp</a> (<a class="el" href="classIEntity.html">IEntity</a> *parent, double *dt, std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; *scheduler)=0</td></tr>
+<tr class="memdesc:ad7a525236d3b3ce3aac7cb10abb32ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">executes the reaction that is supposed to happen when a drone is affected by an EMP.  <a href="classIReaction.html#ad7a525236d3b3ce3aac7cb10abb32ef9">More...</a><br /></td></tr>
+<tr class="separator:ad7a525236d3b3ce3aac7cb10abb32ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9973976475150f7ebd1eda286aec0f97"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIReaction.html#a9973976475150f7ebd1eda286aec0f97">colors</a></td></tr>
-<tr class="memdesc:a9973976475150f7ebd1eda286aec0f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dictionary map that holds the color and hexcodes.  <a href="classIReaction.html#a9973976475150f7ebd1eda286aec0f97">More...</a><br /></td></tr>
+<tr class="memdesc:a9973976475150f7ebd1eda286aec0f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">A dictionary map that holds colors and corresponding hexcodes.  <a href="classIReaction.html#a9973976475150f7ebd1eda286aec0f97">More...</a><br /></td></tr>
 <tr class="separator:a9973976475150f7ebd1eda286aec0f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a8fefac6c93de944f36ad53a46d580f20"><td class="memItemLeft" align="right" valign="top"><a id="a8fefac6c93de944f36ad53a46d580f20"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>counter</b> = 0</td></tr>
-<tr class="separator:a8fefac6c93de944f36ad53a46d580f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class built for <a class="el" href="classIReaction.html" title="A class built for IReaction.">IReaction</a>. </p>
+<div class="textblock"><p><a class="el" href="classIReaction.html" title="IReaction class. Responsible for the physical affects of different weather patterns on entities.">IReaction</a> class. Responsible for the physical affects of different weather patterns on entities. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="acf3ecf0ba873130cd89b30b12f898821"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf3ecf0ba873130cd89b30b12f898821">&#9670;&nbsp;</a></span>react_emp()</h2>
+<a id="ad7a525236d3b3ce3aac7cb10abb32ef9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a525236d3b3ce3aac7cb10abb32ef9">&#9670;&nbsp;</a></span>react_emp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,13 +130,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>counter</b> = 0</td></
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>dt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; *&#160;</td>
           <td class="paramname"><em>scheduler</em>&#160;</td>
         </tr>
         <tr>
@@ -159,24 +152,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>counter</b> = 0</td></
 </table>
 </div><div class="memdoc">
 
-<p>executes the reaction happening to the drone with emp </p>
+<p>executes the reaction that is supposed to happen when a drone is affected by an EMP. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>which is the Ientity </td></tr>
-    <tr><td class="paramname">reaction</td><td>current reaction </td></tr>
+    <tr><td class="paramname">parent</td><td>This is the drone being affected by an EMP. </td></tr>
     <tr><td class="paramname">dt</td><td>delta time </td></tr>
-    <tr><td class="paramname">scheduler</td><td>vector that holds the ientities.</td></tr>
+    <tr><td class="paramname">scheduler</td><td>vector that holds the entities.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none. </dd></dl>
 
-<p>Implemented in <a class="el" href="classIndicatorReaction.html#a649b1a86cf7fad9a34a3ee3bdde20c76">IndicatorReaction</a>, <a class="el" href="classRegularReaction.html#a5a089220ce821407c5cbdb0aaeff5f47">RegularReaction</a>, <a class="el" href="classStreetLevelReaction.html#aa2ee3cda5bbe62c9bfbb4bd6dbe179c2">StreetLevelReaction</a>, and <a class="el" href="classReinforcedReaction.html#a77b0ea3da63d8101094670c80fe51cf9">ReinforcedReaction</a>.</p>
+<p>Implemented in <a class="el" href="classIndicatorReaction.html#a5744c7383e81bc30ad93defeabdae469">IndicatorReaction</a>, <a class="el" href="classRegularReaction.html#acbea6e0075c753202cdce7a3692eb1be">RegularReaction</a>, <a class="el" href="classReinforcedReaction.html#a32b661783568a618c43e50b866fdfcc2">ReinforcedReaction</a>, and <a class="el" href="classStreetLevelReaction.html#a47f40c5cd9e42841e90e645453b0e75a">StreetLevelReaction</a>.</p>
 
 </div>
 </div>
-<a id="a4655d9e1632f4453718653c8b0c1f6bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4655d9e1632f4453718653c8b0c1f6bf">&#9670;&nbsp;</a></span>react_rain()</h2>
+<a id="aff051d6e1529459140c48a275b5dd7c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff051d6e1529459140c48a275b5dd7c3">&#9670;&nbsp;</a></span>react_rain()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,13 +185,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>counter</b> = 0</td></
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>dt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; *&#160;</td>
           <td class="paramname"><em>scheduler</em>&#160;</td>
         </tr>
         <tr>
@@ -215,24 +207,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>counter</b> = 0</td></
 </table>
 </div><div class="memdoc">
 
-<p>executes the reaction happening to the drone with rain </p>
+<p>executes the reaction that is supposed to happen when a drone is affected by rain. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>which is the Ientity </td></tr>
-    <tr><td class="paramname">reaction</td><td>current reaction </td></tr>
+    <tr><td class="paramname">parent</td><td>This is the drone being affected by rain. </td></tr>
     <tr><td class="paramname">dt</td><td>delta time </td></tr>
-    <tr><td class="paramname">scheduler</td><td>vector that holds the ientities.</td></tr>
+    <tr><td class="paramname">scheduler</td><td>vector that holds the entities.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none. </dd></dl>
 
-<p>Implemented in <a class="el" href="classIndicatorReaction.html#a64ebb06a98fd18eaec0de0ac9c303d82">IndicatorReaction</a>, <a class="el" href="classRegularReaction.html#a8c07e22c7996fb4e086651dbfc3f64a8">RegularReaction</a>, <a class="el" href="classStreetLevelReaction.html#ae6958aeee3c0b93cbf5192ae5ab3219b">StreetLevelReaction</a>, and <a class="el" href="classReinforcedReaction.html#a4c57576af813907f5c311013058cbdd7">ReinforcedReaction</a>.</p>
+<p>Implemented in <a class="el" href="classIndicatorReaction.html#ae26362f3424fbf255aa1a2af31acd3e1">IndicatorReaction</a>, <a class="el" href="classRegularReaction.html#ab9039b148ea38c16c914342581fa5326">RegularReaction</a>, <a class="el" href="classReinforcedReaction.html#a27f59940f1bba49258f1272c3d8f1274">ReinforcedReaction</a>, and <a class="el" href="classStreetLevelReaction.html#ae3691217d3e7631c0fb5b8750703c12a">StreetLevelReaction</a>.</p>
 
 </div>
 </div>
-<a id="a427a52e6cb6d0e4622946e4bb445582a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a427a52e6cb6d0e4622946e4bb445582a">&#9670;&nbsp;</a></span>react_wind()</h2>
+<a id="a3153e571df369b6b23fe97d33a693d5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3153e571df369b6b23fe97d33a693d5b">&#9670;&nbsp;</a></span>react_wind()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,13 +240,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>counter</b> = 0</td></
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramtype">double *&#160;</td>
           <td class="paramname"><em>dt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; &amp;&#160;</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; *&#160;</td>
           <td class="paramname"><em>scheduler</em>, </td>
         </tr>
         <tr>
@@ -277,20 +268,19 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>counter</b> = 0</td></
 </table>
 </div><div class="memdoc">
 
-<p>executes the reaction happening to the drone with wind </p>
+<p>executes the reaction that is supposed to happen when a drone is affected by wind. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>which is the Ientity </td></tr>
-    <tr><td class="paramname">reaction</td><td>current reaction </td></tr>
+    <tr><td class="paramname">parent</td><td>This is the drone being affected by wind. </td></tr>
     <tr><td class="paramname">dt</td><td>delta time </td></tr>
-    <tr><td class="paramname">scheduler</td><td>vector that holds the ientities. </td></tr>
-    <tr><td class="paramname">wind</td><td>holds a vector3</td></tr>
+    <tr><td class="paramname">scheduler</td><td>vector that holds the entities. </td></tr>
+    <tr><td class="paramname">wind</td><td>holds a vector3 with details of the wind strength.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>none. </dd></dl>
 
-<p>Implemented in <a class="el" href="classIndicatorReaction.html#af7c81b7e0938d276c11baead24106b1d">IndicatorReaction</a>, <a class="el" href="classRegularReaction.html#a34220c66c692945bbdc5855fd3a51629">RegularReaction</a>, <a class="el" href="classReinforcedReaction.html#aa9aeac97e5abdab4a349a64c6d7f5e9e">ReinforcedReaction</a>, and <a class="el" href="classStreetLevelReaction.html#a9b9bb14e547e8483839cf4910f27a2c1">StreetLevelReaction</a>.</p>
+<p>Implemented in <a class="el" href="classIndicatorReaction.html#a628dbb7b0a0112fa18469c5ce89bb0e5">IndicatorReaction</a>, <a class="el" href="classRegularReaction.html#a0ee3cc7b772e0055d221959dd1156f87">RegularReaction</a>, <a class="el" href="classReinforcedReaction.html#ab25c7751eaf371f58cfa3eaa58476598">ReinforcedReaction</a>, and <a class="el" href="classStreetLevelReaction.html#acdc83581afd3927cf05844aa10faac83">StreetLevelReaction</a>.</p>
 
 </div>
 </div>
@@ -307,16 +297,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>counter</b> = 0</td></
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">      {<span class="stringliteral">&quot;white&quot;</span>, <span class="stringliteral">&quot;0xffffff&quot;</span>},  {<span class="stringliteral">&quot;red&quot;</span>, <span class="stringliteral">&quot;0xff0000&quot;</span>},    {<span class="stringliteral">&quot;yellow&quot;</span>, <span class="stringliteral">&quot;0xffff00&quot;</span>},</div>
-<div class="line">      {<span class="stringliteral">&quot;blue&quot;</span>, <span class="stringliteral">&quot;0x0000ff&quot;</span>},   {<span class="stringliteral">&quot;orange&quot;</span>, <span class="stringliteral">&quot;0xffa500&quot;</span>}, {<span class="stringliteral">&quot;green&quot;</span>, <span class="stringliteral">&quot;0x00ff00&quot;</span>},</div>
-<div class="line">      {<span class="stringliteral">&quot;purple&quot;</span>, <span class="stringliteral">&quot;0xa020f0&quot;</span>}, {<span class="stringliteral">&quot;brown&quot;</span>, <span class="stringliteral">&quot;0x964b00&quot;</span>},  {<span class="stringliteral">&quot;black&quot;</span>, <span class="stringliteral">&quot;0x000000&quot;</span>}}</div>
+<div class="line">      {<span class="stringliteral">&quot;white&quot;</span>, <span class="stringliteral">&quot;#ffffff&quot;</span>},  {<span class="stringliteral">&quot;red&quot;</span>, <span class="stringliteral">&quot;#ff0000&quot;</span>},    {<span class="stringliteral">&quot;yellow&quot;</span>, <span class="stringliteral">&quot;#ffff00&quot;</span>},</div>
+<div class="line">      {<span class="stringliteral">&quot;blue&quot;</span>, <span class="stringliteral">&quot;#0000ff&quot;</span>},   {<span class="stringliteral">&quot;orange&quot;</span>, <span class="stringliteral">&quot;#ffa500&quot;</span>}, {<span class="stringliteral">&quot;green&quot;</span>, <span class="stringliteral">&quot;#00ff00&quot;</span>},</div>
+<div class="line">      {<span class="stringliteral">&quot;purple&quot;</span>, <span class="stringliteral">&quot;#a020f0&quot;</span>}, {<span class="stringliteral">&quot;brown&quot;</span>, <span class="stringliteral">&quot;#964b00&quot;</span>},  {<span class="stringliteral">&quot;black&quot;</span>, <span class="stringliteral">&quot;#000000&quot;</span>}}</div>
 </div><!-- fragment -->
-<p>A dictionary map that holds the color and hexcodes. </p>
+<p>A dictionary map that holds colors and corresponding hexcodes. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="IReaction_8h_source.html">IReaction.h</a></li>
+<li>/home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="IReaction_8h_source.html">IReaction.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

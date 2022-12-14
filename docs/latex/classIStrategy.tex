@@ -2,7 +2,7 @@
 \label{classIStrategy}\index{IStrategy@{IStrategy}}
 
 
-A class built for Istrategy.  
+A class built for Istrategy. Parent class for drone movement strategy classes.  
 
 
 
@@ -29,13 +29,12 @@ virtual bool \mbox{\hyperlink{classIStrategy_a13c6048efd232b696db5f35000d5b106}{
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classIStrategy_abdcb4741836a0bb72017f52752962ba2}\label{classIStrategy_abdcb4741836a0bb72017f52752962ba2}} 
-const I\+Graph $\ast$ {\bfseries graph}
+const I\+Graph $\ast$ \mbox{\hyperlink{classIStrategy_abdcb4741836a0bb72017f52752962ba2}{graph}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-A class built for Istrategy. 
+A class built for Istrategy. Parent class for drone movement strategy classes. 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classIStrategy_a13c6048efd232b696db5f35000d5b106}\label{classIStrategy_a13c6048efd232b696db5f35000d5b106}} 
@@ -49,11 +48,11 @@ A class built for Istrategy.
 method to tell if stragety is completed. 
 
 \begin{DoxyReturn}{Returns}
-boolean 
+boolean. True if strategy completed, false otherwise. 
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classAstarStrategy_a65ae8d490fe820fa152a379da6845103}{Astar\+Strategy}}, \mbox{\hyperlink{classBeelineStrategy_a648eae389f7844f210ac267313ef6233}{Beeline\+Strategy}}, \mbox{\hyperlink{classDfsStrategy_a30fb7b230d0244cd87de51a13a8d8c5b}{Dfs\+Strategy}}, \mbox{\hyperlink{classDijkstraStrategy_a409569a22f38028431ce25522d355ee2}{Dijkstra\+Strategy}}, \mbox{\hyperlink{classCelebrationDecorator_a7ce83ef692d22773bf40e8733e20329a}{Celebration\+Decorator}}, \mbox{\hyperlink{classJumpDecorator_a94b32bed5b764df15980356aa8763abe}{Jump\+Decorator}}, and \mbox{\hyperlink{classSpinDecorator_a0887a816731d9ff8ee8161034a03c4aa}{Spin\+Decorator}}.
+Implemented in \mbox{\hyperlink{classAstarStrategy_a65ae8d490fe820fa152a379da6845103}{Astar\+Strategy}}, \mbox{\hyperlink{classDfsStrategy_a30fb7b230d0244cd87de51a13a8d8c5b}{Dfs\+Strategy}}, \mbox{\hyperlink{classDijkstraStrategy_a409569a22f38028431ce25522d355ee2}{Dijkstra\+Strategy}}, \mbox{\hyperlink{classBeelineStrategy_a648eae389f7844f210ac267313ef6233}{Beeline\+Strategy}}, \mbox{\hyperlink{classCelebrationDecorator_a7ce83ef692d22773bf40e8733e20329a}{Celebration\+Decorator}}, \mbox{\hyperlink{classJumpDecorator_a94b32bed5b764df15980356aa8763abe}{Jump\+Decorator}}, and \mbox{\hyperlink{classSpinDecorator_a0887a816731d9ff8ee8161034a03c4aa}{Spin\+Decorator}}.
 
 \mbox{\Hypertarget{classIStrategy_a69254389f4ef9a851dc5d40c4cc9aacd}\label{classIStrategy_a69254389f4ef9a851dc5d40c4cc9aacd}} 
 \index{IStrategy@{IStrategy}!Move@{Move}}
@@ -67,7 +66,7 @@ moves the entity based on strategy.
 
 
 \begin{DoxyParams}{Parameters}
-{\em entity} & Ientity$\ast$ \\
+{\em entity} & Ientity$\ast$ to be moved using given strategy. \\
 \hline
 {\em dt} & delta time double \\
 \hline
@@ -77,10 +76,19 @@ nothing
 \end{DoxyReturn}
 
 
-Implemented in \mbox{\hyperlink{classAstarStrategy_afd13e7ed2b1872f01aa2a2f4b07b41c3}{Astar\+Strategy}}, \mbox{\hyperlink{classBeelineStrategy_ab8d3f5b05d5e9dd06465f5fc4cd4767e}{Beeline\+Strategy}}, \mbox{\hyperlink{classDfsStrategy_aab5a0a5c97f710075634b81a3e00ecf9}{Dfs\+Strategy}}, \mbox{\hyperlink{classDijkstraStrategy_a24e0177f55b69a6b2260b0a0e2ce4430}{Dijkstra\+Strategy}}, \mbox{\hyperlink{classJumpDecorator_a6d46675428916bbe6acd10fb25d51f86}{Jump\+Decorator}}, \mbox{\hyperlink{classSpinDecorator_a766735ae467d0bb3a80169e109951804}{Spin\+Decorator}}, and \mbox{\hyperlink{classCelebrationDecorator_aaea8fd11f7d0e12dd79ccdc63ab1bbf6}{Celebration\+Decorator}}.
+Implemented in \mbox{\hyperlink{classAstarStrategy_afd13e7ed2b1872f01aa2a2f4b07b41c3}{Astar\+Strategy}}, \mbox{\hyperlink{classDfsStrategy_aab5a0a5c97f710075634b81a3e00ecf9}{Dfs\+Strategy}}, \mbox{\hyperlink{classDijkstraStrategy_a24e0177f55b69a6b2260b0a0e2ce4430}{Dijkstra\+Strategy}}, \mbox{\hyperlink{classBeelineStrategy_ab8d3f5b05d5e9dd06465f5fc4cd4767e}{Beeline\+Strategy}}, \mbox{\hyperlink{classJumpDecorator_a6d46675428916bbe6acd10fb25d51f86}{Jump\+Decorator}}, \mbox{\hyperlink{classSpinDecorator_a766735ae467d0bb3a80169e109951804}{Spin\+Decorator}}, and \mbox{\hyperlink{classCelebrationDecorator_aaea8fd11f7d0e12dd79ccdc63ab1bbf6}{Celebration\+Decorator}}.
 
 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classIStrategy_abdcb4741836a0bb72017f52752962ba2}\label{classIStrategy_abdcb4741836a0bb72017f52752962ba2}} 
+\index{IStrategy@{IStrategy}!graph@{graph}}
+\index{graph@{graph}!IStrategy@{IStrategy}}
+\doxysubsubsection{\texorpdfstring{graph}{graph}}
+{\footnotesize\ttfamily const I\+Graph$\ast$ I\+Strategy\+::graph\hspace{0.3cm}{\ttfamily [protected]}}
+
+I\+Graph object to be used in the simulation. 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/I\+Strategy.\+h\end{DoxyCompactItemize}
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/I\+Strategy.\+h\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 <map id="Robot" name="Robot">
-<area shape="rect" id="node1" title="A class built to manipulate movement of Robot." alt="" coords="7,80,67,107"/>
-<area shape="rect" id="node2" href="$classIEntity.html" title="A class built to see interface." alt="" coords="5,5,69,32"/>
+<area shape="rect" id="node1" title="A class built to manipulate movement of Robots. Inherits from IEntity." alt="" coords="7,80,67,107"/>
+<area shape="rect" id="node2" href="$classIEntity.html" title="A class built to for moving/updating entities in the simulation." alt="" coords="5,5,69,32"/>
 </map>

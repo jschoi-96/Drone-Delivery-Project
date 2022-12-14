@@ -2,7 +2,7 @@
 \label{classWindFactory}\index{WindFactory@{WindFactory}}
 
 
-A class built using the factory design pattern but for wind weather.  
+A class built using the factory design pattern but for wind weather. Inherits from \mbox{\hyperlink{classIEntityFactory}{I\+Entity\+Factory}}.  
 
 
 
@@ -11,8 +11,7 @@ A class built using the factory design pattern but for wind weather.
 
 
 
-Inheritance diagram for Wind\+Factory\+:
-\nopagebreak
+Inheritance diagram for Wind\+Factory\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Wind\+Factory\+:
 \end{figure}
 
 
-Collaboration diagram for Wind\+Factory\+:
-\nopagebreak
+Collaboration diagram for Wind\+Factory\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -33,13 +31,13 @@ Collaboration diagram for Wind\+Factory\+:
 \begin{DoxyCompactItemize}
 \item 
 virtual \mbox{\hyperlink{classWindFactory_a7a370026863d90d40b5ad2bd26cc1a79}{$\sim$\+Wind\+Factory}} ()
-\begin{DoxyCompactList}\small\item\em A deconstructor for wind factory. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ \mbox{\hyperlink{classWindFactory_a5165e7a498712b4dd821868387156689}{Create\+Entity}} (Json\+Object \&entity)
-\begin{DoxyCompactList}\small\item\em Creates the wind weather entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A destructor for wind factory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ \mbox{\hyperlink{classWindFactory_a77841fa4a77ba14d683226b1e1f72c1f}{Create\+Entity}} (const Json\+Object \&entity)
+\begin{DoxyCompactList}\small\item\em Attempts to create a \mbox{\hyperlink{classWindWeather}{Wind\+Weather}} \mbox{\hyperlink{classIEntity}{I\+Entity}}. Returns the entity if it was created, otherwise returns null. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-A class built using the factory design pattern but for wind weather. 
+A class built using the factory design pattern but for wind weather. Inherits from \mbox{\hyperlink{classIEntityFactory}{I\+Entity\+Factory}}. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classWindFactory_a7a370026863d90d40b5ad2bd26cc1a79}\label{classWindFactory_a7a370026863d90d40b5ad2bd26cc1a79}} 
@@ -50,7 +48,7 @@ A class built using the factory design pattern but for wind weather.
 
 
 
-A deconstructor for wind factory. 
+A destructor for wind factory. 
 
 \begin{DoxyReturn}{Returns}
 nothing 
@@ -58,31 +56,31 @@ nothing
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classWindFactory_a5165e7a498712b4dd821868387156689}\label{classWindFactory_a5165e7a498712b4dd821868387156689}} 
+\mbox{\Hypertarget{classWindFactory_a77841fa4a77ba14d683226b1e1f72c1f}\label{classWindFactory_a77841fa4a77ba14d683226b1e1f72c1f}} 
 \index{WindFactory@{WindFactory}!CreateEntity@{CreateEntity}}
 \index{CreateEntity@{CreateEntity}!WindFactory@{WindFactory}}
 \doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ Wind\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{Json\+Object \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ Wind\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{const Json\+Object \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Creates the wind weather entity. 
+Attempts to create a \mbox{\hyperlink{classWindWeather}{Wind\+Weather}} \mbox{\hyperlink{classIEntity}{I\+Entity}}. Returns the entity if it was created, otherwise returns null. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em entity} & jsonobj\& \\
+{\em entity} & J\+S\+ON object the \mbox{\hyperlink{classWindWeather}{Wind\+Weather}} object should be created from. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Ientity$\ast$ 
+the new \mbox{\hyperlink{classWindWeather}{Wind\+Weather}} entity if the J\+S\+ON parameter corresponds to a \mbox{\hyperlink{classWindWeather}{Wind\+Weather}}. otherwise returns a nullpointer. 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classIEntityFactory_a9bd53cf7ca21ab252968062ea5d88180}{I\+Entity\+Factory}}.
+Implements \mbox{\hyperlink{classIEntityFactory_ab28e669d7f78ce426620fa4e472f3adb}{I\+Entity\+Factory}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Wind\+Factory.\+h\item 
-/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Wind\+Factory.\+cc\end{DoxyCompactItemize}
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Wind\+Factory.\+h\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Wind\+Factory.\+cc\end{DoxyCompactItemize}

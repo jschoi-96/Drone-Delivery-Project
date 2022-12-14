@@ -62,7 +62,7 @@ Adds an entity to the program.
 
 Adds an entity to the program 
 \begin{DoxyParams}{Parameters}
-{\em \mbox{\hyperlink{classIEntity}{I\+Entity}}} & type entity \\
+{\em entity} & \mbox{\hyperlink{classIEntity}{I\+Entity}} to add to the program. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classIController_aa50f4cf3a9cc11decfc8e201dc00ab39}\label{classIController_aa50f4cf3a9cc11decfc8e201dc00ab39}} 
@@ -77,9 +77,9 @@ Adds a path to the program.
 
 Adds a path to the program 
 \begin{DoxyParams}{Parameters}
-{\em id} & -\/ int variable \\
+{\em id} & -\/ int variable that uniquely identifies a path \\
 \hline
-{\em path} & -\/ 2d dimention vector that has path \\
+{\em path} & -\/ 2d dimention vector that has a path \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classIController_a35b431eb8e01216df8b33fa3f4c2b25c}\label{classIController_a35b431eb8e01216df8b33fa3f4c2b25c}} 
@@ -94,7 +94,7 @@ Removes an entity from the program.
 
 Removes an entity from the program 
 \begin{DoxyParams}{Parameters}
-{\em \mbox{\hyperlink{classIEntity}{I\+Entity}}} & type entity \\
+{\em id} & integer that uniquely identifies an entity \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classIController_a23bf74a0e1672c6daba1674137759f55}\label{classIController_a23bf74a0e1672c6daba1674137759f55}} 
@@ -109,7 +109,7 @@ Removes a path from the program.
 
 Removes a path from the program 
 \begin{DoxyParams}{Parameters}
-{\em id} & -\/ int variable \\
+{\em id} & -\/ int variable that uniquely identifies a path \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classIController_ab9ee95cb6f33c04b1323cec88e5d27b5}\label{classIController_ab9ee95cb6f33c04b1323cec88e5d27b5}} 
@@ -124,9 +124,9 @@ Allows messages to be passed back to the view.
 
 Allows messages to be passed back to the view 
 \begin{DoxyParams}{Parameters}
-{\em event} & -\/ string variable \\
+{\em event} & -\/ string variable. Name of event to send to sim view. \\
 \hline
-{\em details} & -\/ Json\+Object obj \\
+{\em details} & -\/ Json\+Object of the entity who is responsible for the event. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classIController_aae116763f3bbfc0875eb841912df7c59}\label{classIController_aae116763f3bbfc0875eb841912df7c59}} 
@@ -139,13 +139,13 @@ Allows messages to be passed back to the view
 
 Adds an entity to the program. 
 
-update an entity to the program 
+Updates an entity in the program 
 \begin{DoxyParams}{Parameters}
-{\em \mbox{\hyperlink{classIEntity}{I\+Entity}}} & type entity \\
+{\em entity} & Ientity to update in the program. \\
 \hline
 \end{DoxyParams}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/I\+Controller.\+h\end{DoxyCompactItemize}
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/I\+Controller.\+h\end{DoxyCompactItemize}

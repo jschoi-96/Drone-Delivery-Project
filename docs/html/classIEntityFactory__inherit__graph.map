@@ -1,9 +1,9 @@
 <map id="IEntityFactory" name="IEntityFactory">
 <area shape="rect" id="node1" title="Factory method for IEntity class." alt="" coords="358,5,470,32"/>
-<area shape="rect" id="node2" href="$classCompositeFactory.html" title="Factory method for composite class." alt="" coords="5,80,145,107"/>
-<area shape="rect" id="node3" href="$classDroneFactory.html" title="Factory method for Drone class." alt="" coords="170,80,279,107"/>
-<area shape="rect" id="node4" href="$classEmpFactory.html" title="A class built using the factory design pattern but for emp weather." alt="" coords="303,80,402,107"/>
-<area shape="rect" id="node5" href="$classRainFactory.html" title="A class built using the factory design pattern but for rain weather." alt="" coords="426,80,525,107"/>
-<area shape="rect" id="node6" href="$classRobotFactory.html" title="Factory method for Robot class." alt="" coords="549,80,657,107"/>
-<area shape="rect" id="node7" href="$classWindFactory.html" title="A class built using the factory design pattern but for wind weather." alt="" coords="681,80,784,107"/>
+<area shape="rect" id="node2" href="$classCompositeFactory.html" title="Factory method for composite class. Inherits from IEntityFactory." alt="" coords="5,80,145,107"/>
+<area shape="rect" id="node3" href="$classDroneFactory.html" title="Factory method for Drone class. Inherits from IEntityFactory." alt="" coords="170,80,279,107"/>
+<area shape="rect" id="node4" href="$classEmpFactory.html" title="A class built using the factory design pattern but for emp weather. Inherits from IEntityFactory." alt="" coords="303,80,402,107"/>
+<area shape="rect" id="node5" href="$classRainFactory.html" title="A class built using the factory design pattern but for rain weather. Inherits from IEntityFactory." alt="" coords="426,80,525,107"/>
+<area shape="rect" id="node6" href="$classRobotFactory.html" title="Factory method for Robot class. Inherits from IEntityFactory." alt="" coords="549,80,657,107"/>
+<area shape="rect" id="node7" href="$classWindFactory.html" title="A class built using the factory design pattern but for wind weather. Inherits from IEntityFactory." alt="" coords="681,80,784,107"/>
 </map>

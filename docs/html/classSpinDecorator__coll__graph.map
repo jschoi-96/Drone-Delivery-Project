@@ -1,5 +1,5 @@
 <map id="SpinDecorator" name="SpinDecorator">
-<area shape="rect" id="node1" title="Decorator method to spin object." alt="" coords="29,171,143,197"/>
-<area shape="rect" id="node2" href="$classCelebrationDecorator.html" title="Decorator method to implement other feature." alt="" coords="5,95,167,121"/>
-<area shape="rect" id="node3" href="$classIStrategy.html" title="A class built for Istrategy." alt="" coords="45,5,127,32"/>
+<area shape="rect" id="node1" title="Decorator class for the spin celebration. Inherits from CelebrationDecorator." alt="" coords="29,171,143,197"/>
+<area shape="rect" id="node2" href="$classCelebrationDecorator.html" title="Decorator method to implement other feature. Inherits from IStrategy." alt="" coords="5,95,167,121"/>
+<area shape="rect" id="node3" href="$classIStrategy.html" title="A class built for Istrategy. Parent class for drone movement strategy classes." alt="" coords="45,5,127,32"/>
 </map>

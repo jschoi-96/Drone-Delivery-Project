@@ -6,13 +6,13 @@
 #include "IWeather.h"
 #include "IZoneWeather.h"
 /**
- *@brief A class built for emp weather
+ *@brief A class built for emp weather. Inherits from IZoneWeather.
  **/
 class EmpWeather : public IZoneWeather {
  public:
   /**
    * @brief constructor for empWeather.
-   * @param obj jsonObject&
+   * @param obj JSON object to be used for creating an EmpWeather entity.
    * @return nothing
    **/
   EmpWeather(const JsonObject& obj);
@@ -23,13 +23,14 @@ class EmpWeather : public IZoneWeather {
    * @return nothing
    **/
   ~EmpWeather() override = default;
+
   /**
-   * @brief executes the reaction happening to the drone with empweather.
+   * @brief executes the reaction happening to the drone with Empweather.
    *
-   * @param parent which is the Ientity
-   * @param reaction current reaction
+   * @param parent The drone being affected by the EMP.
+   * @param reaction current weather reaction
    * @param dt delta time
-   * @param scheduler vector that holds the ientities.
+   * @param scheduler vector that holds the entities.
    *
    * @return none.
    **/

@@ -46,7 +46,13 @@ class BeelineStrategy : public IStrategy {
   bool IsCompleted();
 
  private:
+  /**
+   * Position of the drone being moved.
+   **/
   Vector3 position;
+  /**
+   * Destination of drone being moved.
+   **/
   Vector3 destination;
 };      // end class
 #endif  // LIBS_TRANSIT_INCLUDE_BEELINESTRATEGY_H_

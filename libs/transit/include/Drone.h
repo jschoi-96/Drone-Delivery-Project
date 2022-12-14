@@ -13,16 +13,17 @@
 // velocity and direction.
 
 /**
- *@brief A class built to manipulate movement of drone
+ *@brief A class built to manipulate movement of drone. Inherits from IEntity.
  **/
 class Drone : public IEntity {
- public:
+public:
   /**
-   * @brief it sets position, direction,speed, availability of drone
-   *
-   * @param obj contains position, direction, and speed
-   */
+   * @brief Constructor for the Drone class.
+   * 
+   * @return none.
+   **/
   Drone(const JsonObject& obj);
+
   /**
    * @brief Destructor for Drone class.
    *
@@ -112,7 +113,7 @@ class Drone : public IEntity {
 
   /**
    * @brief rotate drone by using angle and formula
-   * @param angle - angle of drone
+   * @param angle - angle to use while rotating the drone.
    */
   void Rotate(double angle);
 
@@ -138,18 +139,57 @@ class Drone : public IEntity {
   Drone& operator=(const Drone& drone) = delete;
 
  private:
+ /**
+  * JSON object representing the drone in the simulation.
+  **/
   JsonObject details;
+  /**
+  * position of the drone. 
+  **/
   Vector3 position;
+  /**
+  * direction of the drone. 
+  **/
   Vector3 direction;
+  /**
+  * height for drone to jump when celebrating. 
+  **/
   float jumpHeight = 0;
-  bool goUp = true;  // jump helper
+  /**
+  * jump helper 
+  **/
+  bool goUp = true;
+  /**
+  * destination of the drone. 
+  **/
   Vector3 destination;
+  /**
+  * speed of the drone. 
+  **/
   float speed;
+  /**
+  * availability of the drone. 
+  **/
   bool available;
+  /**
+  * boolean determining if the drone has a robot currently picked up. 
+  **/
   bool pickedUp;
+  /**
+  * current movement strategy being used by the drone. 
+  **/
   std::string strategyName;
+  /**
+  * current nearest entity to the drone. 
+  **/
   IEntity* nearestEntity = NULL;
+  /**
+  * movement strategy the drone should use when moving towards a pickup location. 
+  **/
   IStrategy* toTargetPosStrategy = NULL;
+  /**
+  * movement strategy the drone should use when moving towards a drop off location. 
+  **/
   IStrategy* toTargetDestStrategy = NULL;
 };
 

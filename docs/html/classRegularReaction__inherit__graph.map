@@ -1,4 +1,4 @@
 <map id="RegularReaction" name="RegularReaction">
-<area shape="rect" id="node1" title="A class built for RegularReaction." alt="" coords="5,80,135,107"/>
-<area shape="rect" id="node2" href="$classIReaction.html" title="A class built for IReaction." alt="" coords="29,5,111,32"/>
+<area shape="rect" id="node1" title="A class built for RegularReactions. Inherits from IReaction." alt="" coords="5,80,135,107"/>
+<area shape="rect" id="node2" href="$classIReaction.html" title="IReaction class. Responsible for the physical affects of different weather patterns on entities." alt="" coords="29,5,111,32"/>
 </map>

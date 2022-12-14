@@ -2,7 +2,7 @@
 \label{classRegularReaction}\index{RegularReaction@{RegularReaction}}
 
 
-A class built for \mbox{\hyperlink{classRegularReaction}{Regular\+Reaction}}.  
+A class built for Regular\+Reactions. Inherits from \mbox{\hyperlink{classIReaction}{I\+Reaction}}.  
 
 
 
@@ -11,8 +11,7 @@ A class built for \mbox{\hyperlink{classRegularReaction}{Regular\+Reaction}}.
 
 
 
-Inheritance diagram for Regular\+Reaction\+:
-\nopagebreak
+Inheritance diagram for Regular\+Reaction\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,8 +20,7 @@ Inheritance diagram for Regular\+Reaction\+:
 \end{figure}
 
 
-Collaboration diagram for Regular\+Reaction\+:
-\nopagebreak
+Collaboration diagram for Regular\+Reaction\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -32,44 +30,69 @@ Collaboration diagram for Regular\+Reaction\+:
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classRegularReaction_ac0c4648fb5293dde2dcc44ac42fa10de}\label{classRegularReaction_ac0c4648fb5293dde2dcc44ac42fa10de}} 
 \mbox{\hyperlink{classRegularReaction_ac0c4648fb5293dde2dcc44ac42fa10de}{Regular\+Reaction}} ()
 \begin{DoxyCompactList}\small\item\em A constructor for Regularreaction. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classRegularReaction_a08608c2154ea08f1115696507b021126}\label{classRegularReaction_a08608c2154ea08f1115696507b021126}} 
 \mbox{\hyperlink{classRegularReaction_a08608c2154ea08f1115696507b021126}{$\sim$\+Regular\+Reaction}} () override=default
-\begin{DoxyCompactList}\small\item\em A deconstructor for regular\+Reaction. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classRegularReaction_a34220c66c692945bbdc5855fd3a51629}{react\+\_\+wind}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler, \mbox{\hyperlink{classVector3}{Vector3}} wind)
-\begin{DoxyCompactList}\small\item\em executes the reaction happening to the drone with wind \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classRegularReaction_a8c07e22c7996fb4e086651dbfc3f64a8}{react\+\_\+rain}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler)
-\begin{DoxyCompactList}\small\item\em executes the reaction happening to the drone with rain \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classRegularReaction_a5a089220ce821407c5cbdb0aaeff5f47}{react\+\_\+emp}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double \&dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&scheduler)
-\begin{DoxyCompactList}\small\item\em executes the reaction happening to the drone with emp \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A destructor for regular\+Reaction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRegularReaction_a0ee3cc7b772e0055d221959dd1156f87}{react\+\_\+wind}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double $\ast$dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$scheduler, \mbox{\hyperlink{classVector3}{Vector3}} wind)
+\begin{DoxyCompactList}\small\item\em executes the reaction that is supposed to happen when a drone is affected by wind. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRegularReaction_ab9039b148ea38c16c914342581fa5326}{react\+\_\+rain}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double $\ast$dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$scheduler)
+\begin{DoxyCompactList}\small\item\em executes the reaction that is supposed to happen when a drone is affected by rain. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRegularReaction_acbea6e0075c753202cdce7a3692eb1be}{react\+\_\+emp}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double $\ast$dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$scheduler)
+\begin{DoxyCompactList}\small\item\em executes the reaction that is supposed to happen when a drone is affected by an E\+MP. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
 \doxysubsection{Detailed Description}
-A class built for \mbox{\hyperlink{classRegularReaction}{Regular\+Reaction}}. 
+A class built for Regular\+Reactions. Inherits from \mbox{\hyperlink{classIReaction}{I\+Reaction}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRegularReaction_ac0c4648fb5293dde2dcc44ac42fa10de}\label{classRegularReaction_ac0c4648fb5293dde2dcc44ac42fa10de}} 
+\index{RegularReaction@{RegularReaction}!RegularReaction@{RegularReaction}}
+\index{RegularReaction@{RegularReaction}!RegularReaction@{RegularReaction}}
+\doxysubsubsection{\texorpdfstring{RegularReaction()}{RegularReaction()}}
+{\footnotesize\ttfamily Regular\+Reaction\+::\+Regular\+Reaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A constructor for Regularreaction. 
+
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRegularReaction_a08608c2154ea08f1115696507b021126}\label{classRegularReaction_a08608c2154ea08f1115696507b021126}} 
+\index{RegularReaction@{RegularReaction}!````~RegularReaction@{$\sim$RegularReaction}}
+\index{````~RegularReaction@{$\sim$RegularReaction}!RegularReaction@{RegularReaction}}
+\doxysubsubsection{\texorpdfstring{$\sim$RegularReaction()}{~RegularReaction()}}
+{\footnotesize\ttfamily Regular\+Reaction\+::$\sim$\+Regular\+Reaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+A destructor for regular\+Reaction. 
+
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classRegularReaction_a5a089220ce821407c5cbdb0aaeff5f47}\label{classRegularReaction_a5a089220ce821407c5cbdb0aaeff5f47}} 
+\mbox{\Hypertarget{classRegularReaction_acbea6e0075c753202cdce7a3692eb1be}\label{classRegularReaction_acbea6e0075c753202cdce7a3692eb1be}} 
 \index{RegularReaction@{RegularReaction}!react\_emp@{react\_emp}}
 \index{react\_emp@{react\_emp}!RegularReaction@{RegularReaction}}
 \doxysubsubsection{\texorpdfstring{react\_emp()}{react\_emp()}}
-{\footnotesize\ttfamily void Regular\+Reaction\+::react\+\_\+emp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double \&}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Regular\+Reaction\+::react\+\_\+emp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double $\ast$}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-executes the reaction happening to the drone with emp 
+executes the reaction that is supposed to happen when a drone is affected by an E\+MP. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em parent} & which is the Ientity \\
-\hline
-{\em reaction} & current reaction \\
+{\em parent} & This is the drone being affected by an E\+MP. \\
 \hline
 {\em dt} & delta time \\
 \hline
-{\em scheduler} & vector that holds the ientities.\\
+{\em scheduler} & vector that holds the entities.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -77,27 +100,25 @@ none.
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classIReaction_acf3ecf0ba873130cd89b30b12f898821}{I\+Reaction}}.
+Implements \mbox{\hyperlink{classIReaction_ad7a525236d3b3ce3aac7cb10abb32ef9}{I\+Reaction}}.
 
-\mbox{\Hypertarget{classRegularReaction_a8c07e22c7996fb4e086651dbfc3f64a8}\label{classRegularReaction_a8c07e22c7996fb4e086651dbfc3f64a8}} 
+\mbox{\Hypertarget{classRegularReaction_ab9039b148ea38c16c914342581fa5326}\label{classRegularReaction_ab9039b148ea38c16c914342581fa5326}} 
 \index{RegularReaction@{RegularReaction}!react\_rain@{react\_rain}}
 \index{react\_rain@{react\_rain}!RegularReaction@{RegularReaction}}
 \doxysubsubsection{\texorpdfstring{react\_rain()}{react\_rain()}}
-{\footnotesize\ttfamily void Regular\+Reaction\+::react\+\_\+rain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double \&}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Regular\+Reaction\+::react\+\_\+rain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double $\ast$}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-executes the reaction happening to the drone with rain 
+executes the reaction that is supposed to happen when a drone is affected by rain. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em parent} & which is the Ientity \\
-\hline
-{\em reaction} & current reaction \\
+{\em parent} & This is the drone being affected by rain. \\
 \hline
 {\em dt} & delta time \\
 \hline
-{\em scheduler} & vector that holds the ientities.\\
+{\em scheduler} & vector that holds the entities.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -105,29 +126,27 @@ none.
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classIReaction_a4655d9e1632f4453718653c8b0c1f6bf}{I\+Reaction}}.
+Implements \mbox{\hyperlink{classIReaction_aff051d6e1529459140c48a275b5dd7c3}{I\+Reaction}}.
 
-\mbox{\Hypertarget{classRegularReaction_a34220c66c692945bbdc5855fd3a51629}\label{classRegularReaction_a34220c66c692945bbdc5855fd3a51629}} 
+\mbox{\Hypertarget{classRegularReaction_a0ee3cc7b772e0055d221959dd1156f87}\label{classRegularReaction_a0ee3cc7b772e0055d221959dd1156f87}} 
 \index{RegularReaction@{RegularReaction}!react\_wind@{react\_wind}}
 \index{react\_wind@{react\_wind}!RegularReaction@{RegularReaction}}
 \doxysubsubsection{\texorpdfstring{react\_wind()}{react\_wind()}}
-{\footnotesize\ttfamily void Regular\+Reaction\+::react\+\_\+wind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double \&}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ \&}]{scheduler,  }\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{wind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Regular\+Reaction\+::react\+\_\+wind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double $\ast$}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$}]{scheduler,  }\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{wind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-executes the reaction happening to the drone with wind 
+executes the reaction that is supposed to happen when a drone is affected by wind. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em parent} & which is the Ientity \\
-\hline
-{\em reaction} & current reaction \\
+{\em parent} & This is the drone being affected by wind. \\
 \hline
 {\em dt} & delta time \\
 \hline
-{\em scheduler} & vector that holds the ientities. \\
+{\em scheduler} & vector that holds the entities. \\
 \hline
-{\em wind} & holds a vector3 \\
+{\em wind} & holds a vector3 with details of the wind strength.\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -135,11 +154,11 @@ none.
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classIReaction_a427a52e6cb6d0e4622946e4bb445582a}{I\+Reaction}}.
+Implements \mbox{\hyperlink{classIReaction_a3153e571df369b6b23fe97d33a693d5b}{I\+Reaction}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Regular\+Reaction.\+h\item 
-/home/choix712/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Regular\+Reaction.\+cc\end{DoxyCompactItemize}
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Regular\+Reaction.\+h\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Regular\+Reaction.\+cc\end{DoxyCompactItemize}

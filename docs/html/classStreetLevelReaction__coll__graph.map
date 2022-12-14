@@ -1,4 +1,4 @@
 <map id="StreetLevelReaction" name="StreetLevelReaction">
-<area shape="rect" id="node1" title="A class built for streetlevelReaction." alt="" coords="5,80,159,107"/>
-<area shape="rect" id="node2" href="$classIReaction.html" title="A class built for IReaction." alt="" coords="41,5,123,32"/>
+<area shape="rect" id="node1" title="A class built for streetlevelReaction. Inherits from IReaction." alt="" coords="5,80,159,107"/>
+<area shape="rect" id="node2" href="$classIReaction.html" title="IReaction class. Responsible for the physical affects of different weather patterns on entities." alt="" coords="41,5,123,32"/>
 </map>

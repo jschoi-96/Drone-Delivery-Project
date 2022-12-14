@@ -69,7 +69,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A class built for emp weather.  
+<p>A class built for emp weather. Inherits from <a class="el" href="classIZoneWeather.html" title="class that holds the IZoneweather. Responsible for setting/moving/maintaining weather boundaries....">IZoneWeather</a>.  
  <a href="classEmpWeather.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="EmpWeather_8h_source.html">EmpWeather.h</a>&gt;</code></p>
@@ -78,10 +78,10 @@ Inheritance diagram for EmpWeather:</div>
 <div class="dyncontent">
 <div class="center"><img src="classEmpWeather__inherit__graph.png" border="0" usemap="#EmpWeather_inherit__map" alt="Inheritance graph"/></div>
 <map name="EmpWeather_inherit__map" id="EmpWeather_inherit__map">
-<area shape="rect" title="A class built for emp weather." alt="" coords="41,155,147,181"/>
-<area shape="rect" href="classIZoneWeather.html" title="class that holds the IZoneweather inherits from iweather and ientity." alt="" coords="37,80,151,107"/>
-<area shape="rect" href="classIWeather.html" title="A class built for IWeather." alt="" coords="5,5,87,32"/>
-<area shape="rect" href="classIEntity.html" title="A class built to see interface." alt="" coords="111,5,175,32"/>
+<area shape="rect" title="A class built for emp weather. Inherits from IZoneWeather." alt="" coords="41,155,147,181"/>
+<area shape="rect" href="classIZoneWeather.html" title="class that holds the IZoneweather. Responsible for setting/moving/maintaining weather boundaries...." alt="" coords="37,80,151,107"/>
+<area shape="rect" href="classIWeather.html" title="Interface built for different weather patterns/reactions." alt="" coords="5,5,87,32"/>
+<area shape="rect" href="classIEntity.html" title="A class built to for moving/updating entities in the simulation." alt="" coords="111,5,175,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -89,88 +89,96 @@ Collaboration diagram for EmpWeather:</div>
 <div class="dyncontent">
 <div class="center"><img src="classEmpWeather__coll__graph.png" border="0" usemap="#EmpWeather_coll__map" alt="Collaboration graph"/></div>
 <map name="EmpWeather_coll__map" id="EmpWeather_coll__map">
-<area shape="rect" title="A class built for emp weather." alt="" coords="63,200,170,227"/>
-<area shape="rect" href="classIZoneWeather.html" title="class that holds the IZoneweather inherits from iweather and ientity." alt="" coords="59,124,174,151"/>
-<area shape="rect" href="classIWeather.html" title="A class built for IWeather." alt="" coords="5,5,87,32"/>
-<area shape="rect" href="classIEntity.html" title="A class built to see interface." alt="" coords="118,5,182,32"/>
+<area shape="rect" title="A class built for emp weather. Inherits from IZoneWeather." alt="" coords="63,200,170,227"/>
+<area shape="rect" href="classIZoneWeather.html" title="class that holds the IZoneweather. Responsible for setting/moving/maintaining weather boundaries...." alt="" coords="59,124,174,151"/>
+<area shape="rect" href="classIWeather.html" title="Interface built for different weather patterns/reactions." alt="" coords="5,5,87,32"/>
+<area shape="rect" href="classIEntity.html" title="A class built to for moving/updating entities in the simulation." alt="" coords="118,5,182,32"/>
 <area shape="rect" href="classVector3.html" title="A class built solely to handle 3D vector mathematics." alt="" coords="206,5,278,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afa82aa185fdb31bc0a5ebf28969f5456"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEmpWeather.html#afa82aa185fdb31bc0a5ebf28969f5456">EmpWeather</a> (JsonObject &amp;obj)</td></tr>
-<tr class="memdesc:afa82aa185fdb31bc0a5ebf28969f5456"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor for empWeather.  <a href="classEmpWeather.html#afa82aa185fdb31bc0a5ebf28969f5456">More...</a><br /></td></tr>
-<tr class="separator:afa82aa185fdb31bc0a5ebf28969f5456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb899f18b2f4f879cde44edcb3c4e9b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEmpWeather.html#aeb899f18b2f4f879cde44edcb3c4e9b9">EmpWeather</a> (const JsonObject &amp;obj)</td></tr>
+<tr class="memdesc:aeb899f18b2f4f879cde44edcb3c4e9b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor for empWeather.  <a href="classEmpWeather.html#aeb899f18b2f4f879cde44edcb3c4e9b9">More...</a><br /></td></tr>
+<tr class="separator:aeb899f18b2f4f879cde44edcb3c4e9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d23b035ab88419f16ad6e41c78a08fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEmpWeather.html#a8d23b035ab88419f16ad6e41c78a08fb">~EmpWeather</a> () override=default</td></tr>
 <tr class="memdesc:a8d23b035ab88419f16ad6e41c78a08fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">deconstructor for empWeather.  <a href="classEmpWeather.html#a8d23b035ab88419f16ad6e41c78a08fb">More...</a><br /></td></tr>
 <tr class="separator:a8d23b035ab88419f16ad6e41c78a08fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74606238abac4c50a621ca8e2bfc1f45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEmpWeather.html#a74606238abac4c50a621ca8e2bfc1f45">Execute</a> (<a class="el" href="classIEntity.html">IEntity</a> *parent, <a class="el" href="classIReaction.html">IReaction</a> *reaction, double dt, std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; scheduler)</td></tr>
-<tr class="memdesc:a74606238abac4c50a621ca8e2bfc1f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">executes the reaction happening to the drone with empweather.  <a href="classEmpWeather.html#a74606238abac4c50a621ca8e2bfc1f45">More...</a><br /></td></tr>
+<tr class="memitem:a74606238abac4c50a621ca8e2bfc1f45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEmpWeather.html#a74606238abac4c50a621ca8e2bfc1f45">Execute</a> (<a class="el" href="classIEntity.html">IEntity</a> *<a class="el" href="classIZoneWeather.html#a6898c798e169fce5f37502954b6e4ef3">parent</a>, <a class="el" href="classIReaction.html">IReaction</a> *reaction, double dt, std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; scheduler)</td></tr>
+<tr class="memdesc:a74606238abac4c50a621ca8e2bfc1f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">executes the reaction happening to the drone with Empweather.  <a href="classEmpWeather.html#a74606238abac4c50a621ca8e2bfc1f45">More...</a><br /></td></tr>
 <tr class="separator:a74606238abac4c50a621ca8e2bfc1f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classIZoneWeather"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIZoneWeather')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classIZoneWeather.html">IZoneWeather</a></td></tr>
-<tr class="memitem:ae550498e257f595a7c94da3d74f91f76 inherit pub_methods_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#ae550498e257f595a7c94da3d74f91f76">IsInside</a> (<a class="el" href="classIEntity.html">IEntity</a> *parent)</td></tr>
-<tr class="memdesc:ae550498e257f595a7c94da3d74f91f76 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if the drone is inside the base weather.  <a href="classIZoneWeather.html#ae550498e257f595a7c94da3d74f91f76">More...</a><br /></td></tr>
+<tr class="memitem:ae550498e257f595a7c94da3d74f91f76 inherit pub_methods_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#ae550498e257f595a7c94da3d74f91f76">IsInside</a> (<a class="el" href="classIEntity.html">IEntity</a> *<a class="el" href="classIZoneWeather.html#a6898c798e169fce5f37502954b6e4ef3">parent</a>)</td></tr>
+<tr class="memdesc:ae550498e257f595a7c94da3d74f91f76 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if the drone is inside a weather zone.  <a href="classIZoneWeather.html#ae550498e257f595a7c94da3d74f91f76">More...</a><br /></td></tr>
 <tr class="separator:ae550498e257f595a7c94da3d74f91f76 inherit pub_methods_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43c61e38309552e19da1a98bb228ad68 inherit pub_methods_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#a43c61e38309552e19da1a98bb228ad68">~IZoneWeather</a> () override=default</td></tr>
-<tr class="memdesc:a43c61e38309552e19da1a98bb228ad68 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classIZoneWeather.html" title="class that holds the IZoneweather inherits from iweather and ientity.">IZoneWeather</a> class.  <a href="classIZoneWeather.html#a43c61e38309552e19da1a98bb228ad68">More...</a><br /></td></tr>
+<tr class="memdesc:a43c61e38309552e19da1a98bb228ad68 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classIZoneWeather.html" title="class that holds the IZoneweather. Responsible for setting/moving/maintaining weather boundaries....">IZoneWeather</a> class.  <a href="classIZoneWeather.html#a43c61e38309552e19da1a98bb228ad68">More...</a><br /></td></tr>
 <tr class="separator:a43c61e38309552e19da1a98bb228ad68 inherit pub_methods_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba37f50f146f68c3ba53670d7d774da8 inherit pub_methods_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classVector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#aba37f50f146f68c3ba53670d7d774da8">GetPosition</a> () const</td></tr>
-<tr class="memdesc:aba37f50f146f68c3ba53670d7d774da8 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">get position  <a href="classIZoneWeather.html#aba37f50f146f68c3ba53670d7d774da8">More...</a><br /></td></tr>
+<tr class="memdesc:aba37f50f146f68c3ba53670d7d774da8 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the position of the weather zone.  <a href="classIZoneWeather.html#aba37f50f146f68c3ba53670d7d774da8">More...</a><br /></td></tr>
 <tr class="separator:aba37f50f146f68c3ba53670d7d774da8 inherit pub_methods_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59ed6a214a0d2446f0e11f00f28d57bb inherit pub_methods_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classVector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#a59ed6a214a0d2446f0e11f00f28d57bb">GetDirection</a> () const</td></tr>
-<tr class="memdesc:a59ed6a214a0d2446f0e11f00f28d57bb inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">get direction  <a href="classIZoneWeather.html#a59ed6a214a0d2446f0e11f00f28d57bb">More...</a><br /></td></tr>
+<tr class="memdesc:a59ed6a214a0d2446f0e11f00f28d57bb inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the direction of the weather zone.  <a href="classIZoneWeather.html#a59ed6a214a0d2446f0e11f00f28d57bb">More...</a><br /></td></tr>
 <tr class="separator:a59ed6a214a0d2446f0e11f00f28d57bb inherit pub_methods_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa36f6964a9e0ce569efa1d932828e122 inherit pub_methods_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classVector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#aa36f6964a9e0ce569efa1d932828e122">GetDestination</a> () const</td></tr>
-<tr class="memdesc:aa36f6964a9e0ce569efa1d932828e122 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">get destination  <a href="classIZoneWeather.html#aa36f6964a9e0ce569efa1d932828e122">More...</a><br /></td></tr>
+<tr class="memdesc:aa36f6964a9e0ce569efa1d932828e122 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the destination of the weather zone.  <a href="classIZoneWeather.html#aa36f6964a9e0ce569efa1d932828e122">More...</a><br /></td></tr>
 <tr class="separator:aa36f6964a9e0ce569efa1d932828e122 inherit pub_methods_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a894c18ffa64f185e2119327aa2856306 inherit pub_methods_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">virtual JsonObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#a894c18ffa64f185e2119327aa2856306">GetDetails</a> () const</td></tr>
-<tr class="memdesc:a894c18ffa64f185e2119327aa2856306 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">get details  <a href="classIZoneWeather.html#a894c18ffa64f185e2119327aa2856306">More...</a><br /></td></tr>
+<tr class="memdesc:a894c18ffa64f185e2119327aa2856306 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the JSON object of the weather entity.  <a href="classIZoneWeather.html#a894c18ffa64f185e2119327aa2856306">More...</a><br /></td></tr>
 <tr class="separator:a894c18ffa64f185e2119327aa2856306 inherit pub_methods_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27787abd20d1a7f3c72920216a084502 inherit pub_methods_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#a27787abd20d1a7f3c72920216a084502">GetSpeed</a> () const</td></tr>
-<tr class="memdesc:a27787abd20d1a7f3c72920216a084502 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">get speed  <a href="classIZoneWeather.html#a27787abd20d1a7f3c72920216a084502">More...</a><br /></td></tr>
+<tr class="memdesc:a27787abd20d1a7f3c72920216a084502 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the speed of the weather zone.  <a href="classIZoneWeather.html#a27787abd20d1a7f3c72920216a084502">More...</a><br /></td></tr>
 <tr class="separator:a27787abd20d1a7f3c72920216a084502 inherit pub_methods_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5b11e82dce67654a7f3e64e61539b03 inherit pub_methods_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#ac5b11e82dce67654a7f3e64e61539b03">GetAvailability</a> () const</td></tr>
-<tr class="memdesc:ac5b11e82dce67654a7f3e64e61539b03 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">check whether it is available  <a href="classIZoneWeather.html#ac5b11e82dce67654a7f3e64e61539b03">More...</a><br /></td></tr>
+<tr class="memdesc:ac5b11e82dce67654a7f3e64e61539b03 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">check whether weather is available (pun intended)  <a href="classIZoneWeather.html#ac5b11e82dce67654a7f3e64e61539b03">More...</a><br /></td></tr>
 <tr class="separator:ac5b11e82dce67654a7f3e64e61539b03 inherit pub_methods_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95a456a852d7e2a21728f49b531a276e inherit pub_methods_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#a95a456a852d7e2a21728f49b531a276e">GetStrategyName</a> ()</td></tr>
-<tr class="memdesc:a95a456a852d7e2a21728f49b531a276e inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">The strategy of robot.  <a href="classIZoneWeather.html#a95a456a852d7e2a21728f49b531a276e">More...</a><br /></td></tr>
+<tr class="memdesc:a95a456a852d7e2a21728f49b531a276e inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for movement strategy of the weather.  <a href="classIZoneWeather.html#a95a456a852d7e2a21728f49b531a276e">More...</a><br /></td></tr>
 <tr class="separator:a95a456a852d7e2a21728f49b531a276e inherit pub_methods_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fc876b402780c17e2cd819146619aa1 inherit pub_methods_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#a3fc876b402780c17e2cd819146619aa1">SetAvailability</a> (bool choice)</td></tr>
-<tr class="memdesc:a3fc876b402780c17e2cd819146619aa1 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">set availability  <a href="classIZoneWeather.html#a3fc876b402780c17e2cd819146619aa1">More...</a><br /></td></tr>
+<tr class="memdesc:a3fc876b402780c17e2cd819146619aa1 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">setter availability  <a href="classIZoneWeather.html#a3fc876b402780c17e2cd819146619aa1">More...</a><br /></td></tr>
 <tr class="separator:a3fc876b402780c17e2cd819146619aa1 inherit pub_methods_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49bcb2852205e7cde43c7c80b705bac7 inherit pub_methods_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#a49bcb2852205e7cde43c7c80b705bac7">Update</a> (double dt, std::vector&lt; <a class="el" href="classIEntity.html">IEntity</a> * &gt; scheduler)</td></tr>
-<tr class="memdesc:a49bcb2852205e7cde43c7c80b705bac7 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">if availablity of drone is true, then call getNearestEntity function  <a href="classIZoneWeather.html#a49bcb2852205e7cde43c7c80b705bac7">More...</a><br /></td></tr>
+<tr class="memdesc:a49bcb2852205e7cde43c7c80b705bac7 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">updates the position/affects of the weather zone over time  <a href="classIZoneWeather.html#a49bcb2852205e7cde43c7c80b705bac7">More...</a><br /></td></tr>
 <tr class="separator:a49bcb2852205e7cde43c7c80b705bac7 inherit pub_methods_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d0a3a084d6b4ac1393a82803b740e77 inherit pub_methods_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#a3d0a3a084d6b4ac1393a82803b740e77">SetGraph</a> (const IGraph *graph)</td></tr>
-<tr class="memdesc:a3d0a3a084d6b4ac1393a82803b740e77 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">set graph  <a href="classIZoneWeather.html#a3d0a3a084d6b4ac1393a82803b740e77">More...</a><br /></td></tr>
+<tr class="memitem:a3d0a3a084d6b4ac1393a82803b740e77 inherit pub_methods_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#a3d0a3a084d6b4ac1393a82803b740e77">SetGraph</a> (const IGraph *<a class="el" href="classIEntity.html#a5d4d1c3d5da8a816fe03522cd0b4fcb3">graph</a>)</td></tr>
+<tr class="memdesc:a3d0a3a084d6b4ac1393a82803b740e77 inherit pub_methods_classIZoneWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">seter for the graph of the weather zone.  <a href="classIZoneWeather.html#a3d0a3a084d6b4ac1393a82803b740e77">More...</a><br /></td></tr>
 <tr class="separator:a3d0a3a084d6b4ac1393a82803b740e77 inherit pub_methods_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classIWeather"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIWeather')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classIWeather.html">IWeather</a></td></tr>
-<tr class="memitem:a626114db543b22b7277b6e791d3ba89f inherit pub_methods_classIWeather"><td class="memItemLeft" align="right" valign="top"><a id="a626114db543b22b7277b6e791d3ba89f"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIWeather.html#a626114db543b22b7277b6e791d3ba89f">~IWeather</a> ()</td></tr>
-<tr class="memdesc:a626114db543b22b7277b6e791d3ba89f inherit pub_methods_classIWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">desconstuctor for <a class="el" href="classIWeather.html" title="A class built for IWeather.">IWeather</a> <br /></td></tr>
+<tr class="memitem:a626114db543b22b7277b6e791d3ba89f inherit pub_methods_classIWeather"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIWeather.html#a626114db543b22b7277b6e791d3ba89f">~IWeather</a> ()</td></tr>
+<tr class="memdesc:a626114db543b22b7277b6e791d3ba89f inherit pub_methods_classIWeather"><td class="mdescLeft">&#160;</td><td class="mdescRight">desconstuctor for <a class="el" href="classIWeather.html" title="Interface built for different weather patterns/reactions.">IWeather</a>  <a href="classIWeather.html#a626114db543b22b7277b6e791d3ba89f">More...</a><br /></td></tr>
 <tr class="separator:a626114db543b22b7277b6e791d3ba89f inherit pub_methods_classIWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classIEntity"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIEntity')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classIEntity.html">IEntity</a></td></tr>
+<tr class="memitem:ad59bd0827b3f6e19b82a4e28e5400fe3 inherit pub_methods_classIEntity"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntity.html#ad59bd0827b3f6e19b82a4e28e5400fe3">IEntity</a> ()</td></tr>
+<tr class="memdesc:ad59bd0827b3f6e19b82a4e28e5400fe3 inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classIEntity.html" title="A class built to for moving/updating entities in the simulation.">IEntity</a> class.  <a href="classIEntity.html#ad59bd0827b3f6e19b82a4e28e5400fe3">More...</a><br /></td></tr>
+<tr class="separator:ad59bd0827b3f6e19b82a4e28e5400fe3 inherit pub_methods_classIEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8aea4fbca51d17a0ce314aaa4633f28e inherit pub_methods_classIEntity"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntity.html#a8aea4fbca51d17a0ce314aaa4633f28e">~IEntity</a> ()</td></tr>
-<tr class="memdesc:a8aea4fbca51d17a0ce314aaa4633f28e inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classIEntity.html" title="A class built to see interface.">IEntity</a> class.  <a href="classIEntity.html#a8aea4fbca51d17a0ce314aaa4633f28e">More...</a><br /></td></tr>
+<tr class="memdesc:a8aea4fbca51d17a0ce314aaa4633f28e inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classIEntity.html" title="A class built to for moving/updating entities in the simulation.">IEntity</a> class.  <a href="classIEntity.html#a8aea4fbca51d17a0ce314aaa4633f28e">More...</a><br /></td></tr>
 <tr class="separator:a8aea4fbca51d17a0ce314aaa4633f28e inherit pub_methods_classIEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bfa9ab304ff33b252fbd5a707e42995 inherit pub_methods_classIEntity"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntity.html#a2bfa9ab304ff33b252fbd5a707e42995">GetId</a> () const</td></tr>
-<tr class="memdesc:a2bfa9ab304ff33b252fbd5a707e42995 inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">get ID from specific obj  <a href="classIEntity.html#a2bfa9ab304ff33b252fbd5a707e42995">More...</a><br /></td></tr>
+<tr class="memdesc:a2bfa9ab304ff33b252fbd5a707e42995 inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">getter for the unique id that entity has.  <a href="classIEntity.html#a2bfa9ab304ff33b252fbd5a707e42995">More...</a><br /></td></tr>
 <tr class="separator:a2bfa9ab304ff33b252fbd5a707e42995 inherit pub_methods_classIEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1326f6c0e0377a4fbde8a8c02fb6ccb3 inherit pub_methods_classIEntity"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntity.html#a1326f6c0e0377a4fbde8a8c02fb6ccb3">GetColor</a> () const</td></tr>
+<tr class="memdesc:a1326f6c0e0377a4fbde8a8c02fb6ccb3 inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the color field of the entity.  <a href="classIEntity.html#a1326f6c0e0377a4fbde8a8c02fb6ccb3">More...</a><br /></td></tr>
+<tr class="separator:a1326f6c0e0377a4fbde8a8c02fb6ccb3 inherit pub_methods_classIEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad93b2cbe055fad782564914833b8c6cd inherit pub_methods_classIEntity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntity.html#ad93b2cbe055fad782564914833b8c6cd">SetColor</a> (std::string color_)</td></tr>
+<tr class="memdesc:ad93b2cbe055fad782564914833b8c6cd inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the color field of the entity.  <a href="classIEntity.html#ad93b2cbe055fad782564914833b8c6cd">More...</a><br /></td></tr>
+<tr class="separator:ad93b2cbe055fad782564914833b8c6cd inherit pub_methods_classIEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0475048b09dc13ed6cf8e7c7be2ae6b inherit pub_methods_classIEntity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntity.html#af0475048b09dc13ed6cf8e7c7be2ae6b">SetPosition</a> (<a class="el" href="classVector3.html">Vector3</a> pos_)</td></tr>
-<tr class="memdesc:af0475048b09dc13ed6cf8e7c7be2ae6b inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the position of object  <a href="classIEntity.html#af0475048b09dc13ed6cf8e7c7be2ae6b">More...</a><br /></td></tr>
+<tr class="memdesc:af0475048b09dc13ed6cf8e7c7be2ae6b inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the position of the entity  <a href="classIEntity.html#af0475048b09dc13ed6cf8e7c7be2ae6b">More...</a><br /></td></tr>
 <tr class="separator:af0475048b09dc13ed6cf8e7c7be2ae6b inherit pub_methods_classIEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64bfaa448a929ca71693ff3e2edb9d97 inherit pub_methods_classIEntity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntity.html#a64bfaa448a929ca71693ff3e2edb9d97">SetDirection</a> (<a class="el" href="classVector3.html">Vector3</a> dir_)</td></tr>
-<tr class="memdesc:a64bfaa448a929ca71693ff3e2edb9d97 inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the direction of object  <a href="classIEntity.html#a64bfaa448a929ca71693ff3e2edb9d97">More...</a><br /></td></tr>
+<tr class="memdesc:a64bfaa448a929ca71693ff3e2edb9d97 inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the direction of the entity  <a href="classIEntity.html#a64bfaa448a929ca71693ff3e2edb9d97">More...</a><br /></td></tr>
 <tr class="separator:a64bfaa448a929ca71693ff3e2edb9d97 inherit pub_methods_classIEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa473000823f673e9d7b89aed3cd3fc5c inherit pub_methods_classIEntity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntity.html#aa473000823f673e9d7b89aed3cd3fc5c">SetDestination</a> (<a class="el" href="classVector3.html">Vector3</a> des_)</td></tr>
-<tr class="memdesc:aa473000823f673e9d7b89aed3cd3fc5c inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the destination of obj  <a href="classIEntity.html#aa473000823f673e9d7b89aed3cd3fc5c">More...</a><br /></td></tr>
+<tr class="memdesc:aa473000823f673e9d7b89aed3cd3fc5c inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the destination of the entity  <a href="classIEntity.html#aa473000823f673e9d7b89aed3cd3fc5c">More...</a><br /></td></tr>
 <tr class="separator:aa473000823f673e9d7b89aed3cd3fc5c inherit pub_methods_classIEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a933def05f85783fddbf05e8257cc8880 inherit pub_methods_classIEntity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntity.html#a933def05f85783fddbf05e8257cc8880">SetStrategyName</a> (std::string strategyName_)</td></tr>
-<tr class="memdesc:a933def05f85783fddbf05e8257cc8880 inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the strategy  <a href="classIEntity.html#a933def05f85783fddbf05e8257cc8880">More...</a><br /></td></tr>
+<tr class="memdesc:a933def05f85783fddbf05e8257cc8880 inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">set the movement strategy of the entity.  <a href="classIEntity.html#a933def05f85783fddbf05e8257cc8880">More...</a><br /></td></tr>
 <tr class="separator:a933def05f85783fddbf05e8257cc8880 inherit pub_methods_classIEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c109baa4179c28422623a7d3b2e9f82 inherit pub_methods_classIEntity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntity.html#a4c109baa4179c28422623a7d3b2e9f82">Rotate</a> (double angle)</td></tr>
-<tr class="memdesc:a4c109baa4179c28422623a7d3b2e9f82 inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotate drone by using angle and formula  <a href="classIEntity.html#a4c109baa4179c28422623a7d3b2e9f82">More...</a><br /></td></tr>
+<tr class="memdesc:a4c109baa4179c28422623a7d3b2e9f82 inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">executes the reaction happening to the drone with rainweather.  <a href="classIEntity.html#a4c109baa4179c28422623a7d3b2e9f82">More...</a><br /></td></tr>
 <tr class="separator:a4c109baa4179c28422623a7d3b2e9f82 inherit pub_methods_classIEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e8eb64a324e1196be039c5e2a293b7a inherit pub_methods_classIEntity"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntity.html#a4e8eb64a324e1196be039c5e2a293b7a">Jump</a> (double height)</td></tr>
 <tr class="memdesc:a4e8eb64a324e1196be039c5e2a293b7a inherit pub_methods_classIEntity"><td class="mdescLeft">&#160;</td><td class="mdescRight">rotate drone by using height and formula  <a href="classIEntity.html#a4e8eb64a324e1196be039c5e2a293b7a">More...</a><br /></td></tr>
@@ -178,44 +186,37 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classIEntity"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classIEntity')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classIEntity.html">IEntity</a></td></tr>
+<tr class="memitem:a00de496c1153bc873b1db364162bd17c inherit pub_attribs_classIEntity"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntity.html#a00de496c1153bc873b1db364162bd17c">color</a> = &quot;None&quot;</td></tr>
+<tr class="separator:a00de496c1153bc873b1db364162bd17c inherit pub_attribs_classIEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classIZoneWeather"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classIZoneWeather')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classIZoneWeather.html">IZoneWeather</a></td></tr>
-<tr class="memitem:aa22b2e12f474847f99b20521fc9ab1b4 inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top"><a id="aa22b2e12f474847f99b20521fc9ab1b4"></a>
-JsonObject&#160;</td><td class="memItemRight" valign="bottom"><b>details</b></td></tr>
+<tr class="memitem:aa22b2e12f474847f99b20521fc9ab1b4 inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">JsonObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#aa22b2e12f474847f99b20521fc9ab1b4">details</a></td></tr>
 <tr class="separator:aa22b2e12f474847f99b20521fc9ab1b4 inherit pro_attribs_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6898c798e169fce5f37502954b6e4ef3 inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top"><a id="a6898c798e169fce5f37502954b6e4ef3"></a>
-<a class="el" href="classIWeather.html">IWeather</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>parent</b></td></tr>
+<tr class="memitem:a6898c798e169fce5f37502954b6e4ef3 inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIWeather.html">IWeather</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#a6898c798e169fce5f37502954b6e4ef3">parent</a></td></tr>
 <tr class="separator:a6898c798e169fce5f37502954b6e4ef3 inherit pro_attribs_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50fce5f997ba2edf81bfd5e9c8005165 inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top"><a id="a50fce5f997ba2edf81bfd5e9c8005165"></a>
-<a class="el" href="classVector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>pos</b></td></tr>
+<tr class="memitem:a50fce5f997ba2edf81bfd5e9c8005165 inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#a50fce5f997ba2edf81bfd5e9c8005165">pos</a></td></tr>
 <tr class="separator:a50fce5f997ba2edf81bfd5e9c8005165 inherit pro_attribs_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16de142b08dcbb819cd563c9bbd3c118 inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top"><a id="a16de142b08dcbb819cd563c9bbd3c118"></a>
-<a class="el" href="classVector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>direction</b></td></tr>
+<tr class="memitem:a16de142b08dcbb819cd563c9bbd3c118 inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#a16de142b08dcbb819cd563c9bbd3c118">direction</a></td></tr>
 <tr class="separator:a16de142b08dcbb819cd563c9bbd3c118 inherit pro_attribs_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a377a4188f2edd6265579aa6fbd771627 inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top"><a id="a377a4188f2edd6265579aa6fbd771627"></a>
-<a class="el" href="classVector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
+<tr class="memitem:a377a4188f2edd6265579aa6fbd771627 inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVector3.html">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#a377a4188f2edd6265579aa6fbd771627">width</a></td></tr>
 <tr class="separator:a377a4188f2edd6265579aa6fbd771627 inherit pro_attribs_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8054fc8cfb6a3db51b5665231abdbba4 inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top"><a id="a8054fc8cfb6a3db51b5665231abdbba4"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>radius</b></td></tr>
+<tr class="memitem:a8054fc8cfb6a3db51b5665231abdbba4 inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#a8054fc8cfb6a3db51b5665231abdbba4">radius</a></td></tr>
 <tr class="separator:a8054fc8cfb6a3db51b5665231abdbba4 inherit pro_attribs_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95f397ec47615cd63819520be57d8f9a inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top"><a id="a95f397ec47615cd63819520be57d8f9a"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>speed</b> = 0</td></tr>
+<tr class="memitem:a95f397ec47615cd63819520be57d8f9a inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#a95f397ec47615cd63819520be57d8f9a">speed</a> = 0</td></tr>
 <tr class="separator:a95f397ec47615cd63819520be57d8f9a inherit pro_attribs_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2a3f7c46052fa0d3cad1eefafd78599 inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top"><a id="ac2a3f7c46052fa0d3cad1eefafd78599"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isCircle</b> = false</td></tr>
+<tr class="memitem:ac2a3f7c46052fa0d3cad1eefafd78599 inherit pro_attribs_classIZoneWeather"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIZoneWeather.html#ac2a3f7c46052fa0d3cad1eefafd78599">isCircle</a> = false</td></tr>
 <tr class="separator:ac2a3f7c46052fa0d3cad1eefafd78599 inherit pro_attribs_classIZoneWeather"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classIEntity"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classIEntity')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classIEntity.html">IEntity</a></td></tr>
-<tr class="memitem:adb3b46323a3c0269c5f108305a36737c inherit pro_attribs_classIEntity"><td class="memItemLeft" align="right" valign="top"><a id="adb3b46323a3c0269c5f108305a36737c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
+<tr class="memitem:adb3b46323a3c0269c5f108305a36737c inherit pro_attribs_classIEntity"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntity.html#adb3b46323a3c0269c5f108305a36737c">id</a></td></tr>
 <tr class="separator:adb3b46323a3c0269c5f108305a36737c inherit pro_attribs_classIEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d4d1c3d5da8a816fe03522cd0b4fcb3 inherit pro_attribs_classIEntity"><td class="memItemLeft" align="right" valign="top"><a id="a5d4d1c3d5da8a816fe03522cd0b4fcb3"></a>
-const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b></td></tr>
+<tr class="memitem:a5d4d1c3d5da8a816fe03522cd0b4fcb3 inherit pro_attribs_classIEntity"><td class="memItemLeft" align="right" valign="top">const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntity.html#a5d4d1c3d5da8a816fe03522cd0b4fcb3">graph</a></td></tr>
 <tr class="separator:a5d4d1c3d5da8a816fe03522cd0b4fcb3 inherit pro_attribs_classIEntity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class built for emp weather. </p>
+<div class="textblock"><p>A class built for emp weather. Inherits from <a class="el" href="classIZoneWeather.html" title="class that holds the IZoneweather. Responsible for setting/moving/maintaining weather boundaries....">IZoneWeather</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="afa82aa185fdb31bc0a5ebf28969f5456"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa82aa185fdb31bc0a5ebf28969f5456">&#9670;&nbsp;</a></span>EmpWeather()</h2>
+<a id="aeb899f18b2f4f879cde44edcb3c4e9b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb899f18b2f4f879cde44edcb3c4e9b9">&#9670;&nbsp;</a></span>EmpWeather()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,7 +224,7 @@ const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b></
         <tr>
           <td class="memname">EmpWeather::EmpWeather </td>
           <td>(</td>
-          <td class="paramtype">JsonObject &amp;&#160;</td>
+          <td class="paramtype">const JsonObject &amp;&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
           <td></td>
         </tr>
@@ -233,7 +234,7 @@ const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b></
 <p>constructor for empWeather. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj</td><td>jsonObject&amp; </td></tr>
+    <tr><td class="paramname">obj</td><td>JSON object to be used for creating an <a class="el" href="classEmpWeather.html" title="A class built for emp weather. Inherits from IZoneWeather.">EmpWeather</a> entity. </td></tr>
   </table>
   </dd>
 </dl>
@@ -316,13 +317,13 @@ const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b></
 </table>
 </div><div class="memdoc">
 
-<p>executes the reaction happening to the drone with empweather. </p>
+<p>executes the reaction happening to the drone with Empweather. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>which is the Ientity </td></tr>
-    <tr><td class="paramname">reaction</td><td>current reaction </td></tr>
+    <tr><td class="paramname">parent</td><td>The drone being affected by the EMP. </td></tr>
+    <tr><td class="paramname">reaction</td><td>current weather reaction </td></tr>
     <tr><td class="paramname">dt</td><td>delta time </td></tr>
-    <tr><td class="paramname">scheduler</td><td>vector that holds the ientities.</td></tr>
+    <tr><td class="paramname">scheduler</td><td>vector that holds the entities.</td></tr>
   </table>
   </dd>
 </dl>
@@ -333,8 +334,8 @@ const IGraph *&#160;</td><td class="memItemRight" valign="bottom"><b>graph</b></
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="EmpWeather_8h_source.html">EmpWeather.h</a></li>
-<li>/home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/src/EmpWeather.cc</li>
+<li>/home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="EmpWeather_8h_source.html">EmpWeather.h</a></li>
+<li>/home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/src/EmpWeather.cc</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

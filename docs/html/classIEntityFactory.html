@@ -69,7 +69,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Factory method for <a class="el" href="classIEntity.html" title="A class built to see interface.">IEntity</a> class.  
+<p>Factory method for <a class="el" href="classIEntity.html" title="A class built to for moving/updating entities in the simulation.">IEntity</a> class.  
  <a href="classIEntityFactory.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="IEntityFactory_8h_source.html">IEntityFactory.h</a>&gt;</code></p>
@@ -79,12 +79,12 @@ Inheritance diagram for IEntityFactory:</div>
 <div class="center"><img src="classIEntityFactory__inherit__graph.png" border="0" usemap="#IEntityFactory_inherit__map" alt="Inheritance graph"/></div>
 <map name="IEntityFactory_inherit__map" id="IEntityFactory_inherit__map">
 <area shape="rect" title="Factory method for IEntity class." alt="" coords="358,5,470,32"/>
-<area shape="rect" href="classCompositeFactory.html" title="Factory method for composite class." alt="" coords="5,80,145,107"/>
-<area shape="rect" href="classDroneFactory.html" title="Factory method for Drone class." alt="" coords="170,80,279,107"/>
-<area shape="rect" href="classEmpFactory.html" title="A class built using the factory design pattern but for emp weather." alt="" coords="303,80,402,107"/>
-<area shape="rect" href="classRainFactory.html" title="A class built using the factory design pattern but for rain weather." alt="" coords="426,80,525,107"/>
-<area shape="rect" href="classRobotFactory.html" title="Factory method for Robot class." alt="" coords="549,80,657,107"/>
-<area shape="rect" href="classWindFactory.html" title="A class built using the factory design pattern but for wind weather." alt="" coords="681,80,784,107"/>
+<area shape="rect" href="classCompositeFactory.html" title="Factory method for composite class. Inherits from IEntityFactory." alt="" coords="5,80,145,107"/>
+<area shape="rect" href="classDroneFactory.html" title="Factory method for Drone class. Inherits from IEntityFactory." alt="" coords="170,80,279,107"/>
+<area shape="rect" href="classEmpFactory.html" title="A class built using the factory design pattern but for emp weather. Inherits from IEntityFactory." alt="" coords="303,80,402,107"/>
+<area shape="rect" href="classRainFactory.html" title="A class built using the factory design pattern but for rain weather. Inherits from IEntityFactory." alt="" coords="426,80,525,107"/>
+<area shape="rect" href="classRobotFactory.html" title="Factory method for Robot class. Inherits from IEntityFactory." alt="" coords="549,80,657,107"/>
+<area shape="rect" href="classWindFactory.html" title="A class built using the factory design pattern but for wind weather. Inherits from IEntityFactory." alt="" coords="681,80,784,107"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -93,12 +93,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a57921a96c43266c435a4d11abd56355c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntityFactory.html#a57921a96c43266c435a4d11abd56355c">~IEntityFactory</a> ()</td></tr>
 <tr class="memdesc:a57921a96c43266c435a4d11abd56355c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="classIEntityFactory.html" title="Factory method for IEntity class.">IEntityFactory</a> class.  <a href="classIEntityFactory.html#a57921a96c43266c435a4d11abd56355c">More...</a><br /></td></tr>
 <tr class="separator:a57921a96c43266c435a4d11abd56355c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bd53cf7ca21ab252968062ea5d88180"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classIEntity.html">IEntity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntityFactory.html#a9bd53cf7ca21ab252968062ea5d88180">CreateEntity</a> (JsonObject &amp;entity)=0</td></tr>
-<tr class="memdesc:a9bd53cf7ca21ab252968062ea5d88180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates entity.  <a href="classIEntityFactory.html#a9bd53cf7ca21ab252968062ea5d88180">More...</a><br /></td></tr>
-<tr class="separator:a9bd53cf7ca21ab252968062ea5d88180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab28e669d7f78ce426620fa4e472f3adb"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classIEntity.html">IEntity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIEntityFactory.html#ab28e669d7f78ce426620fa4e472f3adb">CreateEntity</a> (const JsonObject &amp;entity)=0</td></tr>
+<tr class="memdesc:ab28e669d7f78ce426620fa4e472f3adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates entity using the given JSON object, if possible.  <a href="classIEntityFactory.html#ab28e669d7f78ce426620fa4e472f3adb">More...</a><br /></td></tr>
+<tr class="separator:ab28e669d7f78ce426620fa4e472f3adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Factory method for <a class="el" href="classIEntity.html" title="A class built to see interface.">IEntity</a> class. </p>
+<div class="textblock"><p>Factory method for <a class="el" href="classIEntity.html" title="A class built to for moving/updating entities in the simulation.">IEntity</a> class. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a57921a96c43266c435a4d11abd56355c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57921a96c43266c435a4d11abd56355c">&#9670;&nbsp;</a></span>~IEntityFactory()</h2>
@@ -129,8 +129,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9bd53cf7ca21ab252968062ea5d88180"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bd53cf7ca21ab252968062ea5d88180">&#9670;&nbsp;</a></span>CreateEntity()</h2>
+<a id="ab28e669d7f78ce426620fa4e472f3adb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab28e669d7f78ce426620fa4e472f3adb">&#9670;&nbsp;</a></span>CreateEntity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,7 +141,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="classIEntity.html">IEntity</a>* IEntityFactory::CreateEntity </td>
           <td>(</td>
-          <td class="paramtype">JsonObject &amp;&#160;</td>
+          <td class="paramtype">const JsonObject &amp;&#160;</td>
           <td class="paramname"><em>entity</em></td><td>)</td>
           <td></td>
         </tr>
@@ -153,21 +153,21 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates entity. </p>
+<p>Creates entity using the given JSON object, if possible. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">entity</td><td>- JsonObject type obj </td></tr>
+    <tr><td class="paramname">entity</td><td>- JsonObject to be used to create the new entity. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>none. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Entity that was created if it was created successfully, or a nullpointer if creation failed. </dd></dl>
 
-<p>Implemented in <a class="el" href="classDroneFactory.html#ad0d77279eacf09e49c990b7d2a86e74e">DroneFactory</a>, <a class="el" href="classEmpFactory.html#a6c7121acea4c84653c6f1d81a5c7a3fa">EmpFactory</a>, <a class="el" href="classRainFactory.html#acc32ae576edc67e98855e17330cadf36">RainFactory</a>, <a class="el" href="classWindFactory.html#a5165e7a498712b4dd821868387156689">WindFactory</a>, <a class="el" href="classRobotFactory.html#ad2ceb080af7357b641332a237ae74959">RobotFactory</a>, and <a class="el" href="classCompositeFactory.html#a46a24b2fa2e5c077bd140b7075f61ff9">CompositeFactory</a>.</p>
+<p>Implemented in <a class="el" href="classDroneFactory.html#a00b79f8eb94217a494954de37b4d9a29">DroneFactory</a>, <a class="el" href="classEmpFactory.html#a7e5eb8c11cf08cdc74e91bdde8fd4396">EmpFactory</a>, <a class="el" href="classRainFactory.html#a7e89acfd9e050babc5f27656e0cab2ac">RainFactory</a>, <a class="el" href="classWindFactory.html#a77841fa4a77ba14d683226b1e1f72c1f">WindFactory</a>, <a class="el" href="classRobotFactory.html#afc0e1c7a9a85beae5245ae3294465167">RobotFactory</a>, and <a class="el" href="classCompositeFactory.html#a506147ed95731efad950b572993b30f6">CompositeFactory</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/home/choix712/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="IEntityFactory_8h_source.html">IEntityFactory.h</a></li>
+<li>/home/jens1960/csci-3081w-f22/Team-010-35-homework04/libs/transit/include/<a class="el" href="IEntityFactory_8h_source.html">IEntityFactory.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
