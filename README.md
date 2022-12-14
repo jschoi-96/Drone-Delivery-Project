@@ -38,6 +38,8 @@ In the next sprint, we will polish our existing features, and allow for weather 
 
 ![image](uml.png)
 
-Link to docker repository: TBA
+## External links
+
+Link to docker repository: https://hub.docker.com/repository/docker/stupidityworks/homework-04
 
 Link to video presentation: TBA
