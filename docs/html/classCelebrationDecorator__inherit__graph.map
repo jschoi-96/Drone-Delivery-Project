@@ -1,0 +1,6 @@
+<map id="CelebrationDecorator" name="CelebrationDecorator">
+<area shape="rect" id="node1" title="Decorator method to implement other feature. Inherits from IStrategy." alt="" coords="55,80,216,107"/>
+<area shape="rect" id="node3" href="$classJumpDecorator.html" title="Decorator class for the jump celebration. Inherits from CelebrationDecorator." alt="" coords="5,155,124,181"/>
+<area shape="rect" id="node4" href="$classSpinDecorator.html" title="Decorator class for the spin celebration. Inherits from CelebrationDecorator." alt="" coords="149,155,263,181"/>
+<area shape="rect" id="node2" href="$classIStrategy.html" title="A class built for Istrategy. Parent class for drone movement strategy classes." alt="" coords="95,5,176,32"/>
+</map>

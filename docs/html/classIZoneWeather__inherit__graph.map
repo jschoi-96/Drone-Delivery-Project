@@ -1,0 +1,8 @@
+<map id="IZoneWeather" name="IZoneWeather">
+<area shape="rect" id="node1" title="class that holds the IZoneweather. Responsible for setting/moving/maintaining weather boundaries...." alt="" coords="132,80,247,107"/>
+<area shape="rect" id="node4" href="$classEmpWeather.html" title="A class built for emp weather. Inherits from IZoneWeather." alt="" coords="5,155,112,181"/>
+<area shape="rect" id="node5" href="$classRainWeather.html" title="A class built for rain weather. Inherits from IZoneWeather." alt="" coords="136,155,243,181"/>
+<area shape="rect" id="node6" href="$classWindWeather.html" title="A class built for wind weather. Inherits from IZoneWeather." alt="" coords="267,155,378,181"/>
+<area shape="rect" id="node2" href="$classIWeather.html" title="Interface built for different weather patterns/reactions." alt="" coords="101,5,182,32"/>
+<area shape="rect" id="node3" href="$classIEntity.html" title="A class built to for moving/updating entities in the simulation." alt="" coords="207,5,271,32"/>
+</map>

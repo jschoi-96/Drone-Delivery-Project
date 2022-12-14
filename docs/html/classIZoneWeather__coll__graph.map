@@ -1,0 +1,6 @@
+<map id="IZoneWeather" name="IZoneWeather">
+<area shape="rect" id="node1" title="class that holds the IZoneweather. Responsible for setting/moving/maintaining weather boundaries...." alt="" coords="59,124,174,151"/>
+<area shape="rect" id="node2" href="$classIWeather.html" title="Interface built for different weather patterns/reactions." alt="" coords="5,5,87,32"/>
+<area shape="rect" id="node3" href="$classIEntity.html" title="A class built to for moving/updating entities in the simulation." alt="" coords="118,5,182,32"/>
+<area shape="rect" id="node4" href="$classVector3.html" title="A class built solely to handle 3D vector mathematics." alt="" coords="206,5,278,32"/>
+</map>

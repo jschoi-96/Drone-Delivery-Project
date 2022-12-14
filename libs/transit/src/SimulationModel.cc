@@ -1,15 +1,22 @@
 #include "SimulationModel.h"
-#include "DroneFactory.h"
-#include "RobotFactory.h"
 
-SimulationModel::SimulationModel(IController& controller)
+#include "DroneFactory.h"
+#include "EmpFactory.h"
+#include "RainFactory.h"
+#include "RobotFactory.h"
+#include "WindFactory.h"
+
+SimulationModel::SimulationModel(IController* controller)
     : controller(controller) {
   compFactory = new CompositeFactory();
   AddFactory(new DroneFactory());
   AddFactory(new RobotFactory());
+  AddFactory(new EmpFactory());
+  AddFactory(new WindFactory());
+  AddFactory(new RainFactory());
 }
 
-void SimulationModel::CreateEntity(JsonObject& entity) {
+void SimulationModel::CreateEntity(const JsonObject& entity) {
   std::string type = entity["type"];
   std::string name = entity["name"];
   JsonArray position = entity["position"];
@@ -17,14 +24,14 @@ void SimulationModel::CreateEntity(JsonObject& entity) {
 
   IEntity* myNewEntity = compFactory->CreateEntity(entity);
   myNewEntity->SetGraph(graph);
-  
+
   // Call AddEntity to add it to the view
-  controller.AddEntity(*myNewEntity);
+  controller->AddEntity(*myNewEntity);
   entities.push_back(myNewEntity);
 }
 
 /// Schedules a trip for an object in the scene
-void SimulationModel::ScheduleTrip(JsonObject& details) {
+void SimulationModel::ScheduleTrip(const JsonObject& details) {
   std::string name = details["name"];
   JsonArray start = details["start"];
   JsonArray end = details["end"];
@@ -34,7 +41,8 @@ void SimulationModel::ScheduleTrip(JsonObject& details) {
     JsonObject detailsTemp = entity->GetDetails();
     std::string nameTemp = detailsTemp["name"];
     std::string typeTemp = detailsTemp["type"];
-    if (name.compare(nameTemp) == 0 && typeTemp.compare("robot") == 0 && entity->GetAvailability()) {
+    if (name.compare(nameTemp) == 0 && typeTemp.compare("robot") == 0 &&
+        entity->GetAvailability()) {
       std::string strategyName = details["search"];
       entity->SetStrategyName(strategyName);
       entity->SetDestination(Vector3(end[0], end[1], end[2]));
@@ -42,14 +50,14 @@ void SimulationModel::ScheduleTrip(JsonObject& details) {
       break;
     }
   }
-  controller.SendEventToView("TripScheduled", details);
+  controller->SendEventToView("TripScheduled", details);
 }
 
 /// Updates the simulation
 void SimulationModel::Update(double dt) {
   for (int i = 0; i < entities.size(); i++) {
     entities[i]->Update(dt, scheduler);
-    controller.UpdateEntity(*entities[i]);
+    controller->UpdateEntity(*entities[i]);
   }
 }
 

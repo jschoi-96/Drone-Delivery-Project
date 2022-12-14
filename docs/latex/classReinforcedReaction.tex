@@ -1,0 +1,151 @@
+\hypertarget{classReinforcedReaction}{}\doxysection{Reinforced\+Reaction Class Reference}
+\label{classReinforcedReaction}\index{ReinforcedReaction@{ReinforcedReaction}}
+
+
+A class built for Reinforced\+Reactions. Inherits from \mbox{\hyperlink{classIReaction}{I\+Reaction}}.  
+
+
+
+
+{\ttfamily \#include $<$Reinforced\+Reaction.\+h$>$}
+
+
+
+Inheritance diagram for Reinforced\+Reaction\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classReinforcedReaction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Reinforced\+Reaction\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classReinforcedReaction__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classReinforcedReaction_aa5d12f8a4e65b9b641e1d9b176905fcd}{Reinforced\+Reaction}} ()
+\begin{DoxyCompactList}\small\item\em A constructor for Reinforcedreaction. \end{DoxyCompactList}\item 
+$\ast$param dt delta time $\ast$param scheduler vector that holds the entities $\ast$param wind holds a vector3 with details of the wind strength $\ast$$\ast$return none $\ast$$\ast$void \mbox{\hyperlink{classReinforcedReaction_ab25c7751eaf371f58cfa3eaa58476598}{react\+\_\+wind}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double $\ast$dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$scheduler, \mbox{\hyperlink{classVector3}{Vector3}} wind)
+\begin{DoxyCompactList}\small\item\em A destructor for reinforced\+Reaction /$\ast$$\ast$. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classReinforcedReaction_a27f59940f1bba49258f1272c3d8f1274}{react\+\_\+rain}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double $\ast$dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$scheduler)
+\begin{DoxyCompactList}\small\item\em executes the reaction that is supposed to happen when a drone is affected by rain. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classReinforcedReaction_a32b661783568a618c43e50b866fdfcc2}{react\+\_\+emp}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double $\ast$dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$scheduler)
+\begin{DoxyCompactList}\small\item\em executes the reaction that is supposed to happen when a drone is affected by an E\+MP. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class built for Reinforced\+Reactions. Inherits from \mbox{\hyperlink{classIReaction}{I\+Reaction}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classReinforcedReaction_aa5d12f8a4e65b9b641e1d9b176905fcd}\label{classReinforcedReaction_aa5d12f8a4e65b9b641e1d9b176905fcd}} 
+\index{ReinforcedReaction@{ReinforcedReaction}!ReinforcedReaction@{ReinforcedReaction}}
+\index{ReinforcedReaction@{ReinforcedReaction}!ReinforcedReaction@{ReinforcedReaction}}
+\doxysubsubsection{\texorpdfstring{ReinforcedReaction()}{ReinforcedReaction()}}
+{\footnotesize\ttfamily Reinforced\+Reaction\+::\+Reinforced\+Reaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+A constructor for Reinforcedreaction. 
+
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classReinforcedReaction_a32b661783568a618c43e50b866fdfcc2}\label{classReinforcedReaction_a32b661783568a618c43e50b866fdfcc2}} 
+\index{ReinforcedReaction@{ReinforcedReaction}!react\_emp@{react\_emp}}
+\index{react\_emp@{react\_emp}!ReinforcedReaction@{ReinforcedReaction}}
+\doxysubsubsection{\texorpdfstring{react\_emp()}{react\_emp()}}
+{\footnotesize\ttfamily void Reinforced\+Reaction\+::react\+\_\+emp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double $\ast$}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+executes the reaction that is supposed to happen when a drone is affected by an E\+MP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & This is the drone being affected by an E\+MP. \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the entities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIReaction_ad7a525236d3b3ce3aac7cb10abb32ef9}{I\+Reaction}}.
+
+\mbox{\Hypertarget{classReinforcedReaction_a27f59940f1bba49258f1272c3d8f1274}\label{classReinforcedReaction_a27f59940f1bba49258f1272c3d8f1274}} 
+\index{ReinforcedReaction@{ReinforcedReaction}!react\_rain@{react\_rain}}
+\index{react\_rain@{react\_rain}!ReinforcedReaction@{ReinforcedReaction}}
+\doxysubsubsection{\texorpdfstring{react\_rain()}{react\_rain()}}
+{\footnotesize\ttfamily void Reinforced\+Reaction\+::react\+\_\+rain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double $\ast$}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+executes the reaction that is supposed to happen when a drone is affected by rain. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & This is the drone being affected by rain. \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the entities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIReaction_aff051d6e1529459140c48a275b5dd7c3}{I\+Reaction}}.
+
+\mbox{\Hypertarget{classReinforcedReaction_ab25c7751eaf371f58cfa3eaa58476598}\label{classReinforcedReaction_ab25c7751eaf371f58cfa3eaa58476598}} 
+\index{ReinforcedReaction@{ReinforcedReaction}!react\_wind@{react\_wind}}
+\index{react\_wind@{react\_wind}!ReinforcedReaction@{ReinforcedReaction}}
+\doxysubsubsection{\texorpdfstring{react\_wind()}{react\_wind()}}
+{\footnotesize\ttfamily void Reinforced\+Reaction\+::react\+\_\+wind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double $\ast$}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$}]{scheduler,  }\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{wind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+A destructor for reinforced\+Reaction /$\ast$$\ast$. 
+
+executes the reaction happening to the drone with emp
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & which is the Ientity \\
+\hline
+{\em reaction} & current reaction \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the ientities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIReaction_a3153e571df369b6b23fe97d33a693d5b}{I\+Reaction}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Reinforced\+Reaction.\+h\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Reinforced\+Reaction.\+cc\end{DoxyCompactItemize}

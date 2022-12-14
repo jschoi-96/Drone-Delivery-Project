@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classIEntity.html" title="A class built to for moving/updating entities in the simulation." alt="" coords="14,95,78,121"/>
+<area shape="rect" id="node2" href="$classDrone.html" title="A class built to manipulate movement of drone. Inherits from IEntity." alt="" coords="193,5,255,32"/>
+<area shape="rect" id="node3" href="$classIZoneWeather.html" title="class that holds the IZoneweather. Responsible for setting/moving/maintaining weather boundaries...." alt="" coords="167,157,281,184"/>
+<area shape="rect" id="node7" href="$classRobot.html" title="A class built to manipulate movement of Robots. Inherits from IEntity." alt="" coords="194,56,254,83"/>
+<area shape="rect" id="node8" href="$classWeatherReactDecorator.html" title="A class built using weatherreactDecorator. Inherits from IEntity." alt="" coords="135,107,313,133"/>
+<area shape="rect" id="node4" href="$classEmpWeather.html" title="A class built for emp weather. Inherits from IZoneWeather." alt="" coords="363,107,470,133"/>
+<area shape="rect" id="node5" href="$classRainWeather.html" title="A class built for rain weather. Inherits from IZoneWeather." alt="" coords="363,157,470,184"/>
+<area shape="rect" id="node6" href="$classWindWeather.html" title="A class built for wind weather. Inherits from IZoneWeather." alt="" coords="361,208,472,235"/>
+<area shape="rect" id="node9" href="$classIWeather.html" title="Interface built for different weather patterns/reactions." alt="" coords="5,171,87,197"/>
+<area shape="rect" id="node10" href="$classBaseWeather.html" title="This class inherits from the IWeather and is responsible for setting base weather...." alt="" coords="169,208,279,235"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="IndicatorReaction" name="IndicatorReaction">
+<area shape="rect" id="node1" title="A class built for indicatorReaction. Inherits from IReaction." alt="" coords="5,80,141,107"/>
+<area shape="rect" id="node2" href="$classIReaction.html" title="IReaction class. Responsible for the physical affects of different weather patterns on entities." alt="" coords="32,5,115,32"/>
+</map>

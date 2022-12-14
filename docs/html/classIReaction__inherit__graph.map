@@ -1,0 +1,7 @@
+<map id="IReaction" name="IReaction">
+<area shape="rect" id="node1" title="IReaction class. Responsible for the physical affects of different weather patterns on entities." alt="" coords="271,5,353,32"/>
+<area shape="rect" id="node2" href="$classIndicatorReaction.html" title="A class built for indicatorReaction. Inherits from IReaction." alt="" coords="5,80,141,107"/>
+<area shape="rect" id="node3" href="$classRegularReaction.html" title="A class built for RegularReactions. Inherits from IReaction." alt="" coords="166,80,295,107"/>
+<area shape="rect" id="node4" href="$classReinforcedReaction.html" title="A class built for ReinforcedReactions. Inherits from IReaction." alt="" coords="320,80,469,107"/>
+<area shape="rect" id="node5" href="$classStreetLevelReaction.html" title="A class built for streetlevelReaction. Inherits from IReaction." alt="" coords="494,80,647,107"/>
+</map>

@@ -1,0 +1,154 @@
+\hypertarget{classBaseWeather}{}\doxysection{Base\+Weather Class Reference}
+\label{classBaseWeather}\index{BaseWeather@{BaseWeather}}
+
+
+This class inherits from the \mbox{\hyperlink{classIWeather}{I\+Weather}} and is responsible for setting base weather. Inherits from \mbox{\hyperlink{classIWeather}{I\+Weather}}.  
+
+
+
+
+{\ttfamily \#include $<$Base\+Weather.\+h$>$}
+
+
+
+Inheritance diagram for Base\+Weather\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classBaseWeather__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Base\+Weather\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classBaseWeather__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBaseWeather_a15f142669dd0d22e26716e9e9007e889}{$\sim$\+Base\+Weather}} () override=default
+\begin{DoxyCompactList}\small\item\em Destructor for base\+Weather class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBaseWeather_a6ead11189f8ce07457deea25fc6afad3}{Execute}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, \mbox{\hyperlink{classIReaction}{I\+Reaction}} $\ast$reaction, double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em executes the reaction happening to the drone with base weather. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBaseWeather_a739374c45e55d4695ceb7bdbda8e7d0c}{Is\+Inside}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent)
+\begin{DoxyCompactList}\small\item\em Checks to see if the drone is inside a weather pattern. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classIWeather}{I\+Weather}} $\ast$ \mbox{\hyperlink{classBaseWeather_abc0356c8396497b4435b7841b3206e26}{Get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em getter for instance of base weather. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{classBaseWeather_ad6076e5df3c4081eff0770c10782ed28}{Set\+Instance}} (\mbox{\hyperlink{classIWeather}{I\+Weather}} $\ast$new\+\_\+instance)
+\begin{DoxyCompactList}\small\item\em setter for a new instance of a Weather object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class inherits from the \mbox{\hyperlink{classIWeather}{I\+Weather}} and is responsible for setting base weather. Inherits from \mbox{\hyperlink{classIWeather}{I\+Weather}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBaseWeather_a15f142669dd0d22e26716e9e9007e889}\label{classBaseWeather_a15f142669dd0d22e26716e9e9007e889}} 
+\index{BaseWeather@{BaseWeather}!````~BaseWeather@{$\sim$BaseWeather}}
+\index{````~BaseWeather@{$\sim$BaseWeather}!BaseWeather@{BaseWeather}}
+\doxysubsubsection{\texorpdfstring{$\sim$BaseWeather()}{~BaseWeather()}}
+{\footnotesize\ttfamily Base\+Weather\+::$\sim$\+Base\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+Destructor for base\+Weather class. 
+
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBaseWeather_a6ead11189f8ce07457deea25fc6afad3}\label{classBaseWeather_a6ead11189f8ce07457deea25fc6afad3}} 
+\index{BaseWeather@{BaseWeather}!Execute@{Execute}}
+\index{Execute@{Execute}!BaseWeather@{BaseWeather}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily void Base\+Weather\+::\+Execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classIReaction}{I\+Reaction}} $\ast$}]{reaction,  }\item[{double}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+executes the reaction happening to the drone with base weather. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & This is the drone being affected by Baseweather. \\
+\hline
+{\em reaction} & current weather reaction affecting the drone. \\
+\hline
+{\em dt} & delta time. \\
+\hline
+{\em scheduler} & vector that holds the ientities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIWeather_a1268319157d56c3a6568d09e5cbfdfab}{I\+Weather}}.
+
+\mbox{\Hypertarget{classBaseWeather_abc0356c8396497b4435b7841b3206e26}\label{classBaseWeather_abc0356c8396497b4435b7841b3206e26}} 
+\index{BaseWeather@{BaseWeather}!GetInstance@{GetInstance}}
+\index{GetInstance@{GetInstance}!BaseWeather@{BaseWeather}}
+\doxysubsubsection{\texorpdfstring{GetInstance()}{GetInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIWeather}{I\+Weather}} $\ast$ Base\+Weather\+::\+Get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+getter for instance of base weather. 
+
+\begin{DoxyReturn}{Returns}
+returns an Iweather$\ast$ object. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBaseWeather_a739374c45e55d4695ceb7bdbda8e7d0c}\label{classBaseWeather_a739374c45e55d4695ceb7bdbda8e7d0c}} 
+\index{BaseWeather@{BaseWeather}!IsInside@{IsInside}}
+\index{IsInside@{IsInside}!BaseWeather@{BaseWeather}}
+\doxysubsubsection{\texorpdfstring{IsInside()}{IsInside()}}
+{\footnotesize\ttfamily bool Base\+Weather\+::\+Is\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks to see if the drone is inside a weather pattern. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & drone to check if it is within the bounds of a weather pattern. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns true if drone is inside a weather zone, and false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIWeather_a17bd5cf79e4065f101ba50226db9a732}{I\+Weather}}.
+
+\mbox{\Hypertarget{classBaseWeather_ad6076e5df3c4081eff0770c10782ed28}\label{classBaseWeather_ad6076e5df3c4081eff0770c10782ed28}} 
+\index{BaseWeather@{BaseWeather}!SetInstance@{SetInstance}}
+\index{SetInstance@{SetInstance}!BaseWeather@{BaseWeather}}
+\doxysubsubsection{\texorpdfstring{SetInstance()}{SetInstance()}}
+{\footnotesize\ttfamily static void Base\+Weather\+::\+Set\+Instance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIWeather}{I\+Weather}} $\ast$}]{new\+\_\+instance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+setter for a new instance of a Weather object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+instance} & The new Iweather$\ast$ object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Base\+Weather.\+h\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Base\+Weather.\+cc\end{DoxyCompactItemize}

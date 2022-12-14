@@ -1,0 +1,106 @@
+\hypertarget{classCompositeFactory}{}\doxysection{Composite\+Factory Class Reference}
+\label{classCompositeFactory}\index{CompositeFactory@{CompositeFactory}}
+
+
+Factory method for composite class. Inherits from \mbox{\hyperlink{classIEntityFactory}{I\+Entity\+Factory}}.  
+
+
+
+
+{\ttfamily \#include $<$Composite\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Composite\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classCompositeFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Composite\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{classCompositeFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ \mbox{\hyperlink{classCompositeFactory_a506147ed95731efad950b572993b30f6}{Create\+Entity}} (const Json\+Object \&entity)
+\begin{DoxyCompactList}\small\item\em Creates Factory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCompositeFactory_a1e9833480826a2661f293d7e2d6358d5}{Add\+Factory}} (\mbox{\hyperlink{classIEntityFactory}{I\+Entity\+Factory}} $\ast$factory\+Entity)
+\begin{DoxyCompactList}\small\item\em Adds Factory. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classCompositeFactory_a5601892e2e4dd1ab9f9ab9316be1cd10}{$\sim$\+Composite\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classCompositeFactory}{Composite\+Factory}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Factory method for composite class. Inherits from \mbox{\hyperlink{classIEntityFactory}{I\+Entity\+Factory}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCompositeFactory_a5601892e2e4dd1ab9f9ab9316be1cd10}\label{classCompositeFactory_a5601892e2e4dd1ab9f9ab9316be1cd10}} 
+\index{CompositeFactory@{CompositeFactory}!````~CompositeFactory@{$\sim$CompositeFactory}}
+\index{````~CompositeFactory@{$\sim$CompositeFactory}!CompositeFactory@{CompositeFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$CompositeFactory()}{~CompositeFactory()}}
+{\footnotesize\ttfamily Composite\+Factory\+::$\sim$\+Composite\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor for \mbox{\hyperlink{classCompositeFactory}{Composite\+Factory}} class. 
+
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCompositeFactory_a1e9833480826a2661f293d7e2d6358d5}\label{classCompositeFactory_a1e9833480826a2661f293d7e2d6358d5}} 
+\index{CompositeFactory@{CompositeFactory}!AddFactory@{AddFactory}}
+\index{AddFactory@{AddFactory}!CompositeFactory@{CompositeFactory}}
+\doxysubsubsection{\texorpdfstring{AddFactory()}{AddFactory()}}
+{\footnotesize\ttfamily void Composite\+Factory\+::\+Add\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntityFactory}{I\+Entity\+Factory}} $\ast$}]{factory\+Entity }\end{DoxyParamCaption})}
+
+
+
+Adds Factory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em factory\+Entity} & -\/ \mbox{\hyperlink{classIEntityFactory}{I\+Entity\+Factory}} type obj \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCompositeFactory_a506147ed95731efad950b572993b30f6}\label{classCompositeFactory_a506147ed95731efad950b572993b30f6}} 
+\index{CompositeFactory@{CompositeFactory}!CreateEntity@{CreateEntity}}
+\index{CreateEntity@{CreateEntity}!CompositeFactory@{CompositeFactory}}
+\doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ Composite\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{const Json\+Object \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Creates Factory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & -\/ Json\+Object type obj \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntityFactory_ab28e669d7f78ce426620fa4e472f3adb}{I\+Entity\+Factory}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Composite\+Factory.\+h\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Composite\+Factory.\+cc\end{DoxyCompactItemize}

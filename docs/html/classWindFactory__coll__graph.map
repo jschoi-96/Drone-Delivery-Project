@@ -1,0 +1,4 @@
+<map id="WindFactory" name="WindFactory">
+<area shape="rect" id="node1" title="A class built using the factory design pattern but for wind weather. Inherits from IEntityFactory." alt="" coords="10,80,113,107"/>
+<area shape="rect" id="node2" href="$classIEntityFactory.html" title="Factory method for IEntity class." alt="" coords="5,5,117,32"/>
+</map>

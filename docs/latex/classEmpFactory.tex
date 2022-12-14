@@ -1,0 +1,86 @@
+\hypertarget{classEmpFactory}{}\doxysection{Emp\+Factory Class Reference}
+\label{classEmpFactory}\index{EmpFactory@{EmpFactory}}
+
+
+A class built using the factory design pattern but for emp weather. Inherits from \mbox{\hyperlink{classIEntityFactory}{I\+Entity\+Factory}}.  
+
+
+
+
+{\ttfamily \#include $<$Emp\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Emp\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classEmpFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Emp\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{classEmpFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classEmpFactory_af631b3f38c02bee59cd686e398a1d34d}{$\sim$\+Emp\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em A deconstructor for emp factory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ \mbox{\hyperlink{classEmpFactory_a7e5eb8c11cf08cdc74e91bdde8fd4396}{Create\+Entity}} (const Json\+Object \&entity)
+\begin{DoxyCompactList}\small\item\em Attempts to create an \mbox{\hyperlink{classEmpWeather}{Emp\+Weather}} \mbox{\hyperlink{classIEntity}{I\+Entity}}. Returns the entity if it was created, otherwise returns null. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class built using the factory design pattern but for emp weather. Inherits from \mbox{\hyperlink{classIEntityFactory}{I\+Entity\+Factory}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEmpFactory_af631b3f38c02bee59cd686e398a1d34d}\label{classEmpFactory_af631b3f38c02bee59cd686e398a1d34d}} 
+\index{EmpFactory@{EmpFactory}!````~EmpFactory@{$\sim$EmpFactory}}
+\index{````~EmpFactory@{$\sim$EmpFactory}!EmpFactory@{EmpFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$EmpFactory()}{~EmpFactory()}}
+{\footnotesize\ttfamily virtual Emp\+Factory\+::$\sim$\+Emp\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+A deconstructor for emp factory. 
+
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEmpFactory_a7e5eb8c11cf08cdc74e91bdde8fd4396}\label{classEmpFactory_a7e5eb8c11cf08cdc74e91bdde8fd4396}} 
+\index{EmpFactory@{EmpFactory}!CreateEntity@{CreateEntity}}
+\index{CreateEntity@{CreateEntity}!EmpFactory@{EmpFactory}}
+\doxysubsubsection{\texorpdfstring{CreateEntity()}{CreateEntity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ Emp\+Factory\+::\+Create\+Entity (\begin{DoxyParamCaption}\item[{const Json\+Object \&}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Attempts to create an \mbox{\hyperlink{classEmpWeather}{Emp\+Weather}} \mbox{\hyperlink{classIEntity}{I\+Entity}}. Returns the entity if it was created, otherwise returns null. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & J\+S\+ON object the \mbox{\hyperlink{classEmpWeather}{Emp\+Weather}} object should be created from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the new \mbox{\hyperlink{classEmpWeather}{Emp\+Weather}} entity if the J\+S\+ON parameter corresponds to an \mbox{\hyperlink{classEmpWeather}{Emp\+Weather}}. otherwise returns a nullpointer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntityFactory_ab28e669d7f78ce426620fa4e472f3adb}{I\+Entity\+Factory}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Emp\+Factory.\+h\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Emp\+Factory.\+cc\end{DoxyCompactItemize}

@@ -1,0 +1,149 @@
+\hypertarget{classIReaction}{}\doxysection{I\+Reaction Class Reference}
+\label{classIReaction}\index{IReaction@{IReaction}}
+
+
+\mbox{\hyperlink{classIReaction}{I\+Reaction}} class. Responsible for the physical affects of different weather patterns on entities.  
+
+
+
+
+{\ttfamily \#include $<$I\+Reaction.\+h$>$}
+
+
+
+Inheritance diagram for I\+Reaction\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIReaction__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIReaction_a3e7f69783685869c4eba95aa6c7af1db}\label{classIReaction_a3e7f69783685869c4eba95aa6c7af1db}} 
+virtual \mbox{\hyperlink{classIReaction_a3e7f69783685869c4eba95aa6c7af1db}{$\sim$\+I\+Reaction}} ()
+\begin{DoxyCompactList}\small\item\em A destructor for the \mbox{\hyperlink{classIReaction}{I\+Reaction}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIReaction_a3153e571df369b6b23fe97d33a693d5b}{react\+\_\+wind}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double $\ast$dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$scheduler, \mbox{\hyperlink{classVector3}{Vector3}} wind)=0
+\begin{DoxyCompactList}\small\item\em executes the reaction that is supposed to happen when a drone is affected by wind. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIReaction_aff051d6e1529459140c48a275b5dd7c3}{react\+\_\+rain}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double $\ast$dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$scheduler)=0
+\begin{DoxyCompactList}\small\item\em executes the reaction that is supposed to happen when a drone is affected by rain. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIReaction_ad7a525236d3b3ce3aac7cb10abb32ef9}{react\+\_\+emp}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double $\ast$dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$scheduler)=0
+\begin{DoxyCompactList}\small\item\em executes the reaction that is supposed to happen when a drone is affected by an E\+MP. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, std\+::string $>$ \mbox{\hyperlink{classIReaction_a9973976475150f7ebd1eda286aec0f97}{colors}}
+\begin{DoxyCompactList}\small\item\em A dictionary map that holds colors and corresponding hexcodes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classIReaction}{I\+Reaction}} class. Responsible for the physical affects of different weather patterns on entities. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIReaction_ad7a525236d3b3ce3aac7cb10abb32ef9}\label{classIReaction_ad7a525236d3b3ce3aac7cb10abb32ef9}} 
+\index{IReaction@{IReaction}!react\_emp@{react\_emp}}
+\index{react\_emp@{react\_emp}!IReaction@{IReaction}}
+\doxysubsubsection{\texorpdfstring{react\_emp()}{react\_emp()}}
+{\footnotesize\ttfamily virtual void I\+Reaction\+::react\+\_\+emp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double $\ast$}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+executes the reaction that is supposed to happen when a drone is affected by an E\+MP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & This is the drone being affected by an E\+MP. \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the entities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classIndicatorReaction_a5744c7383e81bc30ad93defeabdae469}{Indicator\+Reaction}}, \mbox{\hyperlink{classRegularReaction_acbea6e0075c753202cdce7a3692eb1be}{Regular\+Reaction}}, \mbox{\hyperlink{classReinforcedReaction_a32b661783568a618c43e50b866fdfcc2}{Reinforced\+Reaction}}, and \mbox{\hyperlink{classStreetLevelReaction_a47f40c5cd9e42841e90e645453b0e75a}{Street\+Level\+Reaction}}.
+
+\mbox{\Hypertarget{classIReaction_aff051d6e1529459140c48a275b5dd7c3}\label{classIReaction_aff051d6e1529459140c48a275b5dd7c3}} 
+\index{IReaction@{IReaction}!react\_rain@{react\_rain}}
+\index{react\_rain@{react\_rain}!IReaction@{IReaction}}
+\doxysubsubsection{\texorpdfstring{react\_rain()}{react\_rain()}}
+{\footnotesize\ttfamily virtual void I\+Reaction\+::react\+\_\+rain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double $\ast$}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+executes the reaction that is supposed to happen when a drone is affected by rain. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & This is the drone being affected by rain. \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the entities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classIndicatorReaction_ae26362f3424fbf255aa1a2af31acd3e1}{Indicator\+Reaction}}, \mbox{\hyperlink{classRegularReaction_ab9039b148ea38c16c914342581fa5326}{Regular\+Reaction}}, \mbox{\hyperlink{classReinforcedReaction_a27f59940f1bba49258f1272c3d8f1274}{Reinforced\+Reaction}}, and \mbox{\hyperlink{classStreetLevelReaction_ae3691217d3e7631c0fb5b8750703c12a}{Street\+Level\+Reaction}}.
+
+\mbox{\Hypertarget{classIReaction_a3153e571df369b6b23fe97d33a693d5b}\label{classIReaction_a3153e571df369b6b23fe97d33a693d5b}} 
+\index{IReaction@{IReaction}!react\_wind@{react\_wind}}
+\index{react\_wind@{react\_wind}!IReaction@{IReaction}}
+\doxysubsubsection{\texorpdfstring{react\_wind()}{react\_wind()}}
+{\footnotesize\ttfamily virtual void I\+Reaction\+::react\+\_\+wind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double $\ast$}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$}]{scheduler,  }\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{wind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+executes the reaction that is supposed to happen when a drone is affected by wind. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & This is the drone being affected by wind. \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the entities. \\
+\hline
+{\em wind} & holds a vector3 with details of the wind strength.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classIndicatorReaction_a628dbb7b0a0112fa18469c5ce89bb0e5}{Indicator\+Reaction}}, \mbox{\hyperlink{classRegularReaction_a0ee3cc7b772e0055d221959dd1156f87}{Regular\+Reaction}}, \mbox{\hyperlink{classReinforcedReaction_ab25c7751eaf371f58cfa3eaa58476598}{Reinforced\+Reaction}}, and \mbox{\hyperlink{classStreetLevelReaction_acdc83581afd3927cf05844aa10faac83}{Street\+Level\+Reaction}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classIReaction_a9973976475150f7ebd1eda286aec0f97}\label{classIReaction_a9973976475150f7ebd1eda286aec0f97}} 
+\index{IReaction@{IReaction}!colors@{colors}}
+\index{colors@{colors}!IReaction@{IReaction}}
+\doxysubsubsection{\texorpdfstring{colors}{colors}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, std\+::string$>$ I\+Reaction\+::colors}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"white"}, \textcolor{stringliteral}{"\#ffffff"}\},  \{\textcolor{stringliteral}{"red"}, \textcolor{stringliteral}{"\#ff0000"}\},    \{\textcolor{stringliteral}{"yellow"}, \textcolor{stringliteral}{"\#ffff00"}\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"blue"}, \textcolor{stringliteral}{"\#0000ff"}\},   \{\textcolor{stringliteral}{"orange"}, \textcolor{stringliteral}{"\#ffa500"}\}, \{\textcolor{stringliteral}{"green"}, \textcolor{stringliteral}{"\#00ff00"}\},}
+\DoxyCodeLine{      \{\textcolor{stringliteral}{"purple"}, \textcolor{stringliteral}{"\#a020f0"}\}, \{\textcolor{stringliteral}{"brown"}, \textcolor{stringliteral}{"\#964b00"}\},  \{\textcolor{stringliteral}{"black"}, \textcolor{stringliteral}{"\#000000"}\}\}}
+
+\end{DoxyCode}
+
+
+A dictionary map that holds colors and corresponding hexcodes. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/I\+Reaction.\+h\end{DoxyCompactItemize}

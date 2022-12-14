@@ -1,0 +1,134 @@
+\hypertarget{classDijkstraStrategy}{}\doxysection{Dijkstra\+Strategy Class Reference}
+\label{classDijkstraStrategy}\index{DijkstraStrategy@{DijkstraStrategy}}
+
+
+Implementation of Dijkstra strategy for entity movement. Inherits from \mbox{\hyperlink{classIStrategy}{I\+Strategy}}.  
+
+
+
+
+{\ttfamily \#include $<$Dijkstra\+Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Dijkstra\+Strategy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classDijkstraStrategy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Dijkstra\+Strategy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{classDijkstraStrategy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDijkstraStrategy_acdfffc5f1d32914d4e3944640e11e50e}{Dijkstra\+Strategy}} (\mbox{\hyperlink{classVector3}{Vector3}} position, \mbox{\hyperlink{classVector3}{Vector3}} destination, const I\+Graph $\ast$\mbox{\hyperlink{classIStrategy_abdcb4741836a0bb72017f52752962ba2}{graph}})
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classDijkstraStrategy}{Dijkstra\+Strategy}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDijkstraStrategy_af08fa6818642996f8a188a6162bc034f}{$\sim$\+Dijkstra\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classDijkstraStrategy}{Dijkstra\+Strategy}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDijkstraStrategy_a24e0177f55b69a6b2260b0a0e2ce4430}{Move}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$entity, double dt)
+\begin{DoxyCompactList}\small\item\em Used for moving drone/robot pairs towards their destination using the dijkstra movement strategy. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classDijkstraStrategy_a409569a22f38028431ce25522d355ee2}{Is\+Completed}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the route has been completed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Implementation of Dijkstra strategy for entity movement. Inherits from \mbox{\hyperlink{classIStrategy}{I\+Strategy}}. 
+
+include 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDijkstraStrategy_acdfffc5f1d32914d4e3944640e11e50e}\label{classDijkstraStrategy_acdfffc5f1d32914d4e3944640e11e50e}} 
+\index{DijkstraStrategy@{DijkstraStrategy}!DijkstraStrategy@{DijkstraStrategy}}
+\index{DijkstraStrategy@{DijkstraStrategy}!DijkstraStrategy@{DijkstraStrategy}}
+\doxysubsubsection{\texorpdfstring{DijkstraStrategy()}{DijkstraStrategy()}}
+{\footnotesize\ttfamily Dijkstra\+Strategy\+::\+Dijkstra\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{position,  }\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{destination,  }\item[{const I\+Graph $\ast$}]{graph }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classDijkstraStrategy}{Dijkstra\+Strategy}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position\+\_\+} & current position of the entity to move. \\
+\hline
+{\em destination\+\_\+} & destination of entity to move. \\
+\hline
+{\em graph\+\_\+} & pointer to graph to be used to generate beeline pathing. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDijkstraStrategy_af08fa6818642996f8a188a6162bc034f}\label{classDijkstraStrategy_af08fa6818642996f8a188a6162bc034f}} 
+\index{DijkstraStrategy@{DijkstraStrategy}!````~DijkstraStrategy@{$\sim$DijkstraStrategy}}
+\index{````~DijkstraStrategy@{$\sim$DijkstraStrategy}!DijkstraStrategy@{DijkstraStrategy}}
+\doxysubsubsection{\texorpdfstring{$\sim$DijkstraStrategy()}{~DijkstraStrategy()}}
+{\footnotesize\ttfamily Dijkstra\+Strategy\+::$\sim$\+Dijkstra\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \mbox{\hyperlink{classDijkstraStrategy}{Dijkstra\+Strategy}} class. 
+
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDijkstraStrategy_a409569a22f38028431ce25522d355ee2}\label{classDijkstraStrategy_a409569a22f38028431ce25522d355ee2}} 
+\index{DijkstraStrategy@{DijkstraStrategy}!IsCompleted@{IsCompleted}}
+\index{IsCompleted@{IsCompleted}!DijkstraStrategy@{DijkstraStrategy}}
+\doxysubsubsection{\texorpdfstring{IsCompleted()}{IsCompleted()}}
+{\footnotesize\ttfamily bool Dijkstra\+Strategy\+::\+Is\+Completed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks if the route has been completed. 
+
+\begin{DoxyReturn}{Returns}
+true if completed, if not, return false. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIStrategy_a13c6048efd232b696db5f35000d5b106}{I\+Strategy}}.
+
+\mbox{\Hypertarget{classDijkstraStrategy_a24e0177f55b69a6b2260b0a0e2ce4430}\label{classDijkstraStrategy_a24e0177f55b69a6b2260b0a0e2ce4430}} 
+\index{DijkstraStrategy@{DijkstraStrategy}!Move@{Move}}
+\index{Move@{Move}!DijkstraStrategy@{DijkstraStrategy}}
+\doxysubsubsection{\texorpdfstring{Move()}{Move()}}
+{\footnotesize\ttfamily void Dijkstra\+Strategy\+::\+Move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{entity,  }\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Used for moving drone/robot pairs towards their destination using the dijkstra movement strategy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & entity to move. \\
+\hline
+{\em dt} & amount of time that the entity will be moving. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIStrategy_a69254389f4ef9a851dc5d40c4cc9aacd}{I\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Dijkstra\+Strategy.\+h\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Dijkstra\+Strategy.\+cc\end{DoxyCompactItemize}

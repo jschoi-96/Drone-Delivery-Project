@@ -1,0 +1,355 @@
+\hypertarget{classIZoneWeather}{}\doxysection{I\+Zone\+Weather Class Reference}
+\label{classIZoneWeather}\index{IZoneWeather@{IZoneWeather}}
+
+
+class that holds the I\+Zoneweather. Responsible for setting/moving/maintaining weather boundaries. inherits from \mbox{\hyperlink{classIWeather}{I\+Weather}} and \mbox{\hyperlink{classIEntity}{I\+Entity}}.  
+
+
+
+
+{\ttfamily \#include $<$I\+Zone\+Weather.\+h$>$}
+
+
+
+Inheritance diagram for I\+Zone\+Weather\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIZoneWeather__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for I\+Zone\+Weather\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classIZoneWeather__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classIZoneWeather_ae550498e257f595a7c94da3d74f91f76}{Is\+Inside}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$\mbox{\hyperlink{classIZoneWeather_a6898c798e169fce5f37502954b6e4ef3}{parent}})
+\begin{DoxyCompactList}\small\item\em Checks to see if the drone is inside a weather zone. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIZoneWeather_a43c61e38309552e19da1a98bb228ad68}{$\sim$\+I\+Zone\+Weather}} () override=default
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classIZoneWeather}{I\+Zone\+Weather}} class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classIZoneWeather_aba37f50f146f68c3ba53670d7d774da8}{Get\+Position}} () const
+\begin{DoxyCompactList}\small\item\em getter for the position of the weather zone. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classIZoneWeather_a59ed6a214a0d2446f0e11f00f28d57bb}{Get\+Direction}} () const
+\begin{DoxyCompactList}\small\item\em getter for the direction of the weather zone. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classIZoneWeather_aa36f6964a9e0ce569efa1d932828e122}{Get\+Destination}} () const
+\begin{DoxyCompactList}\small\item\em getter for the destination of the weather zone. \end{DoxyCompactList}\item 
+virtual Json\+Object \mbox{\hyperlink{classIZoneWeather_a894c18ffa64f185e2119327aa2856306}{Get\+Details}} () const
+\begin{DoxyCompactList}\small\item\em getter for the J\+S\+ON object of the weather entity. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classIZoneWeather_a27787abd20d1a7f3c72920216a084502}{Get\+Speed}} () const
+\begin{DoxyCompactList}\small\item\em getter for the speed of the weather zone. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIZoneWeather_ac5b11e82dce67654a7f3e64e61539b03}{Get\+Availability}} () const
+\begin{DoxyCompactList}\small\item\em check whether weather is available (pun intended) \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classIZoneWeather_a95a456a852d7e2a21728f49b531a276e}{Get\+Strategy\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Getter for movement strategy of the weather. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIZoneWeather_a3fc876b402780c17e2cd819146619aa1}{Set\+Availability}} (bool choice)
+\begin{DoxyCompactList}\small\item\em setter availability \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIZoneWeather_a49bcb2852205e7cde43c7c80b705bac7}{Update}} (double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em updates the position/affects of the weather zone over time \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIZoneWeather_a3d0a3a084d6b4ac1393a82803b740e77}{Set\+Graph}} (const I\+Graph $\ast$\mbox{\hyperlink{classIEntity_a5d4d1c3d5da8a816fe03522cd0b4fcb3}{graph}})
+\begin{DoxyCompactList}\small\item\em seter for the graph of the weather zone. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Json\+Object \mbox{\hyperlink{classIZoneWeather_aa22b2e12f474847f99b20521fc9ab1b4}{details}}
+\item 
+\mbox{\hyperlink{classIWeather}{I\+Weather}} $\ast$ \mbox{\hyperlink{classIZoneWeather_a6898c798e169fce5f37502954b6e4ef3}{parent}}
+\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classIZoneWeather_a50fce5f997ba2edf81bfd5e9c8005165}{pos}}
+\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classIZoneWeather_a16de142b08dcbb819cd563c9bbd3c118}{direction}}
+\item 
+\mbox{\hyperlink{classVector3}{Vector3}} \mbox{\hyperlink{classIZoneWeather_a377a4188f2edd6265579aa6fbd771627}{width}}
+\item 
+float \mbox{\hyperlink{classIZoneWeather_a8054fc8cfb6a3db51b5665231abdbba4}{radius}}
+\item 
+float \mbox{\hyperlink{classIZoneWeather_a95f397ec47615cd63819520be57d8f9a}{speed}} = 0
+\item 
+bool \mbox{\hyperlink{classIZoneWeather_ac2a3f7c46052fa0d3cad1eefafd78599}{is\+Circle}} = false
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+class that holds the I\+Zoneweather. Responsible for setting/moving/maintaining weather boundaries. inherits from \mbox{\hyperlink{classIWeather}{I\+Weather}} and \mbox{\hyperlink{classIEntity}{I\+Entity}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIZoneWeather_a43c61e38309552e19da1a98bb228ad68}\label{classIZoneWeather_a43c61e38309552e19da1a98bb228ad68}} 
+\index{IZoneWeather@{IZoneWeather}!````~IZoneWeather@{$\sim$IZoneWeather}}
+\index{````~IZoneWeather@{$\sim$IZoneWeather}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{$\sim$IZoneWeather()}{~IZoneWeather()}}
+{\footnotesize\ttfamily I\+Zone\+Weather\+::$\sim$\+I\+Zone\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+Destructor for \mbox{\hyperlink{classIZoneWeather}{I\+Zone\+Weather}} class. 
+
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIZoneWeather_ac5b11e82dce67654a7f3e64e61539b03}\label{classIZoneWeather_ac5b11e82dce67654a7f3e64e61539b03}} 
+\index{IZoneWeather@{IZoneWeather}!GetAvailability@{GetAvailability}}
+\index{GetAvailability@{GetAvailability}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{GetAvailability()}{GetAvailability()}}
+{\footnotesize\ttfamily virtual bool I\+Zone\+Weather\+::\+Get\+Availability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+check whether weather is available (pun intended) 
+
+\begin{DoxyReturn}{Returns}
+true if is available and false if not (always false in the case of weather entities) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a90348881691a37d5c3d63265ed3463b1}{I\+Entity}}.
+
+\mbox{\Hypertarget{classIZoneWeather_aa36f6964a9e0ce569efa1d932828e122}\label{classIZoneWeather_aa36f6964a9e0ce569efa1d932828e122}} 
+\index{IZoneWeather@{IZoneWeather}!GetDestination@{GetDestination}}
+\index{GetDestination@{GetDestination}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{GetDestination()}{GetDestination()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classVector3}{Vector3}} I\+Zone\+Weather\+::\+Get\+Destination (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+getter for the destination of the weather zone. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} representing the weather zone\textquotesingle{}s destination. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a0dcaf865938ab1fb49c8389b5e580d90}{I\+Entity}}.
+
+\mbox{\Hypertarget{classIZoneWeather_a894c18ffa64f185e2119327aa2856306}\label{classIZoneWeather_a894c18ffa64f185e2119327aa2856306}} 
+\index{IZoneWeather@{IZoneWeather}!GetDetails@{GetDetails}}
+\index{GetDetails@{GetDetails}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{GetDetails()}{GetDetails()}}
+{\footnotesize\ttfamily virtual Json\+Object I\+Zone\+Weather\+::\+Get\+Details (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+getter for the J\+S\+ON object of the weather entity. 
+
+\begin{DoxyReturn}{Returns}
+Json\+Object for the weather entity. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a97c799400ce05e2ff2566adc4d7b9634}{I\+Entity}}.
+
+\mbox{\Hypertarget{classIZoneWeather_a59ed6a214a0d2446f0e11f00f28d57bb}\label{classIZoneWeather_a59ed6a214a0d2446f0e11f00f28d57bb}} 
+\index{IZoneWeather@{IZoneWeather}!GetDirection@{GetDirection}}
+\index{GetDirection@{GetDirection}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{GetDirection()}{GetDirection()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classVector3}{Vector3}} I\+Zone\+Weather\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+getter for the direction of the weather zone. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} representing the weather zone\textquotesingle{}s direction. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_aa99a8fef8b22195a5113c38ef51f086d}{I\+Entity}}.
+
+\mbox{\Hypertarget{classIZoneWeather_aba37f50f146f68c3ba53670d7d774da8}\label{classIZoneWeather_aba37f50f146f68c3ba53670d7d774da8}} 
+\index{IZoneWeather@{IZoneWeather}!GetPosition@{GetPosition}}
+\index{GetPosition@{GetPosition}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{GetPosition()}{GetPosition()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classVector3}{Vector3}} I\+Zone\+Weather\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+getter for the position of the weather zone. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classVector3}{Vector3}} representing the weather zone\textquotesingle{}s position 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a9bc32587aab91761fc0e718612498199}{I\+Entity}}.
+
+\mbox{\Hypertarget{classIZoneWeather_a27787abd20d1a7f3c72920216a084502}\label{classIZoneWeather_a27787abd20d1a7f3c72920216a084502}} 
+\index{IZoneWeather@{IZoneWeather}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily virtual float I\+Zone\+Weather\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+getter for the speed of the weather zone. 
+
+\begin{DoxyReturn}{Returns}
+float representing the weather zone\textquotesingle{}s destination. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIEntity_a6520d2b1dc71d092bab38ef9f5cc9ff4}{I\+Entity}}.
+
+\mbox{\Hypertarget{classIZoneWeather_a95a456a852d7e2a21728f49b531a276e}\label{classIZoneWeather_a95a456a852d7e2a21728f49b531a276e}} 
+\index{IZoneWeather@{IZoneWeather}!GetStrategyName@{GetStrategyName}}
+\index{GetStrategyName@{GetStrategyName}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{GetStrategyName()}{GetStrategyName()}}
+{\footnotesize\ttfamily virtual std\+::string I\+Zone\+Weather\+::\+Get\+Strategy\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Getter for movement strategy of the weather. 
+
+\begin{DoxyReturn}{Returns}
+return the name of strategy that is used (Nothing for weather entities) 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a9b4a238a04f5cd56db89e50292355005}{I\+Entity}}.
+
+\mbox{\Hypertarget{classIZoneWeather_ae550498e257f595a7c94da3d74f91f76}\label{classIZoneWeather_ae550498e257f595a7c94da3d74f91f76}} 
+\index{IZoneWeather@{IZoneWeather}!IsInside@{IsInside}}
+\index{IsInside@{IsInside}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{IsInside()}{IsInside()}}
+{\footnotesize\ttfamily bool I\+Zone\+Weather\+::\+Is\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks to see if the drone is inside a weather zone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & drone to check if within weather bounds. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean -\/ true if drone is inside weather bounds, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIWeather_a17bd5cf79e4065f101ba50226db9a732}{I\+Weather}}.
+
+\mbox{\Hypertarget{classIZoneWeather_a3fc876b402780c17e2cd819146619aa1}\label{classIZoneWeather_a3fc876b402780c17e2cd819146619aa1}} 
+\index{IZoneWeather@{IZoneWeather}!SetAvailability@{SetAvailability}}
+\index{SetAvailability@{SetAvailability}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{SetAvailability()}{SetAvailability()}}
+{\footnotesize\ttfamily virtual void I\+Zone\+Weather\+::\+Set\+Availability (\begin{DoxyParamCaption}\item[{bool}]{choice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+setter availability 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choice} & -\/ bool type -\/ choice parameter \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_adf3acdf4764f5ff25f89d7814e39551c}{I\+Entity}}.
+
+\mbox{\Hypertarget{classIZoneWeather_a3d0a3a084d6b4ac1393a82803b740e77}\label{classIZoneWeather_a3d0a3a084d6b4ac1393a82803b740e77}} 
+\index{IZoneWeather@{IZoneWeather}!SetGraph@{SetGraph}}
+\index{SetGraph@{SetGraph}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{SetGraph()}{SetGraph()}}
+{\footnotesize\ttfamily virtual void I\+Zone\+Weather\+::\+Set\+Graph (\begin{DoxyParamCaption}\item[{const I\+Graph $\ast$}]{graph }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+seter for the graph of the weather zone. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & -\/ I\+Graph object to set as the graph. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a50b01c5c4fab1632c0289e30aa77faf2}{I\+Entity}}.
+
+\mbox{\Hypertarget{classIZoneWeather_a49bcb2852205e7cde43c7c80b705bac7}\label{classIZoneWeather_a49bcb2852205e7cde43c7c80b705bac7}} 
+\index{IZoneWeather@{IZoneWeather}!Update@{Update}}
+\index{Update@{Update}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void I\+Zone\+Weather\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+updates the position/affects of the weather zone over time 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & -\/ delta time \\
+\hline
+{\em scheduler} & -\/ Vector of all entities in the simulation. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classIEntity_a9a8e8588fd85c7b0d813d60686d4dc2c}{I\+Entity}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classIZoneWeather_aa22b2e12f474847f99b20521fc9ab1b4}\label{classIZoneWeather_aa22b2e12f474847f99b20521fc9ab1b4}} 
+\index{IZoneWeather@{IZoneWeather}!details@{details}}
+\index{details@{details}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{details}{details}}
+{\footnotesize\ttfamily Json\+Object I\+Zone\+Weather\+::details\hspace{0.3cm}{\ttfamily [protected]}}
+
+J\+S\+ON object representing the weather zone in the simulation. \mbox{\Hypertarget{classIZoneWeather_a16de142b08dcbb819cd563c9bbd3c118}\label{classIZoneWeather_a16de142b08dcbb819cd563c9bbd3c118}} 
+\index{IZoneWeather@{IZoneWeather}!direction@{direction}}
+\index{direction@{direction}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} I\+Zone\+Weather\+::direction\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\hyperlink{classVector3}{Vector3}} representing the weather zone\textquotesingle{}s direction. \mbox{\Hypertarget{classIZoneWeather_ac2a3f7c46052fa0d3cad1eefafd78599}\label{classIZoneWeather_ac2a3f7c46052fa0d3cad1eefafd78599}} 
+\index{IZoneWeather@{IZoneWeather}!isCircle@{isCircle}}
+\index{isCircle@{isCircle}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{isCircle}{isCircle}}
+{\footnotesize\ttfamily bool I\+Zone\+Weather\+::is\+Circle = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+boolean determining if the zone is a circle. If true, zone is a circle. Otherwise, the zone is square shaped. \mbox{\Hypertarget{classIZoneWeather_a6898c798e169fce5f37502954b6e4ef3}\label{classIZoneWeather_a6898c798e169fce5f37502954b6e4ef3}} 
+\index{IZoneWeather@{IZoneWeather}!parent@{parent}}
+\index{parent@{parent}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIWeather}{I\+Weather}}$\ast$ I\+Zone\+Weather\+::parent\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\hyperlink{classIWeather}{I\+Weather}} object representing the type of weather for this weather zone. \mbox{\Hypertarget{classIZoneWeather_a50fce5f997ba2edf81bfd5e9c8005165}\label{classIZoneWeather_a50fce5f997ba2edf81bfd5e9c8005165}} 
+\index{IZoneWeather@{IZoneWeather}!pos@{pos}}
+\index{pos@{pos}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} I\+Zone\+Weather\+::pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\hyperlink{classVector3}{Vector3}} representing the weather zone\textquotesingle{}s position. \mbox{\Hypertarget{classIZoneWeather_a8054fc8cfb6a3db51b5665231abdbba4}\label{classIZoneWeather_a8054fc8cfb6a3db51b5665231abdbba4}} 
+\index{IZoneWeather@{IZoneWeather}!radius@{radius}}
+\index{radius@{radius}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily float I\+Zone\+Weather\+::radius\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\hyperlink{classVector3}{Vector3}} representing the weather zone\textquotesingle{}s width. Used only for circle shaped zones. \mbox{\Hypertarget{classIZoneWeather_a95f397ec47615cd63819520be57d8f9a}\label{classIZoneWeather_a95f397ec47615cd63819520be57d8f9a}} 
+\index{IZoneWeather@{IZoneWeather}!speed@{speed}}
+\index{speed@{speed}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float I\+Zone\+Weather\+::speed = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+float representing the weather zone\textquotesingle{}s speed. \mbox{\Hypertarget{classIZoneWeather_a377a4188f2edd6265579aa6fbd771627}\label{classIZoneWeather_a377a4188f2edd6265579aa6fbd771627}} 
+\index{IZoneWeather@{IZoneWeather}!width@{width}}
+\index{width@{width}!IZoneWeather@{IZoneWeather}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVector3}{Vector3}} I\+Zone\+Weather\+::width\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\hyperlink{classVector3}{Vector3}} representing the weather zone\textquotesingle{}s width. Used only for square shaped zones. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/I\+Zone\+Weather.\+h\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/I\+Zone\+Weather.\+cc\end{DoxyCompactItemize}

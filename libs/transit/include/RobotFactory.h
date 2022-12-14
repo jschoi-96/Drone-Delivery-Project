@@ -1,15 +1,23 @@
-#ifndef ROBOT_FACTORY_H_
-#define ROBOT_FACTORY_H_
+#ifndef LIBS_TRANSIT_INCLUDE_ROBOTFACTORY_H_
+#define LIBS_TRANSIT_INCLUDE_ROBOTFACTORY_H_
+
+#include <vector>
 
 #include "IEntity.h"
 #include "IEntityFactory.h"
 #include "Robot.h"
 
-#include <vector>
-
+/**
+ *@brief Factory method for Robot class. Inherits from IEntityFactory.
+ **/
 class RobotFactory : public IEntityFactory {
-  public:
-    IEntity* CreateEntity(JsonObject& entity);
+ public:
+  /**
+   * @brief Creates a new drone entity.
+   * @param entity - JsonObject to represent the drone in the simulation.
+   * @return none.
+   **/
+  IEntity* CreateEntity(const JsonObject& entity);
 };
 
-#endif
+#endif  // LIBS_TRANSIT_INCLUDE_ROBOTFACTORY_H_

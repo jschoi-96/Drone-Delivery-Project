@@ -1,0 +1,113 @@
+\hypertarget{classRainWeather}{}\doxysection{Rain\+Weather Class Reference}
+\label{classRainWeather}\index{RainWeather@{RainWeather}}
+
+
+A class built for rain weather. Inherits from \mbox{\hyperlink{classIZoneWeather}{I\+Zone\+Weather}}.  
+
+
+
+
+{\ttfamily \#include $<$Rain\+Weather.\+h$>$}
+
+
+
+Inheritance diagram for Rain\+Weather\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classRainWeather__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Rain\+Weather\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{classRainWeather__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRainWeather_a175047eac6a923447ca0d0f943ad86ac}{$\sim$\+Rain\+Weather}} () override=default
+\begin{DoxyCompactList}\small\item\em destructor for rain\+Weather. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRainWeather_afa218b8fd7dfec3a702242f2d28ade23}{Rain\+Weather}} (const Json\+Object \&obj)
+\begin{DoxyCompactList}\small\item\em constructor for \mbox{\hyperlink{classRainWeather}{Rain\+Weather}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classRainWeather_a9a04d15d59ea80ce50ad774329e8ce12}{Execute}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$\mbox{\hyperlink{classIZoneWeather_a6898c798e169fce5f37502954b6e4ef3}{parent}}, \mbox{\hyperlink{classIReaction}{I\+Reaction}} $\ast$reaction, double dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ scheduler)
+\begin{DoxyCompactList}\small\item\em executes the reaction happening to the drone with Rainweather. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class built for rain weather. Inherits from \mbox{\hyperlink{classIZoneWeather}{I\+Zone\+Weather}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRainWeather_a175047eac6a923447ca0d0f943ad86ac}\label{classRainWeather_a175047eac6a923447ca0d0f943ad86ac}} 
+\index{RainWeather@{RainWeather}!````~RainWeather@{$\sim$RainWeather}}
+\index{````~RainWeather@{$\sim$RainWeather}!RainWeather@{RainWeather}}
+\doxysubsubsection{\texorpdfstring{$\sim$RainWeather()}{~RainWeather()}}
+{\footnotesize\ttfamily Rain\+Weather\+::$\sim$\+Rain\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+destructor for rain\+Weather. 
+
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classRainWeather_afa218b8fd7dfec3a702242f2d28ade23}\label{classRainWeather_afa218b8fd7dfec3a702242f2d28ade23}} 
+\index{RainWeather@{RainWeather}!RainWeather@{RainWeather}}
+\index{RainWeather@{RainWeather}!RainWeather@{RainWeather}}
+\doxysubsubsection{\texorpdfstring{RainWeather()}{RainWeather()}}
+{\footnotesize\ttfamily Rain\+Weather\+::\+Rain\+Weather (\begin{DoxyParamCaption}\item[{const Json\+Object \&}]{obj }\end{DoxyParamCaption})}
+
+
+
+constructor for \mbox{\hyperlink{classRainWeather}{Rain\+Weather}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & J\+S\+ON object to be used for creating a \mbox{\hyperlink{classRainWeather}{Rain\+Weather}} entity. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRainWeather_a9a04d15d59ea80ce50ad774329e8ce12}\label{classRainWeather_a9a04d15d59ea80ce50ad774329e8ce12}} 
+\index{RainWeather@{RainWeather}!Execute@{Execute}}
+\index{Execute@{Execute}!RainWeather@{RainWeather}}
+\doxysubsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily void Rain\+Weather\+::\+Execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{\mbox{\hyperlink{classIReaction}{I\+Reaction}} $\ast$}]{reaction,  }\item[{double}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+executes the reaction happening to the drone with Rainweather. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & The drone being affected by rain. \\
+\hline
+{\em reaction} & current weather reaction \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the entities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIWeather_a1268319157d56c3a6568d09e5cbfdfab}{I\+Weather}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Rain\+Weather.\+h\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Rain\+Weather.\+cc\end{DoxyCompactItemize}

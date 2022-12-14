@@ -1,0 +1,137 @@
+\hypertarget{classStreetLevelReaction}{}\doxysection{Street\+Level\+Reaction Class Reference}
+\label{classStreetLevelReaction}\index{StreetLevelReaction@{StreetLevelReaction}}
+
+
+A class built for streetlevel\+Reaction. Inherits from \mbox{\hyperlink{classIReaction}{I\+Reaction}}.  
+
+
+
+
+{\ttfamily \#include $<$Street\+Level\+Reaction.\+h$>$}
+
+
+
+Inheritance diagram for Street\+Level\+Reaction\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classStreetLevelReaction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Street\+Level\+Reaction\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classStreetLevelReaction__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classStreetLevelReaction_a6f0bd25c8537cb1aad82ab85c57d85f6}\label{classStreetLevelReaction_a6f0bd25c8537cb1aad82ab85c57d85f6}} 
+\mbox{\hyperlink{classStreetLevelReaction_a6f0bd25c8537cb1aad82ab85c57d85f6}{Street\+Level\+Reaction}} ()
+\begin{DoxyCompactList}\small\item\em A constructor for streetlevelreaction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStreetLevelReaction_a219b475f5a8e3fe428b31b4ead0a3c45}\label{classStreetLevelReaction_a219b475f5a8e3fe428b31b4ead0a3c45}} 
+\mbox{\hyperlink{classStreetLevelReaction_a219b475f5a8e3fe428b31b4ead0a3c45}{$\sim$\+Street\+Level\+Reaction}} () override=default
+\begin{DoxyCompactList}\small\item\em A destructor for streetlevel\+Reaction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStreetLevelReaction_acdc83581afd3927cf05844aa10faac83}{react\+\_\+wind}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double $\ast$dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$scheduler, \mbox{\hyperlink{classVector3}{Vector3}} wind)
+\begin{DoxyCompactList}\small\item\em executes the reaction that is supposed to happen when a drone is affected by wind. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStreetLevelReaction_ae3691217d3e7631c0fb5b8750703c12a}{react\+\_\+rain}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double $\ast$dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$scheduler)
+\begin{DoxyCompactList}\small\item\em executes the reaction that is supposed to happen when a drone is affected by rain. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStreetLevelReaction_a47f40c5cd9e42841e90e645453b0e75a}{react\+\_\+emp}} (\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$parent, double $\ast$dt, std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$scheduler)
+\begin{DoxyCompactList}\small\item\em executes the reaction that is supposed to happen when a drone is affected by an E\+MP. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A class built for streetlevel\+Reaction. Inherits from \mbox{\hyperlink{classIReaction}{I\+Reaction}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStreetLevelReaction_a47f40c5cd9e42841e90e645453b0e75a}\label{classStreetLevelReaction_a47f40c5cd9e42841e90e645453b0e75a}} 
+\index{StreetLevelReaction@{StreetLevelReaction}!react\_emp@{react\_emp}}
+\index{react\_emp@{react\_emp}!StreetLevelReaction@{StreetLevelReaction}}
+\doxysubsubsection{\texorpdfstring{react\_emp()}{react\_emp()}}
+{\footnotesize\ttfamily void Street\+Level\+Reaction\+::react\+\_\+emp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double $\ast$}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+executes the reaction that is supposed to happen when a drone is affected by an E\+MP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & This is the drone being affected by an E\+MP. \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the entities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIReaction_ad7a525236d3b3ce3aac7cb10abb32ef9}{I\+Reaction}}.
+
+\mbox{\Hypertarget{classStreetLevelReaction_ae3691217d3e7631c0fb5b8750703c12a}\label{classStreetLevelReaction_ae3691217d3e7631c0fb5b8750703c12a}} 
+\index{StreetLevelReaction@{StreetLevelReaction}!react\_rain@{react\_rain}}
+\index{react\_rain@{react\_rain}!StreetLevelReaction@{StreetLevelReaction}}
+\doxysubsubsection{\texorpdfstring{react\_rain()}{react\_rain()}}
+{\footnotesize\ttfamily void Street\+Level\+Reaction\+::react\+\_\+rain (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double $\ast$}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$}]{scheduler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+executes the reaction that is supposed to happen when a drone is affected by rain. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & This is the drone being affected by rain. \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the entities.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIReaction_aff051d6e1529459140c48a275b5dd7c3}{I\+Reaction}}.
+
+\mbox{\Hypertarget{classStreetLevelReaction_acdc83581afd3927cf05844aa10faac83}\label{classStreetLevelReaction_acdc83581afd3927cf05844aa10faac83}} 
+\index{StreetLevelReaction@{StreetLevelReaction}!react\_wind@{react\_wind}}
+\index{react\_wind@{react\_wind}!StreetLevelReaction@{StreetLevelReaction}}
+\doxysubsubsection{\texorpdfstring{react\_wind()}{react\_wind()}}
+{\footnotesize\ttfamily void Street\+Level\+Reaction\+::react\+\_\+wind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$}]{parent,  }\item[{double $\ast$}]{dt,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classIEntity}{I\+Entity}} $\ast$ $>$ $\ast$}]{scheduler,  }\item[{\mbox{\hyperlink{classVector3}{Vector3}}}]{wind }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+executes the reaction that is supposed to happen when a drone is affected by wind. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & This is the drone being affected by wind. \\
+\hline
+{\em dt} & delta time \\
+\hline
+{\em scheduler} & vector that holds the entities. \\
+\hline
+{\em wind} & holds a vector3 with details of the wind strength.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIReaction_a3153e571df369b6b23fe97d33a693d5b}{I\+Reaction}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/include/Street\+Level\+Reaction.\+h\item 
+/home/jens1960/csci-\/3081w-\/f22/\+Team-\/010-\/35-\/homework04/libs/transit/src/Street\+Level\+Reaction.\+cc\end{DoxyCompactItemize}

@@ -1,10 +1,15 @@
 #include "DroneFactory.h"
 
-IEntity* DroneFactory::CreateEntity(JsonObject& entity){
+#include "RegularReaction.h"
+#include "WeatherReactDecorator.h"
+
+IEntity* DroneFactory::CreateEntity(const JsonObject& entity) {
   std::string type = entity["type"];
-  if(type.compare("drone") == 0){
+  if (type.compare("drone") == 0) {
     std::cout << "Drone Created" << std::endl;
-    return new Drone(entity);
+    return new WeatherReactDecorator(
+        new Drone(entity),
+        new RegularReaction());  // for now, drones have a regular reaction.
   }
   return nullptr;
 }
