@@ -54,7 +54,6 @@ class IZoneWeather : public IWeather, public IEntity {
    * @return float representing the weather zone's destination.
    **/
   virtual float GetSpeed() const { return speed; }
-  
   /**
    * @brief check whether weather is available (pun intended)
    * @return true if is available and false if not (always false in the case of weather entities)
@@ -104,8 +103,7 @@ class IZoneWeather : public IWeather, public IEntity {
   /**
    * Vector3 representing the weather zone's direction.
    **/
-  Vector3 direction; 
-
+  Vector3 direction;
   /**
    * Vector3 representing the weather zone's width. Used only for square shaped zones.
    **/

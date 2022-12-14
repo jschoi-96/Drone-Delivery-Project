@@ -37,10 +37,11 @@ class WindWeather : public IZoneWeather {
    **/
   void Execute(IEntity* parent, IReaction* reaction, double dt,
                std::vector<IEntity*> scheduler);
-  private:
+ private :
   /**
    * Vector3 representing the velocity of the wind.
    **/
-  Vector3 windSpeed; 
+  Vector3 windSpeed;
 };
 #endif  // LIBS_TRANSIT_INCLUDE_WINDWEATHER_H_
+

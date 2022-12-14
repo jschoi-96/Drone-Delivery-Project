@@ -16,7 +16,7 @@
  *@brief A class built to manipulate movement of drone. Inherits from IEntity.
  **/
 class Drone : public IEntity {
-public:
+ public:
   /**
    * @brief Constructor for the Drone class.
    * 
