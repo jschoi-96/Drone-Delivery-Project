@@ -45,4 +45,4 @@ In the next sprint, we will polish our existing features, and allow for weather 
 
 Link to docker repository: https://hub.docker.com/repository/docker/stupidityworks/homework-04
 
-Link to video presentation: TBA
+Link to video presentation: https://drive.google.com/file/d/1tWiz5jcXL2siRxJf_VaWiozENNtszQN8/view?usp=share_link
