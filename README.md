@@ -27,7 +27,9 @@ Our feature adds a random element to the existing project by changing how the dr
 
 In order to implement our design, we had to use multiple design patterns - we had to use the decorator design pattern to add the functionality onto the entities, as well as the strategy design pattern to change how different drones were affected by these weather phenomena. We also had to use the decorator design pattern again to allow for multiple weather phenomena to stack on top of each other, as well as the singleton design pattern to allow for the entities to access the weather. We used the decorator design pattern because it was the easiest way to put multiple weather phenomena into one place and integrate with a singleton. The singleton was used in order to make sure that the weather patterns could be accessed anytime, anywhere. The strategy design pattern was used to allow for a bigger range of behaviors, and to make the drone’s behavior more extensible. 
 
-This new feature isn’t user available; it will simply affect drones in an uncontrollable way. The user can see when a drone is being affected by a weather phenomenon when it changes color - red for rain, blue for EMP, and yellow for wind. If the drone is affected by two or more weather phenomena, the color will shift to account for that as well in a predictable way. 	
+This new feature isn’t user available; it will simply affect drones in an uncontrollable way. The user can see when a drone is being affected by a weather phenomenon when it changes color - red for rain, blue for EMP, and yellow for wind. If the drone is affected by two or more weather phenomena, the color will shift to account for that as well in a predictable way.
+
+To add some variety we decided to adjust some of the weather effects depending on the movement strategy used. Whenever using the beeline and DFS strategies the drone will be unaffected by wind. Whenever the Dijkstra movement strategy is used, the drone will be less affected by rain and completely unaffected by EMP’s. However, when using the Astar strategy, all weather affects the drone as normal.
 
 ## Our Sprint retrospective
 
