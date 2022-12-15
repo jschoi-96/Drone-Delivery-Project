@@ -3,8 +3,11 @@
 ## Usernames
 
 Thea Hiltner - hiltn018
+
 Dat Phan - phanx289
+
 Junsoo Choi - choix712
+
 Niccolo Jensen-Connel - jens1960
 
 ## Project details
